@@ -1,0 +1,151 @@
+{
+  "testCases": [
+    {
+      "description": "標準的な計算",
+      "input": {
+        "spo2": "90",
+        "fio2": "40",
+        "respiratoryRate": "20"
+      },
+      "expected": {
+        "data": ["11.25", "気管挿管を積極的に検討しない", "green"]
+      }
+    },
+    {
+      "description": "SpO2が低い場合",
+      "input": {
+        "spo2": "85",
+        "fio2": "60",
+        "respiratoryRate": "25"
+      },
+      "expected": {
+        "data": ["5.67", "気管挿管を積極的に検討しない", "green"]
+      }
+    },
+    {
+      "description": "FiO2が0の場合",
+      "input": {
+        "spo2": "95",
+        "fio2": "0",
+        "respiratoryRate": "18"
+      },
+      "expected": null
+    },
+    {
+      "description": "呼吸数が0の場合",
+      "input": {
+        "spo2": "95",
+        "fio2": "30",
+        "respiratoryRate": "0"
+      },
+      "expected": null
+    },
+    {
+      "description": "必須フィールドが欠けている場合",
+      "input": {
+        "spo2": "95",
+        "fio2": "30"
+      },
+      "expected": null
+    },
+    {
+      "description": "空のオブジェクト",
+      "input": {},
+      "expected": null
+    },
+    {
+      "description": "null入力",
+      "input": null,
+      "expected": null
+    },
+    {
+      "description": "undefined入力",
+      "input": null,
+      "expected": null
+    },
+    {
+      "description": "小数点以下の丸め処理確認",
+      "input": {
+        "spo2": "92",
+        "fio2": "45",
+        "respiratoryRate": "23"
+      },
+      "expected": {
+        "data": ["8.89", "気管挿管を積極的に検討しない", "green"]
+      }
+    },
+    {
+      "description": "境界値テスト - 4.88未満",
+      "input": {
+        "spo2": "80",
+        "fio2": "60",
+        "respiratoryRate": "28"
+      },
+      "expected": {
+        "data": ["4.76", "気管挿管を検討する", "red"]
+      }
+    },
+    {
+      "description": "境界値テスト - 4.88以上",
+      "input": {
+        "spo2": "88",
+        "fio2": "60",
+        "respiratoryRate": "30"
+      },
+      "expected": {
+        "data": ["4.89", "気管挿管を積極的に検討しない", "green"]
+      }
+    },
+    {
+      "description": "極端に大きな値",
+      "input": {
+        "spo2": "99",
+        "fio2": "21",
+        "respiratoryRate": "5"
+      },
+      "expected": {
+        "data": ["94.29", "気管挿管を積極的に検討しない", "green"]
+      }
+    },
+    {
+      "description": "小数値の入力",
+      "input": {
+        "spo2": "92.5",
+        "fio2": "42.5",
+        "respiratoryRate": "22.5"
+      },
+      "expected": {
+        "data": ["9.67", "気管挿管を積極的に検討しない", "green"]
+      }
+    },
+    {
+      "description": "極端に小さな値（結果が10000未満）",
+      "input": {
+        "spo2": "70",
+        "fio2": "90",
+        "respiratoryRate": "40"
+      },
+      "expected": {
+        "data": ["1.94", "気管挿管を検討する", "red"]
+      }
+    },
+    {
+      "description": "結果が上限を超える場合",
+      "input": {
+        "spo2": "100",
+        "fio2": "0.1",
+        "respiratoryRate": "1"
+      },
+      "expected": null
+    },
+    {
+      "description": "負の値の入力",
+      "input": {
+        "spo2": "-90",
+        "fio2": "40",
+        "respiratoryRate": "20"
+      },
+      "expected": null
+    }
+  ]
+} 

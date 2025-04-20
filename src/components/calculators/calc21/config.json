@@ -1,0 +1,89 @@
+{
+  "fields": [
+    {
+      "id": "congestiveHeartFailure",
+      "label": "慢性心不全の既往",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 1
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "hematocrit",
+      "label": "ヘマトクリット値（Ht値）30％未満",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 1
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "ecgAbnormality",
+      "label": "心電図異常",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 1
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "shortnessOfBreath",
+      "label": "呼吸困難感",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 1
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "systolicBloodPressure",
+      "label": "トリアージ時の収縮期血圧 90mmHg未満",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 1
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    }
+  ]
+} 

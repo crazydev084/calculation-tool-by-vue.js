@@ -1,0 +1,180 @@
+{
+  "fields": [
+    {
+      "id": "consciousnessGCS",
+      "label": "意識<br />GCS",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "suffix": "※ GCS：Glasgow coma scale",
+      "options": [
+        {
+          "label": "15",
+          "value": 0
+        },
+        {
+          "label": "13~14",
+          "value": 1
+        },
+        {
+          "label": "10~12",
+          "value": 2
+        },
+        {
+          "label": "6~9",
+          "value": 3
+        },
+        {
+          "label": "<6",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "respirationPF",
+      "label": "呼吸<br />PaO<sub>2</sub>/FIO<sub>2</sub><br />（P/F比）",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "≧400",
+          "value": 0
+        },
+        {
+          "label": "<400",
+          "value": 1
+        },
+        {
+          "label": "<300",
+          "value": 2
+        },    
+        {
+          "label": "<200および呼吸補助",
+          "value": 3
+        },
+        {
+          "label": "<100および呼吸補助",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "circulation",
+      "label": "循環",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "suffix": "※ DOA：ドパミン、DOB：ドブタミン、NAD：ノルアドレナリン、Ad：アドレナリン",
+      "options": [
+        {
+          "label": "平均血圧≧70mmHg",
+          "value": 0
+        },
+        {
+          "label": "平均血圧<70mmHg",
+          "value": 1
+        },
+        {
+          "label": "DOA < 5γ or\nDOB使用",
+          "value": 2
+        },
+        {
+          "label": "DOA 5~15γ or\nNAD ≦ 0.1γ or\nAd ≦ 0.1γ",
+          "value": 3
+        },
+        {
+          "label": "DOA > 15γ or\nNAD > 0.1γ or\nAd > 0.1γ",
+          "value": 4
+        }   
+      ]
+    },
+    {
+      "id": "liverBil",
+      "label": "肝<br />血清Bil<br />（mg/dL）",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "<1.2",
+          "value": 0
+        }, 
+        {
+          "label": "1.2~1.9",
+          "value": 1
+        }, 
+        {
+          "label": "2.0~5.9",
+          "value": 2
+        },
+        {
+          "label": "6.0~11.9",
+          "value": 3
+        },
+        {
+          "label": "≧12.0",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "kidneyCrOrUrine",
+      "label": "腎<br />血清Cr<br />（mg/dL）<br />or<br />尿量（mL/日）",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "<1.2",
+          "value": 0
+        },
+        {
+          "label": "1.2~1.9",
+          "value": 1
+        },
+        {
+          "label": "2.0~3.4",
+          "value": 2
+        },
+        {
+          "label": "3.5~4.9 or < 500",
+          "value": 3
+        },
+        {
+          "label": "≧ 5.0 or < 200",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "coagulationPlt",
+      "label": "凝固Plt<br />（×103/μL）",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "≧150",
+          "value": 0
+        },  
+        {
+          "label": "<150",
+          "value": 1
+        },
+        {
+          "label": "<100",
+          "value": 2
+        },
+        {
+          "label": "<50",
+          "value": 3
+        },
+        {
+          "label": "<20",
+          "value": 4
+        }
+      ]
+    }
+  ]
+} 

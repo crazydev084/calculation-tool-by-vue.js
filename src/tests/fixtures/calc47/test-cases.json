@@ -1,0 +1,108 @@
+{
+  "testCases": [    
+    {
+      "name": "PAS",
+      "input": {
+        "appearance": 2,
+        "pulse": 2,
+        "grimace": 2,
+        "activity": 2,
+        "respiration": 2
+      },
+      "expected": {
+        "data": ["10点", "正常","green"]
+      }
+    },
+    {
+      "name": "PAS",
+      "input": {
+        "appearance": 0,
+        "pulse": 0,
+        "grimace": 0,
+        "activity": 0,
+        "respiration": 0
+      },
+      "expected": {
+        "data": ["0点", "第2度仮死","red"]
+      }
+    },
+    {
+      "name": "PAS",
+      "input": {
+        "appearance": 0,
+        "pulse": 2,
+        "grimace": 0,
+        "activity": 0,
+        "respiration": 0
+      },
+      "expected": {
+        "data": ["2点", "第2度仮死","red"]
+      }
+    },
+    {
+      "name": "PAS",
+      "input": {
+        "appearance": 0,
+        "pulse": 2,
+        "grimace": 2,
+        "activity": 2,
+        "respiration": 0
+      },
+      "expected": {
+        "data": ["6点", "第1度仮死","yellow"]
+      }
+    },
+    {
+      "name": "PAS",
+      "input": {
+        "appearance": 0,
+        "pulse": 0,
+        "grimace": 0,
+        "activity": 2,
+        "respiration": 2
+      },
+      "expected": {
+        "data": ["4点", "第1度仮死","yellow"]
+      }
+    },
+    {
+      "name": "PAS",
+      "input": {
+        "appearance": 1,
+        "pulse": 1,
+        "grimace": 1,
+        "activity": 1,
+        "respiration": 1
+      },
+      "expected": {
+        "data": ["5点", "第1度仮死","yellow"]
+      }
+    },
+    {
+      "name": "PAS",
+      "input": {
+        "appearance": 0,
+        "pulse": 1,
+        "grimace": 0,
+        "activity": 1,
+        "respiration": 1
+      },
+      "expected": {
+        "data": ["3点", "第2度仮死","red"]
+      }
+    },
+    {
+      "name": "PAS",
+      "input": {
+        "appearance": 1,
+        "pulse": 0,
+        "grimace": 1,
+        "activity": 1,
+        "respiration": 1
+      },
+      "expected": {
+        "data": ["4点", "第1度仮死","yellow"]
+      }
+    }
+  ]
+} 

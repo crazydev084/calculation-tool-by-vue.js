@@ -1,0 +1,15 @@
+:root {
+  --color-pocket-border: #ECEDEF;
+  --color-pocket-border-blue: #3160D9;
+  --color-pocket-bg: #F6F6F9;
+}
+
+.pls-contents {
+    font-family: var(--pls-font-family-base);
+    font-size: var(--pls-font-size-base);
+    font-weight: var(--pls-font-weight-regular);
+    font-feature-settings: var(--pls-font-kerning-default);
+    line-height: 1.5;
+    color: var(--pls-object-primary);
+    letter-spacing: var(--pls-font-letter-spacing-default);
+}

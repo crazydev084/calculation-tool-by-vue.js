@@ -1,0 +1,210 @@
+{
+  "fields": [
+    {
+      "id": "systolicBloodPressure",
+      "label": "収縮期血圧(mmHg)",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": ">109",
+          "value": 0
+        },
+        {
+          "label": "100~109",
+          "value": 1
+        },
+        {
+          "label": "90~99",
+          "value": 2
+        },
+        {
+          "label": "<90",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "bun",
+      "label": "BUN(mg/dL)",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "<18.2",
+          "value": 0
+        },
+        {
+          "label": "18.2~22.4",
+          "value": 2
+        },
+        {
+          "label": "22.4~28.0",
+          "value": 3
+        },
+        {
+          "label": "28.0~70.0",
+          "value": 4
+        },
+        {
+          "label": "≧70.0",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "id": "gender",
+      "label": "性別",
+      "type": "radio-group",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "男性",
+          "value": 0,
+          "fields": [
+            {
+              "id": "hbMale",
+              "label": "Hb(g/dL)",
+              "type": "radio",
+              "required": true,
+              "defaultValue": 0,
+              "options": [
+                {
+                  "label": ">13",
+                  "value": 0
+                },
+                {
+                  "label": "12~13",
+                  "value": 1
+                },
+                {
+                  "label": "10~12",
+                  "value": 3
+                },
+                {
+                  "label": "<10",
+                  "value": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "女性",
+          "value": 1,
+          "fields": [
+            {
+              "id": "hbFemale",
+              "label": "Hb(g/dL)",
+              "type": "radio",
+              "required": true,
+              "defaultValue": 0,
+              "options": [
+                {
+                  "label": ">12",
+                  "value": 0
+                },
+                {
+                  "label": "10~12",
+                  "value": 1
+                },
+                {
+                  "label": "<10",
+                  "value": 6
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pulseRateAbove100",
+      "label": "脈拍数100回/分以上",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "はい",
+          "value": 1
+        },
+        {
+          "label": "いいえ",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "blackStool",
+      "label": "黒色便",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 1
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "syncope",
+      "label": "失神",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 2
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "liverDisease",
+      "label": "肝臓疾患",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 2
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "heartFailure",
+      "label": "心不全",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 2
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    }
+  ]
+} 

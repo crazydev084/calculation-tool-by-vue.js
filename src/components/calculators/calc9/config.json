@@ -1,0 +1,93 @@
+{
+  "fields": [
+    {
+      "id": "age",
+      "label": "年齢",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "3~14歳",
+          "value": 1
+        },
+        {
+          "label": "15~44歳",
+          "value": 0
+        },
+        {
+          "label": "≧45歳",
+          "value": -1
+        }
+      ]
+    },
+    {
+      "id": "fever",
+      "label": "38℃以上の発熱",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 1
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "cough",
+      "label": "咳嗽",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "咳がない",
+          "value": 1
+        },
+        {
+          "label": "咳がある",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "lymphNodeSwelling",
+      "label": "圧痛のある前頸部リンパ節腫脹",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 1
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "tonsilSwelling",
+      "label": "扁桃の腫大・膿性滲出液",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 1
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    }
+  ]
+} 

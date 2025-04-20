@@ -1,0 +1,37 @@
+{
+  "fields": [
+    {
+      "id": "sodiumConcentration",
+      "label": "血清ナトリウム濃度",
+      "type": "number",
+      "required": true,
+      "defaultValue": "",
+      "placeholder": "基準値：135~145",
+      "unit": "mEq/L",
+      "min": 0,
+      "step": 1
+    },
+    {
+      "id": "ureaNitrogenConcentration",
+      "label": "尿素窒素濃度(BUN)",
+      "type": "number",
+      "required": true,
+      "defaultValue": "",
+      "placeholder": "基準値：8~20",
+      "unit": "mg/dL",
+      "min": 0,
+      "step": 1
+    },
+    {
+      "id": "glucoseConcentration",
+      "label": "グルコース濃度",
+      "type": "number",
+      "required": true,
+      "defaultValue": "",
+      "placeholder": "基準値：70~110",
+      "unit": "mg/dL",
+      "min": 0,
+      "step": 1
+    }
+  ]
+} 

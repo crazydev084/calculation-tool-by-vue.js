@@ -1,0 +1,183 @@
+{
+  "testCases": [
+    {
+      "description": "高リスク（5点）",
+      "input": {
+        "age": 1,
+        "dehydration": 1,
+        "respiration": 1,
+        "orientation": 1,
+        "bloodPressure": 1
+      },
+      "expected": {
+        "data": [
+          5,
+          "超重症（ICU）",
+          "red"
+        ]
+      }
+    },
+    {
+      "description": "中等度リスク（3点）",
+      "input": {
+        "age": 1,
+        "dehydration": 1,
+        "respiration": 1,
+        "orientation": 0,
+        "bloodPressure": 0
+      },
+      "expected": {
+        "data": [
+          3,
+          "重症（入院）",
+          "orange"
+        ]
+      }
+    },
+    {
+      "description": "低リスク（1点）",
+      "input": {
+        "age": 1,
+        "dehydration": 0,
+        "respiration": 0,
+        "orientation": 0,
+        "bloodPressure": 0
+      },
+      "expected": {
+        "data": [
+          1,
+          "中等症（外来または入院）",
+          "yellow-green"
+        ]
+      }
+    },
+    {
+      "description": "最低リスク（0点）",
+      "input": {
+        "age": 0,
+        "dehydration": 0,
+        "respiration": 0,
+        "orientation": 0,
+        "bloodPressure": 0
+      },
+      "expected": {
+        "data": [
+          0,
+          "軽症（外来）",
+          "green"
+        ]
+      }
+    },
+    {
+      "description": "nullが入力された場合",
+      "input": null,
+      "expected": null
+    },
+    {
+      "description": "undefinedが入力された場合",
+      "input": null,
+      "expected": null
+    },
+    
+    {
+      "description": "境界値テスト（スコア2/中等症）",
+      "input": {
+        "age": 1,
+        "dehydration": 1,
+        "respiration": 0,
+        "orientation": 0,
+        "bloodPressure": 0
+      },
+      "expected": {
+        "data": [
+          2,
+          "中等症（外来または入院）",
+          "yellow-green"
+        ]
+      }
+    },
+    {
+      "description": "境界値テスト（スコア3/重症）",
+      "input": {
+        "age": 1,
+        "dehydration": 1,
+        "respiration": 1,
+        "orientation": 0,
+        "bloodPressure": 0
+      },
+      "expected": {
+        "data": [
+          3,
+          "重症（入院）",
+          "orange"
+        ]
+      }
+    },
+    {
+      "description": "境界値テスト（スコア4/超重症）",
+      "input": {
+        "age": 1,
+        "dehydration": 1,
+        "respiration": 1,
+        "orientation": 1,
+        "bloodPressure": 0
+      },
+      "expected": {
+        "data": [
+          4,
+          "超重症（ICU）",
+          "red"
+        ]
+      }
+    },
+    {
+      "description": "非常に大きな値の入力",
+      "input": {
+        "age": 100,
+        "dehydration": 100,
+        "respiration": 100,
+        "orientation": 100,
+        "bloodPressure": 100
+      },
+      "expected": {
+        "data": [
+          500,
+          "超重症（ICU）",
+          "red"
+        ]
+      }
+    },
+    {
+      "description": "一部の項目のみ入力された場合",
+      "input": {
+        "age": 1,
+        "respiration": 1,
+        "bloodPressure": 1
+      },
+      "expected": {
+        "data": [
+          3,
+          "重症（入院）",
+          "orange"
+        ]
+      }
+    },
+    {
+      "description": "一部の項目がnullの場合",
+      "input": {
+        "age": 1,
+        "dehydration": null,
+        "respiration": 1,
+        "orientation": null,
+        "bloodPressure": 1
+      },
+      "expected": {
+        "data": [
+          3,
+          "重症（入院）",
+          "orange"
+        ]
+      }
+    }
+  ]
+} 

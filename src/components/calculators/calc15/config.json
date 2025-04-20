@@ -1,0 +1,111 @@
+{
+  "fields": [
+    {
+      "id": "initialEcgRhythm",
+      "label": "初期心電図調律",
+      "type": "radio",
+      "mode": "vertical",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "Shockable",
+          "value": 0
+        },
+        {
+          "label": "Non Shockable",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "timeToROSC",
+      "label": "ROSCまでの時間",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "<20分",
+          "value": 0
+        },
+        {
+          "label": "≧20分",
+          "value": 1
+        },
+        {
+          "label": "目撃なし",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "ph",
+      "label": "pH",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "≧7.31",
+          "value": 0
+        },
+        {
+          "label": "7.16~7.30",
+          "value": 1
+        },
+        {
+          "label": "7.01~7.15",
+          "value": 2
+        },
+        {
+          "label": "≦7.00",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "lactate",
+      "label": "乳酸値（mmol/L）",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "≦5.0",
+          "value": 0
+        },
+        {
+          "label": "5.1~10.0",
+          "value": 1
+        },
+        {
+          "label": "10.1~14.0",
+          "value": 2
+        },
+        {
+          "label": "≧14.1",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "gcsM",
+      "label": "GCS-M（運動機能）",
+      "type": "radio",
+      "mode": "vertical",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "≧2",
+          "value": 0
+        },
+        {
+          "label": "1",
+          "value": 1
+        }
+      ]
+    }
+  ]
+} 

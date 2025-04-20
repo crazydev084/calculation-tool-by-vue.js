@@ -1,0 +1,123 @@
+{
+  "fields": [
+    {
+      "id": "dvtClinicalSymptoms",
+      "label": "DVTの臨床症状",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 3
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "peMoreLikelyThanOtherDiagnoses",
+      "label": "PEが他鑑別診断と比べてより濃厚",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 3
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "heartRateOver100",
+      "label": "心拍数が100/分を超える",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 1.5
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "recentSurgeryOrProlongedBedRest",
+      "label": "過去4週間以内の手術もしくは3日以上の長期臥床",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 1.5
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "dvtOrPeHistory",
+      "label": "DVTもしくはPEの既往",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 1.5
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "hemoptysis",
+      "label": "喀血",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 1
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "activeCancer",
+      "label": "活動性の癌（6ヵ月以内の治療や緩和的治療を含む）",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 1
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    }
+  ]
+} 

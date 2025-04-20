@@ -1,0 +1,165 @@
+{
+  "testCases": [
+    {
+      "name": "すべての症状がある場合",
+      "input": {
+        "nausea": 1,
+        "hydronephrosis": 4,
+        "hematuria": 3,
+        "stoneHistory": 1,
+        "gender": 1,
+        "age": 1,
+        "painImprovement": 2
+      },
+      "expected": {
+        "data": [13, "尿路結石の可能性が高い", "red"]
+      }
+    },
+    {
+      "name": "すべての症状がない場合",
+      "input": {
+        "nausea": 0,
+        "hydronephrosis": 0,
+        "hematuria": 0,
+        "stoneHistory": 0,
+        "gender": 0,
+        "age": 0,
+        "painImprovement": 0
+      },
+      "expected": {
+        "data": [0, "尿路結石の可能性は低い", "green"]
+      }
+    },
+    {
+      "name": "一部の症状がある場合",
+      "input": {
+        "nausea": 1,
+        "hydronephrosis": 4,
+        "hematuria": 3,
+        "stoneHistory": 0,
+        "gender": 0,
+        "age": 0,
+        "painImprovement": 0
+      },
+      "expected": {
+        "data": [8, "尿路結石の可能性が高い", "red"]
+      }
+    },
+    {
+      "name": "未定義の入力でnullを返す",
+      "input": null,
+      "expected": null
+    },
+    {
+      "name": "nullの入力でnullを返す",
+      "input": null,
+      "expected": null
+    },
+    
+    {
+      "name": "数値に変換できない文字列の入力",
+      "input": {
+        "nausea": "abc",
+        "hydronephrosis": "xyz",
+        "hematuria": "test",
+        "stoneHistory": "invalid",
+        "gender": "male",
+        "age": "old",
+        "painImprovement": "yes"
+      },
+      "expected": {
+        "data": [0, "尿路結石の可能性は低い", "green"]
+      }
+    },
+    {
+      "name": "一部が数値、一部が文字列の混在入力",
+      "input": {
+        "nausea": 1,
+        "hydronephrosis": 4,
+        "hematuria": "test",
+        "stoneHistory": 1,
+        "gender": "male",
+        "age": 1,
+        "painImprovement": 0
+      },
+      "expected": {
+        "data": [7, "尿路結石の可能性が高い", "red"]
+      }
+    },
+    {
+      "name": "境界値テスト（スコア6）",
+      "input": {
+        "nausea": 1,
+        "hydronephrosis": 1,
+        "hematuria": 1,
+        "stoneHistory": 1,
+        "gender": 1,
+        "age": 1,
+        "painImprovement": 0
+      },
+      "expected": {
+        "data": [6, "尿路結石の可能性が高い", "red"]
+      }
+    },
+    {
+      "name": "境界値テスト（スコア5）",
+      "input": {
+        "nausea": 1,
+        "hydronephrosis": 1,
+        "hematuria": 1,
+        "stoneHistory": 1,
+        "gender": 1,
+        "age": 0,
+        "painImprovement": 0
+      },
+      "expected": {
+        "data": [5, "尿路結石の可能性は低い", "green"]
+      }
+    },
+    {
+      "name": "負の値の入力（無効な値）",
+      "input": {
+        "nausea": -1,
+        "hydronephrosis": -2,
+        "hematuria": -3,
+        "stoneHistory": -1,
+        "gender": -1,
+        "age": -1,
+        "painImprovement": -2
+      },
+      "expected": {
+        "data": [-11, "尿路結石の可能性は低い", "green"]
+      }
+    },
+    {
+      "name": "非常に大きな値の入力",
+      "input": {
+        "nausea": 99999,
+        "hydronephrosis": 99999,
+        "hematuria": 99999,
+        "stoneHistory": 99999,
+        "gender": 99999,
+        "age": 99999,
+        "painImprovement": 99999
+      },
+      "expected": {
+        "data": [699993, "尿路結石の可能性が高い", "red"]
+      }
+    },
+    {
+      "name": "小数値の入力（parseInt処理の確認）",
+      "input": {
+        "nausea": 1.9,
+        "hydronephrosis": 4.9,
+        "hematuria": 3.9,
+        "stoneHistory": 1.9,
+        "gender": 1.9,
+        "age": 1.9,
+        "painImprovement": 2.9
+      },
+      "expected": {
+        "data": [13, "尿路結石の可能性が高い", "red"]
+      }
+    }
+  ]
+} 

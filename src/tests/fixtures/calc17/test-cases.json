@@ -1,0 +1,264 @@
+{
+  "testCases": [
+    {
+      "description": "男性の基礎代謝量計算例",
+      "input": {
+        "gender": "0",
+        "weight": 60,
+        "height": 170,
+        "age": 30
+      },
+      "expected": {
+        "data": ["1539", "", "blue"]
+      }
+    },
+    {
+      "description": "女性の基礎代謝量計算例",
+      "input": {
+        "gender": "1",
+        "weight": 50,
+        "height": 160,
+        "age": 25
+      },
+      "expected": {
+        "data": ["1312", "", "blue"]
+      }
+    },
+    {
+      "description": "weightがnullの場合",
+      "input": {
+        "gender": "0",
+        "weight": null,
+        "height": 170,
+        "age": 30
+      },
+      "expected": null
+    },
+    {
+      "description": "heightがnullの場合",
+      "input": {
+        "gender": "0",
+        "weight": 60,
+        "height": null,
+        "age": 30
+      },
+      "expected": null
+    },
+    {
+      "description": "ageがnullの場合",
+      "input": {
+        "gender": "0",
+        "weight": 60,
+        "height": 170,
+        "age": null
+      },
+      "expected": null
+    },
+    {
+      "description": "weightが負の値の場合",
+      "input": {
+        "gender": "0",
+        "weight": -1,
+        "height": 170,
+        "age": 30
+      },
+      "expected": null
+    },
+    {
+      "description": "heightが負の値の場合",
+      "input": {
+        "gender": "0",
+        "weight": 60,
+        "height": -1,
+        "age": 30
+      },
+      "expected": null
+    },
+    {
+      "description": "ageが負の値の場合",
+      "input": {
+        "gender": "0",
+        "weight": 60,
+        "height": 170,
+        "age": -1
+      },
+      "expected": null
+    },
+    {
+      "description": "小数値の入力 - 男性",
+      "input": {
+        "gender": "0",
+        "weight": 65.5,
+        "height": 172.3,
+        "age": 32.7
+      },
+      "expected": {
+        "data": ["1608", "", "blue"]
+      }
+    },
+    {
+      "description": "小数値の入力 - 女性",
+      "input": {
+        "gender": "1",
+        "weight": 52.8,
+        "height": 158.4,
+        "age": 27.2
+      },
+      "expected": {
+        "data": ["1326", "", "blue"]
+      }
+    },
+    {
+      "description": "極端に大きな値のテスト - 体重",
+      "input": {
+        "gender": "0",
+        "weight": 500,
+        "height": 170,
+        "age": 30
+      },
+      "expected": {
+        "data": ["7589", "", "blue"]
+      }
+    },
+    {
+      "description": "極端に大きな値のテスト - 身長",
+      "input": {
+        "gender": "0",
+        "weight": 60,
+        "height": 500,
+        "age": 30
+      },
+      "expected": {
+        "data": ["3189", "", "blue"]
+      }
+    },
+    {
+      "description": "極端に大きな値のテスト - 年齢",
+      "input": {
+        "gender": "0",
+        "weight": 60,
+        "height": 170,
+        "age": 500
+      },
+      "expected": {
+        "data": ["-", "", "blue"]
+      }
+    },
+    {
+      "description": "極端に小さな値のテスト - 体重",
+      "input": {
+        "gender": "0",
+        "weight": 0.1,
+        "height": 170,
+        "age": 30
+      },
+      "expected": {
+        "data": ["715", "", "blue"]
+      }
+    },
+    {
+      "description": "極端に小さな値のテスト - 身長",
+      "input": {
+        "gender": "0",
+        "weight": 60,
+        "height": 0.1,
+        "age": 30
+      },
+      "expected": {
+        "data": ["689", "", "blue"]
+      }
+    },
+    {
+      "description": "極端に小さな値のテスト - 年齢",
+      "input": {
+        "gender": "0",
+        "weight": 60,
+        "height": 170,
+        "age": 0.1
+      },
+      "expected": {
+        "data": ["1741", "", "blue"]
+      }
+    },
+    {
+      "description": "ゼロ値のテスト - 体重",
+      "input": {
+        "gender": "0",
+        "weight": 0,
+        "height": 170,
+        "age": 30
+      },
+      "expected": null
+    },
+    {
+      "description": "ゼロ値のテスト - 身長",
+      "input": {
+        "gender": "0",
+        "weight": 60,
+        "height": 0,
+        "age": 30
+      },
+      "expected": null
+    },
+    {
+      "description": "ゼロ値のテスト - 年齢",
+      "input": {
+        "gender": "0",
+        "weight": 60,
+        "height": 170,
+        "age": 0
+      },
+      "expected": {
+        "data": ["1742", "", "blue"]
+      }
+    },
+    {
+      "description": "丸め処理テスト - 男性 (小数点以下が0.5以上)",
+      "input": {
+        "gender": "0",
+        "weight": 62.5,
+        "height": 175.5,
+        "age": 35.5
+      },
+      "expected": {
+        "data": ["1563", "", "blue"]
+      }
+    },
+    {
+      "description": "丸め処理テスト - 女性 (小数点以下が0.5未満)",
+      "input": {
+        "gender": "1",
+        "weight": 55.4,
+        "height": 162.4,
+        "age": 28.4
+      },
+      "expected": {
+        "data": ["1352", "", "blue"]
+      }
+    },
+    {
+      "description": "境界値テスト - 極端に大きな結果値（上限に近い）",
+      "input": {
+        "gender": "0",
+        "weight": 999,
+        "height": 999,
+        "age": 1
+      },
+      "expected": {
+        "data": ["-", "", "blue"]
+      }
+    },
+    {
+      "description": "境界値テスト - 極端に小さな結果値（負の値）",
+      "input": {
+        "gender": "0",
+        "weight": 1,
+        "height": 1,
+        "age": 999
+      },
+      "expected": {
+        "data": ["-", "", "blue"]
+      }
+    }
+  ]
+} 

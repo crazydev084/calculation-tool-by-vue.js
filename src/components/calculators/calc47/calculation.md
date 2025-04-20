@@ -1,0 +1,98 @@
+### スコアの解説
+APGARスコアは新生児の初期の生命状態を評価するために用いる。
+APGARは評価項目5つの頭文字が由来。
+新生児が生まれた直後（出生1分後・5分後）に各項目を評価し、合計0〜10点の範囲でスコアリングする。スコアが高いほど生命状態は良好。
+
+
+<table>
+  <caption>
+    APGARスコアの評価項目<sup>1)</sup>
+  </caption>
+  <thead>
+    <tr>
+      <th></th>
+      <th>0点</th>
+      <th>1点</th>
+      <th>2点</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Appearance<br>
+        皮膚色
+      </td>
+      <td>全身蒼白</td>
+      <td>
+	  	身体が淡紅色<br>
+		四肢にチアノーゼ
+	  </td>
+      <td>
+	  	全身が淡紅色<br>
+		チアノーゼなし
+	  </td>
+    </tr>
+    <tr>
+        <td>
+			Pulse<br>
+			心拍数
+		</td>
+		<td>なし</td>
+		<td><100回/分</td>
+		<td>≧100回/分し</td>
+    </tr>
+    <tr>
+      	<td>
+			Grimace<br>
+			反応性
+		</td>
+		<td>反応なし</td>
+		<td>顔をしかめる、弱く泣き出す</td>
+		<td>くしゃみや咳が出る、強く泣く</td>
+    </tr>
+    <tr>
+      <td>
+	  	Activity<br>
+		活動性
+	  </td>
+      <td>弛緩している</td>
+      <td>少しだけ四肢を動かす</td>
+      <td>活発に四肢を動かす</td>
+    </tr>
+    <tr>
+		<td>
+			Respiration<br>
+			呼吸
+		</td>
+		<td>なし</td>
+		<td>不規則、緩徐</td>
+		<td>良好、啼泣</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <caption>
+    APGARスコアと解釈<sup>1,2)</sup>
+  </caption>
+  <thead>
+    <tr>
+      <th>APGARスコア</th>
+      <th>解釈</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>7〜10点</td>
+      <td>正常</td>
+    </tr>
+    <tr>
+      <td>4〜6点</td>
+      <td>第1度仮死</td>
+    </tr>
+    <tr>
+      <td>0〜3点</td>
+      <td>第2度仮死</td>
+    </tr>
+  </tbody>
+</table>

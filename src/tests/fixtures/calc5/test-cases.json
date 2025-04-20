@@ -1,0 +1,220 @@
+{
+  "testCases": [
+    {
+      "name": "すべての症状がある場合",
+      "input": {
+        "migrationToRightLowerQuadrant": 1,
+        "anorexia": 1,
+        "nauseaAndVomiting": 1,
+        "tendernessInRightLowerQuadrant": 2,
+        "reboundPain": 1,
+        "elevationOfTemperature": 1,
+        "leukocytosis": 2,
+        "shiftToLeft": 1
+      },
+      "expected": {
+        "data": [10, "高リスク群（入院にて手術）", "red"]
+      }
+    },
+    {
+      "name": "すべての症状がない場合",
+      "input": {
+        "migrationToRightLowerQuadrant": 0,
+        "anorexia": 0,
+        "nauseaAndVomiting": 0,
+        "tendernessInRightLowerQuadrant": 0,
+        "reboundPain": 0,
+        "elevationOfTemperature": 0,
+        "leukocytosis": 0,
+        "shiftToLeft": 0
+      },
+      "expected": {
+        "data": [0, "低リスク（帰宅）", "green"]
+      }
+    },
+    {
+      "name": "一部の症状がある場合",
+      "input": {
+        "migrationToRightLowerQuadrant": 1,
+        "anorexia": 1,
+        "nauseaAndVomiting": 0,
+        "tendernessInRightLowerQuadrant": 2,
+        "reboundPain": 0,
+        "elevationOfTemperature": 1,
+        "leukocytosis": 2,
+        "shiftToLeft": 0
+      },
+      "expected": {
+        "data": [7, "高リスク群（入院にて手術）", "red"]
+      }
+    },
+    {
+      "name": "空の入力値の例",
+      "input": {
+        "migrationToRightLowerQuadrant": "",
+        "anorexia": "",
+        "nauseaAndVomiting": "",
+        "tendernessInRightLowerQuadrant": "",
+        "reboundPain": "",
+        "elevationOfTemperature": "",
+        "leukocytosis": "",
+        "shiftToLeft": ""
+      },
+      "expected": {
+        "data": [0, "低リスク（帰宅）", "green"]
+      }
+    },
+    {
+      "name": "未定義の入力でnullを返す",
+      "input": null,
+      "expected": null
+    },
+    {
+      "name": "nullの入力でnullを返す",
+      "input": null,
+      "expected": null
+    },
+    
+    {
+      "name": "境界値テスト（スコア4/低リスク）",
+      "input": {
+        "migrationToRightLowerQuadrant": 1,
+        "anorexia": 1,
+        "nauseaAndVomiting": 0,
+        "tendernessInRightLowerQuadrant": 2,
+        "reboundPain": 0,
+        "elevationOfTemperature": 0,
+        "leukocytosis": 0,
+        "shiftToLeft": 0
+      },
+      "expected": {
+        "data": [4, "低リスク（帰宅）", "green"]
+      }
+    },
+    {
+      "name": "境界値テスト（スコア5/中リスク）",
+      "input": {
+        "migrationToRightLowerQuadrant": 1,
+        "anorexia": 1,
+        "nauseaAndVomiting": 1,
+        "tendernessInRightLowerQuadrant": 2,
+        "reboundPain": 0,
+        "elevationOfTemperature": 0,
+        "leukocytosis": 0,
+        "shiftToLeft": 0
+      },
+      "expected": {
+        "data": [5, "中リスク（入院にて経過観察）", "yellow"]
+      }
+    },
+    {
+      "name": "境界値テスト（スコア6/中リスク）",
+      "input": {
+        "migrationToRightLowerQuadrant": 1,
+        "anorexia": 1,
+        "nauseaAndVomiting": 1,
+        "tendernessInRightLowerQuadrant": 2,
+        "reboundPain": 1,
+        "elevationOfTemperature": 0,
+        "leukocytosis": 0,
+        "shiftToLeft": 0
+      },
+      "expected": {
+        "data": [6, "中リスク（入院にて経過観察）", "yellow"]
+      }
+    },
+    {
+      "name": "境界値テスト（スコア7/高リスク）",
+      "input": {
+        "migrationToRightLowerQuadrant": 1,
+        "anorexia": 1,
+        "nauseaAndVomiting": 1,
+        "tendernessInRightLowerQuadrant": 2,
+        "reboundPain": 1,
+        "elevationOfTemperature": 1,
+        "leukocytosis": 0,
+        "shiftToLeft": 0
+      },
+      "expected": {
+        "data": [7, "高リスク群（入院にて手術）", "red"]
+      }
+    },
+    {
+      "name": "小数値の入力（Number変換の確認）",
+      "input": {
+        "migrationToRightLowerQuadrant": 0.9,
+        "anorexia": 0.1,
+        "nauseaAndVomiting": 0.5,
+        "tendernessInRightLowerQuadrant": 1.5,
+        "reboundPain": 0.8,
+        "elevationOfTemperature": 0.2,
+        "leukocytosis": 1.7,
+        "shiftToLeft": 0.3
+      },
+      "expected": {
+        "data": [6, "中リスク（入院にて経過観察）", "yellow"]
+      }
+    },
+    {
+      "name": "負の値の入力",
+      "input": {
+        "migrationToRightLowerQuadrant": -1,
+        "anorexia": -1,
+        "nauseaAndVomiting": -1,
+        "tendernessInRightLowerQuadrant": -2,
+        "reboundPain": -1,
+        "elevationOfTemperature": -1,
+        "leukocytosis": -2,
+        "shiftToLeft": -1
+      },
+      "expected": {
+        "data": [-10, "低リスク（帰宅）", "green"]
+      }
+    },
+    {
+      "name": "非常に大きな値の入力",
+      "input": {
+        "migrationToRightLowerQuadrant": 100,
+        "anorexia": 100,
+        "nauseaAndVomiting": 100,
+        "tendernessInRightLowerQuadrant": 100,
+        "reboundPain": 100,
+        "elevationOfTemperature": 100,
+        "leukocytosis": 100,
+        "shiftToLeft": 100
+      },
+      "expected": {
+        "data": [800, "高リスク群（入院にて手術）", "red"]
+      }
+    },
+    {
+      "name": "一部の項目が設定されていない場合",
+      "input": {
+        "migrationToRightLowerQuadrant": 1,
+        "anorexia": 1,
+        "tendernessInRightLowerQuadrant": 2,
+        "elevationOfTemperature": 1,
+        "leukocytosis": 2
+      },
+      "expected": {
+        "data": [7, "高リスク群（入院にて手術）", "red"]
+      }
+    },
+    {
+      "name": "一部の項目がnullの場合",
+      "input": {
+        "migrationToRightLowerQuadrant": 1,
+        "anorexia": 1,
+        "nauseaAndVomiting": null,
+        "tendernessInRightLowerQuadrant": 2,
+        "reboundPain": null,
+        "elevationOfTemperature": 1,
+        "leukocytosis": 2,
+        "shiftToLeft": null
+      },
+      "expected": {
+        "data": [7, "高リスク群（入院にて手術）", "red"]
+      }
+    }
+  ]
+} 

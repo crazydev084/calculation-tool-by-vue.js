@@ -1,0 +1,253 @@
+{
+  "testCases": [
+    {
+      "description": "最高リスク（スコア5点）",
+      "input": {
+        "congestiveHeartFailure": 1,
+        "hematocrit": 1,
+        "ecgAbnormality": 1,
+        "shortnessOfBreath": 1,
+        "systolicBloodPressure": 1
+      },
+      "expected": {
+        "data": [5, "失神後7日以内の重篤な合併症発症リスク高", "red"]
+      }
+    },
+    {
+      "description": "中程度リスク（スコア3点）",
+      "input": {
+        "congestiveHeartFailure": 1,
+        "hematocrit": 1,
+        "ecgAbnormality": 1,
+        "shortnessOfBreath": 0,
+        "systolicBloodPressure": 0
+      },
+      "expected": {
+        "data": [3, "失神後7日以内の重篤な合併症発症リスク高", "red"]
+      }
+    },
+    {
+      "description": "低リスク（スコア1点）",
+      "input": {
+        "congestiveHeartFailure": 1,
+        "hematocrit": 0,
+        "ecgAbnormality": 0,
+        "shortnessOfBreath": 0,
+        "systolicBloodPressure": 0
+      },
+      "expected": {
+        "data": [1, "失神後7日以内の重篤な合併症発症リスク高", "red"]
+      }
+    },
+    {
+      "description": "リスクなし（スコア0点）",
+      "input": {
+        "congestiveHeartFailure": 0,
+        "hematocrit": 0,
+        "ecgAbnormality": 0,
+        "shortnessOfBreath": 0,
+        "systolicBloodPressure": 0
+      },
+      "expected": {
+        "data": [0, "失神後7日以内の重篤な合併症発症リスク低", "green"]
+      }
+    },
+    {
+      "description": "慢性心不全の既往がnullの場合",
+      "input": {
+        "congestiveHeartFailure": null,
+        "hematocrit": 0,
+        "ecgAbnormality": 0,
+        "shortnessOfBreath": 0,
+        "systolicBloodPressure": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "ヘマトクリット値がnullの場合",
+      "input": {
+        "congestiveHeartFailure": 0,
+        "hematocrit": null,
+        "ecgAbnormality": 0,
+        "shortnessOfBreath": 0,
+        "systolicBloodPressure": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "心電図異常がnullの場合",
+      "input": {
+        "congestiveHeartFailure": 0,
+        "hematocrit": 0,
+        "ecgAbnormality": null,
+        "shortnessOfBreath": 0,
+        "systolicBloodPressure": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "呼吸困難感がnullの場合",
+      "input": {
+        "congestiveHeartFailure": 0,
+        "hematocrit": 0,
+        "ecgAbnormality": 0,
+        "shortnessOfBreath": null,
+        "systolicBloodPressure": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "収縮期血圧がnullの場合",
+      "input": {
+        "congestiveHeartFailure": 0,
+        "hematocrit": 0,
+        "ecgAbnormality": 0,
+        "shortnessOfBreath": 0,
+        "systolicBloodPressure": null
+      },
+      "expected": null
+    },
+    {
+      "description": "異常値 - 範囲外の値（慢性心不全）",
+      "input": {
+        "congestiveHeartFailure": 2,
+        "hematocrit": 0,
+        "ecgAbnormality": 0,
+        "shortnessOfBreath": 0,
+        "systolicBloodPressure": 0
+      },
+      "expected": {
+        "data": [2, "失神後7日以内の重篤な合併症発症リスク高", "red"]
+      }
+    },
+    {
+      "description": "異常値 - 負の値",
+      "input": {
+        "congestiveHeartFailure": -1,
+        "hematocrit": 0,
+        "ecgAbnormality": 0,
+        "shortnessOfBreath": 0,
+        "systolicBloodPressure": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "異常値 - 小数値",
+      "input": {
+        "congestiveHeartFailure": 0.5,
+        "hematocrit": 0,
+        "ecgAbnormality": 0,
+        "shortnessOfBreath": 0,
+        "systolicBloodPressure": 0
+      },
+      "expected": {
+        "data": [0.5, "失神後7日以内の重篤な合併症発症リスク高", "red"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア0（閾値ちょうど）",
+      "input": {
+        "congestiveHeartFailure": 0,
+        "hematocrit": 0,
+        "ecgAbnormality": 0,
+        "shortnessOfBreath": 0,
+        "systolicBloodPressure": 0
+      },
+      "expected": {
+        "data": [0, "失神後7日以内の重篤な合併症発症リスク低", "green"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア0（通常と異なる組み合わせ）",
+      "input": {
+        "congestiveHeartFailure": 1,
+        "hematocrit": 1,
+        "ecgAbnormality": -1,
+        "shortnessOfBreath": -1,
+        "systolicBloodPressure": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "極端に大きな値 - 全て大きな値",
+      "input": {
+        "congestiveHeartFailure": 999,
+        "hematocrit": 999,
+        "ecgAbnormality": 999,
+        "shortnessOfBreath": 999,
+        "systolicBloodPressure": 999
+      },
+      "expected": {
+        "data": [4995, "失神後7日以内の重篤な合併症発症リスク高", "red"]
+      }
+    },
+    {
+      "description": "極端に小さな値 - 全て負の値",
+      "input": {
+        "congestiveHeartFailure": -10,
+        "hematocrit": -10,
+        "ecgAbnormality": -10,
+        "shortnessOfBreath": -10,
+        "systolicBloodPressure": -10
+      },
+      "expected": null
+    },
+    {
+      "description": "混合値 - 正と負の値の組み合わせ",
+      "input": {
+        "congestiveHeartFailure": 5,
+        "hematocrit": -3,
+        "ecgAbnormality": 2,
+        "shortnessOfBreath": -1,
+        "systolicBloodPressure": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "境界値テスト - スコア1（最小の陽性値）",
+      "input": {
+        "congestiveHeartFailure": 1,
+        "hematocrit": 0,
+        "ecgAbnormality": 0,
+        "shortnessOfBreath": 0,
+        "systolicBloodPressure": 0
+      },
+      "expected": {
+        "data": [1, "失神後7日以内の重篤な合併症発症リスク高", "red"]
+      }
+    },
+    {
+      "description": "境界値テスト - 正と負の値の和がちょうど0",
+      "input": {
+        "congestiveHeartFailure": 2,
+        "hematocrit": 2,
+        "ecgAbnormality": -2,
+        "shortnessOfBreath": -2,
+        "systolicBloodPressure": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "境界値テスト - 正と負の値の和がちょうど0.1",
+      "input": {
+        "congestiveHeartFailure": 2,
+        "hematocrit": 2.1,
+        "ecgAbnormality": -2,
+        "shortnessOfBreath": -2,
+        "systolicBloodPressure": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "境界値テスト - 正と負の値の和がちょうど-0.1",
+      "input": {
+        "congestiveHeartFailure": 2,
+        "hematocrit": 1.9,
+        "ecgAbnormality": -2,
+        "shortnessOfBreath": -2,
+        "systolicBloodPressure": 0
+      },
+      "expected": null
+    }
+  ]
+} 

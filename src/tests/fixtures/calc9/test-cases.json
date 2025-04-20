@@ -1,0 +1,251 @@
+{
+  "testCases": [
+    {
+      "description": "高スコア（5点）",
+      "input": {
+        "age": 1,
+        "fever": 1,
+        "cough": 1,
+        "lymphNodeSwelling": 1,
+        "tonsilSwelling": 1
+      },
+      "expected": {
+        "data": [
+          5,
+          "A群溶連菌性咽頭炎の確率：55%",
+          "red"
+        ]
+      }
+    },
+    {
+      "description": "中等度スコア（3点）",
+      "input": {
+        "age": 1,
+        "fever": 1,
+        "cough": 0,
+        "lymphNodeSwelling": 1,
+        "tonsilSwelling": 0
+      },
+      "expected": {
+        "data": [
+          3,
+          "A群溶連菌性咽頭炎の確率：37%",
+          "orange"
+        ]
+      }
+    },
+    {
+      "description": "低スコア（1点）",
+      "input": {
+        "age": 1,
+        "fever": 0,
+        "cough": 0,
+        "lymphNodeSwelling": 0,
+        "tonsilSwelling": 0
+      },
+      "expected": {
+        "data": [
+          1,
+          "A群溶連菌性咽頭炎の確率：14%",
+          "yellow-green"
+        ]
+      }
+    },
+    {
+      "description": "マイナススコア（-1点）",
+      "input": {
+        "age": -1,
+        "fever": 0,
+        "cough": 0,
+        "lymphNodeSwelling": 0,
+        "tonsilSwelling": 0
+      },
+      "expected": {
+        "data": [
+          -1,
+          "A群溶連菌性咽頭炎の確率：8%",
+          "green"
+        ]
+      }
+    },
+    {
+      "description": "nullが入力された場合",
+      "input": null,
+      "expected": null
+    },
+    {
+      "description": "undefinedが入力された場合",
+      "input": null,
+      "expected": null
+    },
+    
+    {
+      "description": "境界値テスト（スコア0/低リスク）",
+      "input": {
+        "age": 0,
+        "fever": 0,
+        "cough": 0,
+        "lymphNodeSwelling": 0,
+        "tonsilSwelling": 0
+      },
+      "expected": {
+        "data": [
+          0,
+          "A群溶連菌性咽頭炎の確率：8%",
+          "green"
+        ]
+      }
+    },
+    {
+      "description": "境界値テスト（スコア1/低中リスク）",
+      "input": {
+        "age": 0,
+        "fever": 0,
+        "cough": 0,
+        "lymphNodeSwelling": 0,
+        "tonsilSwelling": 1
+      },
+      "expected": {
+        "data": [
+          1,
+          "A群溶連菌性咽頭炎の確率：14%",
+          "yellow-green"
+        ]
+      }
+    },
+    {
+      "description": "境界値テスト（スコア2/中リスク）",
+      "input": {
+        "age": 0,
+        "fever": 0,
+        "cough": 1,
+        "lymphNodeSwelling": 0,
+        "tonsilSwelling": 1
+      },
+      "expected": {
+        "data": [
+          2,
+          "A群溶連菌性咽頭炎の確率：23%",
+          "yellow"
+        ]
+      }
+    },
+    {
+      "description": "境界値テスト（スコア3/中高リスク）",
+      "input": {
+        "age": 0,
+        "fever": 1,
+        "cough": 1,
+        "lymphNodeSwelling": 0,
+        "tonsilSwelling": 1
+      },
+      "expected": {
+        "data": [
+          3,
+          "A群溶連菌性咽頭炎の確率：37%",
+          "orange"
+        ]
+      }
+    },
+    {
+      "description": "境界値テスト（スコア4/高リスク）",
+      "input": {
+        "age": 0,
+        "fever": 1,
+        "cough": 1,
+        "lymphNodeSwelling": 1,
+        "tonsilSwelling": 1
+      },
+      "expected": {
+        "data": [
+          4,
+          "A群溶連菌性咽頭炎の確率：55%",
+          "red"
+        ]
+      }
+    },
+    {
+      "description": "マイナス値と正の値が混在した場合",
+      "input": {
+        "age": -1,
+        "fever": 1,
+        "cough": 1,
+        "lymphNodeSwelling": 0,
+        "tonsilSwelling": 0
+      },
+      "expected": {
+        "data": [
+          1,
+          "A群溶連菌性咽頭炎の確率：14%",
+          "yellow-green"
+        ]
+      }
+    },
+    {
+      "description": "複数のマイナス値がある場合",
+      "input": {
+        "age": -1,
+        "fever": -1,
+        "cough": 0,
+        "lymphNodeSwelling": 0,
+        "tonsilSwelling": 0
+      },
+      "expected": {
+        "data": [
+          -2,
+          "A群溶連菌性咽頭炎の確率：8%",
+          "green"
+        ]
+      }
+    },
+    {
+      "description": "非常に大きな値の入力",
+      "input": {
+        "age": 100,
+        "fever": 100,
+        "cough": 100,
+        "lymphNodeSwelling": 100,
+        "tonsilSwelling": 100
+      },
+      "expected": {
+        "data": [
+          500,
+          "A群溶連菌性咽頭炎の確率：55%",
+          "red"
+        ]
+      }
+    },
+    {
+      "description": "一部の項目のみ入力された場合",
+      "input": {
+        "age": 1,
+        "fever": 1,
+        "tonsilSwelling": 1
+      },
+      "expected": {
+        "data": [
+          3,
+          "A群溶連菌性咽頭炎の確率：37%",
+          "orange"
+        ]
+      }
+    },
+    {
+      "description": "一部の項目がnullの場合",
+      "input": {
+        "age": 1,
+        "fever": null,
+        "cough": 1,
+        "lymphNodeSwelling": null,
+        "tonsilSwelling": 1
+      },
+      "expected": {
+        "data": [
+          3,
+          "A群溶連菌性咽頭炎の確率：37%",
+          "orange"
+        ]
+      }
+    }
+  ]
+} 

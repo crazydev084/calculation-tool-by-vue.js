@@ -1,0 +1,48 @@
+{
+  "fields": [
+    {
+      "id": "urineSodiumConcentration",
+      "label": "尿中ナトリウム濃度（UNa）",
+      "type": "number",
+      "required": true,
+      "defaultValue": "",
+      "placeholder": "基準値：110~250",
+      "unit": "mEq/L",
+      "min": 0,
+      "step": 1
+    },
+    {
+      "id": "urineCreatinineConcentration",
+      "label": "尿中クレアチニン濃度（UCr）",
+      "type": "number",
+      "required": true,
+      "defaultValue": "",
+      "placeholder": "基準値：100~150",
+      "unit": "mg/dL",
+      "min": 0,
+      "step": 1
+    },
+    {
+      "id": "serumSodiumConcentration",
+      "label": "血清ナトリウム濃度（SNa）",
+      "type": "number",
+      "required": true,
+      "defaultValue": "",
+      "placeholder": "基準値：135~145",
+      "unit": "mEq/L",
+      "min": 0,
+      "step": 1
+    },
+    {
+      "id": "serumCreatinineConcentration",
+      "label": "血清クレアチニン濃度（SCr）",
+      "type": "number",
+      "required": true,
+      "defaultValue": "",
+      "placeholder": "基準値：0.6~1.2",
+      "unit": "mg/dL",
+      "min": 0,
+      "step": 1
+    }
+  ]
+} 

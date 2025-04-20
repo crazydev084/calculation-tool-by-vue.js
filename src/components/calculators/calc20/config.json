@@ -1,0 +1,123 @@
+{
+  "fields": [
+    {
+      "id": "age",
+      "label": "65歳以上",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "はい",
+          "value": 1
+        },
+        {
+          "label": "いいえ",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "anginaSymptoms",
+      "label": "24時間以内に狭心症状が2回以上",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 1
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "aspirinUse",
+      "label": "7日間以内のアスピリン使用",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 1
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "coronaryRiskFactors",
+      "label": "3つ以上の冠危険因子<br />(高血圧、糖尿病、高脂血症、家族歴、喫煙者)",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 1
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "coronaryStenosis",
+      "label": "既知の50％以上の冠動脈狭窄",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 1
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "stElevation",
+      "label": "心電図における1mm超のST偏位",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 5
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "biomarkerElevation",
+      "label": "心筋バイオマーカーの上昇",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 5
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    }
+  ]
+} 

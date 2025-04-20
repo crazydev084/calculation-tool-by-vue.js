@@ -1,0 +1,81 @@
+{
+  "fields": [
+    {
+      "id": "nausea",
+      "type": "radio",
+      "label": "嘔気・嘔吐",
+      "options": [
+        { "label": "ある", "value": 1 },
+        { "label": "ない", "value": 0 }
+      ],
+      "required": true,
+      "defaultValue": 0
+    },
+    {
+      "id": "hydronephrosis",
+      "type": "radio",
+      "label": "水腎症",
+      "options": [
+        { "label": "ある", "value": 4 },
+        { "label": "ない", "value": 0 }
+      ],
+      "required": true,
+      "defaultValue": 0
+    },
+    {
+      "id": "hematuria",
+      "type": "radio",
+      "label": "顕微鏡的血尿",
+      "options": [
+        { "label": "ある", "value": 3 },
+        { "label": "ない", "value": 0 }
+      ],
+      "required": true,
+      "defaultValue": 0
+    },
+    {
+      "id": "stoneHistory",
+      "type": "radio",
+      "label": "結石の既往",
+      "options": [
+        { "label": "ある", "value": 1 },
+        { "label": "ない", "value": 0 }
+      ],
+      "required": true,
+      "defaultValue": 0
+    },
+    {
+      "id": "gender",
+      "type": "radio",
+      "label": "性別",
+      "options": [
+        { "label": "男性", "value": 1 },
+        { "label": "女性", "value": 0 }
+      ],
+      "required": true,
+      "defaultValue": 0
+    },
+    {
+      "id": "age",
+      "type": "radio",
+      "label": "60歳未満",
+      "options": [
+        { "label": "はい", "value": 1 },
+        { "label": "いいえ", "value": 0 }
+      ],
+      "required": true,
+      "defaultValue": 0
+    },
+    {
+      "id": "painImprovement",
+      "type": "radio",
+      "label": "6時間以内の疼痛改善",
+      "options": [
+        { "label": "ある", "value": 2 },
+        { "label": "ない", "value": 0 }
+      ],
+      "required": true,
+      "defaultValue": 0
+    }
+  ]
+} 

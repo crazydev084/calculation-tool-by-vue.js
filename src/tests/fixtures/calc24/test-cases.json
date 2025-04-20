@@ -1,0 +1,309 @@
+{
+  "testCases": [
+    {
+      "description": "最高リスク（スコア6点）",
+      "input": {
+        "congestiveHeartFailure": 1,
+        "hypertension": 1,
+        "age": 1,
+        "diabetesMellitus": 1,
+        "strokeTiaHistory": 2
+      },
+      "expected": {
+        "data": [6, "DOAC推奨、ワルファリン考慮可\n抗凝固療法未施行例における脳梗塞発症率：7.2％", "red"]
+      }
+    },
+    {
+      "description": "高リスク（スコア4点）",
+      "input": {
+        "congestiveHeartFailure": 1,
+        "hypertension": 1,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeTiaHistory": 2
+      },
+      "expected": {
+        "data": [4, "DOAC推奨、ワルファリン考慮可\n抗凝固療法未施行例における脳梗塞発症率：6.1％", "red"]
+      }
+    },
+    {
+      "description": "中リスク（スコア2点）",
+      "input": {
+        "congestiveHeartFailure": 0,
+        "hypertension": 0,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeTiaHistory": 2
+      },
+      "expected": {
+        "data": [2, "DOAC推奨、ワルファリン考慮可\n抗凝固療法未施行例における脳梗塞発症率：1.5％", "red"]
+      }
+    },
+    {
+      "description": "低リスク（スコア1点）",
+      "input": {
+        "congestiveHeartFailure": 1,
+        "hypertension": 0,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeTiaHistory": 0
+      },
+      "expected": {
+        "data": [1, "DOAC推奨、ワルファリン考慮可\n抗凝固療法未施行例における脳梗塞発症率：0.9％", "red"]
+      }
+    },
+    {
+      "description": "最低リスク（スコア0点）",
+      "input": {
+        "congestiveHeartFailure": 0,
+        "hypertension": 0,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeTiaHistory": 0
+      },
+      "expected": {
+        "data": [0, "リスク因子があればDOACまたはワルファリン考慮可\n抗凝固療法未施行例における脳梗塞発症率：0.5％", "green"]
+      }
+    },
+    {
+      "description": "心不全・左室機能不全がnullの場合",
+      "input": {
+        "congestiveHeartFailure": null,
+        "hypertension": 0,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeTiaHistory": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "高血圧がnullの場合",
+      "input": {
+        "congestiveHeartFailure": 0,
+        "hypertension": null,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeTiaHistory": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "年齢がnullの場合",
+      "input": {
+        "congestiveHeartFailure": 0,
+        "hypertension": 0,
+        "age": null,
+        "diabetesMellitus": 0,
+        "strokeTiaHistory": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "糖尿病がnullの場合",
+      "input": {
+        "congestiveHeartFailure": 0,
+        "hypertension": 0,
+        "age": 0,
+        "diabetesMellitus": null,
+        "strokeTiaHistory": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "脳梗塞・TIAの既往がnullの場合",
+      "input": {
+        "congestiveHeartFailure": 0,
+        "hypertension": 0,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeTiaHistory": null
+      },
+      "expected": null
+    },
+    {
+      "description": "異常値 - 心不全が範囲外",
+      "input": {
+        "congestiveHeartFailure": 2,
+        "hypertension": 0,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeTiaHistory": 0
+      },
+      "expected": {
+        "data": [2, "DOAC推奨、ワルファリン考慮可\n抗凝固療法未施行例における脳梗塞発症率：1.5％", "red"]
+      }
+    },
+    {
+      "description": "異常値 - 高血圧が範囲外",
+      "input": {
+        "congestiveHeartFailure": 0,
+        "hypertension": 3,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeTiaHistory": 0
+      },
+      "expected": {
+        "data": [3, "DOAC推奨、ワルファリン考慮可\n抗凝固療法未施行例における脳梗塞発症率：2.7％", "red"]
+      }
+    },
+    {
+      "description": "異常値 - 年齢が範囲外",
+      "input": {
+        "congestiveHeartFailure": 0,
+        "hypertension": 0,
+        "age": 5,
+        "diabetesMellitus": 0,
+        "strokeTiaHistory": 0
+      },
+      "expected": {
+        "data": [5, "DOAC推奨、ワルファリン考慮可\n抗凝固療法未施行例における脳梗塞発症率：3.9％", "red"]
+      }
+    },
+    {
+      "description": "異常値 - 糖尿病が範囲外",
+      "input": {
+        "congestiveHeartFailure": 0,
+        "hypertension": 0,
+        "age": 0,
+        "diabetesMellitus": 4,
+        "strokeTiaHistory": 0
+      },
+      "expected": {
+        "data": [4, "DOAC推奨、ワルファリン考慮可\n抗凝固療法未施行例における脳梗塞発症率：6.1％", "red"]
+      }
+    },
+    {
+      "description": "異常値 - 脳梗塞・TIAの既往が範囲外",
+      "input": {
+        "congestiveHeartFailure": 0,
+        "hypertension": 0,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeTiaHistory": 3
+      },
+      "expected": {
+        "data": [3, "DOAC推奨、ワルファリン考慮可\n抗凝固療法未施行例における脳梗塞発症率：2.7％", "red"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア0（最低リスク）",
+      "input": {
+        "congestiveHeartFailure": 0,
+        "hypertension": 0,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeTiaHistory": 0
+      },
+      "expected": {
+        "data": [0, "リスク因子があればDOACまたはワルファリン考慮可\n抗凝固療法未施行例における脳梗塞発症率：0.5％", "green"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア1（最小のリスク）",
+      "input": {
+        "congestiveHeartFailure": 1,
+        "hypertension": 0,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeTiaHistory": 0
+      },
+      "expected": {
+        "data": [1, "DOAC推奨、ワルファリン考慮可\n抗凝固療法未施行例における脳梗塞発症率：0.9％", "red"]
+      }
+    },
+    {
+      "description": "境界値テスト - 負の値が入力されスコアが0未満",
+      "input": {
+        "congestiveHeartFailure": -1,
+        "hypertension": 0,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeTiaHistory": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "境界値テスト - 負の値が入力されるが合計は正",
+      "input": {
+        "congestiveHeartFailure": -1,
+        "hypertension": 0,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeTiaHistory": 2
+      },
+      "expected": null
+    },
+    {
+      "description": "小数値入力のテスト",
+      "input": {
+        "congestiveHeartFailure": 0.5,
+        "hypertension": 0.5,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeTiaHistory": 0
+      },
+      "expected": {
+        "data": [1, "DOAC推奨、ワルファリン考慮可\n抗凝固療法未施行例における脳梗塞発症率：0.9％", "red"]
+      }
+    },
+    {
+      "description": "極端に大きな値のテスト",
+      "input": {
+        "congestiveHeartFailure": 999,
+        "hypertension": 999,
+        "age": 999,
+        "diabetesMellitus": 999,
+        "strokeTiaHistory": 999
+      },
+      "expected": {
+        "data": [4995, "", "red"]
+      }
+    },
+    {
+      "description": "極端に小さな値（負の値）のテスト",
+      "input": {
+        "congestiveHeartFailure": -10,
+        "hypertension": -10,
+        "age": -10,
+        "diabetesMellitus": -10,
+        "strokeTiaHistory": -10
+      },
+      "expected": null
+    },
+    {
+      "description": "通常とは異なる組み合わせでスコア2になるケース",
+      "input": {
+        "congestiveHeartFailure": 3,
+        "hypertension": -1,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeTiaHistory": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "通常とは異なる組み合わせでスコア3になるケース",
+      "input": {
+        "congestiveHeartFailure": 5,
+        "hypertension": -2,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeTiaHistory": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "定義されていないスコア値（7点）",
+      "input": {
+        "congestiveHeartFailure": 1,
+        "hypertension": 1,
+        "age": 1,
+        "diabetesMellitus": 1,
+        "strokeTiaHistory": 3
+      },
+      "expected": {
+        "data": [7, "", "red"]
+      }
+    }
+  ]
+} 

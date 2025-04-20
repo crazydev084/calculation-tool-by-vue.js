@@ -1,0 +1,264 @@
+{
+  "fields": [    
+    {
+      "id": "age",
+      "label": "年齢",
+      "type": "radio-group",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "2歳未満",
+          "value": 0,
+          "id": "agedown",
+          "fields": [
+            {
+              "id": "gcs",
+              "label": "GCS ＝14（GCS13未満は本スコア対象外）",
+              "type": "radio",
+              "required": true,
+              "defaultValue": 0,
+              "options": [
+                {
+                  "label": "はい",
+                  "value": 1
+                },
+                {
+                  "label": "いいえ",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "id": "altered1",
+              "label": "意識状態の変容",
+              "type": "radio",
+              "required": true,
+              "defaultValue": 0,
+              "options": [
+                {
+                  "label": "あり",
+                  "value": 1
+                },
+                {
+                  "label": "なし",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "id": "fracture",
+              "label": "頭蓋骨骨折を触知",
+              "type": "radio",
+              "required": true,
+              "defaultValue": 0,
+              "options": [
+                {
+                  "label": "あり",
+                  "value": 1
+                },
+                {
+                  "label": "なし",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "id": "hematoma",
+              "label": "皮下血腫（前頭部以外）",
+              "type": "radio",
+              "required": true,
+              "defaultValue": 0,
+              "options": [
+                {
+                  "label": "あり",
+                  "value": 1
+                },
+                {
+                  "label": "なし",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "id": "loss1",
+              "label": "5秒以上の意識消失 ",
+              "type": "radio",
+              "required": true,
+              "defaultValue": 0,
+              "options": [
+                {
+                  "label": "あり",
+                  "value": 1
+                },
+                {
+                  "label": "なし",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "id": "injury",
+              "label": "重篤な受傷機転*",
+              "type": "radio",
+              "required": true,
+              "defaultValue": 0,
+              "options": [
+                {
+                  "label": "あり",
+                  "value": 1
+                },
+                {
+                  "label": "なし",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "id": "point",
+              "label": "親から見て普段と違う ",
+              "type": "radio",
+              "required": true,
+              "defaultValue": 0,
+              "options": [
+                {
+                  "label": "あり",
+                  "value": 1
+                },
+                {
+                  "label": "なし",
+                  "value": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "2歳以上",
+          "value": 1,
+          "fields": [
+            {
+              "id": "gcs2",
+              "label": "GCS=14（GCS13未満は本スコア対象外） ",
+              "type": "radio",
+              "required": true,
+              "defaultValue": 0,
+              "options": [
+                {
+                  "label": "はい",
+                  "value": 1
+                },
+                {
+                  "label": "いいえ",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "id": "altered2",
+              "label": "意識状態の変容",
+              "type": "radio",
+              "required": true,
+              "defaultValue": 0,
+              "options": [
+                {
+                  "label": "あり",
+                  "value": 1
+                },
+                {
+                  "label": "なし",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "id": "skull",
+              "label": "頭蓋骨骨折の徴候",
+              "type": "radio",
+              "required": true,
+              "defaultValue": 0,
+              "options": [
+                {
+                  "label": "あり",
+                  "value": 1
+                },
+                {
+                  "label": "なし",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "id": "loss2",
+              "label": "意識消失",
+              "type": "radio",
+              "required": true,
+              "defaultValue": 0,
+              "options": [
+                {
+                  "label": "あり",
+                  "value": 1
+                },
+                {
+                  "label": "なし",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "id": "vomiting",
+              "label": "嘔吐",
+              "type": "radio",
+              "required": true,
+              "defaultValue": 0,
+              "options": [
+                {
+                  "label": "あり",
+                  "value": 1
+                },
+                {
+                  "label": "なし",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "id": "injury2",
+              "label": "重篤な受傷機転*",
+              "type": "radio",
+              "required": true,
+              "defaultValue": 0,
+              "options": [
+                {
+                  "label": "あり",
+                  "value": 1
+                },
+                {
+                  "label": "なし",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "id": "headache",
+              "label": "激しい頭痛",
+              "type": "radio",
+              "required": true,
+              "defaultValue": 0,
+              "options": [
+                {
+                  "label": "あり",
+                  "value": 1
+                },
+                {
+                  "label": "なし",
+                  "value": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+} 

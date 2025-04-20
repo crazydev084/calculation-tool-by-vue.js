@@ -1,0 +1,309 @@
+{
+  "testCases": [
+    {
+      "description": "最高リスク（スコア7点）",
+      "input": {
+        "age": 1,
+        "bloodPressure": 1,
+        "clinicalFeatures": 2,
+        "duration": 2,
+        "diabetes": 1
+      },
+      "expected": {
+        "data": [7, "48時間以内の脳梗塞発症率は8.1％", "red"]
+      }
+    },
+    {
+      "description": "中程度リスク（スコア5点）",
+      "input": {
+        "age": 1,
+        "bloodPressure": 1,
+        "clinicalFeatures": 2,
+        "duration": 1,
+        "diabetes": 0
+      },
+      "expected": {
+        "data": [5, "48時間以内の脳梗塞発症率は4.1％", "yellow"]
+      }
+    },
+    {
+      "description": "中程度リスク（スコア4点）",
+      "input": {
+        "age": 1,
+        "bloodPressure": 0,
+        "clinicalFeatures": 2,
+        "duration": 1,
+        "diabetes": 0
+      },
+      "expected": {
+        "data": [4, "48時間以内の脳梗塞発症率は4.1％", "yellow"]
+      }
+    },
+    {
+      "description": "低リスク（スコア3点）",
+      "input": {
+        "age": 1,
+        "bloodPressure": 0,
+        "clinicalFeatures": 1,
+        "duration": 1,
+        "diabetes": 0
+      },
+      "expected": {
+        "data": [3, "48時間以内の脳梗塞発症率は1％", "green"]
+      }
+    },
+    {
+      "description": "最低リスク（スコア0点）",
+      "input": {
+        "age": 0,
+        "bloodPressure": 0,
+        "clinicalFeatures": 0,
+        "duration": 0,
+        "diabetes": 0
+      },
+      "expected": {
+        "data": [0, "48時間以内の脳梗塞発症率は1％", "green"]
+      }
+    },
+    {
+      "description": "年齢がnullの場合",
+      "input": {
+        "age": null,
+        "bloodPressure": 0,
+        "clinicalFeatures": 0,
+        "duration": 0,
+        "diabetes": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "血圧がnullの場合",
+      "input": {
+        "age": 0,
+        "bloodPressure": null,
+        "clinicalFeatures": 0,
+        "duration": 0,
+        "diabetes": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "症状がnullの場合",
+      "input": {
+        "age": 0,
+        "bloodPressure": 0,
+        "clinicalFeatures": null,
+        "duration": 0,
+        "diabetes": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "症状の持続時間がnullの場合",
+      "input": {
+        "age": 0,
+        "bloodPressure": 0,
+        "clinicalFeatures": 0,
+        "duration": null,
+        "diabetes": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "糖尿病の有無がnullの場合",
+      "input": {
+        "age": 0,
+        "bloodPressure": 0,
+        "clinicalFeatures": 0,
+        "duration": 0,
+        "diabetes": null
+      },
+      "expected": null
+    },
+    {
+      "description": "異常値 - 負の値の年齢",
+      "input": {
+        "age": -1,
+        "bloodPressure": 0,
+        "clinicalFeatures": 0,
+        "duration": 0,
+        "diabetes": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "異常値 - 範囲外の血圧値",
+      "input": {
+        "age": 0,
+        "bloodPressure": 2,
+        "clinicalFeatures": 0,
+        "duration": 0,
+        "diabetes": 0
+      },
+      "expected": {
+        "data": [2, "48時間以内の脳梗塞発症率は1％", "green"]
+      }
+    },
+    {
+      "description": "異常値 - 範囲外の症状値",
+      "input": {
+        "age": 0,
+        "bloodPressure": 0,
+        "clinicalFeatures": 3,
+        "duration": 0,
+        "diabetes": 0
+      },
+      "expected": {
+        "data": [3, "48時間以内の脳梗塞発症率は1％", "green"]
+      }
+    },
+    {
+      "description": "異常値 - 範囲外の持続時間",
+      "input": {
+        "age": 0,
+        "bloodPressure": 0,
+        "clinicalFeatures": 0,
+        "duration": 3,
+        "diabetes": 0
+      },
+      "expected": {
+        "data": [3, "48時間以内の脳梗塞発症率は1％", "green"]
+      }
+    },
+    {
+      "description": "異常値 - 範囲外の糖尿病値",
+      "input": {
+        "age": 0,
+        "bloodPressure": 0,
+        "clinicalFeatures": 0,
+        "duration": 0,
+        "diabetes": 2
+      },
+      "expected": {
+        "data": [2, "48時間以内の脳梗塞発症率は1％", "green"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア3（低リスクの上限）",
+      "input": {
+        "age": 1,
+        "bloodPressure": 0,
+        "clinicalFeatures": 1,
+        "duration": 1,
+        "diabetes": 0
+      },
+      "expected": {
+        "data": [3, "48時間以内の脳梗塞発症率は1％", "green"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア4（中リスクの下限）",
+      "input": {
+        "age": 1,
+        "bloodPressure": 0,
+        "clinicalFeatures": 2,
+        "duration": 1,
+        "diabetes": 0
+      },
+      "expected": {
+        "data": [4, "48時間以内の脳梗塞発症率は4.1％", "yellow"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア5（中リスクの上限）",
+      "input": {
+        "age": 1,
+        "bloodPressure": 1,
+        "clinicalFeatures": 2,
+        "duration": 1,
+        "diabetes": 0
+      },
+      "expected": {
+        "data": [5, "48時間以内の脳梗塞発症率は4.1％", "yellow"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア6（高リスクの下限）",
+      "input": {
+        "age": 1,
+        "bloodPressure": 1,
+        "clinicalFeatures": 2,
+        "duration": 1,
+        "diabetes": 1
+      },
+      "expected": {
+        "data": [6, "48時間以内の脳梗塞発症率は8.1％", "red"]
+      }
+    },
+    {
+      "description": "小数値入力のテスト",
+      "input": {
+        "age": 0.5,
+        "bloodPressure": 0.5,
+        "clinicalFeatures": 0,
+        "duration": 0,
+        "diabetes": 0
+      },
+      "expected": {
+        "data": [1, "48時間以内の脳梗塞発症率は1％", "green"]
+      }
+    },
+    {
+      "description": "極端に大きな値のテスト",
+      "input": {
+        "age": 999,
+        "bloodPressure": 999,
+        "clinicalFeatures": 999,
+        "duration": 999,
+        "diabetes": 999
+      },
+      "expected": {
+        "data": [4995, "48時間以内の脳梗塞発症率は8.1％", "red"]
+      }
+    },
+    {
+      "description": "極端に小さな値（負の値）のテスト",
+      "input": {
+        "age": -10,
+        "bloodPressure": -10,
+        "clinicalFeatures": -10,
+        "duration": -10,
+        "diabetes": -10
+      },
+      "expected": null
+    },
+    {
+      "description": "通常とは異なる組み合わせでスコア3になるケース",
+      "input": {
+        "age": 1,
+        "bloodPressure": 2,
+        "clinicalFeatures": 1,
+        "duration": -1,
+        "diabetes": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "通常とは異なる組み合わせでスコア4になるケース",
+      "input": {
+        "age": 10,
+        "bloodPressure": -5,
+        "clinicalFeatures": 0,
+        "duration": -1,
+        "diabetes": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "通常とは異なる組み合わせでスコア6になるケース",
+      "input": {
+        "age": 3,
+        "bloodPressure": 1,
+        "clinicalFeatures": 4,
+        "duration": -2,
+        "diabetes": 0
+      },
+      "expected": null
+    }
+  ]
+} 

@@ -1,0 +1,87 @@
+{
+  "fields": [
+    {
+      "id": "baseDisease",
+      "label": "基礎疾患",
+      "type": "radio",
+      "options": [
+        { "label": "ある", "value": 1 },
+        { "label": "ない", "value": 0 }
+      ],
+      "required": true,
+      "defaultValue": 0
+    },
+    {
+      "id": "bleedingSymptoms",
+      "label": "出血症状",
+      "type": "radio",
+      "options": [
+        { "label": "ある", "value": 1 },
+        { "label": "ない", "value": 0 }
+      ],
+      "required": true,
+      "defaultValue": 0
+    },
+    {
+      "id": "tumorSymptoms",
+      "label": "腫瘍症状",
+      "type": "radio",
+      "options": [
+        { "label": "ある", "value": 1 },
+        { "label": "ない", "value": 0 }
+      ],
+      "required": true,
+      "defaultValue": 0
+    },
+    {
+      "id": "serumFDP",
+      "label": "血清FDP値(μg/mL)",
+      "type": "radio",
+      "options": [
+        { "label": "10未満", "value": 0 },
+        { "label": "10以上20未満", "value": 1 },
+        { "label": "20以上40未満", "value": 2 },
+        { "label": "40以上", "value": 3 }
+      ],
+      "required": true,
+      "defaultValue": 0
+    },
+    {
+      "id": "plateletCount",
+      "label": "血小板数(μL)",
+      "type": "radio",
+      "options": [
+        { "label": "12万以上", "value": 0 },
+        { "label": "8万以上12万未満", "value": 1 },
+        { "label": "5万以上8万未満", "value": 2 },
+        { "label": "5万未満", "value": 3 }
+      ],
+      "required": true,
+      "defaultValue": 0
+    },
+    {
+      "id": "fibrinogen",
+      "label": "血漿フィブリノゲン濃度(mg/dL)",
+      "type": "radio",
+      "options": [
+        { "label": "150以上", "value": 0 },
+        { "label": "100以上150未満", "value": 1 },
+        { "label": "100未満", "value": 2 }
+      ],
+      "required": true,
+      "defaultValue": 0
+    },
+    {
+      "id": "ptRatio",
+      "label": "プロトロンビン(PT)時間比",
+      "type": "radio",
+      "options": [
+        { "label": "1.25未満", "value": 0 },
+        { "label": "1.25以上1.67未満", "value": 1 },
+        { "label": "1.67以上", "value": 2 }
+      ],
+      "required": true,
+      "defaultValue": 0
+    }
+  ]
+} 

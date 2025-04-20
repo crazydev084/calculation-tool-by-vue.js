@@ -1,0 +1,97 @@
+{
+  "fields": [
+    {
+      "id": "age",
+      "label": "60歳以上",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 1
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "bloodPressure",
+      "label": "収縮期血圧140mmHg以上<br />または拡張期血圧90mmHg以上",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 1
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "clinicalFeatures",
+      "label": "症状",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "その他の症状",
+          "value": 0
+        },
+        {
+          "label": "脱力を伴わない言語障害",
+          "value": 1
+        },
+        {
+          "label": "片側の脱力",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "duration",
+      "label": "症状の持続時間",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "10分未満持続",
+          "value": 0
+        },
+        {
+          "label": "10分〜59分持続",
+          "value": 1
+        },
+        {
+          "label": "60分以上持続",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "diabetes",
+      "label": "糖尿病がある",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 1
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    }
+  ]
+} 

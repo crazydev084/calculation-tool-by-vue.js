@@ -1,0 +1,311 @@
+{
+  "testCases": [
+    {
+      "description": "標準的な投与量計算",
+      "input": {
+        "weight": "60",
+        "administeredDrugAmount": "5",
+        "dilutedDrudAmount": "50",
+        "infusionRate": "7.2"
+      },
+      "expected": {
+        "data": [
+          "0.20",
+          "",
+          "blue"
+        ]
+      }
+    },
+    {
+      "description": "低体重の投与量計算",
+      "input": {
+        "weight": "40",
+        "administeredDrugAmount": "5",
+        "dilutedDrudAmount": "50",
+        "infusionRate": "7.2"
+      },
+      "expected": {
+        "data": [
+          "0.30",
+          "",
+          "blue"
+        ]
+      }
+    },
+    {
+      "description": "高薬剤濃度の投与量計算",
+      "input": {
+        "weight": "60",
+        "administeredDrugAmount": "5",
+        "dilutedDrudAmount": "50",
+        "infusionRate": "14.4"
+      },
+      "expected": {
+        "data": [
+          "0.40",
+          "",
+          "blue"
+        ]
+      }
+    },
+    {
+      "description": "低速度の投与量計算",
+      "input": {
+        "weight": "60",
+        "administeredDrugAmount": "5",
+        "dilutedDrudAmount": "50",
+        "infusionRate": "2"
+      },
+      "expected": {
+        "data": [
+          "0.06",
+          "",
+          "blue"
+        ]
+      }
+    },
+    
+    {
+      "description": "小数点以下の丸め処理（切り上げ）",
+      "input": {
+        "weight": "65",
+        "administeredDrugAmount": "6",
+        "dilutedDrudAmount": "55",
+        "infusionRate": "7.5"
+      },
+      "expected": {
+        "data": [
+          "0.21",
+          "",
+          "blue"
+        ]
+      }
+    },
+    {
+      "description": "小数点以下の丸め処理（切り捨て）",
+      "input": {
+        "weight": "58",
+        "administeredDrugAmount": "4.5",
+        "dilutedDrudAmount": "45",
+        "infusionRate": "6.2"
+      },
+      "expected": {
+        "data": [
+          "0.18",
+          "",
+          "blue"
+        ]
+      }
+    },
+    {
+      "description": "すべての入力が小数である場合",
+      "input": {
+        "weight": "62.5",
+        "administeredDrugAmount": "4.75",
+        "dilutedDrudAmount": "47.5",
+        "infusionRate": "6.75"
+      },
+      "expected": {
+        "data": [
+          "0.18",
+          "",
+          "blue"
+        ]
+      }
+    },
+    {
+      "description": "極端に低い値の入力",
+      "input": {
+        "weight": "0.1",
+        "administeredDrugAmount": "0.1",
+        "dilutedDrudAmount": "0.1",
+        "infusionRate": "0.1"
+      },
+      "expected": {
+        "data": [
+          "16.67",
+          "",
+          "blue"
+        ]
+      }
+    },
+    {
+      "description": "極端に高い値の入力",
+      "input": {
+        "weight": "1000",
+        "administeredDrugAmount": "1000",
+        "dilutedDrudAmount": "1000",
+        "infusionRate": "1000"
+      },
+      "expected": {
+        "data": [
+          "16.67",
+          "",
+          "blue"
+        ]
+      }
+    },
+    {
+      "description": "計算結果が非常に大きい場合",
+      "input": {
+        "weight": "0.1",
+        "administeredDrugAmount": "1000",
+        "dilutedDrudAmount": "0.1",
+        "infusionRate": "1000"
+      },
+      "expected": {
+        "data": [
+          "-",
+          "",
+          "blue"
+        ]
+      }
+    },
+    {
+      "description": "必須フィールド（体重）が欠けている場合",
+      "input": {
+        "administeredDrugAmount": "5",
+        "dilutedDrudAmount": "50",
+        "infusionRate": "7.2"
+      },
+      "expected": null
+    },
+    {
+      "description": "必須フィールド（薬剤量）が欠けている場合",
+      "input": {
+        "weight": "60",
+        "dilutedDrudAmount": "50",
+        "infusionRate": "7.2"
+      },
+      "expected": null
+    },
+    {
+      "description": "必須フィールド（希釈量）が欠けている場合",
+      "input": {
+        "weight": "60",
+        "administeredDrugAmount": "5",
+        "infusionRate": "7.2"
+      },
+      "expected": null
+    },
+    {
+      "description": "必須フィールド（投与速度）が欠けている場合",
+      "input": {
+        "weight": "60",
+        "administeredDrugAmount": "5",
+        "dilutedDrudAmount": "50"
+      },
+      "expected": null
+    },
+    {
+      "description": "数値に変換できない文字列の入力",
+      "input": {
+        "weight": "六十",
+        "administeredDrugAmount": "五",
+        "dilutedDrudAmount": "五十",
+        "infusionRate": "七・二"
+      },
+      "expected": null
+    },
+    {
+      "description": "一部が数値、一部が変換できない文字列の混在入力",
+      "input": {
+        "weight": "60",
+        "administeredDrugAmount": "五",
+        "dilutedDrudAmount": "50",
+        "infusionRate": "7.2"
+      },
+      "expected": null
+    },
+    {
+      "description": "負の値の入力（体重）",
+      "input": {
+        "weight": "-60",
+        "administeredDrugAmount": "5",
+        "dilutedDrudAmount": "50",
+        "infusionRate": "7.2"
+      },
+      "expected": null
+    },
+    {
+      "description": "負の値の入力（薬剤量）",
+      "input": {
+        "weight": "60",
+        "administeredDrugAmount": "-5",
+        "dilutedDrudAmount": "50",
+        "infusionRate": "7.2"
+      },
+      "expected": null
+    },
+    {
+      "description": "負の値の入力（希釈量）",
+      "input": {
+        "weight": "60",
+        "administeredDrugAmount": "5",
+        "dilutedDrudAmount": "-50",
+        "infusionRate": "7.2"
+      },
+      "expected": null
+    },
+    {
+      "description": "負の値の入力（投与速度）",
+      "input": {
+        "weight": "60",
+        "administeredDrugAmount": "5",
+        "dilutedDrudAmount": "50",
+        "infusionRate": "-7.2"
+      },
+      "expected": null
+    },
+    {
+      "description": "0の入力（体重）",
+      "input": {
+        "weight": "0",
+        "administeredDrugAmount": "5",
+        "dilutedDrudAmount": "50",
+        "infusionRate": "7.2"
+      },
+      "expected": null
+    },
+    {
+      "description": "0の入力（薬剤量）",
+      "input": {
+        "weight": "60",
+        "administeredDrugAmount": "0",
+        "dilutedDrudAmount": "50",
+        "infusionRate": "7.2"
+      },
+      "expected": null
+    },
+    {
+      "description": "0の入力（希釈量）",
+      "input": {
+        "weight": "60",
+        "administeredDrugAmount": "5",
+        "dilutedDrudAmount": "0",
+        "infusionRate": "7.2"
+      },
+      "expected": null
+    },
+    {
+      "description": "0の入力（投与速度）",
+      "input": {
+        "weight": "60",
+        "administeredDrugAmount": "5",
+        "dilutedDrudAmount": "50",
+        "infusionRate": "0"
+      },
+      "expected": null
+    },
+    {
+      "description": "空のオブジェクト",
+      "input": {},
+      "expected": null
+    },
+    {
+      "description": "null入力",
+      "input": null,
+      "expected": null
+    }
+  ]
+} 

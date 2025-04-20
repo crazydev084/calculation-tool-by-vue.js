@@ -1,0 +1,246 @@
+{
+  "testCases": [
+    {
+      "description": "最重症例（24点）",
+      "input": {
+        "consciousnessGCS": 4,
+        "respirationPF": 4,
+        "circulation": 4,
+        "liverBil": 4,
+        "kidneyCrOrUrine": 4,
+        "coagulationPlt": 4
+      },
+      "expected": {
+        "data": [
+          24,
+          "ICU入室時死亡率95%",
+          "red"
+        ]
+      }
+    },
+    {
+      "description": "重症例（15点）",
+      "input": {
+        "consciousnessGCS": 3,
+        "respirationPF": 3,
+        "circulation": 3,
+        "liverBil": 2,
+        "kidneyCrOrUrine": 2,
+        "coagulationPlt": 2
+      },
+      "expected": {
+        "data": [
+          15,
+          "ICU入室時死亡率95%",
+          "red"
+        ]
+      }
+    },
+    {
+      "description": "中等症例（8点）",
+      "input": {
+        "consciousnessGCS": 2,
+        "respirationPF": 2,
+        "circulation": 1,
+        "liverBil": 1,
+        "kidneyCrOrUrine": 1,
+        "coagulationPlt": 1
+      },
+      "expected": {
+        "data": [
+          8,
+          "ICU入室時死亡率33%以下",
+          "green"
+        ]
+      }
+    },
+    {
+      "description": "軽症例（3点）",
+      "input": {
+        "consciousnessGCS": 1,
+        "respirationPF": 1,
+        "circulation": 1,
+        "liverBil": 0,
+        "kidneyCrOrUrine": 0,
+        "coagulationPlt": 0
+      },
+      "expected": {
+        "data": [
+          3,
+          "ICU入室時死亡率33%以下",
+          "green"
+        ]
+      }
+    },
+    {
+      "description": "最軽症例（0点）",
+      "input": {
+        "consciousnessGCS": 0,
+        "respirationPF": 0,
+        "circulation": 0,
+        "liverBil": 0,
+        "kidneyCrOrUrine": 0,
+        "coagulationPlt": 0
+      },
+      "expected": {
+        "data": [
+          0,
+          "ICU入室時死亡率33%以下",
+          "green"
+        ]
+      }
+    },
+    {
+      "description": "nullが入力された場合",
+      "input": null,
+      "expected": null
+    },
+    {
+      "description": "undefinedが入力された場合",
+      "input": null,
+      "expected": null
+    },
+    
+    {
+      "description": "境界値テスト（スコア9/低リスク）",
+      "input": {
+        "consciousnessGCS": 2,
+        "respirationPF": 2,
+        "circulation": 1,
+        "liverBil": 2,
+        "kidneyCrOrUrine": 1,
+        "coagulationPlt": 1
+      },
+      "expected": {
+        "data": [
+          9,
+          "ICU入室時死亡率33%以下",
+          "green"
+        ]
+      }
+    },
+    {
+      "description": "境界値テスト（スコア10/中リスク）",
+      "input": {
+        "consciousnessGCS": 2,
+        "respirationPF": 2,
+        "circulation": 2,
+        "liverBil": 2,
+        "kidneyCrOrUrine": 1,
+        "coagulationPlt": 1
+      },
+      "expected": {
+        "data": [
+          10,
+          "ICU入室時死亡率33%以上",
+          "yellow"
+        ]
+      }
+    },
+    {
+      "description": "境界値テスト（スコア11/高リスク）",
+      "input": {
+        "consciousnessGCS": 2,
+        "respirationPF": 2,
+        "circulation": 2,
+        "liverBil": 2,
+        "kidneyCrOrUrine": 2,
+        "coagulationPlt": 1
+      },
+      "expected": {
+        "data": [
+          11,
+          "ICU入室時死亡率95%",
+          "red"
+        ]
+      }
+    },
+    {
+      "description": "小数値の入力（Number変換の確認）",
+      "input": {
+        "consciousnessGCS": 1.5,
+        "respirationPF": 2.7,
+        "circulation": 0.9,
+        "liverBil": 1.2,
+        "kidneyCrOrUrine": 3.1,
+        "coagulationPlt": 0.5
+      },
+      "expected": {
+        "data": [
+          9.9,
+          "ICU入室時死亡率33%以下",
+          "green"
+        ]
+      }
+    },
+    {
+      "description": "負の値の入力",
+      "input": {
+        "consciousnessGCS": -1,
+        "respirationPF": -2,
+        "circulation": -1,
+        "liverBil": -2,
+        "kidneyCrOrUrine": -3,
+        "coagulationPlt": -1
+      },
+      "expected": {
+        "data": [
+          -10,
+          "ICU入室時死亡率33%以下",
+          "green"
+        ]
+      }
+    },
+    {
+      "description": "非常に大きな値の入力",
+      "input": {
+        "consciousnessGCS": 100,
+        "respirationPF": 100,
+        "circulation": 100,
+        "liverBil": 100,
+        "kidneyCrOrUrine": 100,
+        "coagulationPlt": 100
+      },
+      "expected": {
+        "data": [
+          600,
+          "ICU入室時死亡率95%",
+          "red"
+        ]
+      }
+    },
+    {
+      "description": "一部の項目のみ入力された場合",
+      "input": {
+        "consciousnessGCS": 3,
+        "respirationPF": 4,
+        "circulation": 3
+      },
+      "expected": {
+        "data": [
+          10,
+          "ICU入室時死亡率33%以上",
+          "yellow"
+        ]
+      }
+    },
+    {
+      "description": "一部の項目がnullの場合",
+      "input": {
+        "consciousnessGCS": 3,
+        "respirationPF": null,
+        "circulation": 3,
+        "liverBil": 2,
+        "kidneyCrOrUrine": null,
+        "coagulationPlt": 2
+      },
+      "expected": {
+        "data": [
+          10,
+          "ICU入室時死亡率33%以上",
+          "yellow"
+        ]
+      }
+    }
+  ]
+} 

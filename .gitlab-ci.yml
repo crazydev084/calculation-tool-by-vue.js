@@ -1,0 +1,26 @@
+stages:
+  - build
+  - yamory
+
+build_yarn:
+    stage: build
+    image: node:22.7.0-slim
+    script:
+        - yarn --frozen-lockfile
+        - yarn build
+    artifacts:
+      paths:
+        - dist/
+      expire_in: 1 week
+    cache:
+      key:
+        files:
+          - yarn.lock
+
+yamory_yarn:
+  stage: yamory
+  image: public.ecr.aws/docker/library/centos:latest
+  script:
+    - bash -c "$(curl -sSf -L https://localscanner.yamory.io/script/yarn)"
+  variables:
+    PROJECT_GROUP_KEY: clinical-pocket-calc

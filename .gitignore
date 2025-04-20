@@ -1,0 +1,7 @@
+# yarn build files
+dist/
+node_modules/
+.yarn/
+vscode/
+vite/
+

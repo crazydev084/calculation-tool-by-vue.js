@@ -1,0 +1,154 @@
+{
+  "testCases": [    
+    {
+      "name": "2歳未満",
+      "input": {
+        "GCS": 1,
+        "Altered1": 1,
+        "fracture": 1,
+        "hematoma": 1,
+        "loss1": 1,
+        "injury": 1,
+        "point": 1
+      },
+      "expected": {
+        "data": ["16.8%", "頭部CTを推奨する","red"]
+      }
+    },
+    {
+      "name": "2歳未満",
+      "input": {
+        "GCS": 0,
+        "Altered1": 0,
+        "fracture": 0,
+        "hematoma": 0,
+        "loss1": 0,
+        "injury": 0,
+        "point": 0
+      },
+      "expected": {
+        "data": ["0%", "頭部CTを推奨しない","green"]
+      }
+    },
+    {
+      "name": "2歳未満",
+      "input": {
+        "GCS": 1,
+        "Altered1": 0,
+        "fracture": 1,
+        "hematoma": 0,
+        "loss1": 1,
+        "injury": 0,
+        "point": 1
+      },
+      "expected": {
+        "data": ["9.7%", "頭部CTを推奨する","red"]
+      }
+    },
+    {
+      "name": "2歳未満",
+      "input": {
+        "GCS": 1,
+        "Altered1": 0,
+        "fracture": 0,
+        "hematoma": 0,
+        "loss1": 0,
+        "injury": 0,
+        "point": 1
+      },
+      "expected": {
+        "data": ["5.3%", "頭部CTを推奨する","red"]
+      }
+    },
+    {
+      "name": "2歳未満",
+      "input": {
+        "GCS": 1,
+        "Altered1": 1,
+        "fracture": 1,
+        "hematoma": 0,
+        "loss1": 0,
+        "injury": 0,
+        "point": 0
+      },
+      "expected": {
+        "data": ["13.2%", "頭部CTを推奨する","red"]
+      }
+    },
+    {
+      "name": "2歳以上",
+      "input": {
+        "GCS": 1,
+        "Altered1": 1,
+        "fracture": 1,
+        "hematoma": 1,
+        "loss1": 1,
+        "injury": 1,
+        "point": 1
+      },
+      "expected": {
+        "data": ["16.5%", "頭部CTを推奨する","red"]
+      }
+    },
+    {
+      "name": "2歳以上",
+      "input": {
+        "GCS": 0,
+        "Altered1": 0,
+        "fracture": 0,
+        "hematoma": 0,
+        "loss1": 0,
+        "injury": 0,
+        "point": 0
+      },
+      "expected": {
+        "data": ["0%", "頭部CTを推奨しない","green"]
+      }
+    },
+    {
+      "name": "2歳以上",
+      "input": {
+        "GCS": 1,
+        "Altered1": 0,
+        "fracture": 1,
+        "hematoma": 0,
+        "loss1": 1,
+        "injury": 0,
+        "point": 1
+      },
+      "expected": {
+        "data": ["10.4%", "頭部CTを推奨する","red"]
+      }
+    },
+    {
+      "name": "2歳以上",
+      "input": {
+        "GCS": 1,
+        "Altered1": 0,
+        "fracture": 0,
+        "hematoma": 0,
+        "loss1": 0,
+        "injury": 0,
+        "point": 1
+      },
+      "expected": {
+        "data": ["5.2%", "頭部CTを推奨する","red"]
+      }
+    },
+    {
+      "name": "2歳以上",
+      "input": {
+        "GCS": 1,
+        "Altered1": 1,
+        "fracture": 1,
+        "hematoma": 0,
+        "loss1": 0,
+        "injury": 0,
+        "point": 0
+      },
+      "expected": {
+        "data": ["12.9%", "頭部CTを推奨する","red"]
+      }
+    }
+  ]
+} 

@@ -1,0 +1,396 @@
+{
+  "testCases": [
+    {
+      "description": "高リスク患者（スコア250点以上）",
+      "input": {
+        "age": 100,
+        "heartRate": 46,
+        "systolicBloodPressure": 58,
+        "serumCreatinine": 28,
+        "killipClassification": 59,
+        "cardiacBiomarkerElevation": 14,
+        "stDeviation": 28,
+        "hospitalizationDueToCardiacArrest": 39
+      },
+      "expected": {
+        "data": [372, "ACSによる院内死亡率は52％以上<p>実臨床では<a class=\"result-link\" href=\"https://www.outcomes-umassmed.org/GRACE/default.aspx\" target=\"_blank\">GRACE公式サイト</a></p>", "blue"]
+      }
+    },
+    {
+      "description": "中リスク患者（スコア150-200点）",
+      "input": {
+        "age": 58,
+        "heartRate": 9,
+        "systolicBloodPressure": 34,
+        "serumCreatinine": 7,
+        "killipClassification": 20,
+        "cardiacBiomarkerElevation": 14,
+        "stDeviation": 28,
+        "hospitalizationDueToCardiacArrest": 0
+      },
+      "expected": {
+        "data": [170, "ACSによる院内死亡率は7.3％以下<p>実臨床では<a class=\"result-link\" href=\"https://www.outcomes-umassmed.org/GRACE/default.aspx\" target=\"_blank\">GRACE公式サイト</a></p>", "blue"]
+      }
+    },
+    {
+      "description": "低リスク患者（スコア100点以下）",
+      "input": {
+        "age": 25,
+        "heartRate": 3,
+        "systolicBloodPressure": 24,
+        "serumCreatinine": 4,
+        "killipClassification": 0,
+        "cardiacBiomarkerElevation": 0,
+        "stDeviation": 0,
+        "hospitalizationDueToCardiacArrest": 0
+      },
+      "expected": {
+        "data": [56, "ACSによる院内死亡率は0.2％以下<p>実臨床では<a class=\"result-link\" href=\"https://www.outcomes-umassmed.org/GRACE/default.aspx\" target=\"_blank\">GRACE公式サイト</a></p>", "blue"]
+      }
+    },
+    {
+      "description": "年齢がnullの場合",
+      "input": {
+        "age": null,
+        "heartRate": 9,
+        "systolicBloodPressure": 34,
+        "serumCreatinine": 7,
+        "killipClassification": 0,
+        "cardiacBiomarkerElevation": 0,
+        "stDeviation": 0,
+        "hospitalizationDueToCardiacArrest": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "心拍数がnullの場合",
+      "input": {
+        "age": 25,
+        "heartRate": null,
+        "systolicBloodPressure": 34,
+        "serumCreatinine": 7,
+        "killipClassification": 0,
+        "cardiacBiomarkerElevation": 0,
+        "stDeviation": 0,
+        "hospitalizationDueToCardiacArrest": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "収縮期血圧がnullの場合",
+      "input": {
+        "age": 25,
+        "heartRate": 9,
+        "systolicBloodPressure": null,
+        "serumCreatinine": 7,
+        "killipClassification": 0,
+        "cardiacBiomarkerElevation": 0,
+        "stDeviation": 0,
+        "hospitalizationDueToCardiacArrest": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "血清クレアチニンがnullの場合",
+      "input": {
+        "age": 25,
+        "heartRate": 9,
+        "systolicBloodPressure": 34,
+        "serumCreatinine": null,
+        "killipClassification": 0,
+        "cardiacBiomarkerElevation": 0,
+        "stDeviation": 0,
+        "hospitalizationDueToCardiacArrest": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "Killip分類がnullの場合",
+      "input": {
+        "age": 25,
+        "heartRate": 9,
+        "systolicBloodPressure": 34,
+        "serumCreatinine": 7,
+        "killipClassification": null,
+        "cardiacBiomarkerElevation": 0,
+        "stDeviation": 0,
+        "hospitalizationDueToCardiacArrest": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "心筋バイオマーカー上昇がnullの場合",
+      "input": {
+        "age": 25,
+        "heartRate": 9,
+        "systolicBloodPressure": 34,
+        "serumCreatinine": 7,
+        "killipClassification": 0,
+        "cardiacBiomarkerElevation": null,
+        "stDeviation": 0,
+        "hospitalizationDueToCardiacArrest": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "ST偏位がnullの場合",
+      "input": {
+        "age": 25,
+        "heartRate": 9,
+        "systolicBloodPressure": 34,
+        "serumCreatinine": 7,
+        "killipClassification": 0,
+        "cardiacBiomarkerElevation": 0,
+        "stDeviation": null,
+        "hospitalizationDueToCardiacArrest": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "心停止による入院がnullの場合",
+      "input": {
+        "age": 25,
+        "heartRate": 9,
+        "systolicBloodPressure": 34,
+        "serumCreatinine": 7,
+        "killipClassification": 0,
+        "cardiacBiomarkerElevation": 0,
+        "stDeviation": 0,
+        "hospitalizationDueToCardiacArrest": null
+      },
+      "expected": null
+    },
+    {
+      "description": "異常値 - 年齢が範囲外の大きな値",
+      "input": {
+        "age": 999,
+        "heartRate": 9,
+        "systolicBloodPressure": 34,
+        "serumCreatinine": 7,
+        "killipClassification": 0,
+        "cardiacBiomarkerElevation": 0,
+        "stDeviation": 0,
+        "hospitalizationDueToCardiacArrest": 0
+      },
+      "expected": {
+        "data": [1049, "ACSによる院内死亡率は52％以上<p>実臨床では<a class=\"result-link\" href=\"https://www.outcomes-umassmed.org/GRACE/default.aspx\" target=\"_blank\">GRACE公式サイト</a></p>", "blue"]
+      }
+    },
+    {
+      "description": "異常値 - 心拍数が範囲外の大きな値",
+      "input": {
+        "age": 25,
+        "heartRate": 999,
+        "systolicBloodPressure": 34,
+        "serumCreatinine": 7,
+        "killipClassification": 0,
+        "cardiacBiomarkerElevation": 0,
+        "stDeviation": 0,
+        "hospitalizationDueToCardiacArrest": 0
+      },
+      "expected": {
+        "data": [1065, "ACSによる院内死亡率は52％以上<p>実臨床では<a class=\"result-link\" href=\"https://www.outcomes-umassmed.org/GRACE/default.aspx\" target=\"_blank\">GRACE公式サイト</a></p>", "blue"]
+      }
+    },
+    {
+      "description": "異常値 - 収縮期血圧が範囲外の大きな値",
+      "input": {
+        "age": 25,
+        "heartRate": 9,
+        "systolicBloodPressure": 999,
+        "serumCreatinine": 7,
+        "killipClassification": 0,
+        "cardiacBiomarkerElevation": 0,
+        "stDeviation": 0,
+        "hospitalizationDueToCardiacArrest": 0
+      },
+      "expected": {
+        "data": [1040, "ACSによる院内死亡率は52％以上<p>実臨床では<a class=\"result-link\" href=\"https://www.outcomes-umassmed.org/GRACE/default.aspx\" target=\"_blank\">GRACE公式サイト</a></p>", "blue"]
+      }
+    },
+    {
+      "description": "異常値 - 負の値の年齢",
+      "input": {
+        "age": -50,
+        "heartRate": 9,
+        "systolicBloodPressure": 34,
+        "serumCreatinine": 7,
+        "killipClassification": 0,
+        "cardiacBiomarkerElevation": 0,
+        "stDeviation": 0,
+        "hospitalizationDueToCardiacArrest": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "異常値 - 負の値の心拍数",
+      "input": {
+        "age": 25,
+        "heartRate": -10,
+        "systolicBloodPressure": 34,
+        "serumCreatinine": 7,
+        "killipClassification": 0,
+        "cardiacBiomarkerElevation": 0,
+        "stDeviation": 0,
+        "hospitalizationDueToCardiacArrest": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "境界値テスト - スコア60（死亡率0.2%の境界）",
+      "input": {
+        "age": 25,
+        "heartRate": 0,
+        "systolicBloodPressure": 24,
+        "serumCreatinine": 7,
+        "killipClassification": 0,
+        "cardiacBiomarkerElevation": 0,
+        "stDeviation": 0,
+        "hospitalizationDueToCardiacArrest": 4
+      },
+      "expected": {
+        "data": [60, "ACSによる院内死亡率は0.2％以下<p>実臨床では<a class=\"result-link\" href=\"https://www.outcomes-umassmed.org/GRACE/default.aspx\" target=\"_blank\">GRACE公式サイト</a></p>", "blue"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア61（死亡率0.3%の下限）",
+      "input": {
+        "age": 25,
+        "heartRate": 0,
+        "systolicBloodPressure": 24,
+        "serumCreatinine": 7,
+        "killipClassification": 0,
+        "cardiacBiomarkerElevation": 0,
+        "stDeviation": 0,
+        "hospitalizationDueToCardiacArrest": 5
+      },
+      "expected": {
+        "data": [61, "ACSによる院内死亡率は0.3％以下<p>実臨床では<a class=\"result-link\" href=\"https://www.outcomes-umassmed.org/GRACE/default.aspx\" target=\"_blank\">GRACE公式サイト</a></p>", "blue"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア150（死亡率3.9%の上限）",
+      "input": {
+        "age": 58,
+        "heartRate": 9,
+        "systolicBloodPressure": 34,
+        "serumCreatinine": 7,
+        "killipClassification": 20,
+        "cardiacBiomarkerElevation": 14,
+        "stDeviation": 8,
+        "hospitalizationDueToCardiacArrest": 0
+      },
+      "expected": {
+        "data": [150, "ACSによる院内死亡率は3.9％以下<p>実臨床では<a class=\"result-link\" href=\"https://www.outcomes-umassmed.org/GRACE/default.aspx\" target=\"_blank\">GRACE公式サイト</a></p>", "blue"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア151（死亡率5.4%の下限）",
+      "input": {
+        "age": 58,
+        "heartRate": 9,
+        "systolicBloodPressure": 34,
+        "serumCreatinine": 7,
+        "killipClassification": 20,
+        "cardiacBiomarkerElevation": 14,
+        "stDeviation": 9,
+        "hospitalizationDueToCardiacArrest": 0
+      },
+      "expected": {
+        "data": [151, "ACSによる院内死亡率は5.4％以下<p>実臨床では<a class=\"result-link\" href=\"https://www.outcomes-umassmed.org/GRACE/default.aspx\" target=\"_blank\">GRACE公式サイト</a></p>", "blue"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア250（死亡率52%の最大）",
+      "input": {
+        "age": 75,
+        "heartRate": 38,
+        "systolicBloodPressure": 58,
+        "serumCreatinine": 28,
+        "killipClassification": 39,
+        "cardiacBiomarkerElevation": 0,
+        "stDeviation": 0,
+        "hospitalizationDueToCardiacArrest": 12
+      },
+      "expected": {
+        "data": [250, "ACSによる院内死亡率は52％以下<p>実臨床では<a class=\"result-link\" href=\"https://www.outcomes-umassmed.org/GRACE/default.aspx\" target=\"_blank\">GRACE公式サイト</a></p>", "blue"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア251（死亡率52%超過）",
+      "input": {
+        "age": 75,
+        "heartRate": 38,
+        "systolicBloodPressure": 58,
+        "serumCreatinine": 28,
+        "killipClassification": 39,
+        "cardiacBiomarkerElevation": 0,
+        "stDeviation": 0,
+        "hospitalizationDueToCardiacArrest": 13
+      },
+      "expected": {
+        "data": [251, "ACSによる院内死亡率は52％以上<p>実臨床では<a class=\"result-link\" href=\"https://www.outcomes-umassmed.org/GRACE/default.aspx\" target=\"_blank\">GRACE公式サイト</a></p>", "blue"]
+      }
+    },
+    {
+      "description": "小数値入力のテスト",
+      "input": {
+        "age": 25.5,
+        "heartRate": 3.5,
+        "systolicBloodPressure": 24.5,
+        "serumCreatinine": 4.5,
+        "killipClassification": 0,
+        "cardiacBiomarkerElevation": 0,
+        "stDeviation": 0,
+        "hospitalizationDueToCardiacArrest": 0
+      },
+      "expected": {
+        "data": [58, "ACSによる院内死亡率は0.2％以下<p>実臨床では<a class=\"result-link\" href=\"https://www.outcomes-umassmed.org/GRACE/default.aspx\" target=\"_blank\">GRACE公式サイト</a></p>", "blue"]
+      }
+    },
+    {
+      "description": "極端に大きな値の組み合わせ",
+      "input": {
+        "age": 9999,
+        "heartRate": 9999,
+        "systolicBloodPressure": 9999,
+        "serumCreatinine": 9999,
+        "killipClassification": 9999,
+        "cardiacBiomarkerElevation": 9999,
+        "stDeviation": 9999,
+        "hospitalizationDueToCardiacArrest": 9999
+      },
+      "expected": {
+        "data": [79992, "ACSによる院内死亡率は52％以上<p>実臨床では<a class=\"result-link\" href=\"https://www.outcomes-umassmed.org/GRACE/default.aspx\" target=\"_blank\">GRACE公式サイト</a></p>", "blue"]
+      }
+    },
+    {
+      "description": "極端に小さな値（全て負の値）",
+      "input": {
+        "age": -100,
+        "heartRate": -100,
+        "systolicBloodPressure": -100,
+        "serumCreatinine": -100,
+        "killipClassification": -100,
+        "cardiacBiomarkerElevation": -100,
+        "stDeviation": -100,
+        "hospitalizationDueToCardiacArrest": -100
+      },
+      "expected": null
+    },
+    {
+      "description": "一部が異常値で他は正常値の組み合わせ",
+      "input": {
+        "age": 999,
+        "heartRate": 9,
+        "systolicBloodPressure": -100,
+        "serumCreatinine": 7,
+        "killipClassification": 0,
+        "cardiacBiomarkerElevation": 14,
+        "stDeviation": 28,
+        "hospitalizationDueToCardiacArrest": 0
+      },
+      "expected": null
+    }
+  ]
+} 

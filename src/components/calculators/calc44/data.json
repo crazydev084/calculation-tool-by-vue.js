@@ -1,0 +1,3122 @@
+{
+    "boy": [
+        {
+            "age_data": "0-0",
+            "avg_height": "49.0",
+            "sd_height": "2.1",
+            "avg_weight": "3.0",
+            "sd_weight": "0.4",
+            "head": "0-0"
+        },
+        {
+            "age_data": "0-1",
+            "avg_height": "53.5",
+            "sd_height": "2.2",
+            "avg_weight": "4.3",
+            "sd_weight": "0.6",
+            "head": "0-1"
+        },
+        {
+            "age_data": "0-2",
+            "avg_height": "57.9",
+            "sd_height": "2.2",
+            "avg_weight": "5.5",
+            "sd_weight": "0.7",
+            "head": "0-2"
+        },
+        {
+            "age_data": "0-3",
+            "avg_height": "61.4",
+            "sd_height": "2.2",
+            "avg_weight": "6.4",
+            "sd_weight": "0.8",
+            "head": "0-3"
+        },
+        {
+            "age_data": "0-4",
+            "avg_height": "64.2",
+            "sd_height": "2.3",
+            "avg_weight": "7.1",
+            "sd_weight": "0.9",
+            "head": "0-4"
+        },
+        {
+            "age_data": "0-5",
+            "avg_height": "66.2",
+            "sd_height": "2.3",
+            "avg_weight": "7.7",
+            "sd_weight": "0.8",
+            "head": "0-5"
+        },
+        {
+            "age_data": "0-6",
+            "avg_height": "67.8",
+            "sd_height": "2.4",
+            "avg_weight": "8.0",
+            "sd_weight": "0.9",
+            "head": "0-6"
+        },
+        {
+            "age_data": "0-7",
+            "avg_height": "69.2",
+            "sd_height": "2.4",
+            "avg_weight": "8.2",
+            "sd_weight": "0.9",
+            "head": "0-7"
+        },
+        {
+            "age_data": "0-8",
+            "avg_height": "70.5",
+            "sd_height": "2.4",
+            "avg_weight": "8.6",
+            "sd_weight": "1.0",
+            "head": "0-8"
+        },
+        {
+            "age_data": "0-9",
+            "avg_height": "71.7",
+            "sd_height": "2.5",
+            "avg_weight": "8.9",
+            "sd_weight": "1.0",
+            "head": "0-9"
+        },
+        {
+            "age_data": "0-10",
+            "avg_height": "72.8",
+            "sd_height": "2.5",
+            "avg_weight": "9.1",
+            "sd_weight": "0.9",
+            "head": "0-10"
+        },
+        {
+            "age_data": "0-11",
+            "avg_height": "73.9",
+            "sd_height": "2.5",
+            "avg_weight": "9.2",
+            "sd_weight": "0.9",
+            "head": "0-11"
+        },
+        {
+            "age_data": "1-0",
+            "avg_height": "75.0",
+            "sd_height": "2.6",
+            "avg_weight": "9.3",
+            "sd_weight": "0.9",
+            "head": "1-0"
+        },
+        {
+            "age_data": "1-1",
+            "avg_height": "76.0",
+            "sd_height": "2.6",
+            "avg_weight": "9.5",
+            "sd_weight": "0.9",
+            "head": "1-1"
+        },
+        {
+            "age_data": "1-2",
+            "avg_height": "76.9",
+            "sd_height": "2.6",
+            "avg_weight": "9.8",
+            "sd_weight": "1.0",
+            "head": "1-2"
+        },
+        {
+            "age_data": "1-3",
+            "avg_height": "77.8",
+            "sd_height": "2.7",
+            "avg_weight": "9.9",
+            "sd_weight": "1.0",
+            "head": "1-3"
+        },
+        {
+            "age_data": "1-4",
+            "avg_height": "78.7",
+            "sd_height": "2.7",
+            "avg_weight": "10.1",
+            "sd_weight": "1.0",
+            "head": "1-4"
+        },
+        {
+            "age_data": "1-5",
+            "avg_height": "79.6",
+            "sd_height": "2.8",
+            "avg_weight": "10.3",
+            "sd_weight": "1.1",
+            "head": "1-5"
+        },
+        {
+            "age_data": "1-6",
+            "avg_height": "80.5",
+            "sd_height": "2.8",
+            "avg_weight": "10.5",
+            "sd_weight": "1.2",
+            "head": "1-6"
+        },
+        {
+            "age_data": "1-7",
+            "avg_height": "81.4",
+            "sd_height": "2.8",
+            "avg_weight": "10.6",
+            "sd_weight": "1.1",
+            "head": "1-7"
+        },
+        {
+            "age_data": "1-8",
+            "avg_height": "82.3",
+            "sd_height": "2.9",
+            "avg_weight": "10.9",
+            "sd_weight": "1.1",
+            "head": "1-8"
+        },
+        {
+            "age_data": "1-9",
+            "avg_height": "83.1",
+            "sd_height": "2.9",
+            "avg_weight": "11.2",
+            "sd_weight": "1.2",
+            "head": "1-9"
+        },
+        {
+            "age_data": "1-10",
+            "avg_height": "83.9",
+            "sd_height": "2.9",
+            "avg_weight": "11.3",
+            "sd_weight": "1.2",
+            "head": "1-10"
+        },
+        {
+            "age_data": "1-11",
+            "avg_height": "84.7",
+            "sd_height": "3.0",
+            "avg_weight": "11.4",
+            "sd_weight": "1.1",
+            "head": "1-11"
+        },
+        {
+            "age_data": "2-0",
+            "avg_height": "85.4",
+            "sd_height": "3.0",
+            "avg_weight": "11.6",
+            "sd_weight": "1.2",
+            "head": "2-0-6"
+        },
+        {
+            "age_data": "2-1",
+            "avg_height": "86.2",
+            "sd_height": "3.1",
+            "avg_weight": "11.8",
+            "sd_weight": "1.2",
+            "head": "2-0-6"
+        },
+        {
+            "age_data": "2-2",
+            "avg_height": "86.9",
+            "sd_height": "3.1",
+            "avg_weight": "12.0",
+            "sd_weight": "1.2",
+            "head": "2-0-6"
+        },
+        {
+            "age_data": "2-3",
+            "avg_height": "87.6",
+            "sd_height": "3.1",
+            "avg_weight": "12.1",
+            "sd_weight": "1.3",
+            "head": "2-0-6"
+        },
+        {
+            "age_data": "2-4",
+            "avg_height": "88.3",
+            "sd_height": "3.2",
+            "avg_weight": "12.3",
+            "sd_weight": "1.3",
+            "head": "2-0-6"
+        },
+        {
+            "age_data": "2-5",
+            "avg_height": "88.9",
+            "sd_height": "3.2",
+            "avg_weight": "12.5",
+            "sd_weight": "1.3",
+            "head": "2-0-6"
+        },
+        {
+            "age_data": "2-6",
+            "avg_height": "89.6",
+            "sd_height": "3.2",
+            "avg_weight": "12.7",
+            "sd_weight": "1.3",
+            "head": "2-6-12"
+        },
+        {
+            "age_data": "2-7",
+            "avg_height": "90.2",
+            "sd_height": "3.3",
+            "avg_weight": "12.8",
+            "sd_weight": "1.3",
+            "head": "2-6-12"
+        },
+        {
+            "age_data": "2-8",
+            "avg_height": "90.8",
+            "sd_height": "3.3",
+            "avg_weight": "13.0",
+            "sd_weight": "1.4",
+            "head": "2-6-12"
+        },
+        {
+            "age_data": "2-9",
+            "avg_height": "91.5",
+            "sd_height": "3.3",
+            "avg_weight": "13.2",
+            "sd_weight": "1.4",
+            "head": "2-6-12"
+        },
+        {
+            "age_data": "2-10",
+            "avg_height": "92.1",
+            "sd_height": "3.4",
+            "avg_weight": "13.3",
+            "sd_weight": "1.4",
+            "head": "2-6-12"
+        },
+        {
+            "age_data": "2-11",
+            "avg_height": "92.7",
+            "sd_height": "3.4",
+            "avg_weight": "13.5",
+            "sd_weight": "1.5",
+            "head": "2-6-12"
+        },
+        {
+            "age_data": "3-0",
+            "avg_height": "93.3",
+            "sd_height": "3.5",
+            "avg_weight": "13.7",
+            "sd_weight": "1.5",
+            "head": "3-0-6"
+        },
+        {
+            "age_data": "3-1",
+            "avg_height": "94.0",
+            "sd_height": "3.5",
+            "avg_weight": "13.9",
+            "sd_weight": "1.6",
+            "head": "3-0-6"
+        },
+        {
+            "age_data": "3-2",
+            "avg_height": "94.6",
+            "sd_height": "3.5",
+            "avg_weight": "14.0",
+            "sd_weight": "1.6",
+            "head": "3-0-6"
+        },
+        {
+            "age_data": "3-3",
+            "avg_height": "95.1",
+            "sd_height": "3.6",
+            "avg_weight": "14.2",
+            "sd_weight": "1.7",
+            "head": "3-0-6"
+        },
+        {
+            "age_data": "3-4",
+            "avg_height": "95.7",
+            "sd_height": "3.6",
+            "avg_weight": "14.4",
+            "sd_weight": "1.7",
+            "head": "3-0-6"
+        },
+        {
+            "age_data": "3-5",
+            "avg_height": "96.3",
+            "sd_height": "3.6",
+            "avg_weight": "14.5",
+            "sd_weight": "1.7",
+            "head": "3-0-6"
+        },
+        {
+            "age_data": "3-6",
+            "avg_height": "96.9",
+            "sd_height": "3.7",
+            "avg_weight": "14.7",
+            "sd_weight": "1.8",
+            "head": "3-6-12"
+        },
+        {
+            "age_data": "3-7",
+            "avg_height": "97.5",
+            "sd_height": "3.7",
+            "avg_weight": "14.8",
+            "sd_weight": "1.8",
+            "head": "3-6-12"
+        },
+        {
+            "age_data": "3-8",
+            "avg_height": "98.0",
+            "sd_height": "3.7",
+            "avg_weight": "15.0",
+            "sd_weight": "1.8",
+            "head": "3-6-12"
+        },
+        {
+            "age_data": "3-9",
+            "avg_height": "98.6",
+            "sd_height": "3.8",
+            "avg_weight": "15.1",
+            "sd_weight": "1.8",
+            "head": "3-6-12"
+        },
+        {
+            "age_data": "3-10",
+            "avg_height": "99.1",
+            "sd_height": "3.8",
+            "avg_weight": "15.3",
+            "sd_weight": "1.9",
+            "head": "3-6-12"
+        },
+        {
+            "age_data": "3-11",
+            "avg_height": "99.7",
+            "sd_height": "3.9",
+            "avg_weight": "15.4",
+            "sd_weight": "1.9",
+            "head": "3-6-12"
+        },
+        {
+            "age_data": "4-0",
+            "avg_height": "100.2",
+            "sd_height": "3.9",
+            "avg_weight": "15.6",
+            "sd_weight": "2.0",
+            "head": "4-0-6"
+        },
+        {
+            "age_data": "4-1",
+            "avg_height": "100.8",
+            "sd_height": "3.9",
+            "avg_weight": "15.8",
+            "sd_weight": "2.0",
+            "head": "4-0-6"
+        },
+        {
+            "age_data": "4-2",
+            "avg_height": "101.3",
+            "sd_height": "4.0",
+            "avg_weight": "15.9",
+            "sd_weight": "2.1",
+            "head": "4-0-6"
+        },
+        {
+            "age_data": "4-3",
+            "avg_height": "101.9",
+            "sd_height": "4.0",
+            "avg_weight": "16.1",
+            "sd_weight": "2.1",
+            "head": "4-0-6"
+        },
+        {
+            "age_data": "4-4",
+            "avg_height": "102.4",
+            "sd_height": "4.0",
+            "avg_weight": "16.3",
+            "sd_weight": "2.1",
+            "head": "4-0-6"
+        },
+        {
+            "age_data": "4-5",
+            "avg_height": "103.0",
+            "sd_height": "4.1",
+            "avg_weight": "16.4",
+            "sd_weight": "2.1",
+            "head": "4-0-6"
+        },
+        {
+            "age_data": "4-6",
+            "avg_height": "103.5",
+            "sd_height": "4.1",
+            "avg_weight": "16.6",
+            "sd_weight": "2.1",
+            "head": "4-6-12"
+        },
+        {
+            "age_data": "4-7",
+            "avg_height": "104.0",
+            "sd_height": "4.1",
+            "avg_weight": "16.7",
+            "sd_weight": "2.2",
+            "head": "4-6-12"
+        },
+        {
+            "age_data": "4-8",
+            "avg_height": "104.6",
+            "sd_height": "4.2",
+            "avg_weight": "16.9",
+            "sd_weight": "2.2",
+            "head": "4-6-12"
+        },
+        {
+            "age_data": "4-9",
+            "avg_height": "105.1",
+            "sd_height": "4.2",
+            "avg_weight": "17.0",
+            "sd_weight": "2.2",
+            "head": "4-6-12"
+        },
+        {
+            "age_data": "4-10",
+            "avg_height": "105.6",
+            "sd_height": "4.3",
+            "avg_weight": "17.3",
+            "sd_weight": "2.3",
+            "head": "4-6-12"
+        },
+        {
+            "age_data": "4-11",
+            "avg_height": "106.2",
+            "sd_height": "4.3",
+            "avg_weight": "17.5",
+            "sd_weight": "2.4",
+            "head": "4-6-12"
+        },
+        {
+            "age_data": "5-0",
+            "avg_height": "106.7",
+            "sd_height": "4.3",
+            "avg_weight": "17.7",
+            "sd_weight": "2.5",
+            "head": "5-0-6"
+        },
+        {
+            "age_data": "5-1",
+            "avg_height": "107.3",
+            "sd_height": "4.4",
+            "avg_weight": "17.9",
+            "sd_weight": "2.6",
+            "head": "5-0-6"
+        },
+        {
+            "age_data": "5-2",
+            "avg_height": "107.8",
+            "sd_height": "4.4",
+            "avg_weight": "18.1",
+            "sd_weight": "2.8",
+            "head": "5-0-6"
+        },
+        {
+            "age_data": "5-3",
+            "avg_height": "108.3",
+            "sd_height": "4.4",
+            "avg_weight": "18.3",
+            "sd_weight": "2.9",
+            "head": "5-0-6"
+        },
+        {
+            "age_data": "5-4",
+            "avg_height": "108.9",
+            "sd_height": "4.5",
+            "avg_weight": "18.5",
+            "sd_weight": "2.9",
+            "head": "5-0-6"
+        },
+        {
+            "age_data": "5-5",
+            "avg_height": "109.4",
+            "sd_height": "4.5",
+            "avg_weight": "18.7",
+            "sd_weight": "2.9",
+            "head": "5-0-6"
+        },
+        {
+            "age_data": "5-6",
+            "avg_height": "110.0",
+            "sd_height": "4.5",
+            "avg_weight": "18.9",
+            "sd_weight": "3.0",
+            "head": "5-6-12"
+        },
+        {
+            "age_data": "5-7",
+            "avg_height": "110.5",
+            "sd_height": "4.6",
+            "avg_weight": "19.1",
+            "sd_weight": "3.0",
+            "head": "5-6-12"
+        },
+        {
+            "age_data": "5-8",
+            "avg_height": "111.1",
+            "sd_height": "4.6",
+            "avg_weight": "19.3",
+            "sd_weight": "3.0",
+            "head": "5-6-12"
+        },
+        {
+            "age_data": "5-9",
+            "avg_height": "111.6",
+            "sd_height": "4.7",
+            "avg_weight": "19.6",
+            "sd_weight": "3.0",
+            "head": "5-6-12"
+        },
+        {
+            "age_data": "5-10",
+            "avg_height": "112.2",
+            "sd_height": "4.7",
+            "avg_weight": "19.8",
+            "sd_weight": "3.1",
+            "head": "5-6-12"
+        },
+        {
+            "age_data": "5-11",
+            "avg_height": "112.7",
+            "sd_height": "4.7",
+            "avg_weight": "20.1",
+            "sd_weight": "3.2",
+            "head": "5-6-12"
+        },
+        {
+            "age_data": "6-0",
+            "avg_height": "113.3",
+            "sd_height": "4.8",
+            "avg_weight": "20.3",
+            "sd_weight": "3.3",
+            "head": "6-0-6"
+        },
+        {
+            "age_data": "6-1",
+            "avg_height": "113.9",
+            "sd_height": "4.8",
+            "avg_weight": "20.6",
+            "sd_weight": "3.4",
+            "head": "6-0-6"
+        },
+        {
+            "age_data": "6-2",
+            "avg_height": "114.5",
+            "sd_height": "4.8",
+            "avg_weight": "20.8",
+            "sd_weight": "3.5",
+            "head": "6-0-6"
+        },
+        {
+            "age_data": "6-3",
+            "avg_height": "115.0",
+            "sd_height": "4.9",
+            "avg_weight": "21.1",
+            "sd_weight": "3.5",
+            "head": "6-0-6"
+        },
+        {
+            "age_data": "6-4",
+            "avg_height": "115.6",
+            "sd_height": "4.9",
+            "avg_weight": "21.3",
+            "sd_weight": "3.6",
+            "head": "6-0-6"
+        },
+        {
+            "age_data": "6-5",
+            "avg_height": "116.1",
+            "sd_height": "4.9",
+            "avg_weight": "21.6",
+            "sd_weight": "3.7",
+            "head": "6-0-6"
+        },
+        {
+            "age_data": "6-6",
+            "avg_height": "116.7",
+            "sd_height": "5.0",
+            "avg_weight": "21.8",
+            "sd_weight": "3.8"
+        },
+        {
+            "age_data": "6-7",
+            "avg_height": "117.2",
+            "sd_height": "5.0",
+            "avg_weight": "22.0",
+            "sd_weight": "3.8"
+        },
+        {
+            "age_data": "6-8",
+            "avg_height": "117.7",
+            "sd_height": "5.0",
+            "avg_weight": "22.2",
+            "sd_weight": "3.9"
+        },
+        {
+            "age_data": "6-9",
+            "avg_height": "118.2",
+            "sd_height": "5.0",
+            "avg_weight": "22.5",
+            "sd_weight": "3.9"
+        },
+        {
+            "age_data": "6-10",
+            "avg_height": "118.6",
+            "sd_height": "5.0",
+            "avg_weight": "22.7",
+            "sd_weight": "4.0"
+        },
+        {
+            "age_data": "6-11",
+            "avg_height": "119.1",
+            "sd_height": "5.0",
+            "avg_weight": "22.9",
+            "sd_weight": "4.0"
+        },
+        {
+            "age_data": "7-0",
+            "avg_height": "119.6",
+            "sd_height": "5.1",
+            "avg_weight": "23.1",
+            "sd_weight": "4.1"
+        },
+        {
+            "age_data": "7-1",
+            "avg_height": "120.1",
+            "sd_height": "5.1",
+            "avg_weight": "23.3",
+            "sd_weight": "4.2"
+        },
+        {
+            "age_data": "7-2",
+            "avg_height": "120.6",
+            "sd_height": "5.1",
+            "avg_weight": "23.5",
+            "sd_weight": "4.2"
+        },
+        {
+            "age_data": "7-3",
+            "avg_height": "121.1",
+            "sd_height": "5.1",
+            "avg_weight": "23.8",
+            "sd_weight": "4.3"
+        },
+        {
+            "age_data": "7-4",
+            "avg_height": "121.5",
+            "sd_height": "5.1",
+            "avg_weight": "24.0",
+            "sd_weight": "4.3"
+        },
+        {
+            "age_data": "7-5",
+            "avg_height": "122.0",
+            "sd_height": "5.1",
+            "avg_weight": "24.2",
+            "sd_weight": "4.4"
+        },
+        {
+            "age_data": "7-6",
+            "avg_height": "122.5",
+            "sd_height": "5.1",
+            "avg_weight": "24.4",
+            "sd_weight": "4.4"
+        },
+        {
+            "age_data": "7-7",
+            "avg_height": "123.0",
+            "sd_height": "5.2",
+            "avg_weight": "24.7",
+            "sd_weight": "4.5"
+        },
+        {
+            "age_data": "7-8",
+            "avg_height": "123.4",
+            "sd_height": "5.2",
+            "avg_weight": "25.0",
+            "sd_weight": "4.6"
+        },
+        {
+            "age_data": "7-9",
+            "avg_height": "123.9",
+            "sd_height": "5.2",
+            "avg_weight": "25.2",
+            "sd_weight": "4.7"
+        },
+        {
+            "age_data": "7-10",
+            "avg_height": "124.4",
+            "sd_height": "5.2",
+            "avg_weight": "25.5",
+            "sd_weight": "4.8"
+        },
+        {
+            "age_data": "7-11",
+            "avg_height": "124.8",
+            "sd_height": "5.3",
+            "avg_weight": "25.8",
+            "sd_weight": "4.9"
+        },
+        {
+            "age_data": "8-0",
+            "avg_height": "125.3",
+            "sd_height": "5.3",
+            "avg_weight": "26.1",
+            "sd_weight": "5.0"
+        },
+        {
+            "age_data": "8-1",
+            "avg_height": "125.8",
+            "sd_height": "5.3",
+            "avg_weight": "26.3",
+            "sd_weight": "5.1"
+        },
+        {
+            "age_data": "8-2",
+            "avg_height": "126.2",
+            "sd_height": "5.3",
+            "avg_weight": "26.6",
+            "sd_weight": "5.2"
+        },
+        {
+            "age_data": "8-3",
+            "avg_height": "126.7",
+            "sd_height": "5.4",
+            "avg_weight": "26.9",
+            "sd_weight": "5.3"
+        },
+        {
+            "age_data": "8-4",
+            "avg_height": "127.2",
+            "sd_height": "5.4",
+            "avg_weight": "27.2",
+            "sd_weight": "5.4"
+        },
+        {
+            "age_data": "8-5",
+            "avg_height": "127.6",
+            "sd_height": "5.4",
+            "avg_weight": "27.4",
+            "sd_weight": "5.5"
+        },
+        {
+            "age_data": "8-6",
+            "avg_height": "128.1",
+            "sd_height": "5.5",
+            "avg_weight": "27.7",
+            "sd_weight": "5.6"
+        },
+        {
+            "age_data": "8-7",
+            "avg_height": "128.6",
+            "sd_height": "5.5",
+            "avg_weight": "28.0",
+            "sd_weight": "5.7"
+        },
+        {
+            "age_data": "8-8",
+            "avg_height": "129.0",
+            "sd_height": "5.5",
+            "avg_weight": "28.3",
+            "sd_weight": "5.8"
+        },
+        {
+            "age_data": "8-9",
+            "avg_height": "129.5",
+            "sd_height": "5.5",
+            "avg_weight": "28.6",
+            "sd_weight": "5.9"
+        },
+        {
+            "age_data": "8-10",
+            "avg_height": "129.9",
+            "sd_height": "5.5",
+            "avg_weight": "28.9",
+            "sd_weight": "6.0"
+        },
+        {
+            "age_data": "8-11",
+            "avg_height": "130.4",
+            "sd_height": "5.6",
+            "avg_weight": "29.2",
+            "sd_weight": "6.1"
+        },
+        {
+            "age_data": "9-0",
+            "avg_height": "130.9",
+            "sd_height": "5.6",
+            "avg_weight": "29.5",
+            "sd_weight": "6.2"
+        },
+        {
+            "age_data": "9-1",
+            "avg_height": "131.3",
+            "sd_height": "5.6",
+            "avg_weight": "29.7",
+            "sd_weight": "6.3"
+        },
+        {
+            "age_data": "9-2",
+            "avg_height": "131.8",
+            "sd_height": "5.6",
+            "avg_weight": "30.0",
+            "sd_weight": "6.4"
+        },
+        {
+            "age_data": "9-3",
+            "avg_height": "132.2",
+            "sd_height": "5.7",
+            "avg_weight": "30.3",
+            "sd_weight": "6.5"
+        },
+        {
+            "age_data": "9-4",
+            "avg_height": "132.7",
+            "sd_height": "5.7",
+            "avg_weight": "30.6",
+            "sd_weight": "6.6"
+        },
+        {
+            "age_data": "9-5",
+            "avg_height": "133.1",
+            "sd_height": "5.7",
+            "avg_weight": "30.9",
+            "sd_weight": "6.7"
+        },
+        {
+            "age_data": "9-6",
+            "avg_height": "133.6",
+            "sd_height": "5.7",
+            "avg_weight": "31.2",
+            "sd_weight": "6.8"
+        },
+        {
+            "age_data": "9-7",
+            "avg_height": "134.1",
+            "sd_height": "5.8",
+            "avg_weight": "31.5",
+            "sd_weight": "6.9"
+        },
+        {
+            "age_data": "9-8",
+            "avg_height": "134.5",
+            "sd_height": "5.8",
+            "avg_weight": "31.9",
+            "sd_weight": "7.0"
+        },
+        {
+            "age_data": "9-9",
+            "avg_height": "135.0",
+            "sd_height": "5.8",
+            "avg_weight": "32.2",
+            "sd_weight": "7.1"
+        },
+        {
+            "age_data": "9-10",
+            "avg_height": "135.4",
+            "sd_height": "5.9",
+            "avg_weight": "32.5",
+            "sd_weight": "7.2"
+        },
+        {
+            "age_data": "9-11",
+            "avg_height": "135.9",
+            "sd_height": "5.9",
+            "avg_weight": "32.8",
+            "sd_weight": "7.3"
+        },
+        {
+            "age_data": "10-0",
+            "avg_height": "136.4",
+            "sd_height": "5.9",
+            "avg_weight": "33.2",
+            "sd_weight": "7.4"
+        },
+        {
+            "age_data": "10-1",
+            "avg_height": "136.8",
+            "sd_height": "6.0",
+            "avg_weight": "33.5",
+            "sd_weight": "7.5"
+        },
+        {
+            "age_data": "10-2",
+            "avg_height": "137.3",
+            "sd_height": "6.0",
+            "avg_weight": "33.8",
+            "sd_weight": "7.6"
+        },
+        {
+            "age_data": "10-3",
+            "avg_height": "137.7",
+            "sd_height": "6.0",
+            "avg_weight": "34.1",
+            "sd_weight": "7.7"
+        },
+        {
+            "age_data": "10-4",
+            "avg_height": "138.2",
+            "sd_height": "6.1",
+            "avg_weight": "34.5",
+            "sd_weight": "7.8"
+        },
+        {
+            "age_data": "10-5",
+            "avg_height": "138.6",
+            "sd_height": "6.1",
+            "avg_weight": "34.8",
+            "sd_weight": "7.8"
+        },
+        {
+            "age_data": "10-6",
+            "avg_height": "139.1",
+            "sd_height": "6.1",
+            "avg_weight": "35.1",
+            "sd_weight": "7.9"
+        },
+        {
+            "age_data": "10-7",
+            "avg_height": "139.6",
+            "sd_height": "6.2",
+            "avg_weight": "35.5",
+            "sd_weight": "8.0"
+        },
+        {
+            "age_data": "10-8",
+            "avg_height": "140.1",
+            "sd_height": "6.3",
+            "avg_weight": "35.8",
+            "sd_weight": "8.1"
+        },
+        {
+            "age_data": "10-9",
+            "avg_height": "140.7",
+            "sd_height": "6.4",
+            "avg_weight": "36.2",
+            "sd_weight": "8.2"
+        },
+        {
+            "age_data": "10-10",
+            "avg_height": "141.2",
+            "sd_height": "6.5",
+            "avg_weight": "36.5",
+            "sd_weight": "8.3"
+        },
+        {
+            "age_data": "10-11",
+            "avg_height": "141.7",
+            "sd_height": "6.6",
+            "avg_weight": "36.9",
+            "sd_weight": "8.4"
+        },
+        {
+            "age_data": "11-0",
+            "avg_height": "142.2",
+            "sd_height": "6.6",
+            "avg_weight": "37.3",
+            "sd_weight": "8.5"
+        },
+        {
+            "age_data": "11-1",
+            "avg_height": "142.7",
+            "sd_height": "6.7",
+            "avg_weight": "37.6",
+            "sd_weight": "8.6"
+        },
+        {
+            "age_data": "11-2",
+            "avg_height": "143.2",
+            "sd_height": "6.8",
+            "avg_weight": "38.0",
+            "sd_weight": "8.7"
+        },
+        {
+            "age_data": "11-3",
+            "avg_height": "143.8",
+            "sd_height": "6.9",
+            "avg_weight": "38.3",
+            "sd_weight": "8.8"
+        },
+        {
+            "age_data": "11-4",
+            "avg_height": "144.3",
+            "sd_height": "7.0",
+            "avg_weight": "38.7",
+            "sd_weight": "8.9"
+        },
+        {
+            "age_data": "11-5",
+            "avg_height": "144.8",
+            "sd_height": "7.1",
+            "avg_weight": "39.0",
+            "sd_weight": "9.0"
+        },
+        {
+            "age_data": "11-6",
+            "avg_height": "145.3",
+            "sd_height": "7.1",
+            "avg_weight": "39.4",
+            "sd_weight": "9.2"
+        },
+        {
+            "age_data": "11-7",
+            "avg_height": "145.9",
+            "sd_height": "7.2",
+            "avg_weight": "39.9",
+            "sd_weight": "9.3"
+        },
+        {
+            "age_data": "11-8",
+            "avg_height": "146.6",
+            "sd_height": "7.3",
+            "avg_weight": "40.4",
+            "sd_weight": "9.4"
+        },
+        {
+            "age_data": "11-9",
+            "avg_height": "147.2",
+            "sd_height": "7.4",
+            "avg_weight": "40.9",
+            "sd_weight": "9.5"
+        },
+        {
+            "age_data": "11-10",
+            "avg_height": "147.8",
+            "sd_height": "7.4",
+            "avg_weight": "41.4",
+            "sd_weight": "9.6"
+        },
+        {
+            "age_data": "11-11",
+            "avg_height": "148.5",
+            "sd_height": "7.5",
+            "avg_weight": "41.9",
+            "sd_weight": "9.7"
+        },
+        {
+            "age_data": "12-0",
+            "avg_height": "149.1",
+            "sd_height": "7.6",
+            "avg_weight": "42.4",
+            "sd_weight": "9.8"
+        },
+        {
+            "age_data": "12-1",
+            "avg_height": "149.7",
+            "sd_height": "7.7",
+            "avg_weight": "42.9",
+            "sd_weight": "9.9"
+        },
+        {
+            "age_data": "12-2",
+            "avg_height": "150.4",
+            "sd_height": "7.8",
+            "avg_weight": "43.4",
+            "sd_weight": "10.0"
+        },
+        {
+            "age_data": "12-3",
+            "avg_height": "151.0",
+            "sd_height": "7.8",
+            "avg_weight": "43.9",
+            "sd_weight": "10.1"
+        },
+        {
+            "age_data": "12-4",
+            "avg_height": "151.6",
+            "sd_height": "7.9",
+            "avg_weight": "44.4",
+            "sd_weight": "10.2"
+        },
+        {
+            "age_data": "12-5",
+            "avg_height": "152.3",
+            "sd_height": "8.0",
+            "avg_weight": "44.9",
+            "sd_weight": "10.3"
+        },
+        {
+            "age_data": "12-6",
+            "avg_height": "152.9",
+            "sd_height": "8.1",
+            "avg_weight": "45.4",
+            "sd_weight": "10.4"
+        },
+        {
+            "age_data": "12-7",
+            "avg_height": "153.5",
+            "sd_height": "8.0",
+            "avg_weight": "45.8",
+            "sd_weight": "10.4"
+        },
+        {
+            "age_data": "12-8",
+            "avg_height": "154.1",
+            "sd_height": "8.0",
+            "avg_weight": "46.2",
+            "sd_weight": "10.4"
+        },
+        {
+            "age_data": "12-9",
+            "avg_height": "154.7",
+            "sd_height": "8.0",
+            "avg_weight": "46.7",
+            "sd_weight": "10.4"
+        },
+        {
+            "age_data": "12-10",
+            "avg_height": "155.3",
+            "sd_height": "7.9",
+            "avg_weight": "47.1",
+            "sd_weight": "10.4"
+        },
+        {
+            "age_data": "12-11",
+            "avg_height": "155.9",
+            "sd_height": "7.9",
+            "avg_weight": "47.5",
+            "sd_weight": "10.4"
+        },
+        {
+            "age_data": "13-0",
+            "avg_height": "156.5",
+            "sd_height": "7.9",
+            "avg_weight": "47.9",
+            "sd_weight": "10.4"
+        },
+        {
+            "age_data": "13-1",
+            "avg_height": "157.0",
+            "sd_height": "7.8",
+            "avg_weight": "48.3",
+            "sd_weight": "10.4"
+        },
+        {
+            "age_data": "13-2",
+            "avg_height": "157.6",
+            "sd_height": "7.8",
+            "avg_weight": "48.7",
+            "sd_weight": "10.5"
+        },
+        {
+            "age_data": "13-3",
+            "avg_height": "158.2",
+            "sd_height": "7.8",
+            "avg_weight": "49.2",
+            "sd_weight": "10.5"
+        },
+        {
+            "age_data": "13-4",
+            "avg_height": "158.8",
+            "sd_height": "7.8",
+            "avg_weight": "49.6",
+            "sd_weight": "10.5"
+        },
+        {
+            "age_data": "13-5",
+            "avg_height": "159.4",
+            "sd_height": "7.7",
+            "avg_weight": "50.0",
+            "sd_weight": "10.5"
+        },
+        {
+            "age_data": "13-6",
+            "avg_height": "160.0",
+            "sd_height": "7.7",
+            "avg_weight": "50.4",
+            "sd_weight": "10.5"
+        },
+        {
+            "age_data": "13-7",
+            "avg_height": "160.5",
+            "sd_height": "7.6",
+            "avg_weight": "50.8",
+            "sd_weight": "10.5"
+        },
+        {
+            "age_data": "13-8",
+            "avg_height": "160.9",
+            "sd_height": "7.5",
+            "avg_weight": "51.2",
+            "sd_weight": "10.5"
+        },
+        {
+            "age_data": "13-9",
+            "avg_height": "161.4",
+            "sd_height": "7.4",
+            "avg_weight": "51.7",
+            "sd_weight": "10.4"
+        },
+        {
+            "age_data": "13-10",
+            "avg_height": "161.8",
+            "sd_height": "7.3",
+            "avg_weight": "52.1",
+            "sd_weight": "10.4"
+        },
+        {
+            "age_data": "13-11",
+            "avg_height": "162.3",
+            "sd_height": "7.2",
+            "avg_weight": "52.5",
+            "sd_weight": "10.4"
+        },
+        {
+            "age_data": "14-0",
+            "avg_height": "162.8",
+            "sd_height": "7.1",
+            "avg_weight": "52.9",
+            "sd_weight": "10.4"
+        },
+        {
+            "age_data": "14-1",
+            "avg_height": "163.2",
+            "sd_height": "7.0",
+            "avg_weight": "53.3",
+            "sd_weight": "10.4"
+        },
+        {
+            "age_data": "14-2",
+            "avg_height": "163.7",
+            "sd_height": "6.9",
+            "avg_weight": "53.7",
+            "sd_weight": "10.4"
+        },
+        {
+            "age_data": "14-3",
+            "avg_height": "164.1",
+            "sd_height": "6.8",
+            "avg_weight": "54.2",
+            "sd_weight": "10.4"
+        },
+        {
+            "age_data": "14-4",
+            "avg_height": "164.6",
+            "sd_height": "6.7",
+            "avg_weight": "54.6",
+            "sd_weight": "10.4"
+        },
+        {
+            "age_data": "14-5",
+            "avg_height": "165.0",
+            "sd_height": "6.6",
+            "avg_weight": "55.0",
+            "sd_weight": "10.4"
+        },
+        {
+            "age_data": "14-6",
+            "avg_height": "165.5",
+            "sd_height": "6.5",
+            "avg_weight": "55.4",
+            "sd_weight": "10.3"
+        },
+        {
+            "age_data": "14-7",
+            "avg_height": "165.8",
+            "sd_height": "6.4",
+            "avg_weight": "55.8",
+            "sd_weight": "10.4"
+        },
+        {
+            "age_data": "14-8",
+            "avg_height": "166.0",
+            "sd_height": "6.4",
+            "avg_weight": "56.1",
+            "sd_weight": "10.4"
+        },
+        {
+            "age_data": "14-9",
+            "avg_height": "166.3",
+            "sd_height": "6.3",
+            "avg_weight": "56.5",
+            "sd_weight": "10.5"
+        },
+        {
+            "age_data": "14-10",
+            "avg_height": "166.5",
+            "sd_height": "6.3",
+            "avg_weight": "56.8",
+            "sd_weight": "10.5"
+        },
+        {
+            "age_data": "14-11",
+            "avg_height": "166.8",
+            "sd_height": "6.2",
+            "avg_weight": "57.2",
+            "sd_weight": "10.5"
+        },
+        {
+            "age_data": "15-0",
+            "avg_height": "167.1",
+            "sd_height": "6.2",
+            "avg_weight": "57.6",
+            "sd_weight": "10.6"
+        },
+        {
+            "age_data": "15-1",
+            "avg_height": "167.3",
+            "sd_height": "6.1",
+            "avg_weight": "57.9",
+            "sd_weight": "10.6"
+        },
+        {
+            "age_data": "15-2",
+            "avg_height": "167.6",
+            "sd_height": "6.1",
+            "avg_weight": "58.3",
+            "sd_weight": "10.7"
+        },
+        {
+            "age_data": "15-3",
+            "avg_height": "167.8",
+            "sd_height": "6.0",
+            "avg_weight": "58.6",
+            "sd_weight": "10.7"
+        },
+        {
+            "age_data": "15-4",
+            "avg_height": "168.1",
+            "sd_height": "6.0",
+            "avg_weight": "59.0",
+            "sd_weight": "10.7"
+        },
+        {
+            "age_data": "15-5",
+            "avg_height": "168.3",
+            "sd_height": "5.9",
+            "avg_weight": "59.3",
+            "sd_weight": "10.8"
+        },
+        {
+            "age_data": "15-6",
+            "avg_height": "168.6",
+            "sd_height": "5.9",
+            "avg_weight": "59.7",
+            "sd_weight": "10.8"
+        },
+        {
+            "age_data": "15-7",
+            "avg_height": "168.7",
+            "sd_height": "5.9",
+            "avg_weight": "59.8",
+            "sd_weight": "10.8"
+        },
+        {
+            "age_data": "15-8",
+            "avg_height": "168.9",
+            "sd_height": "5.9",
+            "avg_weight": "60.0",
+            "sd_weight": "10.7"
+        },
+        {
+            "age_data": "15-9",
+            "avg_height": "169.0",
+            "sd_height": "5.9",
+            "avg_weight": "60.1",
+            "sd_weight": "10.7"
+        },
+        {
+            "age_data": "15-10",
+            "avg_height": "169.1",
+            "sd_height": "5.9",
+            "avg_weight": "60.2",
+            "sd_weight": "10.6"
+        },
+        {
+            "age_data": "15-11",
+            "avg_height": "169.2",
+            "sd_height": "5.8",
+            "avg_weight": "60.3",
+            "sd_weight": "10.5"
+        },
+        {
+            "age_data": "16-0",
+            "avg_height": "169.4",
+            "sd_height": "5.8",
+            "avg_weight": "60.5",
+            "sd_weight": "10.5"
+        },
+        {
+            "age_data": "16-1",
+            "avg_height": "169.5",
+            "sd_height": "5.8",
+            "avg_weight": "60.6",
+            "sd_weight": "10.4"
+        },
+        {
+            "age_data": "16-2",
+            "avg_height": "169.6",
+            "sd_height": "5.8",
+            "avg_weight": "60.7",
+            "sd_weight": "10.4"
+        },
+        {
+            "age_data": "16-3",
+            "avg_height": "169.7",
+            "sd_height": "5.8",
+            "avg_weight": "60.8",
+            "sd_weight": "10.3"
+        },
+        {
+            "age_data": "16-4",
+            "avg_height": "169.9",
+            "sd_height": "5.8",
+            "avg_weight": "61.0",
+            "sd_weight": "10.2"
+        },
+        {
+            "age_data": "16-5",
+            "avg_height": "170.0",
+            "sd_height": "5.8",
+            "avg_weight": "61.1",
+            "sd_weight": "10.2"
+        },
+        {
+            "age_data": "16-6",
+            "avg_height": "170.1",
+            "sd_height": "5.8",
+            "avg_weight": "61.2",
+            "sd_weight": "10.1"
+        },
+        {
+            "age_data": "16-7",
+            "avg_height": "170.2",
+            "sd_height": "5.8",
+            "avg_weight": "61.3",
+            "sd_weight": "10.1"
+        },
+        {
+            "age_data": "16-8",
+            "avg_height": "170.2",
+            "sd_height": "5.8",
+            "avg_weight": "61.4",
+            "sd_weight": "10.2"
+        },
+        {
+            "age_data": "16-9",
+            "avg_height": "170.3",
+            "sd_height": "5.8",
+            "avg_weight": "61.6",
+            "sd_weight": "10.2"
+        },
+        {
+            "age_data": "16-10",
+            "avg_height": "170.3",
+            "sd_height": "5.8",
+            "avg_weight": "61.7",
+            "sd_weight": "10.2"
+        },
+        {
+            "age_data": "16-11",
+            "avg_height": "170.4",
+            "sd_height": "5.8",
+            "avg_weight": "61.8",
+            "sd_weight": "10.2"
+        },
+        {
+            "age_data": "17-0",
+            "avg_height": "170.5",
+            "sd_height": "5.8",
+            "avg_weight": "61.9",
+            "sd_weight": "10.2"
+        },
+        {
+            "age_data": "17-1",
+            "avg_height": "170.5",
+            "sd_height": "5.8",
+            "avg_weight": "62.0",
+            "sd_weight": "10.2"
+        },
+        {
+            "age_data": "17-2",
+            "avg_height": "170.6",
+            "sd_height": "5.8",
+            "avg_weight": "62.1",
+            "sd_weight": "10.3"
+        },
+        {
+            "age_data": "17-3",
+            "avg_height": "170.6",
+            "sd_height": "5.8",
+            "avg_weight": "62.3",
+            "sd_weight": "10.3"
+        },
+        {
+            "age_data": "17-4",
+            "avg_height": "170.7",
+            "sd_height": "5.8",
+            "avg_weight": "62.4",
+            "sd_weight": "10.3"
+        },
+        {
+            "age_data": "17-5",
+            "avg_height": "170.7",
+            "sd_height": "5.8",
+            "avg_weight": "62.5",
+            "sd_weight": "10.3"
+        },
+        {
+            "age_data": "17-6",
+            "avg_height": "170.8",
+            "sd_height": "5.8",
+            "avg_weight": "62.6",
+            "sd_weight": "10.3"
+        }
+    ],
+    "girl": [
+        {
+            "age_data": "0-0",
+            "avg_height": "48.4",
+            "sd_height": "2.1",
+            "avg_weight": "3.0",
+            "sd_weight": "0.4",
+            "head": "0-0"
+        },
+        {
+            "age_data": "0-1",
+            "avg_height": "52.6",
+            "sd_height": "2.1",
+            "avg_weight": "4.1",
+            "sd_weight": "0.5",
+            "head": "0-1"
+        },
+        {
+            "age_data": "0-2",
+            "avg_height": "56.7",
+            "sd_height": "2.2",
+            "avg_weight": "5.2",
+            "sd_weight": "0.6",
+            "head": "0-2"
+        },
+        {
+            "age_data": "0-3",
+            "avg_height": "60.0",
+            "sd_height": "2.2",
+            "avg_weight": "6.0",
+            "sd_weight": "0.7",
+            "head": "0-3"
+        },
+        {
+            "age_data": "0-4",
+            "avg_height": "62.6",
+            "sd_height": "2.2",
+            "avg_weight": "6.6",
+            "sd_weight": "0.8",
+            "head": "0-4"
+        },
+        {
+            "age_data": "0-5",
+            "avg_height": "64.6",
+            "sd_height": "2.3",
+            "avg_weight": "7.0",
+            "sd_weight": "0.8",
+            "head": "0-5"
+        },
+        {
+            "age_data": "0-6",
+            "avg_height": "66.2",
+            "sd_height": "2.3",
+            "avg_weight": "7.5",
+            "sd_weight": "0.8",
+            "head": "0-6"
+        },
+        {
+            "age_data": "0-7",
+            "avg_height": "67.5",
+            "sd_height": "2.3",
+            "avg_weight": "7.8",
+            "sd_weight": "0.8",
+            "head": "0-7"
+        },
+        {
+            "age_data": "0-8",
+            "avg_height": "68.9",
+            "sd_height": "2.4",
+            "avg_weight": "8.0",
+            "sd_weight": "0.9",
+            "head": "0-8"
+        },
+        {
+            "age_data": "0-9",
+            "avg_height": "70.0",
+            "sd_height": "2.4",
+            "avg_weight": "8.2",
+            "sd_weight": "0.9",
+            "head": "0-9"
+        },
+        {
+            "age_data": "0-10",
+            "avg_height": "71.2",
+            "sd_height": "2.4",
+            "avg_weight": "8.5",
+            "sd_weight": "0.9",
+            "head": "0-10"
+        },
+        {
+            "age_data": "0-11",
+            "avg_height": "72.3",
+            "sd_height": "2.5",
+            "avg_weight": "8.6",
+            "sd_weight": "0.9",
+            "head": "0-11"
+        },
+        {
+            "age_data": "1-0",
+            "avg_height": "73.4",
+            "sd_height": "2.5",
+            "avg_weight": "8.7",
+            "sd_weight": "1.0",
+            "head": "1-0"
+        },
+        {
+            "age_data": "1-1",
+            "avg_height": "74.5",
+            "sd_height": "2.5",
+            "avg_weight": "9.0",
+            "sd_weight": "0.9",
+            "head": "1-1"
+        },
+        {
+            "age_data": "1-2",
+            "avg_height": "75.5",
+            "sd_height": "2.6",
+            "avg_weight": "9.2",
+            "sd_weight": "0.9",
+            "head": "1-2"
+        },
+        {
+            "age_data": "1-3",
+            "avg_height": "76.5",
+            "sd_height": "2.6",
+            "avg_weight": "9.3",
+            "sd_weight": "1.0",
+            "head": "1-3"
+        },
+        {
+            "age_data": "1-4",
+            "avg_height": "77.5",
+            "sd_height": "2.6",
+            "avg_weight": "9.5",
+            "sd_weight": "0.9",
+            "head": "1-4"
+        },
+        {
+            "age_data": "1-5",
+            "avg_height": "78.4",
+            "sd_height": "2.7",
+            "avg_weight": "9.7",
+            "sd_weight": "1.0",
+            "head": "1-5"
+        },
+        {
+            "age_data": "1-6",
+            "avg_height": "79.4",
+            "sd_height": "2.7",
+            "avg_weight": "9.9",
+            "sd_weight": "1.0",
+            "head": "1-6"
+        },
+        {
+            "age_data": "1-7",
+            "avg_height": "80.3",
+            "sd_height": "2.8",
+            "avg_weight": "10.2",
+            "sd_weight": "1.1",
+            "head": "1-7"
+        },
+        {
+            "age_data": "1-8",
+            "avg_height": "81.2",
+            "sd_height": "2.8",
+            "avg_weight": "10.4",
+            "sd_weight": "1.1",
+            "head": "1-8"
+        },
+        {
+            "age_data": "1-9",
+            "avg_height": "82.0",
+            "sd_height": "2.8",
+            "avg_weight": "10.4",
+            "sd_weight": "1.0",
+            "head": "1-9"
+        },
+        {
+            "age_data": "1-10",
+            "avg_height": "82.8",
+            "sd_height": "2.9",
+            "avg_weight": "10.7",
+            "sd_weight": "1.2",
+            "head": "1-10"
+        },
+        {
+            "age_data": "1-11",
+            "avg_height": "83.5",
+            "sd_height": "2.9",
+            "avg_weight": "11.0",
+            "sd_weight": "1.2",
+            "head": "1-11"
+        },
+        {
+            "age_data": "2-0",
+            "avg_height": "84.3",
+            "sd_height": "2.9",
+            "avg_weight": "11.0",
+            "sd_weight": "1.1",
+            "head": "2-0-6"
+        },
+        {
+            "age_data": "2-1",
+            "avg_height": "85.0",
+            "sd_height": "3.0",
+            "avg_weight": "11.2",
+            "sd_weight": "1.2",
+            "head": "2-0-6"
+        },
+        {
+            "age_data": "2-2",
+            "avg_height": "85.7",
+            "sd_height": "3.0",
+            "avg_weight": "11.4",
+            "sd_weight": "1.2",
+            "head": "2-0-6"
+        },
+        {
+            "age_data": "2-3",
+            "avg_height": "86.4",
+            "sd_height": "3.0",
+            "avg_weight": "11.6",
+            "sd_weight": "1.3",
+            "head": "2-0-6"
+        },
+        {
+            "age_data": "2-4",
+            "avg_height": "87.1",
+            "sd_height": "3.1",
+            "avg_weight": "11.8",
+            "sd_weight": "1.3",
+            "head": "2-0-6"
+        },
+        {
+            "age_data": "2-5",
+            "avg_height": "87.7",
+            "sd_height": "3.1",
+            "avg_weight": "12.0",
+            "sd_weight": "1.4",
+            "head": "2-0-6"
+        },
+        {
+            "age_data": "2-6",
+            "avg_height": "88.4",
+            "sd_height": "3.1",
+            "avg_weight": "12.2",
+            "sd_weight": "1.4",
+            "head": "2-6-12"
+        },
+        {
+            "age_data": "2-7",
+            "avg_height": "89.0",
+            "sd_height": "3.2",
+            "avg_weight": "12.3",
+            "sd_weight": "1.4",
+            "head": "2-6-12"
+        },
+        {
+            "age_data": "2-8",
+            "avg_height": "89.6",
+            "sd_height": "3.2",
+            "avg_weight": "12.5",
+            "sd_weight": "1.4",
+            "head": "2-6-12"
+        },
+        {
+            "age_data": "2-9",
+            "avg_height": "90.3",
+            "sd_height": "3.3",
+            "avg_weight": "12.7",
+            "sd_weight": "1.5",
+            "head": "2-6-12"
+        },
+        {
+            "age_data": "2-10",
+            "avg_height": "90.9",
+            "sd_height": "3.3",
+            "avg_weight": "12.8",
+            "sd_weight": "1.5",
+            "head": "2-6-12"
+        },
+        {
+            "age_data": "2-11",
+            "avg_height": "91.6",
+            "sd_height": "3.3",
+            "avg_weight": "13.0",
+            "sd_weight": "1.5",
+            "head": "2-6-12"
+        },
+        {
+            "age_data": "3-0",
+            "avg_height": "92.2",
+            "sd_height": "3.4",
+            "avg_weight": "13.1",
+            "sd_weight": "1.6",
+            "head": "3-0-6"
+        },
+        {
+            "age_data": "3-1",
+            "avg_height": "92.8",
+            "sd_height": "3.4",
+            "avg_weight": "13.3",
+            "sd_weight": "1.6",
+            "head": "3-0-6"
+        },
+        {
+            "age_data": "3-2",
+            "avg_height": "93.5",
+            "sd_height": "3.4",
+            "avg_weight": "13.4",
+            "sd_weight": "1.6",
+            "head": "3-0-6"
+        },
+        {
+            "age_data": "3-3",
+            "avg_height": "94.1",
+            "sd_height": "3.5",
+            "avg_weight": "13.6",
+            "sd_weight": "1.7",
+            "head": "3-0-6"
+        },
+        {
+            "age_data": "3-4",
+            "avg_height": "94.7",
+            "sd_height": "3.5",
+            "avg_weight": "13.8",
+            "sd_weight": "1.7",
+            "head": "3-0-6"
+        },
+        {
+            "age_data": "3-5",
+            "avg_height": "95.3",
+            "sd_height": "3.5",
+            "avg_weight": "13.9",
+            "sd_weight": "1.7",
+            "head": "3-0-6"
+        },
+        {
+            "age_data": "3-6",
+            "avg_height": "95.9",
+            "sd_height": "3.6",
+            "avg_weight": "14.1",
+            "sd_weight": "1.7",
+            "head": "3-6-12"
+        },
+        {
+            "age_data": "3-7",
+            "avg_height": "96.5",
+            "sd_height": "3.6",
+            "avg_weight": "14.3",
+            "sd_weight": "1.7",
+            "head": "3-6-12"
+        },
+        {
+            "age_data": "3-8",
+            "avg_height": "97.1",
+            "sd_height": "3.6",
+            "avg_weight": "14.4",
+            "sd_weight": "1.7",
+            "head": "3-6-12"
+        },
+        {
+            "age_data": "3-9",
+            "avg_height": "97.7",
+            "sd_height": "3.7",
+            "avg_weight": "14.6",
+            "sd_weight": "1.7",
+            "head": "3-6-12"
+        },
+        {
+            "age_data": "3-10",
+            "avg_height": "98.3",
+            "sd_height": "3.7",
+            "avg_weight": "14.8",
+            "sd_weight": "1.8",
+            "head": "3-6-12"
+        },
+        {
+            "age_data": "3-11",
+            "avg_height": "98.9",
+            "sd_height": "3.8",
+            "avg_weight": "15.0",
+            "sd_weight": "1.9",
+            "head": "3-6-12"
+        },
+        {
+            "age_data": "4-0",
+            "avg_height": "99.5",
+            "sd_height": "3.8",
+            "avg_weight": "15.2",
+            "sd_weight": "2.0",
+            "head": "4-0-6"
+        },
+        {
+            "age_data": "4-1",
+            "avg_height": "100.0",
+            "sd_height": "3.8",
+            "avg_weight": "15.4",
+            "sd_weight": "2.1",
+            "head": "4-0-6"
+        },
+        {
+            "age_data": "4-2",
+            "avg_height": "100.6",
+            "sd_height": "3.9",
+            "avg_weight": "15.6",
+            "sd_weight": "2.2",
+            "head": "4-0-6"
+        },
+        {
+            "age_data": "4-3",
+            "avg_height": "101.2",
+            "sd_height": "3.9",
+            "avg_weight": "15.8",
+            "sd_weight": "2.4",
+            "head": "4-0-6"
+        },
+        {
+            "age_data": "4-4",
+            "avg_height": "101.7",
+            "sd_height": "3.9",
+            "avg_weight": "15.9",
+            "sd_weight": "2.3",
+            "head": "4-0-6"
+        },
+        {
+            "age_data": "4-5",
+            "avg_height": "102.3",
+            "sd_height": "4.0",
+            "avg_weight": "16.1",
+            "sd_weight": "2.2",
+            "head": "4-0-6"
+        },
+        {
+            "age_data": "4-6",
+            "avg_height": "102.8",
+            "sd_height": "4.0",
+            "avg_weight": "16.3",
+            "sd_weight": "2.2",
+            "head": "4-6-12"
+        },
+        {
+            "age_data": "4-7",
+            "avg_height": "103.4",
+            "sd_height": "4.0",
+            "avg_weight": "16.4",
+            "sd_weight": "2.1",
+            "head": "4-6-12"
+        },
+        {
+            "age_data": "4-8",
+            "avg_height": "103.9",
+            "sd_height": "4.1",
+            "avg_weight": "16.6",
+            "sd_weight": "2.1",
+            "head": "4-6-12"
+        },
+        {
+            "age_data": "4-9",
+            "avg_height": "104.5",
+            "sd_height": "4.1",
+            "avg_weight": "16.8",
+            "sd_weight": "2.0",
+            "head": "4-6-12"
+        },
+        {
+            "age_data": "4-10",
+            "avg_height": "105.0",
+            "sd_height": "4.1",
+            "avg_weight": "17.0",
+            "sd_weight": "2.1",
+            "head": "4-6-12"
+        },
+        {
+            "age_data": "4-11",
+            "avg_height": "105.6",
+            "sd_height": "4.2",
+            "avg_weight": "17.2",
+            "sd_weight": "2.2",
+            "head": "4-6-12"
+        },
+        {
+            "age_data": "5-0",
+            "avg_height": "106.2",
+            "sd_height": "4.2",
+            "avg_weight": "17.4",
+            "sd_weight": "2.3",
+            "head": "5-0-6"
+        },
+        {
+            "age_data": "5-1",
+            "avg_height": "106.7",
+            "sd_height": "4.3",
+            "avg_weight": "17.6",
+            "sd_weight": "2.4",
+            "head": "5-0-6"
+        },
+        {
+            "age_data": "5-2",
+            "avg_height": "107.3",
+            "sd_height": "4.3",
+            "avg_weight": "17.8",
+            "sd_weight": "2.5",
+            "head": "5-0-6"
+        },
+        {
+            "age_data": "5-3",
+            "avg_height": "107.8",
+            "sd_height": "4.3",
+            "avg_weight": "18.0",
+            "sd_weight": "2.6",
+            "head": "5-0-6"
+        },
+        {
+            "age_data": "5-4",
+            "avg_height": "108.4",
+            "sd_height": "4.4",
+            "avg_weight": "18.1",
+            "sd_weight": "2.6",
+            "head": "5-0-6"
+        },
+        {
+            "age_data": "5-5",
+            "avg_height": "108.9",
+            "sd_height": "4.4",
+            "avg_weight": "18.2",
+            "sd_weight": "2.6",
+            "head": "5-0-6"
+        },
+        {
+            "age_data": "5-6",
+            "avg_height": "109.5",
+            "sd_height": "4.4",
+            "avg_weight": "18.4",
+            "sd_weight": "2.7",
+            "head": "5-6-12"
+        },
+        {
+            "age_data": "5-7",
+            "avg_height": "110.0",
+            "sd_height": "4.5",
+            "avg_weight": "18.5",
+            "sd_weight": "2.7",
+            "head": "5-6-12"
+        },
+        {
+            "age_data": "5-8",
+            "avg_height": "110.6",
+            "sd_height": "4.5",
+            "avg_weight": "18.6",
+            "sd_weight": "2.7",
+            "head": "5-6-12"
+        },
+        {
+            "age_data": "5-9",
+            "avg_height": "111.1",
+            "sd_height": "4.5",
+            "avg_weight": "18.7",
+            "sd_weight": "2.8",
+            "head": "5-6-12"
+        },
+        {
+            "age_data": "5-10",
+            "avg_height": "111.6",
+            "sd_height": "4.6",
+            "avg_weight": "19.0",
+            "sd_weight": "2.8",
+            "head": "5-6-12"
+        },
+        {
+            "age_data": "5-11",
+            "avg_height": "112.2",
+            "sd_height": "4.6",
+            "avg_weight": "19.3",
+            "sd_weight": "2.9",
+            "head": "5-6-12"
+        },
+        {
+            "age_data": "6-0",
+            "avg_height": "112.7",
+            "sd_height": "4.6",
+            "avg_weight": "19.6",
+            "sd_weight": "3.0",
+            "head": "6-0-6"
+        },
+        {
+            "age_data": "6-1",
+            "avg_height": "113.3",
+            "sd_height": "4.7",
+            "avg_weight": "19.9",
+            "sd_weight": "3.1",
+            "head": "6-0-6"
+        },
+        {
+            "age_data": "6-2",
+            "avg_height": "113.8",
+            "sd_height": "4.7",
+            "avg_weight": "20.2",
+            "sd_weight": "3.2",
+            "head": "6-0-6"
+        },
+        {
+            "age_data": "6-3",
+            "avg_height": "114.1",
+            "sd_height": "4.6",
+            "avg_weight": "20.4",
+            "sd_weight": "3.3",
+            "head": "6-0-6"
+        },
+        {
+            "age_data": "6-4",
+            "avg_height": "114.6",
+            "sd_height": "4.7",
+            "avg_weight": "20.7",
+            "sd_weight": "3.4",
+            "head": "6-0-6"
+        },
+        {
+            "age_data": "6-5",
+            "avg_height": "115.2",
+            "sd_height": "4.8",
+            "avg_weight": "21.0",
+            "sd_weight": "3.5",
+            "head": "6-0-6"
+        },
+        {
+            "age_data": "6-6",
+            "avg_height": "115.8",
+            "sd_height": "4.9",
+            "avg_weight": "21.3",
+            "sd_weight": "3.6",
+            "head": "6-6-12"
+        },
+        {
+            "age_data": "6-7",
+            "avg_height": "116.3",
+            "sd_height": "4.9",
+            "avg_weight": "21.5",
+            "sd_weight": "3.6",
+            "head": "6-6-12"
+        },
+        {
+            "age_data": "6-8",
+            "avg_height": "116.8",
+            "sd_height": "4.9",
+            "avg_weight": "21.7",
+            "sd_weight": "3.7",
+            "head": "6-6-12"
+        },
+        {
+            "age_data": "6-9",
+            "avg_height": "117.3",
+            "sd_height": "4.9",
+            "avg_weight": "21.9",
+            "sd_weight": "3.7",
+            "head": "6-6-12"
+        },
+        {
+            "age_data": "6-10",
+            "avg_height": "117.8",
+            "sd_height": "5.0",
+            "avg_weight": "22.1",
+            "sd_weight": "3.8",
+            "head": "6-6-12"
+        },
+        {
+            "age_data": "6-11",
+            "avg_height": "118.3",
+            "sd_height": "5.0",
+            "avg_weight": "22.3",
+            "sd_weight": "3.8",
+            "head": "6-6-12"
+        },
+        {
+            "age_data": "7-0",
+            "avg_height": "118.8",
+            "sd_height": "5.0",
+            "avg_weight": "22.6",
+            "sd_weight": "3.9"
+        },
+        {
+            "age_data": "7-1",
+            "avg_height": "119.2",
+            "sd_height": "5.0",
+            "avg_weight": "22.8",
+            "sd_weight": "3.9"
+        },
+        {
+            "age_data": "7-2",
+            "avg_height": "119.7",
+            "sd_height": "5.0",
+            "avg_weight": "23.0",
+            "sd_weight": "4.0"
+        },
+        {
+            "age_data": "7-3",
+            "avg_height": "120.2",
+            "sd_height": "5.1",
+            "avg_weight": "23.2",
+            "sd_weight": "4.1"
+        },
+        {
+            "age_data": "7-4",
+            "avg_height": "120.7",
+            "sd_height": "5.1",
+            "avg_weight": "23.4",
+            "sd_weight": "4.1"
+        },
+        {
+            "age_data": "7-5",
+            "avg_height": "121.2",
+            "sd_height": "5.1",
+            "avg_weight": "23.6",
+            "sd_weight": "4.2"
+        },
+        {
+            "age_data": "7-6",
+            "avg_height": "121.7",
+            "sd_height": "5.1",
+            "avg_weight": "23.8",
+            "sd_weight": "4.2"
+        },
+        {
+            "age_data": "7-7",
+            "avg_height": "122.2",
+            "sd_height": "5.2",
+            "avg_weight": "24.1",
+            "sd_weight": "4.3"
+        },
+        {
+            "age_data": "7-8",
+            "avg_height": "122.7",
+            "sd_height": "5.2",
+            "avg_weight": "24.3",
+            "sd_weight": "4.4"
+        },
+        {
+            "age_data": "7-9",
+            "avg_height": "123.2",
+            "sd_height": "5.2",
+            "avg_weight": "24.6",
+            "sd_weight": "4.5"
+        },
+        {
+            "age_data": "7-10",
+            "avg_height": "123.6",
+            "sd_height": "5.3",
+            "avg_weight": "24.9",
+            "sd_weight": "4.6"
+        },
+        {
+            "age_data": "7-11",
+            "avg_height": "124.1",
+            "sd_height": "5.3",
+            "avg_weight": "25.1",
+            "sd_weight": "4.7"
+        },
+        {
+            "age_data": "8-0",
+            "avg_height": "124.6",
+            "sd_height": "5.4",
+            "avg_weight": "25.4",
+            "sd_weight": "4.7"
+        },
+        {
+            "age_data": "8-1",
+            "avg_height": "125.1",
+            "sd_height": "5.4",
+            "avg_weight": "25.7",
+            "sd_weight": "4.8"
+        },
+        {
+            "age_data": "8-2",
+            "avg_height": "125.6",
+            "sd_height": "5.4",
+            "avg_weight": "25.9",
+            "sd_weight": "4.9"
+        },
+        {
+            "age_data": "8-3",
+            "avg_height": "126.1",
+            "sd_height": "5.5",
+            "avg_weight": "26.2",
+            "sd_weight": "5.0"
+        },
+        {
+            "age_data": "8-4",
+            "avg_height": "126.5",
+            "sd_height": "5.5",
+            "avg_weight": "26.5",
+            "sd_weight": "5.1"
+        },
+        {
+            "age_data": "8-5",
+            "avg_height": "127.0",
+            "sd_height": "5.5",
+            "avg_weight": "26.7",
+            "sd_weight": "5.2"
+        },
+        {
+            "age_data": "8-6",
+            "avg_height": "127.5",
+            "sd_height": "5.6",
+            "avg_weight": "27.0",
+            "sd_weight": "5.3"
+        },
+        {
+            "age_data": "8-7",
+            "avg_height": "128.0",
+            "sd_height": "5.6",
+            "avg_weight": "27.3",
+            "sd_weight": "5.4"
+        },
+        {
+            "age_data": "8-8",
+            "avg_height": "128.5",
+            "sd_height": "5.7",
+            "avg_weight": "27.6",
+            "sd_weight": "5.5"
+        },
+        {
+            "age_data": "8-9",
+            "avg_height": "129.0",
+            "sd_height": "5.7",
+            "avg_weight": "27.9",
+            "sd_weight": "5.5"
+        },
+        {
+            "age_data": "8-10",
+            "avg_height": "129.5",
+            "sd_height": "5.8",
+            "avg_weight": "28.2",
+            "sd_weight": "5.6"
+        },
+        {
+            "age_data": "8-11",
+            "avg_height": "130.0",
+            "sd_height": "5.8",
+            "avg_weight": "28.5",
+            "sd_weight": "5.7"
+        },
+        {
+            "age_data": "9-0",
+            "avg_height": "130.5",
+            "sd_height": "5.9",
+            "avg_weight": "28.9",
+            "sd_weight": "5.8"
+        },
+        {
+            "age_data": "9-1",
+            "avg_height": "131.0",
+            "sd_height": "5.9",
+            "avg_weight": "29.2",
+            "sd_weight": "5.9"
+        },
+        {
+            "age_data": "9-2",
+            "avg_height": "131.5",
+            "sd_height": "6.0",
+            "avg_weight": "29.5",
+            "sd_weight": "6.0"
+        },
+        {
+            "age_data": "9-3",
+            "avg_height": "132.0",
+            "sd_height": "6.0",
+            "avg_weight": "29.8",
+            "sd_weight": "6.1"
+        },
+        {
+            "age_data": "9-4",
+            "avg_height": "132.5",
+            "sd_height": "6.1",
+            "avg_weight": "30.1",
+            "sd_weight": "6.2"
+        },
+        {
+            "age_data": "9-5",
+            "avg_height": "133.0",
+            "sd_height": "6.1",
+            "avg_weight": "30.4",
+            "sd_weight": "6.3"
+        },
+        {
+            "age_data": "9-6",
+            "avg_height": "133.5",
+            "sd_height": "6.2",
+            "avg_weight": "30.7",
+            "sd_weight": "6.4"
+        },
+        {
+            "age_data": "9-7",
+            "avg_height": "134.1",
+            "sd_height": "6.2",
+            "avg_weight": "31.1",
+            "sd_weight": "6.5"
+        },
+        {
+            "age_data": "9-8",
+            "avg_height": "134.6",
+            "sd_height": "6.3",
+            "avg_weight": "31.4",
+            "sd_weight": "6.6"
+        },
+        {
+            "age_data": "9-9",
+            "avg_height": "135.2",
+            "sd_height": "6.3",
+            "avg_weight": "31.8",
+            "sd_weight": "6.7"
+        },
+        {
+            "age_data": "9-10",
+            "avg_height": "135.8",
+            "sd_height": "6.4",
+            "avg_weight": "32.1",
+            "sd_weight": "6.8"
+        },
+        {
+            "age_data": "9-11",
+            "avg_height": "136.3",
+            "sd_height": "6.4",
+            "avg_weight": "32.5",
+            "sd_weight": "6.9"
+        },
+        {
+            "age_data": "10-0",
+            "avg_height": "136.9",
+            "sd_height": "6.5",
+            "avg_weight": "32.8",
+            "sd_weight": "7.0"
+        },
+        {
+            "age_data": "10-1",
+            "avg_height": "137.5",
+            "sd_height": "6.5",
+            "avg_weight": "33.2",
+            "sd_weight": "7.1"
+        },
+        {
+            "age_data": "10-2",
+            "avg_height": "138.0",
+            "sd_height": "6.6",
+            "avg_weight": "33.5",
+            "sd_weight": "7.1"
+        },
+        {
+            "age_data": "10-3",
+            "avg_height": "138.6",
+            "sd_height": "6.6",
+            "avg_weight": "33.9",
+            "sd_weight": "7.2"
+        },
+        {
+            "age_data": "10-4",
+            "avg_height": "139.2",
+            "sd_height": "6.7",
+            "avg_weight": "34.2",
+            "sd_weight": "7.3"
+        },
+        {
+            "age_data": "10-5",
+            "avg_height": "139.7",
+            "sd_height": "6.7",
+            "avg_weight": "34.6",
+            "sd_weight": "7.4"
+        },
+        {
+            "age_data": "10-6",
+            "avg_height": "140.3",
+            "sd_height": "6.8",
+            "avg_weight": "34.9",
+            "sd_weight": "7.5"
+        },
+        {
+            "age_data": "10-7",
+            "avg_height": "140.9",
+            "sd_height": "6.8",
+            "avg_weight": "35.3",
+            "sd_weight": "7.6"
+        },
+        {
+            "age_data": "10-8",
+            "avg_height": "141.4",
+            "sd_height": "6.8",
+            "avg_weight": "35.8",
+            "sd_weight": "7.7"
+        },
+        {
+            "age_data": "10-9",
+            "avg_height": "142.0",
+            "sd_height": "6.8",
+            "avg_weight": "36.2",
+            "sd_weight": "7.7"
+        },
+        {
+            "age_data": "10-10",
+            "avg_height": "142.6",
+            "sd_height": "6.8",
+            "avg_weight": "36.6",
+            "sd_weight": "7.8"
+        },
+        {
+            "age_data": "10-11",
+            "avg_height": "143.1",
+            "sd_height": "6.7",
+            "avg_weight": "37.1",
+            "sd_weight": "7.9"
+        },
+        {
+            "age_data": "11-0",
+            "avg_height": "143.7",
+            "sd_height": "6.7",
+            "avg_weight": "37.5",
+            "sd_weight": "7.9"
+        },
+        {
+            "age_data": "11-1",
+            "avg_height": "144.3",
+            "sd_height": "6.7",
+            "avg_weight": "37.9",
+            "sd_weight": "8.0"
+        },
+        {
+            "age_data": "11-2",
+            "avg_height": "144.8",
+            "sd_height": "6.7",
+            "avg_weight": "38.4",
+            "sd_weight": "8.1"
+        },
+        {
+            "age_data": "11-3",
+            "avg_height": "145.4",
+            "sd_height": "6.7",
+            "avg_weight": "38.8",
+            "sd_weight": "8.1"
+        },
+        {
+            "age_data": "11-4",
+            "avg_height": "146.0",
+            "sd_height": "6.7",
+            "avg_weight": "39.2",
+            "sd_weight": "8.2"
+        },
+        {
+            "age_data": "11-5",
+            "avg_height": "146.5",
+            "sd_height": "6.7",
+            "avg_weight": "39.7",
+            "sd_weight": "8.3"
+        },
+        {
+            "age_data": "11-6",
+            "avg_height": "147.1",
+            "sd_height": "6.7",
+            "avg_weight": "40.1",
+            "sd_weight": "8.4"
+        },
+        {
+            "age_data": "11-7",
+            "avg_height": "147.5",
+            "sd_height": "6.6",
+            "avg_weight": "40.5",
+            "sd_weight": "8.4"
+        },
+        {
+            "age_data": "11-8",
+            "avg_height": "147.9",
+            "sd_height": "6.5",
+            "avg_weight": "40.9",
+            "sd_weight": "8.4"
+        },
+        {
+            "age_data": "11-9",
+            "avg_height": "148.4",
+            "sd_height": "6.5",
+            "avg_weight": "41.3",
+            "sd_weight": "8.4"
+        },
+        {
+            "age_data": "11-10",
+            "avg_height": "148.8",
+            "sd_height": "6.4",
+            "avg_weight": "41.7",
+            "sd_weight": "8.4"
+        },
+        {
+            "age_data": "11-11",
+            "avg_height": "149.2",
+            "sd_height": "6.4",
+            "avg_weight": "42.1",
+            "sd_weight": "8.5"
+        },
+        {
+            "age_data": "12-0",
+            "avg_height": "149.6",
+            "sd_height": "6.3",
+            "avg_weight": "42.6",
+            "sd_weight": "8.5"
+        },
+        {
+            "age_data": "12-1",
+            "avg_height": "150.0",
+            "sd_height": "6.2",
+            "avg_weight": "43.0",
+            "sd_weight": "8.5"
+        },
+        {
+            "age_data": "12-2",
+            "avg_height": "150.4",
+            "sd_height": "6.2",
+            "avg_weight": "43.4",
+            "sd_weight": "8.5"
+        },
+        {
+            "age_data": "12-3",
+            "avg_height": "150.9",
+            "sd_height": "6.1",
+            "avg_weight": "43.8",
+            "sd_weight": "8.5"
+        },
+        {
+            "age_data": "12-4",
+            "avg_height": "151.3",
+            "sd_height": "6.1",
+            "avg_weight": "44.2",
+            "sd_weight": "8.6"
+        },
+        {
+            "age_data": "12-5",
+            "avg_height": "151.7",
+            "sd_height": "6.0",
+            "avg_weight": "44.6",
+            "sd_weight": "8.6"
+        },
+        {
+            "age_data": "12-6",
+            "avg_height": "152.1",
+            "sd_height": "5.9",
+            "avg_weight": "45.0",
+            "sd_weight": "8.6"
+        },
+        {
+            "age_data": "12-7",
+            "avg_height": "152.4",
+            "sd_height": "5.9",
+            "avg_weight": "45.3",
+            "sd_weight": "8.6"
+        },
+        {
+            "age_data": "12-8",
+            "avg_height": "152.6",
+            "sd_height": "5.8",
+            "avg_weight": "45.6",
+            "sd_weight": "8.5"
+        },
+        {
+            "age_data": "12-9",
+            "avg_height": "152.9",
+            "sd_height": "5.8",
+            "avg_weight": "45.8",
+            "sd_weight": "8.5"
+        },
+        {
+            "age_data": "12-10",
+            "avg_height": "153.1",
+            "sd_height": "5.8",
+            "avg_weight": "46.1",
+            "sd_weight": "8.5"
+        },
+        {
+            "age_data": "12-11",
+            "avg_height": "153.4",
+            "sd_height": "5.7",
+            "avg_weight": "46.4",
+            "sd_weight": "8.4"
+        },
+        {
+            "age_data": "13-0",
+            "avg_height": "153.6",
+            "sd_height": "5.7",
+            "avg_weight": "46.7",
+            "sd_weight": "8.4"
+        },
+        {
+            "age_data": "13-1",
+            "avg_height": "153.9",
+            "sd_height": "5.6",
+            "avg_weight": "46.9",
+            "sd_weight": "8.4"
+        },
+        {
+            "age_data": "13-2",
+            "avg_height": "154.1",
+            "sd_height": "5.6",
+            "avg_weight": "47.2",
+            "sd_weight": "8.4"
+        },
+        {
+            "age_data": "13-3",
+            "avg_height": "154.4",
+            "sd_height": "5.5",
+            "avg_weight": "47.5",
+            "sd_weight": "8.3"
+        },
+        {
+            "age_data": "13-4",
+            "avg_height": "154.6",
+            "sd_height": "5.5",
+            "avg_weight": "47.8",
+            "sd_weight": "8.3"
+        },
+        {
+            "age_data": "13-5",
+            "avg_height": "154.9",
+            "sd_height": "5.4",
+            "avg_weight": "48.0",
+            "sd_weight": "8.3"
+        },
+        {
+            "age_data": "13-6",
+            "avg_height": "155.1",
+            "sd_height": "5.4",
+            "avg_weight": "48.3",
+            "sd_weight": "8.2"
+        },
+        {
+            "age_data": "13-7",
+            "avg_height": "155.2",
+            "sd_height": "5.4",
+            "avg_weight": "48.5",
+            "sd_weight": "8.2"
+        },
+        {
+            "age_data": "13-8",
+            "avg_height": "155.4",
+            "sd_height": "5.4",
+            "avg_weight": "48.7",
+            "sd_weight": "8.2"
+        },
+        {
+            "age_data": "13-9",
+            "avg_height": "155.5",
+            "sd_height": "5.4",
+            "avg_weight": "48.9",
+            "sd_weight": "8.2"
+        },
+        {
+            "age_data": "13-10",
+            "avg_height": "155.7",
+            "sd_height": "5.4",
+            "avg_weight": "49.1",
+            "sd_weight": "8.1"
+        },
+        {
+            "age_data": "13-11",
+            "avg_height": "155.8",
+            "sd_height": "5.4",
+            "avg_weight": "49.3",
+            "sd_weight": "8.1"
+        },
+        {
+            "age_data": "14-0",
+            "avg_height": "156.0",
+            "sd_height": "5.4",
+            "avg_weight": "49.5",
+            "sd_weight": "8.1"
+        },
+        {
+            "age_data": "14-1",
+            "avg_height": "156.1",
+            "sd_height": "5.3",
+            "avg_weight": "49.7",
+            "sd_weight": "8.1"
+        },
+        {
+            "age_data": "14-2",
+            "avg_height": "156.2",
+            "sd_height": "5.3",
+            "avg_weight": "49.9",
+            "sd_weight": "8.0"
+        },
+        {
+            "age_data": "14-3",
+            "avg_height": "156.4",
+            "sd_height": "5.3",
+            "avg_weight": "50.1",
+            "sd_weight": "8.0"
+        },
+        {
+            "age_data": "14-4",
+            "avg_height": "156.5",
+            "sd_height": "5.3",
+            "avg_weight": "50.3",
+            "sd_weight": "8.0"
+        },
+        {
+            "age_data": "14-5",
+            "avg_height": "156.7",
+            "sd_height": "5.3",
+            "avg_weight": "50.5",
+            "sd_weight": "8.0"
+        },
+        {
+            "age_data": "14-6",
+            "avg_height": "156.8",
+            "sd_height": "5.3",
+            "avg_weight": "50.7",
+            "sd_weight": "8.0"
+        },
+        {
+            "age_data": "14-7",
+            "avg_height": "156.8",
+            "sd_height": "5.3",
+            "avg_weight": "50.8",
+            "sd_weight": "8.0"
+        },
+        {
+            "age_data": "14-8",
+            "avg_height": "156.9",
+            "sd_height": "5.3",
+            "avg_weight": "50.9",
+            "sd_weight": "8.0"
+        },
+        {
+            "age_data": "14-9",
+            "avg_height": "156.9",
+            "sd_height": "5.3",
+            "avg_weight": "51.1",
+            "sd_weight": "8.0"
+        },
+        {
+            "age_data": "14-10",
+            "avg_height": "157.0",
+            "sd_height": "5.3",
+            "avg_weight": "51.2",
+            "sd_weight": "8.1"
+        },
+        {
+            "age_data": "14-11",
+            "avg_height": "157.0",
+            "sd_height": "5.3",
+            "avg_weight": "51.3",
+            "sd_weight": "8.1"
+        },
+        {
+            "age_data": "15-0",
+            "avg_height": "157.1",
+            "sd_height": "5.3",
+            "avg_weight": "51.4",
+            "sd_weight": "8.1"
+        },
+        {
+            "age_data": "15-1",
+            "avg_height": "157.1",
+            "sd_height": "5.3",
+            "avg_weight": "51.5",
+            "sd_weight": "8.1"
+        },
+        {
+            "age_data": "15-2",
+            "avg_height": "157.1",
+            "sd_height": "5.2",
+            "avg_weight": "51.6",
+            "sd_weight": "8.2"
+        },
+        {
+            "age_data": "15-3",
+            "avg_height": "157.2",
+            "sd_height": "5.2",
+            "avg_weight": "51.8",
+            "sd_weight": "8.2"
+        },
+        {
+            "age_data": "15-4",
+            "avg_height": "157.2",
+            "sd_height": "5.2",
+            "avg_weight": "51.9",
+            "sd_weight": "8.2"
+        },
+        {
+            "age_data": "15-5",
+            "avg_height": "157.3",
+            "sd_height": "5.2",
+            "avg_weight": "52.0",
+            "sd_weight": "8.2"
+        },
+        {
+            "age_data": "15-6",
+            "avg_height": "157.3",
+            "sd_height": "5.2",
+            "avg_weight": "52.1",
+            "sd_weight": "8.3"
+        },
+        {
+            "age_data": "15-7",
+            "avg_height": "157.3",
+            "sd_height": "5.2",
+            "avg_weight": "52.2",
+            "sd_weight": "8.2"
+        },
+        {
+            "age_data": "15-8",
+            "avg_height": "157.4",
+            "sd_height": "5.2",
+            "avg_weight": "52.3",
+            "sd_weight": "8.2"
+        },
+        {
+            "age_data": "15-9",
+            "avg_height": "157.4",
+            "sd_height": "5.2",
+            "avg_weight": "52.3",
+            "sd_weight": "8.1"
+        },
+        {
+            "age_data": "15-10",
+            "avg_height": "157.4",
+            "sd_height": "5.2",
+            "avg_weight": "52.4",
+            "sd_weight": "8.1"
+        },
+        {
+            "age_data": "15-11",
+            "avg_height": "157.5",
+            "sd_height": "5.2",
+            "avg_weight": "52.5",
+            "sd_weight": "8.1"
+        },
+        {
+            "age_data": "16-0",
+            "avg_height": "157.5",
+            "sd_height": "5.2",
+            "avg_weight": "52.6",
+            "sd_weight": "8.0"
+        },
+        {
+            "age_data": "16-1",
+            "avg_height": "157.5",
+            "sd_height": "5.2",
+            "avg_weight": "52.6",
+            "sd_weight": "8.0"
+        },
+        {
+            "age_data": "16-2",
+            "avg_height": "157.6",
+            "sd_height": "5.2",
+            "avg_weight": "52.7",
+            "sd_weight": "8.0"
+        },
+        {
+            "age_data": "16-3",
+            "avg_height": "157.6",
+            "sd_height": "5.2",
+            "avg_weight": "52.8",
+            "sd_weight": "7.9"
+        },
+        {
+            "age_data": "16-4",
+            "avg_height": "157.6",
+            "sd_height": "5.2",
+            "avg_weight": "52.9",
+            "sd_weight": "7.9"
+        },
+        {
+            "age_data": "16-5",
+            "avg_height": "157.7",
+            "sd_height": "5.2",
+            "avg_weight": "52.9",
+            "sd_weight": "7.8"
+        },
+        {
+            "age_data": "16-6",
+            "avg_height": "157.7",
+            "sd_height": "5.2",
+            "avg_weight": "53.0",
+            "sd_weight": "7.8"
+        },
+        {
+            "age_data": "16-7",
+            "avg_height": "157.7",
+            "sd_height": "5.2",
+            "avg_weight": "53.0",
+            "sd_weight": "7.8"
+        },
+        {
+            "age_data": "16-8",
+            "avg_height": "157.8",
+            "sd_height": "5.2",
+            "avg_weight": "53.0",
+            "sd_weight": "7.8"
+        },
+        {
+            "age_data": "16-9",
+            "avg_height": "157.8",
+            "sd_height": "5.2",
+            "avg_weight": "53.0",
+            "sd_weight": "7.8"
+        },
+        {
+            "age_data": "16-10",
+            "avg_height": "157.8",
+            "sd_height": "5.2",
+            "avg_weight": "53.0",
+            "sd_weight": "7.8"
+        },
+        {
+            "age_data": "16-11",
+            "avg_height": "157.9",
+            "sd_height": "5.2",
+            "avg_weight": "53.0",
+            "sd_weight": "7.8"
+        },
+        {
+            "age_data": "17-0",
+            "avg_height": "157.9",
+            "sd_height": "5.2",
+            "avg_weight": "53.1",
+            "sd_weight": "7.9"
+        },
+        {
+            "age_data": "17-1",
+            "avg_height": "157.9",
+            "sd_height": "5.2",
+            "avg_weight": "53.1",
+            "sd_weight": "7.9"
+        },
+        {
+            "age_data": "17-2",
+            "avg_height": "158.0",
+            "sd_height": "5.2",
+            "avg_weight": "53.1",
+            "sd_weight": "7.9"
+        },
+        {
+            "age_data": "17-3",
+            "avg_height": "158.0",
+            "sd_height": "5.2",
+            "avg_weight": "53.1",
+            "sd_weight": "7.9"
+        },
+        {
+            "age_data": "17-4",
+            "avg_height": "158.0",
+            "sd_height": "5.2",
+            "avg_weight": "53.1",
+            "sd_weight": "7.9"
+        },
+        {
+            "age_data": "17-5",
+            "avg_height": "158.1",
+            "sd_height": "5.2",
+            "avg_weight": "53.1",
+            "sd_weight": "7.9"
+        },
+        {
+            "age_data": "17-6",
+            "avg_height": "158.1",
+            "sd_height": "5.3",
+            "avg_weight": "53.1",
+            "sd_weight": "7.9"
+        }
+    ]
+}

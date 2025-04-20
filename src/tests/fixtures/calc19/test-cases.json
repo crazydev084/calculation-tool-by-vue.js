@@ -1,0 +1,148 @@
+{
+  "testCases": [
+    {
+      "description": "リスクの高い創 + 接種歴3回以上",
+      "input": {
+        "woundCharacteristics": 1,
+        "tetanusVaccinationHistory": 10
+      },
+      "expected": {
+        "data": ["", "◯最終接種から5年以上経過している場合、\n　破傷風トキソイドを1回接種\n◯最終接種から5年未満の場合、\n　接種不要", "blue"]
+      }
+    },
+    {
+      "description": "リスクの低い創 + 接種歴3回以上",
+      "input": {
+        "woundCharacteristics": 2,
+        "tetanusVaccinationHistory": 10
+      },
+      "expected": {
+        "data": ["", "◯最終接種から10年以上経過している場合、\n　破傷風トキソイドを1回接種\n◯最終接種から10年未満の場合、\n　接種不要", "blue"]
+      }
+    },
+    {
+      "description": "リスクの高い創 + 接種歴3回未満もしくは不明",
+      "input": {
+        "woundCharacteristics": 1,
+        "tetanusVaccinationHistory": 20
+      },
+      "expected": {
+        "data": ["", "◯抗破傷風人免疫グロブリン(TIG)使用\n◯破傷風トキソイドを次の手順で3回接種する。\n・受傷時に1回目接種\n・1回目の3〜8週後に2回目接種\n・2回目の6〜18か月後に3回目接種", "blue"]
+      }
+    },
+    {
+      "description": "リスクの低い創 + 接種歴3回未満もしくは不明",
+      "input": {
+        "woundCharacteristics": 2,
+        "tetanusVaccinationHistory": 20
+      },
+      "expected": {
+        "data": ["", "◯破傷風トキソイドを次の手順で3回接種する。\n・受傷時に1回目接種\n・1回目の3〜8週後に2回目接種\n・2回目の6〜18か月後に3回目接種", "blue"]
+      }
+    },
+    {
+      "description": "創の特徴がnullの場合",
+      "input": {
+        "woundCharacteristics": null,
+        "tetanusVaccinationHistory": 10
+      },
+      "expected": null
+    },
+    {
+      "description": "破傷風トキソイド接種歴がnullの場合",
+      "input": {
+        "woundCharacteristics": 1,
+        "tetanusVaccinationHistory": null
+      },
+      "expected": null
+    },
+    {
+      "description": "不正な値の創の特徴",
+      "input": {
+        "woundCharacteristics": 3,
+        "tetanusVaccinationHistory": 10
+      },
+      "expected": {
+        "data": ["", "", "blue"]
+      }
+    },
+    {
+      "description": "不正な値の破傷風トキソイド接種歴",
+      "input": {
+        "woundCharacteristics": 1,
+        "tetanusVaccinationHistory": 30
+      },
+      "expected": {
+        "data": ["", "", "blue"]
+      }
+    },
+    {
+      "description": "両方不正な値",
+      "input": {
+        "woundCharacteristics": 3,
+        "tetanusVaccinationHistory": 30
+      },
+      "expected": {
+        "data": ["", "", "blue"]
+      }
+    },
+    {
+      "description": "負の値の入力",
+      "input": {
+        "woundCharacteristics": -1,
+        "tetanusVaccinationHistory": 10
+      },
+      "expected": null
+    },
+    {
+      "description": "小数値の入力",
+      "input": {
+        "woundCharacteristics": 1.5,
+        "tetanusVaccinationHistory": 10
+      },
+      "expected": {
+        "data": ["", "", "blue"]
+      }
+    },
+    {
+      "description": "極端に大きな値",
+      "input": {
+        "woundCharacteristics": 9999,
+        "tetanusVaccinationHistory": 10
+      },
+      "expected": {
+        "data": ["", "", "blue"]
+      }
+    },
+    {
+      "description": "ゼロ値の入力",
+      "input": {
+        "woundCharacteristics": 0,
+        "tetanusVaccinationHistory": 10
+      },
+      "expected": {
+        "data": ["", "", "blue"]
+      }
+    },
+    {
+      "description": "組み合わせテスト - 創の特徴を変更（値がちょうど異なる）",
+      "input": {
+        "woundCharacteristics": 2,
+        "tetanusVaccinationHistory": 10
+      },
+      "expected": {
+        "data": ["", "◯最終接種から10年以上経過している場合、\n　破傷風トキソイドを1回接種\n◯最終接種から10年未満の場合、\n　接種不要", "blue"]
+      }
+    },
+    {
+      "description": "組み合わせテスト - 接種歴を変更（値がちょうど異なる）",
+      "input": {
+        "woundCharacteristics": 1,
+        "tetanusVaccinationHistory": 20
+      },
+      "expected": {
+        "data": ["", "◯抗破傷風人免疫グロブリン(TIG)使用\n◯破傷風トキソイドを次の手順で3回接種する。\n・受傷時に1回目接種\n・1回目の3〜8週後に2回目接種\n・2回目の6〜18か月後に3回目接種", "blue"]
+      }
+    }
+  ]
+} 

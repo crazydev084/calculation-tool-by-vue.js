@@ -1,0 +1,89 @@
+{
+  "fields": [
+    {
+      "id": "congestiveHeartFailure",
+      "label": "心不全・左室機能不全",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 1
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "hypertension",
+      "label": "高血圧",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 1
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "age",
+      "label": "75歳以上",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "はい",
+          "value": 1
+        },
+        {
+          "label": "いいえ",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "diabetesMellitus",
+      "label": "糖尿病",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 1
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "strokeTiaHistory",
+      "label": "脳梗塞・TIAの既往",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 2
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    }
+  ]
+} 

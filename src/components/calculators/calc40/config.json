@@ -1,0 +1,24 @@
+{
+  "fields": [
+    {
+      "id": "rbc",
+      "type": "number",
+      "label": "輸血単位",
+      "unit": "単位",
+      "step": 1,
+      "min": 0,
+      "required": false,
+      "placeholder": "例：10"
+    },
+    {
+      "id": "weight",
+      "label": "体重",
+      "type": "number",
+      "unit": "kg",
+      "step": 1,
+      "min": 0,
+      "required": true,
+      "placeholder": "例: 60"
+    }
+  ]
+} 

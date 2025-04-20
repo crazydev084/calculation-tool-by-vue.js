@@ -1,0 +1,58 @@
+{
+  "fields": [
+    {
+      "type": "group",
+      "id": "case1",
+      "label": "予測上昇Hb値を求める場合",
+      "fields": [
+        {
+          "id": "rcc",
+          "type": "number",
+          "label": "RCC（Hb量：26.5g/本）",
+          "unit": "単位",
+          "step": 1,
+          "min": 0,
+          "required": false,
+          "placeholder": "例：2"
+        },
+        {
+          "id": "weight",
+          "label": "体重",
+          "type": "number",
+          "unit": "kg",
+          "step": 1,
+          "min": 0,
+          "required": true,
+          "placeholder": "例: 60"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "case2",
+      "label": "投入するRCC単位を求める場合",
+      "fields": [
+        {
+          "id": "weight",
+          "label": "体重",
+          "type": "number",
+          "unit": "kg",
+          "step": 1,
+          "min": 0,
+          "required": true,
+          "placeholder": "例: 60"
+        },
+        {
+          "id": "hb",
+          "label": "上昇させたいHb値",
+          "type": "number",
+          "unit": "g/dL",
+          "step": 0.1,
+          "min": 0.0,
+          "required": false,
+          "placeholder": "例: 1.3"
+        }
+      ]
+    }
+  ]
+}

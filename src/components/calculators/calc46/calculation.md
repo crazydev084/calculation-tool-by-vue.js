@@ -1,0 +1,83 @@
+
+### スコアの解説
+PAS（Pediatric Appendicitis Score）は小児（4-15歳）の急性虫垂炎のスクリーニングに用いる。
+以下の8項目を評価し、合計0〜10点の範囲でスコアリングする。
+
+<table>
+  <caption>
+    PASの評価項目<sup>1,2)</sup>
+  </caption>
+  <thead>
+    <tr>
+      <th>評価項目</th>
+      <th>点数</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>右下腹部に移動する痛み</td>
+      <td>1点</td>
+    </tr>
+    <tr>
+      <td>右下腹部痛</td>
+      <td>2点</td>
+    </tr>
+    <tr>
+      <td>咳・跳躍・打診による叩打痛</td>
+      <td>2点</td>
+    </tr>
+    <tr>
+      <td>嘔気・嘔吐</td>
+      <td>1点</td>
+    </tr>
+    <tr>
+      <td>食欲不振</td>
+      <td>1点</td>
+    </tr>
+    <tr>
+      <td>38℃以上の発熱</td>
+      <td>1点</td>
+    </tr>
+    <tr>
+      <td>白血球数>10,000/μL</td>
+      <td>1点</td>
+    </tr>
+    <tr>
+      <td>多核好中球数>7,500/μL</td>
+      <td>1点</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <caption>
+    PASのスコアリング評価<sup>2)</sup>
+  </caption>
+  <thead>
+    <tr>
+      <th>スコアリング点数</th>
+      <th>評価</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3点以下：低リスク</td>
+      <td>
+      帰宅可能<br>
+      翌日再評価（発症後48時間以内）
+      </td>
+    </tr>
+    <tr>
+      <td>4〜6点：中リスク</td>
+      <td>
+      二次入院施設でactive observation* <br>
+      or 画像検査による評価
+      </td>
+    </tr>
+    <tr>
+      <td>7点以上：高リスク</td>
+      <td>手術対応可能な施設で画像診断、手術検討</td>
+    </tr>
+  </tbody>
+</table>
+*急性虫垂炎疑いで画像による診断確定困難or画像検査追加不可の場合に行う。輸液を行い経口摂取禁止で4〜8時間ごとに身体所見・スコア・白血球数・CRP・エコー検査などで再評価を繰り返す。抗菌薬の使用有無は問わない。

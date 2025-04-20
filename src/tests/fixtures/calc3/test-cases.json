@@ -1,0 +1,193 @@
+{
+  "testCases": [
+    {
+      "name": "すべての値が最大の場合",
+      "input": {
+        "baseDisease": 1,
+        "bleedingSymptoms": 1,
+        "tumorSymptoms": 1,
+        "serumFDP": 3,
+        "plateletCount": 3,
+        "fibrinogen": 2,
+        "ptRatio": 2
+      },
+      "expected": {
+        "data": [13, "DIC", "red"]
+      }
+    },
+    {
+      "name": "すべての値が最小の場合",
+      "input": {
+        "baseDisease": 0,
+        "bleedingSymptoms": 0,
+        "tumorSymptoms": 0,
+        "serumFDP": 0,
+        "plateletCount": 0,
+        "fibrinogen": 0,
+        "ptRatio": 0
+      },
+      "expected": {
+        "data": [0, "DICの可能性は低い。ただし、白血病および類縁疾患に該当する場合は解説を参照。", "green"]
+      }
+    },
+    {
+      "name": "中程度のスコアの場合",
+      "input": {
+        "baseDisease": 1,
+        "bleedingSymptoms": 1,
+        "tumorSymptoms": 0,
+        "serumFDP": 2,
+        "plateletCount": 1,
+        "fibrinogen": 1,
+        "ptRatio": 1
+      },
+      "expected": {
+        "data": [7, "DIC", "red"]
+      }
+    },
+    {
+      "name": "空の入力値の例",
+      "input": {
+        "baseDisease": "",
+        "bleedingSymptoms": "",
+        "tumorSymptoms": "",
+        "serumFDP": "",
+        "plateletCount": "",
+        "fibrinogen": "",
+        "ptRatio": ""
+      },
+      "expected": {
+        "data": [0, "DICの可能性は低い。ただし、白血病および類縁疾患に該当する場合は解説を参照。", "green"]
+      }
+    },
+    {
+      "name": "未定義の入力でnullを返す",
+      "input": null,
+      "expected": null
+    },
+    {
+      "name": "nullの入力でnullを返す",
+      "input": null,
+      "expected": null
+    },
+    
+    {
+      "name": "境界値テスト（スコア7）",
+      "input": {
+        "baseDisease": 1,
+        "bleedingSymptoms": 1,
+        "tumorSymptoms": 1,
+        "serumFDP": 1,
+        "plateletCount": 1,
+        "fibrinogen": 1,
+        "ptRatio": 1
+      },
+      "expected": {
+        "data": [7, "DIC", "red"]
+      }
+    },
+    {
+      "name": "境界値テスト（スコア6）",
+      "input": {
+        "baseDisease": 1,
+        "bleedingSymptoms": 1,
+        "tumorSymptoms": 1,
+        "serumFDP": 1,
+        "plateletCount": 1,
+        "fibrinogen": 1,
+        "ptRatio": 0
+      },
+      "expected": {
+        "data": [6, "DICの疑い", "orange"]
+      }
+    },
+    {
+      "name": "境界値テスト（スコア5）",
+      "input": {
+        "baseDisease": 1,
+        "bleedingSymptoms": 1,
+        "tumorSymptoms": 1,
+        "serumFDP": 1,
+        "plateletCount": 1,
+        "fibrinogen": 0,
+        "ptRatio": 0
+      },
+      "expected": {
+        "data": [5, "DICの可能性は低い。ただし、白血病および類縁疾患に該当する場合は解説を参照。", "green"]
+      }
+    },
+    {
+      "name": "小数値の入力（Number変換の確認）",
+      "input": {
+        "baseDisease": 0.9,
+        "bleedingSymptoms": 0.1,
+        "tumorSymptoms": 0.5,
+        "serumFDP": 2.7,
+        "plateletCount": 1.2,
+        "fibrinogen": 1.8,
+        "ptRatio": 0.3
+      },
+      "expected": {
+        "data": [7.5, "DIC", "red"]
+      }
+    },
+    {
+      "name": "負の値の入力",
+      "input": {
+        "baseDisease": -1,
+        "bleedingSymptoms": -1,
+        "tumorSymptoms": -1,
+        "serumFDP": -3,
+        "plateletCount": -3,
+        "fibrinogen": -2,
+        "ptRatio": -2
+      },
+      "expected": {
+        "data": [-13, "DICの可能性は低い。ただし、白血病および類縁疾患に該当する場合は解説を参照。", "green"]
+      }
+    },
+    {
+      "name": "非常に大きな値の入力",
+      "input": {
+        "baseDisease": 99999,
+        "bleedingSymptoms": 99999,
+        "tumorSymptoms": 99999,
+        "serumFDP": 99999,
+        "plateletCount": 99999,
+        "fibrinogen": 99999,
+        "ptRatio": 99999
+      },
+      "expected": {
+        "data": [699993, "DIC", "red"]
+      }
+    },
+    {
+      "name": "一部の項目が設定されていない場合",
+      "input": {
+        "baseDisease": 1,
+        "bleedingSymptoms": 1,
+        "serumFDP": 3,
+        "fibrinogen": 2,
+        "ptRatio": 2
+      },
+      "expected": {
+        "data": [9, "DIC", "red"]
+      }
+    },
+    {
+      "name": "一部の項目がnullの場合",
+      "input": {
+        "baseDisease": 1,
+        "bleedingSymptoms": 1,
+        "tumorSymptoms": null,
+        "serumFDP": 3,
+        "plateletCount": null,
+        "fibrinogen": 2,
+        "ptRatio": 2
+      },
+      "expected": {
+        "data": [9, "DIC", "red"]
+      }
+    }
+  ]
+} 

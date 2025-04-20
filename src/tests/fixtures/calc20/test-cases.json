@@ -1,0 +1,281 @@
+{
+  "testCases": [
+    {
+      "description": "最高リスク（スコア15点）",
+      "input": {
+        "age": 1,
+        "anginaSymptoms": 1,
+        "aspirinUse": 1,
+        "coronaryRiskFactors": 1,
+        "coronaryStenosis": 1,
+        "stElevation": 5,
+        "biomarkerElevation": 5
+      },
+      "expected": {
+        "data": [15, "30日以内死亡,急性心筋梗塞発生率34.1％", "red"]
+      }
+    },
+    {
+      "description": "高リスク（スコア5点）",
+      "input": {
+        "age": 0,
+        "anginaSymptoms": 0,
+        "aspirinUse": 0,
+        "coronaryRiskFactors": 0,
+        "coronaryStenosis": 0,
+        "stElevation": 5,
+        "biomarkerElevation": 0
+      },
+      "expected": {
+        "data": [5, "30日以内死亡,急性心筋梗塞発生率16.0％", "orange"]
+      }
+    },
+    {
+      "description": "中リスク（スコア4点）",
+      "input": {
+        "age": 1,
+        "anginaSymptoms": 1,
+        "aspirinUse": 1,
+        "coronaryRiskFactors": 1,
+        "coronaryStenosis": 0,
+        "stElevation": 0,
+        "biomarkerElevation": 0
+      },
+      "expected": {
+        "data": [4, "30日以内死亡,急性心筋梗塞発生率7.0％", "yellow"]
+      }
+    },
+    {
+      "description": "低リスク（スコア2点）",
+      "input": {
+        "age": 1,
+        "anginaSymptoms": 1,
+        "aspirinUse": 0,
+        "coronaryRiskFactors": 0,
+        "coronaryStenosis": 0,
+        "stElevation": 0,
+        "biomarkerElevation": 0
+      },
+      "expected": {
+        "data": [2, "30日以内死亡,急性心筋梗塞発生率3.2％", "yellow-green"]
+      }
+    },
+    {
+      "description": "最低リスク（スコア0点）",
+      "input": {
+        "age": 0,
+        "anginaSymptoms": 0,
+        "aspirinUse": 0,
+        "coronaryRiskFactors": 0,
+        "coronaryStenosis": 0,
+        "stElevation": 0,
+        "biomarkerElevation": 0
+      },
+      "expected": {
+        "data": [0, "30日以内死亡,急性心筋梗塞発生率1.4％", "green"]
+      }
+    },
+    {
+      "description": "年齢がnullの場合",
+      "input": {
+        "age": null,
+        "anginaSymptoms": 0,
+        "aspirinUse": 0,
+        "coronaryRiskFactors": 0,
+        "coronaryStenosis": 0,
+        "stElevation": 0,
+        "biomarkerElevation": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "狭心症状がnullの場合",
+      "input": {
+        "age": 0,
+        "anginaSymptoms": null,
+        "aspirinUse": 0,
+        "coronaryRiskFactors": 0,
+        "coronaryStenosis": 0,
+        "stElevation": 0,
+        "biomarkerElevation": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "全項目nullの場合",
+      "input": {
+        "age": null,
+        "anginaSymptoms": null,
+        "aspirinUse": null,
+        "coronaryRiskFactors": null,
+        "coronaryStenosis": null,
+        "stElevation": null,
+        "biomarkerElevation": null
+      },
+      "expected": null
+    },
+    {
+      "description": "1項目だけnullの場合（他はゼロ）",
+      "input": {
+        "age": 0,
+        "anginaSymptoms": 0,
+        "aspirinUse": 0,
+        "coronaryRiskFactors": 0,
+        "coronaryStenosis": null,
+        "stElevation": 0,
+        "biomarkerElevation": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "異常値 - 論理値範囲外の値 (age)",
+      "input": {
+        "age": 2,
+        "anginaSymptoms": 0,
+        "aspirinUse": 0,
+        "coronaryRiskFactors": 0,
+        "coronaryStenosis": 0,
+        "stElevation": 0,
+        "biomarkerElevation": 0
+      },
+      "expected": {
+        "data": [2, "30日以内死亡,急性心筋梗塞発生率3.2％", "yellow-green"]
+      }
+    },
+    {
+      "description": "異常値 - 論理値範囲外の値 (anginaSymptoms)",
+      "input": {
+        "age": 0,
+        "anginaSymptoms": 3,
+        "aspirinUse": 0,
+        "coronaryRiskFactors": 0,
+        "coronaryStenosis": 0,
+        "stElevation": 0,
+        "biomarkerElevation": 0
+      },
+      "expected": {
+        "data": [3, "30日以内死亡,急性心筋梗塞発生率3.7％", "yellow-green"]
+      }
+    },
+    {
+      "description": "異常値 - 論理値範囲外の値 (stElevation)",
+      "input": {
+        "age": 0,
+        "anginaSymptoms": 0,
+        "aspirinUse": 0,
+        "coronaryRiskFactors": 0,
+        "coronaryStenosis": 0,
+        "stElevation": 10,
+        "biomarkerElevation": 0
+      },
+      "expected": {
+        "data": [10, "30日以内死亡,急性心筋梗塞発生率34.1％", "red"]
+      }
+    },
+    {
+      "description": "極端に大きな値",
+      "input": {
+        "age": 999,
+        "anginaSymptoms": 999,
+        "aspirinUse": 999,
+        "coronaryRiskFactors": 999,
+        "coronaryStenosis": 999,
+        "stElevation": 999,
+        "biomarkerElevation": 999
+      },
+      "expected": {
+        "data": [6993, "30日以内死亡,急性心筋梗塞発生率34.1％", "red"]
+      }
+    },
+    {
+      "description": "小数値の入力",
+      "input": {
+        "age": 0.5,
+        "anginaSymptoms": 0.5,
+        "aspirinUse": 0,
+        "coronaryRiskFactors": 0,
+        "coronaryStenosis": 0,
+        "stElevation": 0,
+        "biomarkerElevation": 0
+      },
+      "expected": {
+        "data": [1, "30日以内死亡,急性心筋梗塞発生率0.7％", "green"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア1",
+      "input": {
+        "age": 1,
+        "anginaSymptoms": 0,
+        "aspirinUse": 0,
+        "coronaryRiskFactors": 0,
+        "coronaryStenosis": 0,
+        "stElevation": 0,
+        "biomarkerElevation": 0
+      },
+      "expected": {
+        "data": [1, "30日以内死亡,急性心筋梗塞発生率0.7％", "green"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア3",
+      "input": {
+        "age": 1,
+        "anginaSymptoms": 1,
+        "aspirinUse": 1,
+        "coronaryRiskFactors": 0,
+        "coronaryStenosis": 0,
+        "stElevation": 0,
+        "biomarkerElevation": 0
+      },
+      "expected": {
+        "data": [3, "30日以内死亡,急性心筋梗塞発生率3.7％", "yellow-green"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア5 (高得点項目からの合計)",
+      "input": {
+        "age": 0,
+        "anginaSymptoms": 0,
+        "aspirinUse": 0,
+        "coronaryRiskFactors": 0,
+        "coronaryStenosis": 0,
+        "stElevation": 5,
+        "biomarkerElevation": 0
+      },
+      "expected": {
+        "data": [5, "30日以内死亡,急性心筋梗塞発生率16.0％", "orange"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア6 (5点以上の最小値)",
+      "input": {
+        "age": 1,
+        "anginaSymptoms": 0,
+        "aspirinUse": 0,
+        "coronaryRiskFactors": 0,
+        "coronaryStenosis": 0,
+        "stElevation": 5,
+        "biomarkerElevation": 0
+      },
+      "expected": {
+        "data": [6, "30日以内死亡,急性心筋梗塞発生率34.1％", "red"]
+      }
+    },
+    {
+      "description": "全ての項目が最大値のケース",
+      "input": {
+        "age": 1,
+        "anginaSymptoms": 1,
+        "aspirinUse": 1,
+        "coronaryRiskFactors": 1,
+        "coronaryStenosis": 1,
+        "stElevation": 5,
+        "biomarkerElevation": 5
+      },
+      "expected": {
+        "data": [15, "30日以内死亡,急性心筋梗塞発生率34.1％", "red"]
+      }
+    }
+  ]
+} 

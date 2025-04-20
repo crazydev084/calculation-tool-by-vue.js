@@ -1,0 +1,382 @@
+{
+  "testCases": [
+    {
+      "description": "高リスクケース（スコア12点）",
+      "input": {
+        "severeCkd": 2,
+        "peripheralVascularDisease": 2,
+        "atrialFibrillation": 2,
+        "anemia": 2,
+        "ageOver75": 1,
+        "heartFailure": 1,
+        "diabetes": 1,
+        "chronicTotalOcclusion": 1
+      },
+      "expected": {
+        "data": [12, "イベント発生率は7.6％\n（DAPT期間は臨床的に判断する）<a href='clinicalpocket://calculator/31'>出血性リスクも評価</a>", "red"]
+      }
+    },
+    {
+      "description": "中リスクケース（スコア3点）",
+      "input": {
+        "severeCkd": 0,
+        "peripheralVascularDisease": 0,
+        "atrialFibrillation": 2,
+        "anemia": 0,
+        "ageOver75": 1,
+        "heartFailure": 0,
+        "diabetes": 0,
+        "chronicTotalOcclusion": 0
+      },
+      "expected": {
+        "data": [3, "イベント発生率は3.7％\n（DAPT期間は臨床的に判断する）<a href='clinicalpocket://calculator/31'>出血性リスクも評価</a>", "yellow"]
+      }
+    },
+    {
+      "description": "低リスクケース（スコア1点）",
+      "input": {
+        "severeCkd": 0,
+        "peripheralVascularDisease": 0,
+        "atrialFibrillation": 0,
+        "anemia": 0,
+        "ageOver75": 1,
+        "heartFailure": 0,
+        "diabetes": 0,
+        "chronicTotalOcclusion": 0
+      },
+      "expected": {
+        "data": [1, "イベント発生率は2.4％\n（DAPT期間は臨床的に判断する）<a href='clinicalpocket://calculator/31'>出血性リスクも評価</a>", "green"]
+      }
+    },
+    {
+      "description": "最低リスクケース（スコア0点）",
+      "input": {
+        "severeCkd": 0,
+        "peripheralVascularDisease": 0,
+        "atrialFibrillation": 0,
+        "anemia": 0,
+        "ageOver75": 0,
+        "heartFailure": 0,
+        "diabetes": 0,
+        "chronicTotalOcclusion": 0
+      },
+      "expected": {
+        "data": [0, "イベント発生率は2.4％\n（DAPT期間は臨床的に判断する）<a href='clinicalpocket://calculator/31'>出血性リスクも評価</a>", "green"]
+      }
+    },
+    {
+      "description": "重度CKDがnullの場合",
+      "input": {
+        "severeCkd": null,
+        "peripheralVascularDisease": 0,
+        "atrialFibrillation": 0,
+        "anemia": 0,
+        "ageOver75": 0,
+        "heartFailure": 0,
+        "diabetes": 0,
+        "chronicTotalOcclusion": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "末梢血管疾患がnullの場合",
+      "input": {
+        "severeCkd": 0,
+        "peripheralVascularDisease": null,
+        "atrialFibrillation": 0,
+        "anemia": 0,
+        "ageOver75": 0,
+        "heartFailure": 0,
+        "diabetes": 0,
+        "chronicTotalOcclusion": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "心房細動がnullの場合",
+      "input": {
+        "severeCkd": 0,
+        "peripheralVascularDisease": 0,
+        "atrialFibrillation": null,
+        "anemia": 0,
+        "ageOver75": 0,
+        "heartFailure": 0,
+        "diabetes": 0,
+        "chronicTotalOcclusion": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "貧血がnullの場合",
+      "input": {
+        "severeCkd": 0,
+        "peripheralVascularDisease": 0,
+        "atrialFibrillation": 0,
+        "anemia": null,
+        "ageOver75": 0,
+        "heartFailure": 0,
+        "diabetes": 0,
+        "chronicTotalOcclusion": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "年齢がnullの場合",
+      "input": {
+        "severeCkd": 0,
+        "peripheralVascularDisease": 0,
+        "atrialFibrillation": 0,
+        "anemia": 0,
+        "ageOver75": null,
+        "heartFailure": 0,
+        "diabetes": 0,
+        "chronicTotalOcclusion": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "心不全がnullの場合",
+      "input": {
+        "severeCkd": 0,
+        "peripheralVascularDisease": 0,
+        "atrialFibrillation": 0,
+        "anemia": 0,
+        "ageOver75": 0,
+        "heartFailure": null,
+        "diabetes": 0,
+        "chronicTotalOcclusion": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "糖尿病がnullの場合",
+      "input": {
+        "severeCkd": 0,
+        "peripheralVascularDisease": 0,
+        "atrialFibrillation": 0,
+        "anemia": 0,
+        "ageOver75": 0,
+        "heartFailure": 0,
+        "diabetes": null,
+        "chronicTotalOcclusion": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "CTOがnullの場合",
+      "input": {
+        "severeCkd": 0,
+        "peripheralVascularDisease": 0,
+        "atrialFibrillation": 0,
+        "anemia": 0,
+        "ageOver75": 0,
+        "heartFailure": 0,
+        "diabetes": 0,
+        "chronicTotalOcclusion": null
+      },
+      "expected": null
+    },
+    {
+      "description": "境界値テスト - スコア1（低リスク上限）",
+      "input": {
+        "severeCkd": 0,
+        "peripheralVascularDisease": 0,
+        "atrialFibrillation": 0,
+        "anemia": 0,
+        "ageOver75": 1,
+        "heartFailure": 0,
+        "diabetes": 0,
+        "chronicTotalOcclusion": 0
+      },
+      "expected": {
+        "data": [1, "イベント発生率は2.4％\n（DAPT期間は臨床的に判断する）<a href='clinicalpocket://calculator/31'>出血性リスクも評価</a>", "green"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア2（中リスク下限）",
+      "input": {
+        "severeCkd": 0,
+        "peripheralVascularDisease": 0,
+        "atrialFibrillation": 0,
+        "anemia": 0,
+        "ageOver75": 1,
+        "heartFailure": 1,
+        "diabetes": 0,
+        "chronicTotalOcclusion": 0
+      },
+      "expected": {
+        "data": [2, "イベント発生率は3.7％\n（DAPT期間は臨床的に判断する）<a href='clinicalpocket://calculator/31'>出血性リスクも評価</a>", "yellow"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア3（中リスク上限）",
+      "input": {
+        "severeCkd": 0,
+        "peripheralVascularDisease": 0,
+        "atrialFibrillation": 0,
+        "anemia": 0,
+        "ageOver75": 1,
+        "heartFailure": 1,
+        "diabetes": 1,
+        "chronicTotalOcclusion": 0
+      },
+      "expected": {
+        "data": [3, "イベント発生率は3.7％\n（DAPT期間は臨床的に判断する）<a href='clinicalpocket://calculator/31'>出血性リスクも評価</a>", "yellow"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア4（高リスク下限）",
+      "input": {
+        "severeCkd": 0,
+        "peripheralVascularDisease": 0,
+        "atrialFibrillation": 2,
+        "anemia": 0,
+        "ageOver75": 1,
+        "heartFailure": 1,
+        "diabetes": 0,
+        "chronicTotalOcclusion": 0
+      },
+      "expected": {
+        "data": [4, "イベント発生率は7.6％\n（DAPT期間は臨床的に判断する）<a href='clinicalpocket://calculator/31'>出血性リスクも評価</a>", "red"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア12（最大有効スコア）",
+      "input": {
+        "severeCkd": 2,
+        "peripheralVascularDisease": 2,
+        "atrialFibrillation": 2,
+        "anemia": 2,
+        "ageOver75": 1,
+        "heartFailure": 1,
+        "diabetes": 1,
+        "chronicTotalOcclusion": 1
+      },
+      "expected": {
+        "data": [12, "イベント発生率は7.6％\n（DAPT期間は臨床的に判断する）<a href='clinicalpocket://calculator/31'>出血性リスクも評価</a>", "red"]
+      }
+    },
+    {
+      "description": "異常値テスト - 重度CKDが範囲外の大きな値",
+      "input": {
+        "severeCkd": 10,
+        "peripheralVascularDisease": 0,
+        "atrialFibrillation": 0,
+        "anemia": 0,
+        "ageOver75": 0,
+        "heartFailure": 0,
+        "diabetes": 0,
+        "chronicTotalOcclusion": 0
+      },
+      "expected": {
+        "data": [10, "イベント発生率は7.6％\n（DAPT期間は臨床的に判断する）<a href='clinicalpocket://calculator/31'>出血性リスクも評価</a>", "red"]
+      }
+    },
+    {
+      "description": "異常値テスト - 末梢血管疾患が範囲外の大きな値",
+      "input": {
+        "severeCkd": 0,
+        "peripheralVascularDisease": 5,
+        "atrialFibrillation": 0,
+        "anemia": 0,
+        "ageOver75": 0,
+        "heartFailure": 0,
+        "diabetes": 0,
+        "chronicTotalOcclusion": 0
+      },
+      "expected": {
+        "data": [5, "イベント発生率は7.6％\n（DAPT期間は臨床的に判断する）<a href='clinicalpocket://calculator/31'>出血性リスクも評価</a>", "red"]
+      }
+    },
+    {
+      "description": "異常値テスト - 75歳以上が範囲外の大きな値",
+      "input": {
+        "severeCkd": 0,
+        "peripheralVascularDisease": 0,
+        "atrialFibrillation": 0,
+        "anemia": 0,
+        "ageOver75": 5,
+        "heartFailure": 0,
+        "diabetes": 0,
+        "chronicTotalOcclusion": 0
+      },
+      "expected": {
+        "data": [5, "イベント発生率は7.6％\n（DAPT期間は臨床的に判断する）<a href='clinicalpocket://calculator/31'>出血性リスクも評価</a>", "red"]
+      }
+    },
+    {
+      "description": "異常値テスト - 負の値（重度CKD）",
+      "input": {
+        "severeCkd": -2,
+        "peripheralVascularDisease": 0,
+        "atrialFibrillation": 0,
+        "anemia": 0,
+        "ageOver75": 0,
+        "heartFailure": 0,
+        "diabetes": 0,
+        "chronicTotalOcclusion": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "異常値テスト - すべての値が負",
+      "input": {
+        "severeCkd": -1,
+        "peripheralVascularDisease": -1,
+        "atrialFibrillation": -1,
+        "anemia": -1,
+        "ageOver75": -1,
+        "heartFailure": -1,
+        "diabetes": -1,
+        "chronicTotalOcclusion": -1
+      },
+      "expected": null
+    },
+    {
+      "description": "異常値テスト - 小数値入力",
+      "input": {
+        "severeCkd": 0.5,
+        "peripheralVascularDisease": 0.5,
+        "atrialFibrillation": 0,
+        "anemia": 0,
+        "ageOver75": 0.5,
+        "heartFailure": 0.5,
+        "diabetes": 0,
+        "chronicTotalOcclusion": 0
+      },
+      "expected": {
+        "data": [2, "イベント発生率は3.7％\n（DAPT期間は臨床的に判断する）<a href='clinicalpocket://calculator/31'>出血性リスクも評価</a>", "yellow"]
+      }
+    },
+    {
+      "description": "異常値テスト - 極端に大きな値すべて",
+      "input": {
+        "severeCkd": 999,
+        "peripheralVascularDisease": 999,
+        "atrialFibrillation": 999,
+        "anemia": 999,
+        "ageOver75": 999,
+        "heartFailure": 999,
+        "diabetes": 999,
+        "chronicTotalOcclusion": 999
+      },
+      "expected": {
+        "data": [7992, "イベント発生率は7.6％\n（DAPT期間は臨床的に判断する）<a href='clinicalpocket://calculator/31'>出血性リスクも評価</a>", "red"]
+      }
+    },
+    {
+      "description": "異常値テスト - 一部大きな値、一部負の値",
+      "input": {
+        "severeCkd": 10,
+        "peripheralVascularDisease": -5,
+        "atrialFibrillation": 10,
+        "anemia": -5,
+        "ageOver75": 10,
+        "heartFailure": -5,
+        "diabetes": 10,
+        "chronicTotalOcclusion": -5
+      },
+      "expected": null
+    }
+  ]
+} 

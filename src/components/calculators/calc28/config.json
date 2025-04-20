@@ -1,0 +1,303 @@
+{
+  "fields": [
+    {
+      "id": "systolicBloodPressure",
+      "label": "収縮期血圧",
+      "type": "select",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "200以上 mmHg",
+          "value": 0
+        },
+        {
+          "label": "190-199 mmHg",
+          "value": 2
+        },
+        {
+          "label": "180-189 mmHg",
+          "value": 4
+        },
+        {
+          "label": "170-179 mmHg",
+          "value": 6
+        },
+        {
+          "label": "160-169 mmHg",
+          "value": 8
+        },
+        {
+          "label": "150-159 mmHg",
+          "value": 9
+        },
+        {
+          "label": "140-149 mmHg",
+          "value": 11
+        },
+        {
+          "label": "130-139 mmHg",
+          "value": 13
+        },
+        {
+          "label": "120-129 mmHg",
+          "value": 15
+        },
+        {
+          "label": "110-119 mmHg",
+          "value": 17
+        },
+        {
+          "label": "100-109 mmHg",
+          "value": 19
+        },
+        {
+          "label": "90-99 mmHg",
+          "value": 21
+        },
+        {
+          "label": "80-89 mmHg",
+          "value": 23
+        },
+        {
+          "label": "70-79 mmHg",
+          "value": 24
+        },
+        {
+          "label": "60-69 mmHg",
+          "value": 26
+        },
+        {
+          "label": "50-59 mmHg",
+          "value": 28
+        }
+      ]
+    },
+    {
+      "id": "bun",
+      "label": "BUN(尿素窒素)",
+      "type": "select",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "9 mg/dL以下",
+          "value": 0
+        },
+        {
+          "label": "10-19 mg/dL",
+          "value": 2
+        },
+        {
+          "label": "20-29 mg/dL",
+          "value": 4
+        },
+        {
+          "label": "30-39 mg/dL",
+          "value": 6
+        },
+        {
+          "label": "40-49 mg/dL",
+          "value": 8
+        },
+        {
+          "label": "50-59 mg/dL",
+          "value": 9
+        },
+        {
+          "label": "60-69 mg/dL",
+          "value": 11
+        },
+        {
+          "label": "70-79 mg/dL",
+          "value": 13
+        },
+        {
+          "label": "80-89 mg/dL",
+          "value": 15
+        },
+        {
+          "label": "90-99 mg/dL",
+          "value": 17
+        },
+        {
+          "label": "100-109 mg/dL",
+          "value": 19
+        },
+        {
+          "label": "110-119 mg/dL",
+          "value": 21
+        },
+        {
+          "label": "120-129 mg/dL",
+          "value": 23
+        },
+        {
+          "label": "130-139 mg/dL",
+          "value": 24
+        },
+        {
+          "label": "140-149 mg/dL",
+          "value": 26
+        },
+        {
+          "label": "150 mg/dL以上",
+          "value": 28
+        }
+      ]
+    },
+    {
+      "id": "sodium",
+      "label": "ナトリウム",
+      "type": "select",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "139 mg/dL以上",
+          "value": 0
+        },
+        {
+          "label": "137-138 mg/dL",
+          "value": 1
+        },
+        {
+          "label": "134-136 mg/dL",
+          "value": 2
+        },
+        {
+          "label": "131-133 mg/dL",
+          "value": 3
+        },
+        {
+          "label": "130 mg/dL以下",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "age",
+      "label": "年齢",
+      "type": "select",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "19歳以下",
+          "value": 0
+        },
+        {
+          "label": "20-29歳",
+          "value": 3
+        },
+        {
+          "label": "30-39歳",
+          "value": 6
+        },
+        {
+          "label": "40-49歳",
+          "value": 8
+        },
+        {
+          "label": "50-59歳",
+          "value": 11
+        },
+        {
+          "label": "60-69歳",
+          "value": 14
+        },
+        {
+          "label": "70-79歳",
+          "value": 17
+        },
+        {
+          "label": "80-89歳",
+          "value": 19
+        },
+        {
+          "label": "90-99歳",
+          "value": 22
+        },
+        {
+          "label": "100-109歳",
+          "value": 25
+        },
+        {
+          "label": "110歳以上",
+          "value": 28
+        }
+      ]
+    },
+    {
+      "id": "heartRate",
+      "label": "心拍数",
+      "type": "select",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "79 回/分 以下",
+          "value": 0
+        },
+        {
+          "label": "80-84 回/分",
+          "value": 1
+        },
+        {
+          "label": "85-89 回/分",
+          "value": 3
+        },
+        {
+          "label": "90-94 回/分",
+          "value": 4
+        },
+        {
+          "label": "95-99 回/分",
+          "value": 5
+        },
+        {
+          "label": "100-104 回/分",
+          "value": 6
+        },
+        {
+          "label": "105 回/分以上",
+          "value": 8
+        }
+      ]
+    },
+    {
+      "id": "blackRace",
+      "label": "黒色人種",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 3,
+      "options": [
+        {
+          "label": "非該当",
+          "value": 3
+        },
+        {
+          "label": "該当",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "copd",
+      "label": "COPDあり",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 2
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    }
+  ]
+} 

@@ -1,0 +1,571 @@
+{
+  "testCases": [
+    {
+      "description": "最高リスク（スコア100点）",
+      "input": {
+        "systolicBloodPressure": 28,
+        "bun": 28,
+        "sodium": 4,
+        "age": 28,
+        "heartRate": 8,
+        "blackRace": 3,
+        "copd": 2
+      },
+      "expected": {
+        "data": [101, "予測院内死亡率は50％以上", "red"]
+      }
+    },
+    {
+      "description": "高リスク（スコア75点）",
+      "input": {
+        "systolicBloodPressure": 19,
+        "bun": 15,
+        "sodium": 2,
+        "age": 19,
+        "heartRate": 6,
+        "blackRace": 3,
+        "copd": 2
+      },
+      "expected": {
+        "data": [66, "予測院内死亡率は20-30％", "yellow"]
+      }
+    },
+    {
+      "description": "中リスク（スコア50点）",
+      "input": {
+        "systolicBloodPressure": 9,
+        "bun": 8,
+        "sodium": 1,
+        "age": 11,
+        "heartRate": 5,
+        "blackRace": 3,
+        "copd": 2
+      },
+      "expected": {
+        "data": [39, "予測院内死亡率は1-5％", "yellow-green"]
+      }
+    },
+    {
+      "description": "低リスク（スコア25点）",
+      "input": {
+        "systolicBloodPressure": 4,
+        "bun": 4,
+        "sodium": 0,
+        "age": 6,
+        "heartRate": 3,
+        "blackRace": 3,
+        "copd": 2
+      },
+      "expected": {
+        "data": [22, "予測院内死亡率は1％未満", "green"]
+      }
+    },
+    {
+      "description": "最低リスク（スコア5点）",
+      "input": {
+        "systolicBloodPressure": 0,
+        "bun": 0,
+        "sodium": 0,
+        "age": 0,
+        "heartRate": 0,
+        "blackRace": 3,
+        "copd": 2
+      },
+      "expected": {
+        "data": [5, "予測院内死亡率は1％未満", "green"]
+      }
+    },
+    {
+      "description": "収縮期血圧がnullの場合",
+      "input": {
+        "systolicBloodPressure": null,
+        "bun": 0,
+        "sodium": 0,
+        "age": 0,
+        "heartRate": 0,
+        "blackRace": 3,
+        "copd": 2
+      },
+      "expected": null
+    },
+    {
+      "description": "BUNがnullの場合",
+      "input": {
+        "systolicBloodPressure": 0,
+        "bun": null,
+        "sodium": 0,
+        "age": 0,
+        "heartRate": 0,
+        "blackRace": 3,
+        "copd": 2
+      },
+      "expected": null
+    },
+    {
+      "description": "ナトリウムがnullの場合",
+      "input": {
+        "systolicBloodPressure": 0,
+        "bun": 0,
+        "sodium": null,
+        "age": 0,
+        "heartRate": 0,
+        "blackRace": 3,
+        "copd": 2
+      },
+      "expected": null
+    },
+    {
+      "description": "年齢がnullの場合",
+      "input": {
+        "systolicBloodPressure": 0,
+        "bun": 0,
+        "sodium": 0,
+        "age": null,
+        "heartRate": 0,
+        "blackRace": 3,
+        "copd": 2
+      },
+      "expected": null
+    },
+    {
+      "description": "心拍数がnullの場合",
+      "input": {
+        "systolicBloodPressure": 0,
+        "bun": 0,
+        "sodium": 0,
+        "age": 0,
+        "heartRate": null,
+        "blackRace": 3,
+        "copd": 2
+      },
+      "expected": null
+    },
+    {
+      "description": "黒色人種がnullの場合",
+      "input": {
+        "systolicBloodPressure": 0,
+        "bun": 0,
+        "sodium": 0,
+        "age": 0,
+        "heartRate": 0,
+        "blackRace": null,
+        "copd": 2
+      },
+      "expected": null
+    },
+    {
+      "description": "COPDがnullの場合",
+      "input": {
+        "systolicBloodPressure": 0,
+        "bun": 0,
+        "sodium": 0,
+        "age": 0,
+        "heartRate": 0,
+        "blackRace": 3,
+        "copd": null
+      },
+      "expected": null
+    },
+    {
+      "description": "異常値 - 収縮期血圧が範囲外の大きな値",
+      "input": {
+        "systolicBloodPressure": 999,
+        "bun": 0,
+        "sodium": 0,
+        "age": 0,
+        "heartRate": 0,
+        "blackRace": 3,
+        "copd": 2
+      },
+      "expected": {
+        "data": [1004, "予測院内死亡率は50％以上", "red"]
+      }
+    },
+    {
+      "description": "異常値 - BUNが範囲外の大きな値",
+      "input": {
+        "systolicBloodPressure": 0,
+        "bun": 999,
+        "sodium": 0,
+        "age": 0,
+        "heartRate": 0,
+        "blackRace": 3,
+        "copd": 2
+      },
+      "expected": {
+        "data": [1004, "予測院内死亡率は50％以上", "red"]
+      }
+    },
+    {
+      "description": "異常値 - ナトリウムが範囲外の大きな値",
+      "input": {
+        "systolicBloodPressure": 0,
+        "bun": 0,
+        "sodium": 999,
+        "age": 0,
+        "heartRate": 0,
+        "blackRace": 3,
+        "copd": 2
+      },
+      "expected": {
+        "data": [1004, "予測院内死亡率は50％以上", "red"]
+      }
+    },
+    {
+      "description": "異常値 - 年齢が範囲外の大きな値",
+      "input": {
+        "systolicBloodPressure": 0,
+        "bun": 0,
+        "sodium": 0,
+        "age": 999,
+        "heartRate": 0,
+        "blackRace": 3,
+        "copd": 2
+      },
+      "expected": {
+        "data": [1004, "予測院内死亡率は50％以上", "red"]
+      }
+    },
+    {
+      "description": "異常値 - 心拍数が範囲外の大きな値",
+      "input": {
+        "systolicBloodPressure": 0,
+        "bun": 0,
+        "sodium": 0,
+        "age": 0,
+        "heartRate": 999,
+        "blackRace": 3,
+        "copd": 2
+      },
+      "expected": {
+        "data": [1004, "予測院内死亡率は50％以上", "red"]
+      }
+    },
+    {
+      "description": "異常値 - 黒色人種が範囲外の大きな値",
+      "input": {
+        "systolicBloodPressure": 0,
+        "bun": 0,
+        "sodium": 0,
+        "age": 0,
+        "heartRate": 0,
+        "blackRace": 999,
+        "copd": 2
+      },
+      "expected": {
+        "data": [1001, "予測院内死亡率は50％以上", "red"]
+      }
+    },
+    {
+      "description": "異常値 - COPDが範囲外の大きな値",
+      "input": {
+        "systolicBloodPressure": 0,
+        "bun": 0,
+        "sodium": 0,
+        "age": 0,
+        "heartRate": 0,
+        "blackRace": 3,
+        "copd": 999
+      },
+      "expected": {
+        "data": [1002, "予測院内死亡率は50％以上", "red"]
+      }
+    },
+    {
+      "description": "負の値 - 収縮期血圧が負の値",
+      "input": {
+        "systolicBloodPressure": -10,
+        "bun": 0,
+        "sodium": 0,
+        "age": 0,
+        "heartRate": 0,
+        "blackRace": 3,
+        "copd": 2
+      },
+      "expected": null
+    },
+    {
+      "description": "負の値 - 全ての値が負",
+      "input": {
+        "systolicBloodPressure": -10,
+        "bun": -10,
+        "sodium": -10,
+        "age": -10,
+        "heartRate": -10,
+        "blackRace": -10,
+        "copd": -10
+      },
+      "expected": null
+    },
+    {
+      "description": "小数値入力のテスト",
+      "input": {
+        "systolicBloodPressure": 4.5,
+        "bun": 4.5,
+        "sodium": 0.5,
+        "age": 6.5,
+        "heartRate": 3.5,
+        "blackRace": 3.5,
+        "copd": 2.5
+      },
+      "expected": {
+        "data": [25.5, "予測院内死亡率は1％未満", "green"]
+      }
+    },
+    {
+      "description": "極端に大きな値の組み合わせ",
+      "input": {
+        "systolicBloodPressure": 9999,
+        "bun": 9999,
+        "sodium": 9999,
+        "age": 9999,
+        "heartRate": 9999,
+        "blackRace": 9999,
+        "copd": 9999
+      },
+      "expected": {
+        "data": [69993, "予測院内死亡率は50％以上", "red"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア33（低リスク上限）",
+      "input": {
+        "systolicBloodPressure": 9,
+        "bun": 8,
+        "sodium": 2,
+        "age": 9,
+        "heartRate": 0,
+        "blackRace": 3,
+        "copd": 2
+      },
+      "expected": {
+        "data": [33, "予測院内死亡率は1％未満", "green"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア34（中低リスク下限）",
+      "input": {
+        "systolicBloodPressure": 9,
+        "bun": 8,
+        "sodium": 2,
+        "age": 9,
+        "heartRate": 1,
+        "blackRace": 3,
+        "copd": 2
+      },
+      "expected": {
+        "data": [34, "予測院内死亡率は1-5％", "yellow-green"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア50（1-5%死亡率の上限）",
+      "input": {
+        "systolicBloodPressure": 13,
+        "bun": 9,
+        "sodium": 2,
+        "age": 14,
+        "heartRate": 5,
+        "blackRace": 3,
+        "copd": 4
+      },
+      "expected": {
+        "data": [50, "予測院内死亡率は1-5％", "yellow-green"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア51（5-10%死亡率の下限）",
+      "input": {
+        "systolicBloodPressure": 13,
+        "bun": 9,
+        "sodium": 2,
+        "age": 14,
+        "heartRate": 5,
+        "blackRace": 3,
+        "copd": 5
+      },
+      "expected": {
+        "data": [51, "予測院内死亡率は5-10％", "yellow-green"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア57（5-10%死亡率の上限）",
+      "input": {
+        "systolicBloodPressure": 15,
+        "bun": 11,
+        "sodium": 1,
+        "age": 14,
+        "heartRate": 6,
+        "blackRace": 3,
+        "copd": 7
+      },
+      "expected": {
+        "data": [57, "予測院内死亡率は5-10％", "yellow-green"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア58（10-15%死亡率の下限）",
+      "input": {
+        "systolicBloodPressure": 15,
+        "bun": 11,
+        "sodium": 1,
+        "age": 14,
+        "heartRate": 6,
+        "blackRace": 3,
+        "copd": 8
+      },
+      "expected": {
+        "data": [58, "予測院内死亡率は10-15％", "yellow-green"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア61（10-15%死亡率の上限）",
+      "input": {
+        "systolicBloodPressure": 17,
+        "bun": 13,
+        "sodium": 1,
+        "age": 14,
+        "heartRate": 6,
+        "blackRace": 3,
+        "copd": 7
+      },
+      "expected": {
+        "data": [61, "予測院内死亡率は10-15％", "yellow-green"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア62（15-20%死亡率の下限）",
+      "input": {
+        "systolicBloodPressure": 17,
+        "bun": 13,
+        "sodium": 1,
+        "age": 14,
+        "heartRate": 6,
+        "blackRace": 3,
+        "copd": 8
+      },
+      "expected": {
+        "data": [62, "予測院内死亡率は15-20％", "yellow"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア65（15-20%死亡率の上限）",
+      "input": {
+        "systolicBloodPressure": 19,
+        "bun": 15,
+        "sodium": 1,
+        "age": 14,
+        "heartRate": 6,
+        "blackRace": 3,
+        "copd": 7
+      },
+      "expected": {
+        "data": [65, "予測院内死亡率は15-20％", "yellow"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア66（20-30%死亡率の下限）",
+      "input": {
+        "systolicBloodPressure": 19,
+        "bun": 15,
+        "sodium": 1,
+        "age": 14,
+        "heartRate": 6,
+        "blackRace": 3,
+        "copd": 8
+      },
+      "expected": {
+        "data": [66, "予測院内死亡率は20-30％", "yellow"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア70（20-30%死亡率の上限）",
+      "input": {
+        "systolicBloodPressure": 19,
+        "bun": 15,
+        "sodium": 2,
+        "age": 19,
+        "heartRate": 6,
+        "blackRace": 3,
+        "copd": 6
+      },
+      "expected": {
+        "data": [70, "予測院内死亡率は20-30％", "yellow"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア71（30-40%死亡率の下限）",
+      "input": {
+        "systolicBloodPressure": 19,
+        "bun": 15,
+        "sodium": 2,
+        "age": 19,
+        "heartRate": 6,
+        "blackRace": 3,
+        "copd": 7
+      },
+      "expected": {
+        "data": [71, "予測院内死亡率は30-40％", "orange"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア74（30-40%死亡率の上限）",
+      "input": {
+        "systolicBloodPressure": 19,
+        "bun": 17,
+        "sodium": 2,
+        "age": 19,
+        "heartRate": 6,
+        "blackRace": 3,
+        "copd": 8
+      },
+      "expected": {
+        "data": [74, "予測院内死亡率は30-40％", "orange"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア75（40-50%死亡率の下限）",
+      "input": {
+        "systolicBloodPressure": 19,
+        "bun": 17,
+        "sodium": 3,
+        "age": 19,
+        "heartRate": 6,
+        "blackRace": 3,
+        "copd": 8
+      },
+      "expected": {
+        "data": [75, "予測院内死亡率は40-50％", "orange"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア78（40-50%死亡率の上限）",
+      "input": {
+        "systolicBloodPressure": 21,
+        "bun": 17,
+        "sodium": 3,
+        "age": 19,
+        "heartRate": 6,
+        "blackRace": 3,
+        "copd": 9
+      },
+      "expected": {
+        "data": [78, "予測院内死亡率は40-50％", "orange"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア79（50%以上死亡率の下限）",
+      "input": {
+        "systolicBloodPressure": 21,
+        "bun": 17,
+        "sodium": 4,
+        "age": 19,
+        "heartRate": 6,
+        "blackRace": 3,
+        "copd": 9
+      },
+      "expected": {
+        "data": [79, "予測院内死亡率は50％以上", "red"]
+      }
+    }
+  ]
+} 

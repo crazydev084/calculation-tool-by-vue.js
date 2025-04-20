@@ -1,0 +1,51 @@
+{
+  "fields": [
+    {
+      "id": "Cr1",
+      "label": "血清Cr",
+      "type": "number",
+      "unit": "mg/dL",
+      "required": true,
+      "defaultValue": "",
+      "min": 0,
+      "step": 1,
+      "placeholder": "例：0.7 mg/dL"
+    },
+    {
+      "id": "UN1",
+      "label": "血清UN",
+      "type": "number",
+      "unit": "mg/dL",
+      "required": true,
+      "defaultValue": "",
+      "min": 8.0,
+      "max": 20,
+      "step": 1,
+      "placeholder": "基準値：8.0〜20 mg/dL"
+    },
+    {
+      "id": "Cr2",
+      "label": "尿中Cr",
+      "type": "number",
+      "unit": "mg/dL",
+      "required": true,
+      "defaultValue": "",
+      "min": 1.0,
+      "max": 1.5,
+      "step": 1,
+      "placeholder": "基準値：1.0〜1.5 mg/dL"
+    },
+    {
+      "id": "UN2",
+      "label": "尿中UN<br>※ 準値には男女で差がある。",
+      "type": "number",
+      "unit": "mg/dL",
+      "required": true,
+      "defaultValue": "",
+      "min": 6.5,
+      "max": 13,
+      "step": 1,
+      "placeholder": "基準値：6.5〜13 mg/dL"
+    }
+  ]
+} 

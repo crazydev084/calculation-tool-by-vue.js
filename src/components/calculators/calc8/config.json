@@ -1,0 +1,89 @@
+{
+  "fields": [
+    {
+      "id": "age",
+      "label": "男性70歳以上<br>女性75歳以上",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "はい",
+          "value": 1
+        },
+        {
+          "label": "いいえ",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "dehydration",
+      "label": "BUN≧21mg/dL<br />または脱水所見",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 1
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "respiration",
+      "label": "SpO<sub>2</sub>≦90%<br />またはPaO<sub>2</sub>≦60Torr",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 1
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "orientation",
+      "label": "GCS(Glasgow coma scale)<15",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 1
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "bloodPressure",
+      "label": "収縮期血圧が90mmHg以下",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 1
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    }
+  ]
+} 

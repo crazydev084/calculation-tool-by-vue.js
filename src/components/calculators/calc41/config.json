@@ -1,0 +1,110 @@
+{
+  "fields": [
+    {
+      "id": "Plt",
+      "label": "Plt数 （×10^4 /μL）",
+      "type": "radio",
+      "options": [
+        { "label": "5以下", "value": 0 },
+        { "label": "5 < Plt ≦ 8", "value": 1 },
+        { "label": "8 < Plt ≦ 12", "value": 2 },
+        { "label": "12超", "value": 3 }
+      ],
+      "required": true,
+      "defaultValue": 0
+    },
+    {
+      "id": "decrease",
+      "label": "24時間以内に30％以上の減少",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "あり",
+          "value": 1
+        },
+        {
+          "label": "なし",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "FDP",
+      "label": "FDP（μg/mL）",
+      "type": "radio",
+      "options": [
+        { "label": "10未満", "value": 0 },
+        { "label": "10≦ FDP <20", "value": 1 },
+        { "label": "20≦ FDP <40", "value": 2 },
+        { "label": "40以上", "value": 3 }
+      ],
+      "required": true,
+      "defaultValue": 0
+    },
+    {
+      "id": "Fib",
+      "label": "Fib（mg/dL）",
+      "type": "radio",
+      "options": [
+        { "label": "100以下", "value": 0 },
+        { "label": "100< Fib ≦150", "value": 1 },
+        { "label": "150超", "value": 2 }
+      ],
+      "required": true,
+      "defaultValue": 0
+    },
+    {
+      "id": "PT",
+      "label": "PT時間比",
+      "type": "radio",
+      "options": [
+        { "label": "1.25未満", "value": 0 },
+        { "label": "1.25≦ PT <1.67", "value": 1 },
+        { "label": "1.67超", "value": 2 }
+      ],
+      "required": true,
+      "defaultValue": 0
+    },
+    {
+      "id": "AT",
+      "label": "AT（％）",
+      "type": "radio",
+      "options": [
+        { "label": "70未満", "value": 0 },
+        { "label": "70以上", "value": 1 }
+      ],
+      "required": true,
+      "defaultValue": 0
+    },
+    {
+      "id": "TAT",
+      "label": "TAT、SF またはF1+2",
+      "type": "radio",
+      "options": [
+        { "label": "基準値範囲上限の2倍未満", "value": 0 },
+        { "label": "基準値範囲上限の2倍以上", "value": 1 }
+      ],
+      "required": true,
+      "defaultValue": 0
+    },
+    {
+      "id": "Liverfailure",
+      "label": "肝不全",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "なし",
+          "value": 0
+        },
+        {
+          "label": "あり",
+          "value": -3
+        }
+      ]
+    }
+  ]
+} 

@@ -1,0 +1,157 @@
+{
+  "fields": [
+    {
+      "id": "age",
+      "label": "4-15歳",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "はい",
+          "value": 1
+        },
+        {
+          "label": "いいえ",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "abdomen",
+      "label": "右下腹部に移動する痛み",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "あり",
+          "value": 1
+        },
+        {
+          "label": "なし",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "abdomen1",
+      "label": "右下腹部痛",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "あり",
+          "value": 2
+        },
+        {
+          "label": "なし",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "tapping",
+      "label": "咳・跳躍・打診による叩打痛",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "あり",
+          "value": 2
+        },
+        {
+          "label": "なし",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "vomiting",
+      "label": "嘔気・嘔吐 ",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "あり",
+          "value": 1
+        },
+        {
+          "label": "なし",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "appetite",
+      "label": "食欲不振 ",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "あり",
+          "value": 1
+        },
+        {
+          "label": "なし",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "fever",
+      "label": "38℃以上の発熱 ",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "あり",
+          "value": 1
+        },
+        {
+          "label": "なし",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "blood",
+      "label": "白血球数>10,000/μL ",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "あり",
+          "value": 1
+        },
+        {
+          "label": "なし",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "neutrophil",
+      "label": "多核好中球数>7,500/μL",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "あり",
+          "value": 1
+        },
+        {
+          "label": "なし",
+          "value": 0
+        }
+      ]
+    }
+  ]
+} 

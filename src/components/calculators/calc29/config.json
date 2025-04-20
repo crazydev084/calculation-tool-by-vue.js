@@ -1,0 +1,156 @@
+{
+  "fields": [
+    {
+      "id": "gender",
+      "label": "性別",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "男性",
+          "value": 7
+        },
+        {
+          "label": "女性",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "systolicBloodPressure",
+      "label": "収縮期血圧",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "120mmHg未満",
+          "value": 0
+        },
+        {
+          "label": "120〜129mmHg",
+          "value": 1
+        },
+        {
+          "label": "130〜139mmHg",
+          "value": 2
+        },
+        {
+          "label": "140〜159mmHg",
+          "value": 3
+        },
+        {
+          "label": "160mmHg以上",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "glucoseMetabolismAbnormality",
+      "label": "糖代謝異常（糖尿病は含まない）",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 1
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "serumLDL_C",
+      "label": "血清LDL-C",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "120mg/dL未満",
+          "value": 0
+        },
+        {
+          "label": "120〜139mg/dL",
+          "value": 1
+        },
+        {
+          "label": "140〜159mg/dL",
+          "value": 2
+        },
+        {
+          "label": "160mg/dL以上",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "serumHDL_C",
+      "label": "血清HDL-C",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "60mg/dL以上",
+          "value": 0
+        },
+        {
+          "label": "40〜59mg/dL",
+          "value": 1
+        },
+        {
+          "label": "40mg/dL未満",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "smoking",
+      "label": "喫煙<br>（過去喫煙者は「なし」）",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 2
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "age",
+      "label": "年齢<br>(年齢階級分けの評価に用いる)",
+      "type": "radio",
+      "required": true,
+      "showValue": false,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "40-49歳",
+          "value": 0
+        },
+        {
+          "label": "50-59歳",
+          "value": 1
+        },
+        {
+          "label": "60-69歳",
+          "value": 2
+        },
+        {
+          "label": "70-79歳",
+          "value": 3
+        }
+      ]
+    }
+  ]
+} 

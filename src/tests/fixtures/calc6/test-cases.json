@@ -1,0 +1,283 @@
+{
+  "testCases": [
+    {
+      "description": "最高リスク（23点）",
+      "input": {
+        "systolicBloodPressure": 3,
+        "bun": 6,
+        "gender": 0,
+        "hbMale": 6,
+        "pulseRateAbove100": 1,
+        "blackStool": 1,
+        "syncope": 2,
+        "liverDisease": 2,
+        "heartFailure": 2
+      },
+      "expected": {
+        "data": [23, "至急の内視鏡検査が必要になることが多い", "red"]
+      }
+    },
+    {
+      "description": "中等度リスク（6点）",
+      "input": {
+        "systolicBloodPressure": 1,
+        "bun": 2,
+        "gender": 1,
+        "hbFemale": 1,
+        "pulseRateAbove100": 1,
+        "blackStool": 1,
+        "syncope": 0,
+        "liverDisease": 0,
+        "heartFailure": 0
+      },
+      "expected": {
+        "data": [6, "待機的な内視鏡検査で良い場合が多い", "yellow"]
+      }
+    },
+    {
+      "description": "低リスク（1点）",
+      "input": {
+        "systolicBloodPressure": 0,
+        "bun": 0,
+        "gender": 0,
+        "hbMale": 0,
+        "pulseRateAbove100": 1,
+        "blackStool": 0,
+        "syncope": 0,
+        "liverDisease": 0,
+        "heartFailure": 0
+      },
+      "expected": {
+        "data": [1, "緊急内視鏡が不要な可能性が高い", "green"]
+      }
+    },
+    {
+      "description": "最低リスク（0点）",
+      "input": {
+        "systolicBloodPressure": 0,
+        "bun": 0,
+        "gender": 1,
+        "hbFemale": 0,
+        "pulseRateAbove100": 0,
+        "blackStool": 0,
+        "syncope": 0,
+        "liverDisease": 0,
+        "heartFailure": 0
+      },
+      "expected": {
+        "data": [0, "緊急内視鏡が不要な可能性が高い", "green"]
+      }
+    },
+    {
+      "description": "nullが入力された場合",
+      "input": null,
+      "expected": null
+    },
+    {
+      "description": "undefinedが入力された場合",
+      "input": null,
+      "expected": null
+    },
+    
+    {
+      "description": "境界値テスト（スコア1/低リスク）",
+      "input": {
+        "systolicBloodPressure": 0,
+        "bun": 0,
+        "gender": 0,
+        "hbMale": 0,
+        "pulseRateAbove100": 1,
+        "blackStool": 0,
+        "syncope": 0,
+        "liverDisease": 0,
+        "heartFailure": 0
+      },
+      "expected": {
+        "data": [1, "緊急内視鏡が不要な可能性が高い", "green"]
+      }
+    },
+    {
+      "description": "境界値テスト（スコア2/中リスク）",
+      "input": {
+        "systolicBloodPressure": 0,
+        "bun": 0,
+        "gender": 0,
+        "hbMale": 1,
+        "pulseRateAbove100": 1,
+        "blackStool": 0,
+        "syncope": 0,
+        "liverDisease": 0,
+        "heartFailure": 0
+      },
+      "expected": {
+        "data": [2, "待機的な内視鏡検査で良い場合が多い", "yellow"]
+      }
+    },
+    {
+      "description": "境界値テスト（スコア6/中リスク）",
+      "input": {
+        "systolicBloodPressure": 1,
+        "bun": 2,
+        "gender": 0,
+        "hbMale": 1,
+        "pulseRateAbove100": 1,
+        "blackStool": 1,
+        "syncope": 0,
+        "liverDisease": 0,
+        "heartFailure": 0
+      },
+      "expected": {
+        "data": [6, "待機的な内視鏡検査で良い場合が多い", "yellow"]
+      }
+    },
+    {
+      "description": "境界値テスト（スコア7/高リスク）",
+      "input": {
+        "systolicBloodPressure": 1,
+        "bun": 2,
+        "gender": 0,
+        "hbMale": 1,
+        "pulseRateAbove100": 1,
+        "blackStool": 0,
+        "syncope": 2,
+        "liverDisease": 0,
+        "heartFailure": 0
+      },
+      "expected": {
+        "data": [7, "至急の内視鏡検査が必要になることが多い", "red"]
+      }
+    },
+    {
+      "description": "性別指定の影響テスト（男性）",
+      "input": {
+        "systolicBloodPressure": 1,
+        "bun": 2,
+        "gender": 0,
+        "hbMale": 3,
+        "pulseRateAbove100": 1,
+        "blackStool": 1,
+        "syncope": 0,
+        "liverDisease": 0,
+        "heartFailure": 0
+      },
+      "expected": {
+        "data": [8, "至急の内視鏡検査が必要になることが多い", "red"]
+      }
+    },
+    {
+      "description": "性別指定の影響テスト（女性）",
+      "input": {
+        "systolicBloodPressure": 1,
+        "bun": 2,
+        "gender": 1,
+        "hbFemale": 6,
+        "pulseRateAbove100": 1,
+        "blackStool": 1,
+        "syncope": 0,
+        "liverDisease": 0,
+        "heartFailure": 0
+      },
+      "expected": {
+        "data": [11, "至急の内視鏡検査が必要になることが多い", "red"]
+      }
+    },
+    {
+      "description": "小数値の入力（Number変換の確認）",
+      "input": {
+        "systolicBloodPressure": 1.5,
+        "bun": 2.7,
+        "gender": 0,
+        "hbMale": 3.2,
+        "pulseRateAbove100": 0.9,
+        "blackStool": 0.1,
+        "syncope": 0.3,
+        "liverDisease": 0.8,
+        "heartFailure": 0.4
+      },
+      "expected": {
+        "data": [9.9, "至急の内視鏡検査が必要になることが多い", "red"]
+      }
+    },
+    {
+      "description": "負の値の入力",
+      "input": {
+        "systolicBloodPressure": -1,
+        "bun": -2,
+        "gender": 0,
+        "hbMale": -3,
+        "pulseRateAbove100": -1,
+        "blackStool": -1,
+        "syncope": -2,
+        "liverDisease": -2,
+        "heartFailure": -2
+      },
+      "expected": {
+        "data": [-14, "緊急内視鏡が不要な可能性が高い", "green"]
+      }
+    },
+    {
+      "description": "非常に大きな値の入力",
+      "input": {
+        "systolicBloodPressure": 100,
+        "bun": 100,
+        "gender": 0,
+        "hbMale": 100,
+        "pulseRateAbove100": 100,
+        "blackStool": 100,
+        "syncope": 100,
+        "liverDisease": 100,
+        "heartFailure": 100
+      },
+      "expected": {
+        "data": [800, "至急の内視鏡検査が必要になることが多い", "red"]
+      }
+    },
+    {
+      "description": "一部の項目が設定されていない場合",
+      "input": {
+        "systolicBloodPressure": 3,
+        "bun": 6,
+        "gender": 0,
+        "hbMale": 6,
+        "pulseRateAbove100": 1,
+        "liverDisease": 2
+      },
+      "expected": {
+        "data": [18, "至急の内視鏡検査が必要になることが多い", "red"]
+      }
+    },
+    {
+      "description": "一部の項目がnullの場合",
+      "input": {
+        "systolicBloodPressure": 3,
+        "bun": 6,
+        "gender": 0,
+        "hbMale": 6,
+        "pulseRateAbove100": null,
+        "blackStool": 1,
+        "syncope": null,
+        "liverDisease": 2,
+        "heartFailure": null
+      },
+      "expected": {
+        "data": [18, "至急の内視鏡検査が必要になることが多い", "red"]
+      }
+    },
+    {
+      "description": "性別が設定されているが対応するヘモグロビン値がない場合",
+      "input": {
+        "systolicBloodPressure": 1,
+        "bun": 2,
+        "gender": 0,
+        "pulseRateAbove100": 1,
+        "blackStool": 1,
+        "syncope": 0,
+        "liverDisease": 0,
+        "heartFailure": 0
+      },
+      "expected": {
+        "data": [5, "待機的な内視鏡検査で良い場合が多い", "yellow"]
+      }
+    }
+  ]
+} 

@@ -1,0 +1,26 @@
+{
+  "fields": [
+    {
+      "id": "bnp",
+      "label": "BNP",
+      "type": "number",
+      "required": true,
+      "defaultValue": "",
+      "placeholder": "例：40",
+      "unit": "pg/mL",
+      "min": 0,
+      "step": 1
+    },
+    {
+      "id": "ntProBnp",
+      "label": "NT-proBNP",
+      "type": "number",
+      "required": true,
+      "defaultValue": "",
+      "placeholder": "例：130",
+      "unit": "pg/mL",
+      "min": 0,
+      "step": 1
+    }
+  ]
+} 

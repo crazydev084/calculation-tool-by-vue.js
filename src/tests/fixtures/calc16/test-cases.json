@@ -1,0 +1,212 @@
+{
+  "testCases": [
+    {
+      "description": "血清ナトリウム濃度補正の計算例1",
+      "input": {
+        "sodiumConcentration": 140,
+        "ureaNitrogenConcentration": 20,
+        "glucoseConcentration": 200
+      },
+      "expected": {
+        "data": ["298.3", "=基準値(275〜290)超過", "red", "※血清Na濃度があと5mEq/L低ければ基準値"]
+      }
+    },
+    {
+      "description": "血清ナトリウム濃度補正の計算例2",
+      "input": {
+        "sodiumConcentration": 130,
+        "ureaNitrogenConcentration": 30,
+        "glucoseConcentration": 300
+      },
+      "expected": {
+        "data": ["287.4", "=基準値(275〜290)", "yellow", "※血清Na濃度があと7mEq/L低ければ基準値未満"]
+      }
+    },
+    {
+      "description": "血清ナトリウム濃度補正の計算例3",
+      "input": {
+        "sodiumConcentration": 150,
+        "ureaNitrogenConcentration": 40,
+        "glucoseConcentration": 400
+      },
+      "expected": {
+        "data": ["336.5", "=基準値(275〜290)超過", "red", "※血清Na濃度があと24mEq/L低ければ基準値"]
+      }
+    },
+    {
+      "description": "血清ナトリウム濃度がnullの場合",
+      "input": {
+        "sodiumConcentration": null,
+        "ureaNitrogenConcentration": 20,
+        "glucoseConcentration": 200
+      },
+      "expected": null
+    },
+    {
+      "description": "尿素窒素濃度がnullの場合",
+      "input": {
+        "sodiumConcentration": 140,
+        "ureaNitrogenConcentration": null,
+        "glucoseConcentration": 200
+      },
+      "expected": null
+    },
+    {
+      "description": "グルコース濃度がnullの場合",
+      "input": {
+        "sodiumConcentration": 140,
+        "ureaNitrogenConcentration": 20,
+        "glucoseConcentration": null
+      },
+      "expected": null
+    },
+    {
+      "description": "血清ナトリウム濃度が負の値の場合",
+      "input": {
+        "sodiumConcentration": -1,
+        "ureaNitrogenConcentration": 20,
+        "glucoseConcentration": 200
+      },
+      "expected": null
+    },
+    {
+      "description": "尿素窒素濃度が負の値の場合",
+      "input": {
+        "sodiumConcentration": 140,
+        "ureaNitrogenConcentration": -1,
+        "glucoseConcentration": 200
+      },
+      "expected": null
+    },
+    {
+      "description": "グルコース濃度が負の値の場合",
+      "input": {
+        "sodiumConcentration": 140,
+        "ureaNitrogenConcentration": 20,
+        "glucoseConcentration": -1
+      },
+      "expected": null
+    },
+    {
+      "description": "境界値テスト - 基準値下限ギリギリ（274.9）",
+      "input": {
+        "sodiumConcentration": 129,
+        "ureaNitrogenConcentration": 10,
+        "glucoseConcentration": 100
+      },
+      "expected": {
+        "data": ["267.1", "=基準値(275〜290)未満", "green", ""]
+      }
+    },
+    {
+      "description": "境界値テスト - 基準値下限ちょうど（275.0）",
+      "input": {
+        "sodiumConcentration": 130,
+        "ureaNitrogenConcentration": 2.8,
+        "glucoseConcentration": 90
+      },
+      "expected": {
+        "data": ["266.0", "=基準値(275〜290)未満", "green", ""]
+      }
+    },
+    {
+      "description": "境界値テスト - 基準値上限ちょうど（290.0）",
+      "input": {
+        "sodiumConcentration": 138,
+        "ureaNitrogenConcentration": 14,
+        "glucoseConcentration": 108
+      },
+      "expected": {
+        "data": ["287.0", "=基準値(275〜290)", "yellow", "※血清Na濃度があと6mEq/L低ければ基準値未満"]
+      }
+    },
+    {
+      "description": "境界値テスト - 基準値上限超え（290.1）",
+      "input": {
+        "sodiumConcentration": 138,
+        "ureaNitrogenConcentration": 15,
+        "glucoseConcentration": 108
+      },
+      "expected": {
+        "data": ["287.4", "=基準値(275〜290)", "yellow", "※血清Na濃度があと7mEq/L低ければ基準値未満"]
+      }
+    },
+    {
+      "description": "丸め処理テスト - 小数点以下1桁に丸められるか",
+      "input": {
+        "sodiumConcentration": 135.6,
+        "ureaNitrogenConcentration": 12.3,
+        "glucoseConcentration": 105.7
+      },
+      "expected": {
+        "data": ["281.5", "=基準値(275〜290)", "yellow", "※血清Na濃度があと4mEq/L低ければ基準値未満"]
+      }
+    },
+    {
+      "description": "極端に大きな値のテスト",
+      "input": {
+        "sodiumConcentration": 200,
+        "ureaNitrogenConcentration": 100,
+        "glucoseConcentration": 1000
+      },
+      "expected": {
+        "data": ["491.3", "=基準値(275〜290)超過", "red", "※血清Na濃度があと101mEq/L低ければ基準値"]
+      }
+    },
+    {
+      "description": "極端に小さな値のテスト",
+      "input": {
+        "sodiumConcentration": 110,
+        "ureaNitrogenConcentration": 1,
+        "glucoseConcentration": 50
+      },
+      "expected": {
+        "data": ["223.1", "=基準値(275〜290)未満", "green", ""]
+      }
+    },
+    {
+      "description": "ゼロ値のテスト",
+      "input": {
+        "sodiumConcentration": 0,
+        "ureaNitrogenConcentration": 0,
+        "glucoseConcentration": 0
+      },
+      "expected": {
+        "data": ["0.0", "=基準値(275〜290)未満", "green", ""]
+      }
+    },
+    {
+      "description": "浮動小数点の精度テスト",
+      "input": {
+        "sodiumConcentration": 137.5,
+        "ureaNitrogenConcentration": 8.4,
+        "glucoseConcentration": 99.9
+      },
+      "expected": {
+        "data": ["283.6", "=基準値(275〜290)", "yellow", "※血清Na濃度があと5mEq/L低ければ基準値未満"]
+      }
+    },
+    {
+      "description": "基準値調整メッセージテスト1 - 少量の調整",
+      "input": {
+        "sodiumConcentration": 142,
+        "ureaNitrogenConcentration": 10,
+        "glucoseConcentration": 100
+      },
+      "expected": {
+        "data": ["293.1", "=基準値(275〜290)超過", "red", "※血清Na濃度があと2mEq/L低ければ基準値"]
+      }
+    },
+    {
+      "description": "基準値調整メッセージテスト2 - 大量の調整",
+      "input": {
+        "sodiumConcentration": 160,
+        "ureaNitrogenConcentration": 25,
+        "glucoseConcentration": 300
+      },
+      "expected": {
+        "data": ["345.6", "=基準値(275〜290)超過", "red", "※血清Na濃度があと28mEq/L低ければ基準値"]
+      }
+    }
+  ]
+} 

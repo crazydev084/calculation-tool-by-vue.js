@@ -1,0 +1,66 @@
+{
+  "testCases": [
+    {
+      "description": "BNPが基準値以上の場合",
+      "input": {
+        "bnp": 35,
+        "ntProBnp": 100
+      },
+      "expected": {
+        "data": ["", "心不全の可能性は高い", "red"]
+      }
+    },
+    {
+      "description": "NT-proBNPが基準値以上の場合",
+      "input": {
+        "bnp": 30,
+        "ntProBnp": 125
+      },
+      "expected": {
+        "data": ["", "心不全の可能性は高い", "red"]
+      }
+    },
+    {
+      "description": "両方とも基準値未満の場合",
+      "input": {
+        "bnp": 34,
+        "ntProBnp": 124
+      },
+      "expected": {
+        "data": ["", "心不全の可能性は低い", "blue"]
+      }
+    },
+    {
+      "description": "BNPがnullの場合",
+      "input": {
+        "bnp": null,
+        "ntProBnp": 100
+      },
+      "expected": null
+    },
+    {
+      "description": "NT-proBNPがnullの場合",
+      "input": {
+        "bnp": 30,
+        "ntProBnp": null
+      },
+      "expected": null
+    },
+    {
+      "description": "BNPが負の値の場合",
+      "input": {
+        "bnp": -1,
+        "ntProBnp": 100
+      },
+      "expected": null
+    },
+    {
+      "description": "NT-proBNPが負の値の場合",
+      "input": {
+        "bnp": 30,
+        "ntProBnp": -1
+      },
+      "expected": null
+    }
+  ]
+} 

@@ -1,0 +1,267 @@
+{
+  "testCases": [
+    {
+      "description": "標準的な男性の計算",
+      "input": {
+        "gender": "0",
+        "age": "40",
+        "weight": "60",
+        "serumCreatinine": "1.0"
+      },
+      "expected": {
+        "data": ["83.3", "", "blue"]
+      }
+    },
+    {
+      "description": "標準的な女性の計算",
+      "input": {
+        "gender": "1",
+        "age": "40",
+        "weight": "50",
+        "serumCreatinine": "0.8"
+      },
+      "expected": {
+        "data": ["73.8", "", "blue"]
+      }
+    },
+    {
+      "description": "高齢者の計算",
+      "input": {
+        "gender": "0",
+        "age": "80",
+        "weight": "55",
+        "serumCreatinine": "1.2"
+      },
+      "expected": {
+        "data": ["38.2", "", "blue"]
+      }
+    },
+    {
+      "description": "若年者の計算",
+      "input": {
+        "gender": "1",
+        "age": "20",
+        "weight": "45",
+        "serumCreatinine": "0.6"
+      },
+      "expected": {
+        "data": ["106.3", "", "blue"]
+      }
+    },
+    {
+      "description": "必須フィールドが欠けている場合",
+      "input": {
+        "gender": "0",
+        "age": "40",
+        "weight": "60"
+      },
+      "expected": null
+    },
+    {
+      "description": "空のオブジェクト",
+      "input": {},
+      "expected": null
+    },
+    {
+      "description": "null入力",
+      "input": null,
+      "expected": null
+    },
+    {
+      "description": "undefined入力",
+      "input": null,
+      "expected": null
+    },
+    
+    {
+      "description": "丸め処理のテスト（小数点以下繰り上がり）",
+      "input": {
+        "gender": "0",
+        "age": "35",
+        "weight": "67.5",
+        "serumCreatinine": "0.95"
+      },
+      "expected": {
+        "data": ["103.6", "", "blue"]
+      }
+    },
+    {
+      "description": "丸め処理のテスト（小数点以下切り捨て）",
+      "input": {
+        "gender": "1",
+        "age": "58",
+        "weight": "72",
+        "serumCreatinine": "1.34"
+      },
+      "expected": {
+        "data": ["52.0", "", "blue"]
+      }
+    },
+    {
+      "description": "非常に若い年齢（極端なケース）",
+      "input": {
+        "gender": "0",
+        "age": "1",
+        "weight": "10",
+        "serumCreatinine": "0.3"
+      },
+      "expected": {
+        "data": ["64.4", "", "blue"]
+      }
+    },
+    {
+      "description": "非常に高齢（極端なケース）",
+      "input": {
+        "gender": "1",
+        "age": "110",
+        "weight": "40",
+        "serumCreatinine": "1.5"
+      },
+      "expected": {
+        "data": ["9.4", "", "blue"]
+      }
+    },
+    {
+      "description": "非常に低体重（極端なケース）",
+      "input": {
+        "gender": "0",
+        "age": "50",
+        "weight": "30",
+        "serumCreatinine": "0.8"
+      },
+      "expected": {
+        "data": ["46.9", "", "blue"]
+      }
+    },
+    {
+      "description": "非常に高体重（極端なケース）",
+      "input": {
+        "gender": "1",
+        "age": "45",
+        "weight": "150",
+        "serumCreatinine": "1.2"
+      },
+      "expected": {
+        "data": ["140.2", "", "blue"]
+      }
+    },
+    {
+      "description": "非常に低いクレアチニン値（極端なケース）",
+      "input": {
+        "gender": "0",
+        "age": "60",
+        "weight": "70",
+        "serumCreatinine": "0.1"
+      },
+      "expected": {
+        "data": ["777.8", "", "blue"]
+      }
+    },
+    {
+      "description": "非常に高いクレアチニン値（極端なケース）",
+      "input": {
+        "gender": "1",
+        "age": "65",
+        "weight": "55",
+        "serumCreatinine": "10.0"
+      },
+      "expected": {
+        "data": ["4.9", "", "blue"]
+      }
+    },
+    {
+      "description": "入力値が数値型ではなく文字列型の場合",
+      "input": {
+        "gender": "0",
+        "age": "35",
+        "weight": "65",
+        "serumCreatinine": "0.9"
+      },
+      "expected": {
+        "data": ["105.3", "", "blue"]
+      }
+    },
+    {
+      "description": "数値に変換できない文字列の入力",
+      "input": {
+        "gender": "0",
+        "age": "四十",
+        "weight": "六十",
+        "serumCreatinine": "正常"
+      },
+      "expected": null
+    },
+    {
+      "description": "一部が数値、一部が文字列の混在入力",
+      "input": {
+        "gender": "0",
+        "age": "40",
+        "weight": "六十",
+        "serumCreatinine": "1.0"
+      },
+      "expected": null
+    },
+    {
+      "description": "負の値の入力（年齢）",
+      "input": {
+        "gender": "0",
+        "age": "-40",
+        "weight": "60",
+        "serumCreatinine": "1.0"
+      },
+      "expected": null
+    },
+    {
+      "description": "負の値の入力（体重）",
+      "input": {
+        "gender": "0",
+        "age": "40",
+        "weight": "-60",
+        "serumCreatinine": "1.0"
+      },
+      "expected": null
+    },
+    {
+      "description": "負の値の入力（クレアチニン）",
+      "input": {
+        "gender": "0",
+        "age": "40",
+        "weight": "60",
+        "serumCreatinine": "-1.0"
+      },
+      "expected": null
+    },
+    {
+      "description": "0の入力（年齢が0）",
+      "input": {
+        "gender": "1",
+        "age": "0",
+        "weight": "3.5",
+        "serumCreatinine": "0.2"
+      },
+      "expected": {
+        "data": ["28.9", "", "blue"]
+      }
+    },
+    {
+      "description": "0の入力（体重が0）",
+      "input": {
+        "gender": "0",
+        "age": "40",
+        "weight": "0",
+        "serumCreatinine": "1.0"
+      },
+      "expected": null
+    },
+    {
+      "description": "0の入力（クレアチニンが0）- 除算エラーの可能性",
+      "input": {
+        "gender": "0",
+        "age": "40",
+        "weight": "60",
+        "serumCreatinine": "0"
+      },
+      "expected": null
+    }
+  ]
+} 

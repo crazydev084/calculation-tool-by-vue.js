@@ -1,0 +1,127 @@
+{
+  "fields": [
+    {
+      "id": "congestiveHeartFailure",
+      "label": "心不全・左室機能不全",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 1
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "hypertension",
+      "label": "高血圧",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 1
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "age",
+      "label": "年齢",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "64歳以下",
+          "value": 0
+        },
+        {
+          "label": "65歳以上74歳以下",
+          "value": 1
+        },
+        {
+          "label": "75歳以上",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "diabetesMellitus",
+      "label": "糖尿病",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 1
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "strokeHistory",
+      "label": "脳梗塞・TIAの既往",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 2
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "vascularDisease",
+      "label": "血管疾患（心筋梗塞の既往、末梢動脈疾患、大動脈プラーク）",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 1
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "sexCategory",
+      "label": "性別",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "女性",
+          "value": 1
+        },
+        {
+          "label": "男性",
+          "value": 0
+        }
+      ]
+    }
+  ]
+} 

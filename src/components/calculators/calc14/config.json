@@ -1,0 +1,37 @@
+{
+  "fields": [
+    {
+      "id": "spo2",
+      "label": "SpO<sub>2</sub>",
+      "type": "number",
+      "unit": "%",
+      "required": true,
+      "defaultValue": "",
+      "min": 0,
+      "step": 1,
+      "placeholder": "例：97"
+    },
+    {
+      "id": "fio2",
+      "label": "FiO<sub>2</sub>",
+      "type": "number",
+      "unit": "%",
+      "required": true,
+      "defaultValue": "",
+      "min": 0,
+      "step": 1,
+      "placeholder": "例：40"
+    },
+    {
+      "id": "respiratoryRate",
+      "label": "呼吸回数",
+      "type": "number",
+      "unit": "(回/分)",
+      "required": true,
+      "defaultValue": "",
+      "min": 0,
+      "step": 1,
+      "placeholder": "例：25"
+    }
+  ]
+} 

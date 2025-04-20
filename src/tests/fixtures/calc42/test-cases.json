@@ -1,0 +1,52 @@
+{
+  "testCases": [    
+    {
+      "name": "FeUA",
+      "input": {
+        "Cr1": 1,
+        "Cr2": 1,
+        "UA1": 1,
+        "UA2": 1
+      },
+      "expected": {
+        "data": ["100%", "SIADHとRSWの鑑別に有用。", "red"]
+      }
+    },
+    {
+      "name": "FeUA",
+      "input": {
+        "Cr1": 0,
+        "Cr2": 0,
+        "UA1": 0,
+        "UA2": 0
+      },
+      "expected": {
+        "data": ["0", "SIADHとRSWの鑑別に有用。", "green"]
+      }
+    },
+    {
+      "name": "FeUA",
+      "input": {
+        "Cr1": 0.7,
+        "Cr2": 5,
+        "UA1": 1,
+        "UA2": 0.4
+      },
+      "expected": {
+        "data": ["5.60%", "SIADHとRSWの鑑別に有用。", "green"]
+      }
+    },
+    {
+      "name": "FeUA",
+      "input": {
+        "Cr1": 0.7,
+        "Cr2": 5,
+        "UA1": 1.5,
+        "UA2": 1.2
+      },
+      "expected": {
+        "data": ["11.20%", "SIADHとRSWの鑑別に有用。", "red"]
+      }
+    }
+  ]
+} 

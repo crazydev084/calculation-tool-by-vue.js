@@ -1,0 +1,60 @@
+{
+  "testCases": [    
+    {
+      "name": "SD",
+      "input": {
+        "age": 0,
+        "age_month": 0,
+        "gender": 0,
+        "height": 0,
+        "weight": 0,
+        "head": 0
+      },
+      "expected": {
+        "data": ["","","","green"]
+      }
+    },
+    {
+      "name": "SD",
+      "input": {
+        "age": 1,
+        "age_month": 1,
+        "gender": 0,
+        "height": 60,
+        "weight": 10,
+        "head": 44
+      },
+      "expected": {
+        "data": ["0.56","-6.15","3%~10%tile（平均46.5cm）","green"]
+      }
+    },
+    {
+      "name": "SD",
+      "input": {
+        "age": 2,
+        "age_month": 1,
+        "gender": 0,
+        "height": 60,
+        "weight": 10,
+        "head": 44
+      },
+      "expected": {
+        "data": ["-1.50","-8.45","小さすぎる","red"]
+      }
+    },
+    {
+      "name": "SD",
+      "input": {
+        "age": 15,
+        "age_month": 1,
+        "gender": 0,
+        "height": 60,
+        "weight": 10,
+        "head": 44
+      },
+      "expected": {
+        "data": ["-4.52","-8.45","小さすぎる","red"]
+      }
+    }
+  ]
+} 

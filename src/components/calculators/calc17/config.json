@@ -1,0 +1,55 @@
+{
+  "fields": [
+    {
+      "id": "gender",
+      "label": "性別",
+      "type": "radio",
+      "required": true,
+      "showValue": false,
+      "defaultValue": "0",
+      "options": [
+        {
+          "label": "男",
+          "value": "0"
+        },
+        {
+          "label": "女",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "id": "weight",
+      "label": "体重",
+      "type": "number",
+      "required": true,
+      "defaultValue": "",
+      "placeholder": "例：60",
+      "unit": "kg",
+      "min": 0,
+      "step": 1
+    },
+    {
+      "id": "height",
+      "label": "身長",
+      "type": "number",
+      "required": true,
+      "defaultValue": "",
+      "placeholder": "例：170",
+      "unit": "cm",
+      "min": 0,
+      "step": 1
+    },
+    {
+      "id": "age",
+      "label": "年齢",
+      "type": "number",
+      "required": true,
+      "defaultValue": "",
+      "placeholder": "例：30",
+      "unit": "歳",
+      "min": 0,
+      "step": 1
+    }
+  ]
+} 

@@ -1,0 +1,52 @@
+{
+  "testCases": [    
+    {
+      "name": "FeUN",
+      "input": {
+        "Cr1": 1,
+        "Cr2": 1,
+        "UA1": 1,
+        "UA2": 1
+      },
+      "expected": {
+        "data": ["100%", "尿中Cr/血清Cr>140の場合、FeNa≧0.15％ or FeUN≧45％でSIADHパターンの判断に有用"]
+      }
+    },
+    {
+      "name": "FeUN",
+      "input": {
+        "Cr1": 0,
+        "Cr2": 0,
+        "UA1": 0,
+        "UA2": 0
+      },
+      "expected": {
+        "data": ["0", ""]
+      }
+    },
+    {
+      "name": "FeUN",
+      "input": {
+        "Cr1": 0.7,
+        "Cr2": 5,
+        "UA1": 1,
+        "UA2": 0.4
+      },
+      "expected": {
+        "data": ["56.88%", "尿中Cr/血清Cr>140の場合、FeNa≧0.15％ or FeUN≧45％でSIADHパターンの判断に有用"]
+      }
+    },
+    {
+      "name": "FeUN",
+      "input": {
+        "Cr1": 0.7,
+        "Cr2": 5,
+        "UA1": 1.5,
+        "UA2": 1.2
+      },
+      "expected": {
+        "data": ["30.33%", "尿中Cr/血清Cr>140の場合、FeNa≧0.15％ or FeUN≧45％でSIADHパターンの判断に有用"]
+      }
+    }
+  ]
+} 

@@ -1,0 +1,231 @@
+{
+  "testCases": [
+    {
+      "description": "標準的な計算例",
+      "input": {
+        "weight": 60,
+        "administeredDrugAmount": 5,
+        "dilutedDrudAmount": 50,
+        "targetDose": 0.05
+      },
+      "expected": {
+        "data": ["1.80", "1ml/hrあげると、0.03γ上昇", "blue"]
+      }
+    },
+    {
+      "description": "小数点を含む計算例",
+      "input": {
+        "weight": 55.5,
+        "administeredDrugAmount": 4.5,
+        "dilutedDrudAmount": 45.5,
+        "targetDose": 0.025
+      },
+      "expected": {
+        "data": ["0.84", "1ml/hrあげると、0.03γ上昇", "blue"]
+      }
+    },
+    {
+      "description": "体重が0の場合",
+      "input": {
+        "weight": 0,
+        "administeredDrugAmount": 5,
+        "dilutedDrudAmount": 50,
+        "targetDose": 0.05
+      },
+      "expected": null
+    },
+    {
+      "description": "薬剤量が0の場合",
+      "input": {
+        "weight": 60,
+        "administeredDrugAmount": 0,
+        "dilutedDrudAmount": 50,
+        "targetDose": 0.05
+      },
+      "expected": null
+    },
+    {
+      "description": "希釈量が0の場合",
+      "input": {
+        "weight": 60,
+        "administeredDrugAmount": 5,
+        "dilutedDrudAmount": 0,
+        "targetDose": 0.05
+      },
+      "expected": null
+    },
+    {
+      "description": "目標用量が0の場合",
+      "input": {
+        "weight": 60,
+        "administeredDrugAmount": 5,
+        "dilutedDrudAmount": 50,
+        "targetDose": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "空の入力値の例",
+      "input": {
+        "weight": "",
+        "administeredDrugAmount": "",
+        "dilutedDrudAmount": "",
+        "targetDose": ""
+      },
+      "expected": null
+    },
+    {
+      "description": "nullが入力された場合",
+      "input": null,
+      "expected": null
+    },
+    {
+      "description": "undefinedが入力された場合",
+      "input": null,
+      "expected": null
+    },
+    
+    {
+      "description": "小数点以下の丸め処理（切り上げ）",
+      "input": {
+        "weight": 65,
+        "administeredDrugAmount": 5.5,
+        "dilutedDrudAmount": 55,
+        "targetDose": 0.055
+      },
+      "expected": {
+        "data": ["2.15", "1ml/hrあげると、0.03γ上昇", "blue"]
+      }
+    },
+    {
+      "description": "小数点以下の丸め処理（切り捨て）",
+      "input": {
+        "weight": 67,
+        "administeredDrugAmount": 4.8,
+        "dilutedDrudAmount": 48,
+        "targetDose": 0.042
+      },
+      "expected": {
+        "data": ["1.69", "1ml/hrあげると、0.03γ上昇", "blue"]
+      }
+    },
+    {
+      "description": "極端に小さい値の入力",
+      "input": {
+        "weight": 0.1,
+        "administeredDrugAmount": 0.001,
+        "dilutedDrudAmount": 0.001,
+        "targetDose": 0.0001
+      },
+      "expected": {
+        "data": ["0.00", "1ml/hrあげると、166.67γ上昇", "blue"]
+      }
+    },
+    {
+      "description": "極端に大きい値の入力",
+      "input": {
+        "weight": 1000,
+        "administeredDrugAmount": 1000,
+        "dilutedDrudAmount": 1000,
+        "targetDose": 100
+      },
+      "expected": {
+        "data": ["6000.00", "1ml/hrあげると、0.02γ上昇", "blue"]
+      }
+    },
+    {
+      "description": "小数点3桁以上の値（丸め処理の確認）",
+      "input": {
+        "weight": 63.456,
+        "administeredDrugAmount": 4.789,
+        "dilutedDrudAmount": 45.123,
+        "targetDose": 0.0678
+      },
+      "expected": {
+        "data": ["2.43", "1ml/hrあげると、0.03γ上昇", "blue"]
+      }
+    },
+    {
+      "description": "負の値の入力（体重）",
+      "input": {
+        "weight": -50,
+        "administeredDrugAmount": 5,
+        "dilutedDrudAmount": 50,
+        "targetDose": 0.05
+      },
+      "expected": null
+    },
+    {
+      "description": "負の値の入力（薬剤量）",
+      "input": {
+        "weight": 60,
+        "administeredDrugAmount": -5,
+        "dilutedDrudAmount": 50,
+        "targetDose": 0.05
+      },
+      "expected": null
+    },
+    {
+      "description": "負の値の入力（希釈量）",
+      "input": {
+        "weight": 60,
+        "administeredDrugAmount": 5,
+        "dilutedDrudAmount": -50,
+        "targetDose": 0.05
+      },
+      "expected": null
+    },
+    {
+      "description": "負の値の入力（目標用量）",
+      "input": {
+        "weight": 60,
+        "administeredDrugAmount": 5,
+        "dilutedDrudAmount": 50,
+        "targetDose": -0.05
+      },
+      "expected": null
+    },
+    {
+      "description": "数値に変換できない文字列の入力",
+      "input": {
+        "weight": "重い",
+        "administeredDrugAmount": "多め",
+        "dilutedDrudAmount": "適量",
+        "targetDose": "標準"
+      },
+      "expected": null
+    },
+    {
+      "description": "一部が数値、一部が文字列の混在入力",
+      "input": {
+        "weight": 60,
+        "administeredDrugAmount": "五",
+        "dilutedDrudAmount": 50,
+        "targetDose": "0.05"
+      },
+      "expected": null
+    },
+    {
+      "description": "大きな希釈量と小さな薬剤量（極端な比率）",
+      "input": {
+        "weight": 60,
+        "administeredDrugAmount": 0.01,
+        "dilutedDrudAmount": 1000,
+        "targetDose": 0.05
+      },
+      "expected": null
+    },
+    {
+      "description": "小さな希釈量と大きな薬剤量（極端な比率）",
+      "input": {
+        "weight": 60,
+        "administeredDrugAmount": 1000,
+        "dilutedDrudAmount": 0.1,
+        "targetDose": 0.05
+      },
+      "expected": {
+        "data": ["0.00", "1ml/hrあげると、2777.78γ上昇", "blue"]
+      }
+    }
+  ]
+} 

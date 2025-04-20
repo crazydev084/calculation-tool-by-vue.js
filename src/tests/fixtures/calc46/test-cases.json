@@ -1,0 +1,123 @@
+{
+  "testCases": [    
+    {
+      "name": "PAS",
+      "input": {
+        "age": 1,
+        "abdomen1": 1,
+        "abdomen2": 2,
+        "trapping": 2,
+        "appetite": 1,
+        "fever": 1,
+        "diabetes": 1,
+        "blood": 1,
+        "neutrophil": 1
+      },
+      "expected": {
+        "data": ["10点", "高リスク","red"]
+      }
+    },
+    {
+      "name": "PAS",
+      "input": {
+        "age": 0,
+        "abdomen1": 0,
+        "abdomen2": 0,
+        "trapping": 0,
+        "appetite": 0,
+        "fever": 0,
+        "diabetes": 0,
+        "blood": 0,
+        "neutrophil": 0
+      },
+      "expected": {
+        "data": ["0点", "PAS対象外","green"]
+      }
+    },
+    {
+      "name": "PAS",
+      "input": {
+        "age": 1,
+        "abdomen1": 1,
+        "abdomen2": 2,
+        "trapping": 0,
+        "appetite": 0,
+        "fever": 0,
+        "diabetes": 0,
+        "blood": 0,
+        "neutrophil": 0
+      },
+      "expected": {
+        "data": ["3点", "低リスク","blue"]
+      }
+    },
+    {
+      "name": "PAS",
+      "input": {
+        "age": 1,
+        "abdomen1": 1,
+        "abdomen2": 2,
+        "trapping": 0,
+        "appetite": 1,
+        "fever": 0,
+        "diabetes": 0,
+        "blood": 0,
+        "neutrophil": 0
+      },
+      "expected": {
+        "data": ["4点", "中リスク","yellow"]
+      }
+    },
+    {
+      "name": "PAS",
+      "input": {
+        "age": 1,
+        "abdomen1": 1,
+        "abdomen2": 2,
+        "trapping": 0,
+        "appetite": 1,
+        "fever": 0,
+        "diabetes": 1,
+        "blood": 0,
+        "neutrophil": 0
+      },
+      "expected": {
+        "data": ["5点", "中リスク","yellow"]
+      }
+    },
+    {
+      "name": "PAS",
+      "input": {
+        "age": 1,
+        "abdomen1": 1,
+        "abdomen2": 2,
+        "trapping": 2,
+        "appetite": 1,
+        "fever": 1,
+        "diabetes": 1,
+        "blood": 0,
+        "neutrophil": 0
+      },
+      "expected": {
+        "data": ["8点", "高リスク","red"]
+      }
+    },
+    {
+      "name": "PAS",
+      "input": {
+        "age": 1,
+        "abdomen1": 1,
+        "abdomen2": 0,
+        "trapping": 0,
+        "appetite": 1,
+        "fever": 1,
+        "diabetes": 1,
+        "blood": 1,
+        "neutrophil": 1
+      },
+      "expected": {
+        "data": ["4点", "中リスク","yellow"]
+      }
+    }
+  ]
+} 

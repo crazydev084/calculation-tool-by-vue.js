@@ -1,0 +1,190 @@
+{
+  "fields": [
+    {
+      "id": "consciousnessLevel",
+      "label": "意識水準",
+      "type": "radio",
+      "options": [
+        { "label": "完全覚醒", "value": 0 },
+        { "label": "簡単な刺激で覚醒", "value": 1 },
+        { "label": "繰り返し刺激、強い刺激で覚醒", "value": 2 },
+        { "label": "完全に無反応", "value": 3 }
+      ],
+      "required": true,
+      "defaultValue": 0
+    },
+    {
+      "id": "consciousnessDisorderQuestion",
+      "label": "質問<br>※今月の月名、年齢",
+      "type": "radio",
+      "options": [
+        { "label": "両方正解", "value": 0 },
+        { "label": "片方正解", "value": 1 },
+        { "label": "両方不正解", "value": 2 }
+      ],
+      "required": true,
+      "defaultValue": 0
+    },
+    {
+      "id": "consciousnessDisorderCommand",
+      "label": "従命<br>※「開眼・閉眼」、「手を握る・開く」",
+      "type": "radio",
+      "options": [
+        { "label": "両方可", "value": 0 },
+        { "label": "片方可", "value": 1 },
+        { "label": "両方不可", "value": 2 }
+      ],
+      "required": true,
+      "defaultValue": 0
+    },
+    {
+      "id": "bestGaze",
+      "label": "最良の注視<br>※水平眼球運動のみ",
+      "type": "radio",
+      "options": [
+        { "label": "正常", "value": 0 },
+        { "label": "部分的注視麻痺", "value": 1 },
+        { "label": "固定した偏視や完全注視麻痺", "value": 2 }
+      ],
+      "required": true,
+      "defaultValue": 0
+    },
+    {
+      "id": "visualField",
+      "label": "視野<br>※片眼ずつ",
+      "type": "radio",
+      "options": [
+        { "label": "視野欠損なし", "value": 0 },
+        { "label": "部分的半盲(4分盲含)", "value": 1 },
+        { "label": "完全半盲(同名半盲含)", "value": 2 },
+        { "label": "両側性半盲(皮質盲含全盲)", "value": 3 }
+      ],
+      "required": true,
+      "defaultValue": 0
+    },
+    {
+      "id": "facialPalsy",
+      "label": "顔面麻痺",
+      "type": "radio",
+      "options": [
+        { "label": "正常", "value": 0 },
+        { "label": "軽度の麻痺", "value": 1 },
+        { "label": "部分的麻痺", "value": 2 },
+        { "label": "完全麻痺", "value": 3 }
+      ],
+      "required": true,
+      "defaultValue": 0
+    },
+    {
+      "id": "upperExtremityMovementRight",
+      "label": "上肢の運動(右)",
+      "type": "radio",
+      "options": [
+        { "label": "10秒間保持可", "value": 0 },
+        { "label": "10秒以内に下垂", "value": 1 },
+        { "label": "重力に抗するが10秒以内に下垂", "value": 2 },
+        { "label": "重力に抗する動きはない", "value": 3 },
+        { "label": "全く動きがみられない", "value": 4 },
+        { "label": "切断・関節癒合", "value": "N" }
+      ],
+      "required": true,
+      "defaultValue": 0
+    },
+    {
+      "id": "upperExtremityMovementLeft",
+      "label": "上肢の運動(左)",
+      "type": "radio",
+      "options": [
+        { "label": "10秒間保持可", "value": 0 },
+        { "label": "10秒以内に下垂", "value": 1 },
+        { "label": "重力に抗するが10秒以内に下垂", "value": 2 },
+        { "label": "重力に抗する動きはない", "value": 3 },
+        { "label": "全く動きがみられない", "value": 4 },
+        { "label": "切断・関節癒合", "value": "N" }
+      ],
+      "required": true,
+      "defaultValue": 0
+    },
+    {
+      "id": "lowerExtremityMovementRight",
+      "label": "下肢の運動(右)",
+      "type": "radio",
+      "options": [
+        { "label": "5秒間保持可", "value": 0 },
+        { "label": "5秒以内に下垂", "value": 1 },
+        { "label": "重力に抗するが5秒以内に下垂", "value": 2 },
+        { "label": "重力に抗する動きはない", "value": 3 },
+        { "label": "全く動きがみられない", "value": 4 },
+        { "label": "切断・関節癒合", "value": "N" }
+      ],
+      "required": true,
+      "defaultValue": 0
+    },
+    {
+      "id": "lowerExtremityMovementLeft",
+      "label": "下肢の運動(左)",
+      "type": "radio",
+      "options": [
+        { "label": "5秒間保持可", "value": 0 },
+        { "label": "5秒以内に下垂", "value": 1 },
+        { "label": "重力に抗するが5秒以内に下垂", "value": 2 },
+        { "label": "重力に抗する動きはない", "value": 3 },
+        { "label": "全く動きがみられない", "value": 4 },
+        { "label": "切断・関節癒合", "value": "N" }
+      ],
+      "required": true,
+      "defaultValue": 0
+    },
+    {
+      "id": "ataxia",
+      "label": "運動失調<br>※「鼻‐指‐鼻試験」および「膝‐踵試験」。",
+      "type": "radio",
+      "options": [
+        { "label": "なし", "value": 0 },
+        { "label": "1肢に存在", "value": 1 },
+        { "label": "2肢に存在", "value": 2 },
+        { "label": "切断・関節癒合", "value": "N" }
+      ],
+      "required": true,
+      "defaultValue": 0
+    },
+    {
+      "id": "sensation",
+      "label": "感覚<br>※顔面・上肢・下肢・体幹を対象",
+      "type": "radio",
+      "options": [
+        { "label": "障害なし", "value": 0 },
+        { "label": "軽度～中等度障害", "value": 1 },
+        { "label": "重度障害", "value": 2 }
+      ],
+      "required": true,
+      "defaultValue": 0
+    },
+    {
+      "id": "bestLanguage",
+      "label": "最良の言語",
+      "type": "radio",
+      "options": [
+        { "label": "失語なし", "value": 0 },
+        { "label": "軽度～中等度失語", "value": 1 },
+        { "label": "重度失語", "value": 2 },
+        { "label": "無言、全失語", "value": 3 }
+      ],
+      "required": true,
+      "defaultValue": 0
+    },
+    {
+      "id": "articulationDisorder",
+      "label": "構音障害",
+      "type": "radio",
+      "options": [
+        { "label": "正常", "value": 0 },
+        { "label": "軽度～中等度障害", "value": 1 },
+        { "label": "重度障害", "value": 2 },
+        { "label": "挿管または身体的障壁", "value": "N" }
+      ],
+      "required": true,
+      "defaultValue": 0
+    }
+  ]
+} 

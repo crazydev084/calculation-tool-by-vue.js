@@ -1,0 +1,239 @@
+{
+  "testCases": [
+    {
+      "description": "最低リスク（0点）",
+      "input": {
+        "initialEcgRhythm": 0,
+        "timeToROSC": 0,
+        "ph": 0,
+        "lactate": 0,
+        "gcsM": 0
+      },
+      "expected": {
+        "data": ["0.0", "低リスク", "green", "30日後神経学的不良率：13.5％、死亡率：2.1％\n90日後神経学的不良率：14.5％、死亡率：4.4％"]
+      }
+    },
+    {
+      "description": "中リスク（10点）",
+      "input": {
+        "initialEcgRhythm": 1,
+        "timeToROSC": 1,
+        "ph": 2,
+        "lactate": 2,
+        "gcsM": 0
+      },
+      "expected": {
+        "data": ["9.0", "中リスク", "yellow", "30日後神経学的不良率：56.3％、死亡率：20.3％\n90日後神経学的不良率：52.7％、死亡率：34.5％"]
+      }
+    },
+    {
+      "description": "高リスク（15点）",
+      "input": {
+        "initialEcgRhythm": 1,
+        "timeToROSC": 2,
+        "ph": 3,
+        "lactate": 3,
+        "gcsM": 1
+      },
+      "expected": {
+        "data": ["18.5", "高リスク", "red", "30日後神経学的不良率：94.8％、死亡率：62.8％\n90日後神経学的不良率：95.4％、死亡率：73.2％"]
+      }
+    },
+    {
+      "description": "initialEcgRhythmがnullの場合",
+      "input": {
+        "initialEcgRhythm": null,
+        "timeToROSC": 0,
+        "ph": 0,
+        "lactate": 0,
+        "gcsM": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "timeToROSCがnullの場合",
+      "input": {
+        "initialEcgRhythm": 0,
+        "timeToROSC": null,
+        "ph": 0,
+        "lactate": 0,
+        "gcsM": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "phがnullの場合",
+      "input": {
+        "initialEcgRhythm": 0,
+        "timeToROSC": 0,
+        "ph": null,
+        "lactate": 0,
+        "gcsM": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "lactateがnullの場合",
+      "input": {
+        "initialEcgRhythm": 0,
+        "timeToROSC": 0,
+        "ph": 0,
+        "lactate": null,
+        "gcsM": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "gcsMがnullの場合",
+      "input": {
+        "initialEcgRhythm": 0,
+        "timeToROSC": 0,
+        "ph": 0,
+        "lactate": 0,
+        "gcsM": null
+      },
+      "expected": null
+    },
+    {
+      "description": "境界値テスト - 低リスクの上限（5.9点）",
+      "input": {
+        "initialEcgRhythm": 0,
+        "timeToROSC": 1,
+        "ph": 1,
+        "lactate": 1,
+        "gcsM": 0
+      },
+      "expected": {
+        "data": ["5.0", "低リスク", "green", "30日後神経学的不良率：13.5％、死亡率：2.1％\n90日後神経学的不良率：14.5％、死亡率：4.4％"]
+      }
+    },
+    {
+      "description": "境界値テスト - 中リスクの下限（6.0点）",
+      "input": {
+        "initialEcgRhythm": 0,
+        "timeToROSC": 0,
+        "ph": 2,
+        "lactate": 2,
+        "gcsM": 0
+      },
+      "expected": {
+        "data": ["6.0", "中リスク", "yellow", "30日後神経学的不良率：56.3％、死亡率：20.3％\n90日後神経学的不良率：52.7％、死亡率：34.5％"]
+      }
+    },
+    {
+      "description": "境界値テスト - 中リスクの上限（14.0点）",
+      "input": {
+        "initialEcgRhythm": 1,
+        "timeToROSC": 1,
+        "ph": 2,
+        "lactate": 3,
+        "gcsM": 1
+      },
+      "expected": {
+        "data": ["14.0", "中リスク", "yellow", "30日後神経学的不良率：56.3％、死亡率：20.3％\n90日後神経学的不良率：52.7％、死亡率：34.5％"]
+      }
+    },
+    {
+      "description": "境界値テスト - 高リスクの下限（14.1点）",
+      "input": {
+        "initialEcgRhythm": 1,
+        "timeToROSC": 2,
+        "ph": 2,
+        "lactate": 1,
+        "gcsM": 1
+      },
+      "expected": {
+        "data": ["15.0", "高リスク", "red", "30日後神経学的不良率：94.8％、死亡率：62.8％\n90日後神経学的不良率：95.4％、死亡率：73.2％"]
+      }
+    },
+    {
+      "description": "最高点数テスト（20点）",
+      "input": {
+        "initialEcgRhythm": 1,
+        "timeToROSC": 2,
+        "ph": 3,
+        "lactate": 3,
+        "gcsM": 1
+      },
+      "expected": {
+        "data": ["18.5", "高リスク", "red", "30日後神経学的不良率：94.8％、死亡率：62.8％\n90日後神経学的不良率：95.4％、死亡率：73.2％"]
+      }
+    },
+    {
+      "description": "無効な値（範囲外の値）- initialEcgRhythm",
+      "input": {
+        "initialEcgRhythm": 3,
+        "timeToROSC": 0,
+        "ph": 0,
+        "lactate": 0,
+        "gcsM": 0
+      },
+      "expected": {
+        "data": ["3.0", "低リスク", "green", "30日後神経学的不良率：13.5％、死亡率：2.1％\n90日後神経学的不良率：14.5％、死亡率：4.4％"]
+      }
+    },
+    {
+      "description": "無効な値（範囲外の値）- timeToROSC",
+      "input": {
+        "initialEcgRhythm": 0,
+        "timeToROSC": 5,
+        "ph": 0,
+        "lactate": 0,
+        "gcsM": 0
+      },
+      "expected": {
+        "data": ["10.0", "中リスク", "yellow", "30日後神経学的不良率：56.3％、死亡率：20.3％\n90日後神経学的不良率：52.7％、死亡率：34.5％"]
+      }
+    },
+    {
+      "description": "無効な値（範囲外の値）- ph",
+      "input": {
+        "initialEcgRhythm": 0,
+        "timeToROSC": 0,
+        "ph": 5,
+        "lactate": 0,
+        "gcsM": 0
+      },
+      "expected": {
+        "data": ["12.5", "中リスク", "yellow", "30日後神経学的不良率：56.3％、死亡率：20.3％\n90日後神経学的不良率：52.7％、死亡率：34.5％"]
+      }
+    },
+    {
+      "description": "無効な値（範囲外の値）- lactate",
+      "input": {
+        "initialEcgRhythm": 0,
+        "timeToROSC": 0,
+        "ph": 0,
+        "lactate": 5,
+        "gcsM": 0
+      },
+      "expected": {
+        "data": ["2.5", "低リスク", "green", "30日後神経学的不良率：13.5％、死亡率：2.1％\n90日後神経学的不良率：14.5％、死亡率：4.4％"]
+      }
+    },
+    {
+      "description": "無効な値（範囲外の値）- gcsM",
+      "input": {
+        "initialEcgRhythm": 0,
+        "timeToROSC": 0,
+        "ph": 0,
+        "lactate": 0,
+        "gcsM": 3
+      },
+      "expected": {
+        "data": ["13.5", "中リスク", "yellow", "30日後神経学的不良率：56.3％、死亡率：20.3％\n90日後神経学的不良率：52.7％、死亡率：34.5％"]
+      }
+    },
+    {
+      "description": "負の値入力テスト",
+      "input": {
+        "initialEcgRhythm": -1,
+        "timeToROSC": 0,
+        "ph": 0,
+        "lactate": 0,
+        "gcsM": 0
+      },
+      "expected": null
+    }
+  ]
+} 

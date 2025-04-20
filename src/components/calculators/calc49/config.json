@@ -1,0 +1,122 @@
+{
+  "fields": [
+    {
+      "id": "back",
+      "label": "子宮展退度 Back",
+      "type": "radio",
+      "mode": "vertical",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "0～30％",
+          "value": 0
+        },
+        {
+          "label": "40～50％",
+          "value": 1
+        },
+        {
+          "label": "60～70％*",
+          "value": 2
+        },
+        {
+          "label": "80～100％",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "station",
+      "label": "児頭の位置 Station",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "-3cm",
+          "value": 0
+        },
+        {
+          "label": "-2cm",
+          "value": 1
+        },
+        {
+          "label": "-1～0cm",
+          "value": 2
+        },
+        {
+          "label": "+1cm",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "hard",
+      "label": "頸部の硬さHard",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "硬",
+          "value": 0
+        },
+        {
+          "label": "中",
+          "value": 1
+        },
+        {
+          "label": "軟",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "open",
+      "label": "頸管開大度 Open",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "0cm",
+          "value": 0
+        },
+        {
+          "label": "1～2cm",
+          "value": 1
+        },
+        {
+          "label": "3～4cm",
+          "value": 2
+        },
+        {
+          "label": "5～6cm",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "position",
+      "label": "子宮口位置 Position",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "後方",
+          "value": 0
+        },
+        {
+          "label": "中央",
+          "value": 1
+        },
+        {
+          "label": "前方",
+          "value": 2
+        }
+      ]
+    }
+  ]
+} 

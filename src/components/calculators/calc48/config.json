@@ -1,0 +1,76 @@
+{
+  "fields": [
+    {
+      "id": "disease",
+      "label": "①基礎疾患・徴候",
+      "type": "radio",
+      "mode": "vertical",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "常位胎盤早期剥離",
+          "value": 4
+        },
+        {
+          "label": "羊水塞栓症",
+          "value": 4
+        },
+        {
+          "label": "非凝固性分娩後異常出血*",
+          "value": 4
+        },
+        {
+          "label": "上記に該当なし",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "Coagulation",
+      "label": "②凝固系検査（Fib、単位mg/dL）",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "300以上",
+          "value": 0
+        },
+        {
+          "label": "200以上300未満",
+          "value": 1
+        },
+        {
+          "label": "150以上200未満",
+          "value": 2
+        },
+        {
+          "label": "150未満",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "Fibrinolysis",
+      "label": "③線溶系検査<br>（FDPとD-dimerのどちらかを選択、単位はいずれもμg/mL）",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "FDP30未満 または D-dimer15未満",
+          "value": 0
+        },
+        {
+          "label": "FDP30以上60未満 または D-dimer 15以上25未満",
+          "value": 1
+        },
+        {
+          "label": "FDP 60以上 または D-dimer 25以上",
+          "value": 2
+        }
+      ]
+    }
+  ]
+} 

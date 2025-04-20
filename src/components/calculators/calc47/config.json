@@ -1,0 +1,111 @@
+{
+  "fields": [
+    {
+      "id": "appearance",
+      "label": "Appearance<br>皮膚色",
+      "type": "radio",
+      "mode": "vertical",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "全身蒼白",
+          "value": 0
+        },
+        {
+          "label": "身体が淡紅色",
+          "value": 1
+        },
+        {
+          "label": "全身が淡紅色",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "pulse",
+      "label": "Pulse<br>心拍数",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "なし",
+          "value": 0
+        },
+        {
+          "label": "<100回/分",
+          "value": 1
+        },
+        {
+          "label": "≧100回/分",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "grimace",
+      "label": "Grimace<br>反応性",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "反応なし",
+          "value": 0
+        },
+        {
+          "label": "顔をしかめる、弱く泣き出す",
+          "value": 1
+        },
+        {
+          "label": "くしゃみや咳が出る、強く泣く",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "activity",
+      "label": "Activity<br>活動性",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "弛緩している",
+          "value": 0
+        },
+        {
+          "label": "少しだけ四肢を動かす",
+          "value": 1
+        },
+        {
+          "label": "活発に四肢を動かす",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "respiration",
+      "label": "Respiration<br>呼吸",
+      "type": "radio",
+      "mode": "vertical",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "なし",
+          "value": 0
+        },
+        {
+          "label": "緩徐",
+          "value": 1
+        },
+        {
+          "label": "啼泣",
+          "value": 2
+        }
+      ]
+    }
+  ]
+} 

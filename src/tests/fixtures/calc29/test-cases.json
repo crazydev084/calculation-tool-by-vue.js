@@ -1,0 +1,316 @@
+{
+  "testCases": [
+    {
+      "description": "男性、低血圧、糖代謝異常なし、低LDL、高HDL、喫煙なし、40代",
+      "input": {
+        "gender": 7,
+        "systolicBloodPressure": 0,
+        "glucoseMetabolismAbnormality": 0,
+        "serumLDL_C": 0,
+        "serumHDL_C": 0,
+        "smoking": 0,
+        "age": 0
+      },
+      "expected": {
+        "data": [7, "低リスク（発症確率は<1.0%）", "green", "脂質管理目標値 LDL<160、Non-HDL<190、TG<150、HDL≥40"]
+      }
+    },
+    {
+      "description": "女性、高血圧、糖代謝異常あり、高LDL、低HDL、喫煙あり、70代",
+      "input": {
+        "gender": 0,
+        "systolicBloodPressure": 4,
+        "glucoseMetabolismAbnormality": 1,
+        "serumLDL_C": 3,
+        "serumHDL_C": 2,
+        "smoking": 2,
+        "age": 3
+      },
+      "expected": {
+        "data": [12, "高リスク（発症確率は17.7%）", "red", "脂質管理目標値 LDL<120、Non-HDL<150、TG<150、HDL≥40"]
+      }
+    },
+    {
+      "description": "男性、中程度血圧、糖代謝異常なし、中程度LDL、中程度HDL、喫煙なし、60代",
+      "input": {
+        "gender": 7,
+        "systolicBloodPressure": 2,
+        "glucoseMetabolismAbnormality": 0,
+        "serumLDL_C": 1,
+        "serumHDL_C": 1,
+        "smoking": 0,
+        "age": 2
+      },
+      "expected": {
+        "data": [11, "中リスク（発症確率は7.9%）", "yellow", "脂質管理目標値 LDL<140、Non-HDL<170、TG<150、HDL≥40"]
+      }
+    },
+    {
+      "description": "性別がnullの場合",
+      "input": {
+        "gender": null,
+        "systolicBloodPressure": 2,
+        "glucoseMetabolismAbnormality": 0,
+        "serumLDL_C": 1,
+        "serumHDL_C": 1,
+        "smoking": 0,
+        "age": 2
+      },
+      "expected": null
+    },
+    {
+      "description": "血圧がnullの場合",
+      "input": {
+        "gender": 7,
+        "systolicBloodPressure": null,
+        "glucoseMetabolismAbnormality": 0,
+        "serumLDL_C": 1,
+        "serumHDL_C": 1,
+        "smoking": 0,
+        "age": 2
+      },
+      "expected": null
+    },
+    {
+      "description": "糖代謝異常がnullの場合",
+      "input": {
+        "gender": 7,
+        "systolicBloodPressure": 2,
+        "glucoseMetabolismAbnormality": null,
+        "serumLDL_C": 1,
+        "serumHDL_C": 1,
+        "smoking": 0,
+        "age": 2
+      },
+      "expected": null
+    },
+    {
+      "description": "LDL-Cがnullの場合",
+      "input": {
+        "gender": 7,
+        "systolicBloodPressure": 2,
+        "glucoseMetabolismAbnormality": 0,
+        "serumLDL_C": null,
+        "serumHDL_C": 1,
+        "smoking": 0,
+        "age": 2
+      },
+      "expected": null
+    },
+    {
+      "description": "HDL-Cがnullの場合",
+      "input": {
+        "gender": 7,
+        "systolicBloodPressure": 2,
+        "glucoseMetabolismAbnormality": 0,
+        "serumLDL_C": 1,
+        "serumHDL_C": null,
+        "smoking": 0,
+        "age": 2
+      },
+      "expected": null
+    },
+    {
+      "description": "喫煙がnullの場合",
+      "input": {
+        "gender": 7,
+        "systolicBloodPressure": 2,
+        "glucoseMetabolismAbnormality": 0,
+        "serumLDL_C": 1,
+        "serumHDL_C": 1,
+        "smoking": null,
+        "age": 2
+      },
+      "expected": null
+    },
+    {
+      "description": "年齢がnullの場合",
+      "input": {
+        "gender": 7,
+        "systolicBloodPressure": 2,
+        "glucoseMetabolismAbnormality": 0,
+        "serumLDL_C": 1,
+        "serumHDL_C": 1,
+        "smoking": 0,
+        "age": null
+      },
+      "expected": null
+    },
+    {
+      "description": "異常値 - 性別が負の値",
+      "input": {
+        "gender": -5,
+        "systolicBloodPressure": 0,
+        "glucoseMetabolismAbnormality": 0,
+        "serumLDL_C": 0,
+        "serumHDL_C": 0,
+        "smoking": 0,
+        "age": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "異常値 - LDL-Cが範囲外の大きな値",
+      "input": {
+        "gender": 7,
+        "systolicBloodPressure": 0,
+        "glucoseMetabolismAbnormality": 0,
+        "serumLDL_C": 8,
+        "serumHDL_C": 0,
+        "smoking": 0,
+        "age": 0
+      },
+      "expected": {
+        "data": [15, "中リスク（発症確率は3.0%）", "yellow", "脂質管理目標値 LDL<140、Non-HDL<170、TG<150、HDL≥40"]
+      }
+    },
+    {
+      "description": "異常値 - 喫煙が範囲外の大きな値",
+      "input": {
+        "gender": 7,
+        "systolicBloodPressure": 0,
+        "glucoseMetabolismAbnormality": 0,
+        "serumLDL_C": 0,
+        "serumHDL_C": 0,
+        "smoking": 7,
+        "age": 0
+      },
+      "expected": {
+        "data": [14, "中リスク（発症確率は2.6%）", "yellow", "脂質管理目標値 LDL<140、Non-HDL<170、TG<150、HDL≥40"]
+      }
+    },
+    {
+      "description": "異常値 - 年齢が範囲外の大きな値",
+      "input": {
+        "gender": 7,
+        "systolicBloodPressure": 0,
+        "glucoseMetabolismAbnormality": 0,
+        "serumLDL_C": 0,
+        "serumHDL_C": 0,
+        "smoking": 0,
+        "age": 5
+      },
+      "expected": {
+        "data": [7, "", "green", ""]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア1（低リスク）",
+      "input": {
+        "gender": 0,
+        "systolicBloodPressure": 1,
+        "glucoseMetabolismAbnormality": 0,
+        "serumLDL_C": 0,
+        "serumHDL_C": 0,
+        "smoking": 0,
+        "age": 0
+      },
+      "expected": {
+        "data": [1, "低リスク（発症確率は<1.0%）", "green", "脂質管理目標値 LDL<160、Non-HDL<190、TG<150、HDL≥40"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア8（中リスク下限）",
+      "input": {
+        "gender": 7,
+        "systolicBloodPressure": 0,
+        "glucoseMetabolismAbnormality": 0,
+        "serumLDL_C": 1,
+        "serumHDL_C": 0,
+        "smoking": 0,
+        "age": 0
+      },
+      "expected": {
+        "data": [8, "低リスク（発症確率は1.1%）", "green", "脂質管理目標値 LDL<160、Non-HDL<190、TG<150、HDL≥40"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア9（中リスク）",
+      "input": {
+        "gender": 7,
+        "systolicBloodPressure": 0,
+        "glucoseMetabolismAbnormality": 0,
+        "serumLDL_C": 1,
+        "serumHDL_C": 1,
+        "smoking": 0,
+        "age": 2
+      },
+      "expected": {
+        "data": [9, "中リスク（発症確率は6.0%）", "yellow", "脂質管理目標値 LDL<140、Non-HDL<170、TG<150、HDL≥40"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア12（高リスク下限）",
+      "input": {
+        "gender": 7,
+        "systolicBloodPressure": 0,
+        "glucoseMetabolismAbnormality": 1,
+        "serumLDL_C": 2,
+        "serumHDL_C": 2,
+        "smoking": 0,
+        "age": 3
+      },
+      "expected": {
+        "data": [12, "高リスク（発症確率は17.7%）", "red", "脂質管理目標値 LDL<120、Non-HDL<150、TG<150、HDL≥40"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア13（高リスク）",
+      "input": {
+        "gender": 7,
+        "systolicBloodPressure": 0,
+        "glucoseMetabolismAbnormality": 1,
+        "serumLDL_C": 3,
+        "serumHDL_C": 2,
+        "smoking": 0,
+        "age": 3
+      },
+      "expected": {
+        "data": [13, "高リスク（発症確率は20.2%）", "red", "脂質管理目標値 LDL<120、Non-HDL<150、TG<150、HDL≥40"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア19（最大スコア）",
+      "input": {
+        "gender": 7,
+        "systolicBloodPressure": 4,
+        "glucoseMetabolismAbnormality": 1,
+        "serumLDL_C": 3,
+        "serumHDL_C": 2,
+        "smoking": 2,
+        "age": 3
+      },
+      "expected": {
+        "data": [19, "高リスク（発症確率は41.1%）", "red", "脂質管理目標値 LDL<120、Non-HDL<150、TG<150、HDL≥40"]
+      }
+    },
+    {
+      "description": "総合的な異常値テスト - 全ての値が高い",
+      "input": {
+        "gender": 99,
+        "systolicBloodPressure": 99,
+        "glucoseMetabolismAbnormality": 99,
+        "serumLDL_C": 99,
+        "serumHDL_C": 99,
+        "smoking": 99,
+        "age": 3
+      },
+      "expected": {
+        "data": [594, "", "green", ""]
+      }
+    },
+    {
+      "description": "総合的な異常値テスト - 全ての値が負",
+      "input": {
+        "gender": -10,
+        "systolicBloodPressure": -10,
+        "glucoseMetabolismAbnormality": -10,
+        "serumLDL_C": -10,
+        "serumHDL_C": -10,
+        "smoking": -10,
+        "age": 1
+      },
+      "expected": null
+    }
+  ]
+} 

@@ -1,0 +1,174 @@
+{
+  "testCases": [    
+    {
+      "description": "予測Plt増加数",
+      "input": {
+        "rbc": 1,
+        "weight": 60
+      },
+      "expected": {
+        "data": ["3174.6", "予測Plt増加数", "green"]
+      }
+    },
+    {
+      "description": "予測Plt増加数",
+      "input": {
+        "rbc": 0,
+        "weight": 21
+      },
+      "expected": {
+        "data": ["None", "予測Plt増加数", "green"]
+      }
+    },
+    {
+      "description": "予測Plt増加数",
+      "input": {
+        "rbc": 19,
+        "weight": 5
+      },
+      "expected": {
+        "data": ["723809.5", "予測Plt増加数", "green"]
+      }
+    },
+    {
+      "description": "予測Plt増加数",
+      "input": {
+        "rbc": 19,
+        "weight": 10
+      },
+      "expected": {
+        "data": ["361904.8", "予測Plt増加数", "green"]
+      }
+    },
+    {
+      "description": "予測Plt増加数",
+      "input": {
+        "rbc": 19,
+        "weight": 15
+      },
+      "expected": {
+        "data": ["241269.8", "予測Plt増加数", "green"]
+      }
+    },
+    {
+      "description": "予測Plt増加数",
+      "input": {
+        "rbc": 19,
+        "weight": 20
+      },
+      "expected": {
+        "data": ["180952.4", "予測Plt増加数", "green"]
+      }
+    },
+    {
+      "description": "予測Plt増加数",
+      "input": {
+        "rbc": 15.2,
+        "weight": 25
+      },
+      "expected": {
+        "data": ["115809.5", "予測Plt増加数", "green"]
+      }
+    },
+    {
+      "description": "予測Plt増加数",
+      "input": {
+        "rbc": 12.7,
+        "weight": 30
+      },
+      "expected": {
+        "data": ["80634.9", "予測Plt増加数", "green"]
+      }
+    },
+    {
+      "description": "予測Plt増加数",
+      "input": {
+        "rbc": 10.9,
+        "weight": 35
+      },
+      "expected": {
+        "data": ["59319.7", "予測Plt増加数", "green"]
+      }
+    },
+    {
+      "description": "予測Plt増加数",
+      "input": {
+        "rbc": 9.5,
+        "weight": 40
+      },
+      "expected": {
+        "data": ["45238.1", "予測Plt増加数", "green"]
+      }
+    },
+    {
+      "description": "予測Plt増加数",
+      "input": {
+        "rbc": 8.5,
+        "weight": 45
+      },
+      "expected": {
+        "data": ["35978.8", "予測Plt増加数", "green"]
+      }
+    },
+    {
+      "description": "予測Plt増加数",
+      "input": {
+        "rbc": 7.6,
+        "weight": 50
+      },
+      "expected": {
+        "data": ["28952.4", "予測Plt増加数", "green"]
+      }
+    },
+    {
+      "description": "予測Plt増加数",
+      "input": {
+        "rbc": 6.3,
+        "weight": 60
+      },
+      "expected": {
+        "data": ["20000.0", "予測Plt増加数", "green"]
+      }
+    },
+    {
+      "description": "予測Plt増加数",
+      "input": {
+        "rbc": 5.4,
+        "weight": 70
+      },
+      "expected": {
+        "data": ["14693.9", "予測Plt増加数", "green"]
+      }
+    },
+    {
+      "description": "予測Plt増加数",
+      "input": {
+        "rbc": 4.8,
+        "weight": 80
+      },
+      "expected": {
+        "data": ["11428.6", "予測Plt増加数", "green"]
+      }
+    },
+    {
+      "description": "予測Plt増加数",
+      "input": {
+        "rbc": 4.2,
+        "weight": 90
+      },
+      "expected": {
+        "data": ["8888.9", "予測Plt増加数", "green"]
+      }
+    },
+    {
+      "description": "予測Plt増加数",
+      "input": {
+        "rbc": 3.8,
+        "weight": 100
+      },
+      "expected": {
+        "data": ["7238.1", "予測Plt増加数", "green"]
+      }
+    }
+  ]
+} 

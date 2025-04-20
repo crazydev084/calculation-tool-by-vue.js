@@ -1,0 +1,48 @@
+{
+  "fields": [
+    {
+      "id": "weight",
+      "label": "体重",
+      "type": "number",
+      "unit": "kg",
+      "required": true,
+      "defaultValue": "",
+      "min": 0,
+      "step": 1,
+      "placeholder": "例：60"
+    },
+    {
+      "id": "administeredDrugAmount",
+      "label": "投与薬剤量",
+      "type": "number",
+      "unit": "mg",
+      "required": true,
+      "defaultValue": "",
+      "min": 0,
+      "step": 0.1,
+      "placeholder": "例：5"
+    },
+    {
+      "id": "dilutedDrudAmount",
+      "label": "希釈薬剤量<br />(=総薬剤量)",
+      "type": "number",
+      "unit": "ml",
+      "required": true,
+      "defaultValue": "",
+      "min": 0,
+      "step": 0.1,
+      "placeholder": "例：50"
+    },
+    {
+      "id": "infusionRate",
+      "label": "投与速度",
+      "type": "number",
+      "unit": "ml/hr",
+      "required": true,
+      "defaultValue": "",
+      "min": 0,
+      "step": 0.1,
+      "placeholder": "例：7.2"
+    }
+  ]
+} 

@@ -1,0 +1,280 @@
+{
+  "testCases": [
+    {
+      "description": "腎前性AKIの場合（FENa < 1%）",
+      "input": {
+        "urineSodiumConcentration": 20,
+        "urineCreatinineConcentration": 100,
+        "serumSodiumConcentration": 140,
+        "serumCreatinineConcentration": 2.0
+      },
+      "expected": {
+        "data": ["0.29", "腎前性AKIの可能性あり", "green", "※UNaがあと50mEq/L高いとFENaが1%超"]
+      }
+    },
+    {
+      "description": "腎性AKIの場合（FENa > 1%）",
+      "input": {
+        "urineSodiumConcentration": 60,
+        "urineCreatinineConcentration": 80,
+        "serumSodiumConcentration": 135,
+        "serumCreatinineConcentration": 3.0
+      },
+      "expected": {
+        "data": ["1.67", "腎性AKIの可能性あり", "red", "※UNaがあと24mEq/L低ければFENaが1%以下"]
+      }
+    },
+    {
+      "description": "ボーダーライン（FENa = 1%）",
+      "input": {
+        "urineSodiumConcentration": 40,
+        "urineCreatinineConcentration": 100,
+        "serumSodiumConcentration": 140,
+        "serumCreatinineConcentration": 2.8
+      },
+      "expected": {
+        "data": ["0.80", "腎前性AKIの可能性あり", "green", "※UNaがあと10mEq/L高いとFENaが1%超"]
+      }
+    },
+    {
+      "description": "尿中ナトリウム濃度がnullの場合",
+      "input": {
+        "urineSodiumConcentration": null,
+        "urineCreatinineConcentration": 100,
+        "serumSodiumConcentration": 140,
+        "serumCreatinineConcentration": 2.0
+      },
+      "expected": null
+    },
+    {
+      "description": "尿中クレアチニン濃度がnullの場合",
+      "input": {
+        "urineSodiumConcentration": 20,
+        "urineCreatinineConcentration": null,
+        "serumSodiumConcentration": 140,
+        "serumCreatinineConcentration": 2.0
+      },
+      "expected": null
+    },
+    {
+      "description": "血清ナトリウム濃度がnullの場合",
+      "input": {
+        "urineSodiumConcentration": 20,
+        "urineCreatinineConcentration": 100,
+        "serumSodiumConcentration": null,
+        "serumCreatinineConcentration": 2.0
+      },
+      "expected": null
+    },
+    {
+      "description": "血清クレアチニン濃度がnullの場合",
+      "input": {
+        "urineSodiumConcentration": 20,
+        "urineCreatinineConcentration": 100,
+        "serumSodiumConcentration": 140,
+        "serumCreatinineConcentration": null
+      },
+      "expected": null
+    },
+    {
+      "description": "値が0以下の場合",
+      "input": {
+        "urineSodiumConcentration": 0,
+        "urineCreatinineConcentration": 100,
+        "serumSodiumConcentration": 140,
+        "serumCreatinineConcentration": 2.0
+      },
+      "expected": null
+    },
+    {
+      "description": "値が上限を超える場合",
+      "input": {
+        "urineSodiumConcentration": 10000,
+        "urineCreatinineConcentration": 100,
+        "serumSodiumConcentration": 140,
+        "serumCreatinineConcentration": 2.0
+      },
+      "expected": null
+    },
+    {
+      "description": "境界値テスト - FENa 1.00%ちょうど",
+      "input": {
+        "urineSodiumConcentration": 50,
+        "urineCreatinineConcentration": 100,
+        "serumSodiumConcentration": 140,
+        "serumCreatinineConcentration": 2.8
+      },
+      "expected": {
+        "data": ["1.00", "腎性AKIの可能性あり", "red", ""]
+      }
+    },
+    {
+      "description": "境界値テスト - FENa 0.99%",
+      "input": {
+        "urineSodiumConcentration": 49.5,
+        "urineCreatinineConcentration": 100,
+        "serumSodiumConcentration": 140,
+        "serumCreatinineConcentration": 2.8
+      },
+      "expected": {
+        "data": ["0.99", "腎前性AKIの可能性あり", "green", "※UNaがあと1mEq/L高いとFENaが1%超"]
+      }
+    },
+    {
+      "description": "境界値テスト - FENa 1.01%",
+      "input": {
+        "urineSodiumConcentration": 50.5,
+        "urineCreatinineConcentration": 100,
+        "serumSodiumConcentration": 140,
+        "serumCreatinineConcentration": 2.8
+      },
+      "expected": {
+        "data": ["1.01", "腎性AKIの可能性あり", "red", "※UNaがあと1mEq/L低ければFENaが1%以下"]
+      }
+    },
+    {
+      "description": "小数点以下の丸め処理テスト - 切り捨て",
+      "input": {
+        "urineSodiumConcentration": 30,
+        "urineCreatinineConcentration": 95.5,
+        "serumSodiumConcentration": 138.7,
+        "serumCreatinineConcentration": 2.2
+      },
+      "expected": {
+        "data": ["0.50", "腎前性AKIの可能性あり", "green", "※UNaがあと31mEq/L高いとFENaが1%超"]
+      }
+    },
+    {
+      "description": "小数点以下の丸め処理テスト - 切り上げ",
+      "input": {
+        "urineSodiumConcentration": 45,
+        "urineCreatinineConcentration": 98.2,
+        "serumSodiumConcentration": 139.5,
+        "serumCreatinineConcentration": 2.5
+      },
+      "expected": {
+        "data": ["0.82", "腎前性AKIの可能性あり", "green", "※UNaがあと10mEq/L高いとFENaが1%超"]
+      }
+    },
+    {
+      "description": "極端に大きな値のテスト - 尿中ナトリウム濃度",
+      "input": {
+        "urineSodiumConcentration": 500,
+        "urineCreatinineConcentration": 100,
+        "serumSodiumConcentration": 140,
+        "serumCreatinineConcentration": 2.0
+      },
+      "expected": {
+        "data": ["7.14", "腎性AKIの可能性あり", "red", "※UNaがあと430mEq/L低ければFENaが1%以下"]
+      }
+    },
+    {
+      "description": "極端に大きな値のテスト - 尿中クレアチニン濃度",
+      "input": {
+        "urineSodiumConcentration": 50,
+        "urineCreatinineConcentration": 1000,
+        "serumSodiumConcentration": 140,
+        "serumCreatinineConcentration": 2.0
+      },
+      "expected": {
+        "data": ["0.07", "腎前性AKIの可能性あり", "green", "※UNaがあと650mEq/L高いとFENaが1%超"]
+      }
+    },
+    {
+      "description": "極端に大きな値のテスト - 血清ナトリウム濃度",
+      "input": {
+        "urineSodiumConcentration": 50,
+        "urineCreatinineConcentration": 100,
+        "serumSodiumConcentration": 200,
+        "serumCreatinineConcentration": 2.0
+      },
+      "expected": {
+        "data": ["0.50", "腎前性AKIの可能性あり", "green", "※UNaがあと50mEq/L高いとFENaが1%超"]
+      }
+    },
+    {
+      "description": "極端に大きな値のテスト - 血清クレアチニン濃度",
+      "input": {
+        "urineSodiumConcentration": 50,
+        "urineCreatinineConcentration": 100,
+        "serumSodiumConcentration": 140,
+        "serumCreatinineConcentration": 10.0
+      },
+      "expected": {
+        "data": ["3.57", "腎性AKIの可能性あり", "red", "※UNaがあと36mEq/L低ければFENaが1%以下"]
+      }
+    },
+    {
+      "description": "極端に小さな値のテスト - 尿中ナトリウム濃度",
+      "input": {
+        "urineSodiumConcentration": 0.1,
+        "urineCreatinineConcentration": 100,
+        "serumSodiumConcentration": 140,
+        "serumCreatinineConcentration": 2.0
+      },
+      "expected": {
+        "data": ["0.00", "腎前性AKIの可能性あり", "green", "※UNaがあと70mEq/L高いとFENaが1%超"]
+      }
+    },
+    {
+      "description": "極端に小さな値のテスト - 尿中クレアチニン濃度",
+      "input": {
+        "urineSodiumConcentration": 50,
+        "urineCreatinineConcentration": 0.1,
+        "serumSodiumConcentration": 140,
+        "serumCreatinineConcentration": 2.0
+      },
+      "expected": {
+        "data": ["100.00", "腎性AKIの可能性あり", "red", "※UNaがあと50mEq/L低ければFENaが1%以下"]
+      }
+    },
+    {
+      "description": "極端に小さな値のテスト - 血清ナトリウム濃度",
+      "input": {
+        "urineSodiumConcentration": 50,
+        "urineCreatinineConcentration": 100,
+        "serumSodiumConcentration": 0.1,
+        "serumCreatinineConcentration": 2.0
+      },
+      "expected": {
+        "data": ["100.00", "腎性AKIの可能性あり", "red", "※UNaがあと50mEq/L低ければFENaが1%以下"]
+      }
+    },
+    {
+      "description": "極端に小さな値のテスト - 血清クレアチニン濃度",
+      "input": {
+        "urineSodiumConcentration": 50,
+        "urineCreatinineConcentration": 100,
+        "serumSodiumConcentration": 140,
+        "serumCreatinineConcentration": 0.1
+      },
+      "expected": {
+        "data": ["0.04", "腎前性AKIの可能性あり", "green", "※UNaがあと1350mEq/L高いとFENaが1%超"]
+      }
+    },
+    {
+      "description": "ゼロ判定テスト - FENaが0%",
+      "input": {
+        "urineSodiumConcentration": 0.01,
+        "urineCreatinineConcentration": 100,
+        "serumSodiumConcentration": 140,
+        "serumCreatinineConcentration": 1.0
+      },
+      "expected": {
+        "data": ["0.00", "腎前性AKIの可能性あり", "green", "※UNaがあと140mEq/L高いとFENaが1%超"]
+      }
+    },
+    {
+      "description": "FENaが100%に近い値",
+      "input": {
+        "urineSodiumConcentration": 140,
+        "urineCreatinineConcentration": 1,
+        "serumSodiumConcentration": 140,
+        "serumCreatinineConcentration": 10.0
+      },
+      "expected": {
+        "data": ["100.00", "腎性AKIの可能性あり", "red", "※UNaがあと140mEq/L低ければFENaが1%以下"]
+      }
+    }
+  ]
+} 

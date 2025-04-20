@@ -1,0 +1,233 @@
+{
+  "description": "注：本計算ツールはオリジナル版のGRACEリスクスコア <sup>1)</sup> に基づき作成しています。<br>実際に臨床で使用する際は、最新の<a href='https://www.outcomes-umassmed.org/GRACE/default.aspx' target='_blank'>GRACEの公式サイト</a> をご利用ください。",
+  "fields": [
+    {
+      "id": "age",
+      "label": "年齢",
+      "type": "select",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "30 歳未満",
+          "value": 0
+        },
+        {
+          "label": "30-39 歳",
+          "value": 8
+        },
+        {
+          "label": "40-49 歳",
+          "value": 25
+        },
+        {
+          "label": "50-59 歳",
+          "value": 41
+        },
+        {
+          "label": "60-69 歳",
+          "value": 58
+        },
+        {
+          "label": "70-79 歳",
+          "value": 75
+        },
+        {
+          "label": "80-89 歳",
+          "value": 91
+        },
+        {
+          "label": "90 歳以上",
+          "value": 100
+        }
+      ]
+    },
+    {
+      "id": "heartRate",
+      "label": "心拍数",
+      "type": "select",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "50 回/分未満",
+          "value": 0
+        },
+        {
+          "label": "50-69 回/分",
+          "value": 3
+        },
+        {
+          "label": "70-89 回/分",
+          "value": 9
+        },
+        {
+          "label": "90-109 回/分",
+          "value": 15
+        },
+        {
+          "label": "110-149 回/分",
+          "value": 24
+        },
+        {
+          "label": "150-199 回/分",
+          "value": 38
+        },
+        {
+          "label": "200 回/分以上",
+          "value": 46
+        }
+      ]
+    },
+    {
+      "id": "systolicBloodPressure",
+      "label": "収縮期血圧",
+      "type": "select",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "80 mmHg未満",
+          "value": 58
+        },
+        {
+          "label": "80-99 mmHg",
+          "value": 53
+        },
+        {
+          "label": "100-119 mmHg",
+          "value": 43
+        },
+        {
+          "label": "120-139 mmHg",
+          "value": 34
+        },
+        {
+          "label": "140-159 mmHg",
+          "value": 24
+        },
+        {
+          "label": "160-199 mmHg",
+          "value": 10
+        },
+        {
+          "label": "200 mmHg以上",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "serumCreatinine",
+      "label": "血清クレアチニン",
+      "type": "select",
+      "required": true,
+      "defaultValue": 1,
+      "options": [
+        {
+          "label": "0-0.39 mg/dL",
+          "value": 1
+        },
+        {
+          "label": "0.40-0.79 mg/dL",
+          "value": 4
+        },
+        {
+          "label": "0.80-1.19 mg/dL",
+          "value": 7
+        },
+        {
+          "label": "1.20-1.59 mg/dL",
+          "value": 10
+        },
+        {
+          "label": "1.60-1.99 mg/dL",
+          "value": 13
+        },
+        {
+          "label": "2.00-3.99 mg/dL",
+          "value": 21
+        },
+        {
+          "label": "4 mg/dL以上",
+          "value": 28
+        }
+      ]
+    },
+    {
+      "id": "killipClassification",
+      "label": "Killip分類",
+      "type": "select",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "I（心不全徴候なし）",
+          "value": 0
+        },
+        {
+          "label": "II（ラ音聴取または頸静脈怒張あり）",
+          "value": 20
+        },
+        {
+          "label": "III（肺うっ血あり）",
+          "value": 39
+        },
+        {
+          "label": "IV（心原性ショック）",
+          "value": 59
+        }
+      ]
+    },
+    {
+      "id": "cardiacBiomarkerElevation",
+      "label": "心筋バイオマーカー上昇",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 14
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "stDeviation",
+      "label": "ST偏位",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 28
+        },
+        {
+          "label": "ない",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "hospitalizationDueToCardiacArrest",
+      "label": "心停止による入院",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "options": [
+        {
+          "label": "ある",
+          "value": 39
+        },
+        {
+          "label": "なし",
+          "value": 0
+        }
+      ]
+    }
+  ]
+} 

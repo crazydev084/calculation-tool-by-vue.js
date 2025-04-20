@@ -1,0 +1,435 @@
+{
+  "testCases": [
+    {
+      "description": "最高リスク（スコア9点）",
+      "input": {
+        "systolicBloodPressure": 1,
+        "AbnormalRenal": 1,
+        "liverFunction": 1,
+        "stroke": 1,
+        "bleeding": 1,
+        "unstableInr": 1,
+        "age66OrMore": 1,
+        "antiplateletOrNsaids": 1,
+        "alcoholDependence": 1
+      },
+      "expected": {
+        "data": [9, "高リスク(抗凝固療法の適用を慎重に判断)", "red"]
+      }
+    },
+    {
+      "description": "高リスク（スコア5点）",
+      "input": {
+        "systolicBloodPressure": 1,
+        "AbnormalRenal": 1,
+        "liverFunction": 1,
+        "stroke": 1,
+        "bleeding": 1,
+        "unstableInr": 0,
+        "age66OrMore": 0,
+        "antiplateletOrNsaids": 0,
+        "alcoholDependence": 0
+      },
+      "expected": {
+        "data": [5, "高リスク(抗凝固療法の適用を慎重に判断)", "red"]
+      }
+    },
+    {
+      "description": "中リスク（スコア3点）",
+      "input": {
+        "systolicBloodPressure": 1,
+        "AbnormalRenal": 1,
+        "liverFunction": 1,
+        "stroke": 0,
+        "bleeding": 0,
+        "unstableInr": 0,
+        "age66OrMore": 0,
+        "antiplateletOrNsaids": 0,
+        "alcoholDependence": 0
+      },
+      "expected": {
+        "data": [3, "高リスク(抗凝固療法の適用を慎重に判断)", "red"]
+      }
+    },
+    {
+      "description": "低リスク（スコア2点）",
+      "input": {
+        "systolicBloodPressure": 1,
+        "AbnormalRenal": 1,
+        "liverFunction": 0,
+        "stroke": 0,
+        "bleeding": 0,
+        "unstableInr": 0,
+        "age66OrMore": 0,
+        "antiplateletOrNsaids": 0,
+        "alcoholDependence": 0
+      },
+      "expected": {
+        "data": [2, "低リスク", "green"]
+      }
+    },
+    {
+      "description": "最低リスク（スコア0点）",
+      "input": {
+        "systolicBloodPressure": 0,
+        "AbnormalRenal": 0,
+        "liverFunction": 0,
+        "stroke": 0,
+        "bleeding": 0,
+        "unstableInr": 0,
+        "age66OrMore": 0,
+        "antiplateletOrNsaids": 0,
+        "alcoholDependence": 0
+      },
+      "expected": {
+        "data": [0, "低リスク", "green"]
+      }
+    },
+    {
+      "description": "収縮期血圧がnullの場合",
+      "input": {
+        "systolicBloodPressure": null,
+        "AbnormalRenal": 0,
+        "liverFunction": 0,
+        "stroke": 0,
+        "bleeding": 0,
+        "unstableInr": 0,
+        "age66OrMore": 0,
+        "antiplateletOrNsaids": 0,
+        "alcoholDependence": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "腎障害がnullの場合",
+      "input": {
+        "systolicBloodPressure": 0,
+        "AbnormalRenal": null,
+        "liverFunction": 0,
+        "stroke": 0,
+        "bleeding": 0,
+        "unstableInr": 0,
+        "age66OrMore": 0,
+        "antiplateletOrNsaids": 0,
+        "alcoholDependence": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "肝障害がnullの場合",
+      "input": {
+        "systolicBloodPressure": 0,
+        "AbnormalRenal": 0,
+        "liverFunction": null,
+        "stroke": 0,
+        "bleeding": 0,
+        "unstableInr": 0,
+        "age66OrMore": 0,
+        "antiplateletOrNsaids": 0,
+        "alcoholDependence": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "境界値テスト - スコア2（低リスク上限）",
+      "input": {
+        "systolicBloodPressure": 1,
+        "AbnormalRenal": 1,
+        "liverFunction": 0,
+        "stroke": 0,
+        "bleeding": 0,
+        "unstableInr": 0,
+        "age66OrMore": 0,
+        "antiplateletOrNsaids": 0,
+        "alcoholDependence": 0
+      },
+      "expected": {
+        "data": [2, "低リスク", "green"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア3（高リスク下限）",
+      "input": {
+        "systolicBloodPressure": 1,
+        "AbnormalRenal": 1,
+        "liverFunction": 1,
+        "stroke": 0,
+        "bleeding": 0,
+        "unstableInr": 0,
+        "age66OrMore": 0,
+        "antiplateletOrNsaids": 0,
+        "alcoholDependence": 0
+      },
+      "expected": {
+        "data": [3, "高リスク(抗凝固療法の適用を慎重に判断)", "red"]
+      }
+    },
+    {
+      "description": "異常値 - 収縮期血圧が範囲外",
+      "input": {
+        "systolicBloodPressure": 2,
+        "AbnormalRenal": 0,
+        "liverFunction": 0,
+        "stroke": 0,
+        "bleeding": 0,
+        "unstableInr": 0,
+        "age66OrMore": 0,
+        "antiplateletOrNsaids": 0,
+        "alcoholDependence": 0
+      },
+      "expected": {
+        "data": [2, "低リスク", "green"]
+      }
+    },
+    {
+      "description": "異常値 - 腎障害が範囲外",
+      "input": {
+        "systolicBloodPressure": 0,
+        "AbnormalRenal": 3,
+        "liverFunction": 0,
+        "stroke": 0,
+        "bleeding": 0,
+        "unstableInr": 0,
+        "age66OrMore": 0,
+        "antiplateletOrNsaids": 0,
+        "alcoholDependence": 0
+      },
+      "expected": {
+        "data": [3, "高リスク(抗凝固療法の適用を慎重に判断)", "red"]
+      }
+    },
+    {
+      "description": "異常値 - 負の値",
+      "input": {
+        "systolicBloodPressure": -1,
+        "AbnormalRenal": 0,
+        "liverFunction": 0,
+        "stroke": 0,
+        "bleeding": 0,
+        "unstableInr": 0,
+        "age66OrMore": 0,
+        "antiplateletOrNsaids": 0,
+        "alcoholDependence": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "異常値 - 負値と正値の組み合わせでスコア0",
+      "input": {
+        "systolicBloodPressure": 1,
+        "AbnormalRenal": -1,
+        "liverFunction": 0,
+        "stroke": 0,
+        "bleeding": 0,
+        "unstableInr": 0,
+        "age66OrMore": 0,
+        "antiplateletOrNsaids": 0,
+        "alcoholDependence": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "異常値 - 負値と正値の組み合わせでスコア3",
+      "input": {
+        "systolicBloodPressure": 2,
+        "AbnormalRenal": 2,
+        "liverFunction": 0,
+        "stroke": 0,
+        "bleeding": 0,
+        "unstableInr": 0,
+        "age66OrMore": 0,
+        "antiplateletOrNsaids": 0,
+        "alcoholDependence": -1
+      },
+      "expected": {
+        "data": [3, "高リスク(抗凝固療法の適用を慎重に判断)", "red"]
+      }
+    },
+    {
+      "description": "小数値入力のテスト",
+      "input": {
+        "systolicBloodPressure": 0.5,
+        "AbnormalRenal": 0.5,
+        "liverFunction": 0,
+        "stroke": 0,
+        "bleeding": 0,
+        "unstableInr": 0,
+        "age66OrMore": 0,
+        "antiplateletOrNsaids": 0,
+        "alcoholDependence": 0
+      },
+      "expected": {
+        "data": [1, "低リスク", "green"]
+      }
+    },
+    {
+      "description": "小数値入力でスコア3のテスト",
+      "input": {
+        "systolicBloodPressure": 1.5,
+        "AbnormalRenal": 1.5,
+        "liverFunction": 0,
+        "stroke": 0,
+        "bleeding": 0,
+        "unstableInr": 0,
+        "age66OrMore": 0,
+        "antiplateletOrNsaids": 0,
+        "alcoholDependence": 0
+      },
+      "expected": {
+        "data": [3, "高リスク(抗凝固療法の適用を慎重に判断)", "red"]
+      }
+    },
+    {
+      "description": "極端に大きな値のテスト",
+      "input": {
+        "systolicBloodPressure": 999,
+        "AbnormalRenal": 999,
+        "liverFunction": 999,
+        "stroke": 999,
+        "bleeding": 999,
+        "unstableInr": 999,
+        "age66OrMore": 999,
+        "antiplateletOrNsaids": 999,
+        "alcoholDependence": 999
+      },
+      "expected": {
+        "data": [8991, "高リスク(抗凝固療法の適用を慎重に判断)", "red"]
+      }
+    },
+    {
+      "description": "極端に小さな値（負の値）のテスト",
+      "input": {
+        "systolicBloodPressure": -10,
+        "AbnormalRenal": -10,
+        "liverFunction": -10,
+        "stroke": -10,
+        "bleeding": -10,
+        "unstableInr": -10,
+        "age66OrMore": -10,
+        "antiplateletOrNsaids": -10,
+        "alcoholDependence": -10
+      },
+      "expected": null
+    },
+    {
+      "description": "出血がnullの場合",
+      "input": {
+        "systolicBloodPressure": 0,
+        "AbnormalRenal": 0,
+        "liverFunction": 0,
+        "stroke": 0,
+        "bleeding": null,
+        "unstableInr": 0,
+        "age66OrMore": 0,
+        "antiplateletOrNsaids": 0,
+        "alcoholDependence": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "不安定なINRがnullの場合",
+      "input": {
+        "systolicBloodPressure": 0,
+        "AbnormalRenal": 0,
+        "liverFunction": 0,
+        "stroke": 0,
+        "bleeding": 0,
+        "unstableInr": null,
+        "age66OrMore": 0,
+        "antiplateletOrNsaids": 0,
+        "alcoholDependence": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "年齢がnullの場合",
+      "input": {
+        "systolicBloodPressure": 0,
+        "AbnormalRenal": 0,
+        "liverFunction": 0,
+        "stroke": 0,
+        "bleeding": 0,
+        "unstableInr": 0,
+        "age66OrMore": null,
+        "antiplateletOrNsaids": 0,
+        "alcoholDependence": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "抗血小板薬やNSAIDsの使用がnullの場合",
+      "input": {
+        "systolicBloodPressure": 0,
+        "AbnormalRenal": 0,
+        "liverFunction": 0,
+        "stroke": 0,
+        "bleeding": 0,
+        "unstableInr": 0,
+        "age66OrMore": 0,
+        "antiplateletOrNsaids": null,
+        "alcoholDependence": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "アルコール依存がnullの場合",
+      "input": {
+        "systolicBloodPressure": 0,
+        "AbnormalRenal": 0,
+        "liverFunction": 0,
+        "stroke": 0,
+        "bleeding": 0,
+        "unstableInr": 0,
+        "age66OrMore": 0,
+        "antiplateletOrNsaids": 0,
+        "alcoholDependence": null
+      },
+      "expected": null
+    },
+    {
+      "description": "脳卒中がnullの場合",
+      "input": {
+        "systolicBloodPressure": 0,
+        "AbnormalRenal": 0,
+        "liverFunction": 0,
+        "stroke": null,
+        "bleeding": 0,
+        "unstableInr": 0,
+        "age66OrMore": 0,
+        "antiplateletOrNsaids": 0,
+        "alcoholDependence": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "通常とは異なる組み合わせでスコア2になるケース",
+      "input": {
+        "systolicBloodPressure": 3,
+        "AbnormalRenal": -1,
+        "liverFunction": 0,
+        "stroke": 0,
+        "bleeding": 0,
+        "unstableInr": 0,
+        "age66OrMore": 0,
+        "antiplateletOrNsaids": 0,
+        "alcoholDependence": 0
+      },
+      "expected":null
+    },
+    {
+      "description": "通常とは異なる組み合わせでスコア3になるケース",
+      "input": {
+        "systolicBloodPressure": 4,
+        "AbnormalRenal": -1,
+        "liverFunction": 0,
+        "stroke": 0,
+        "bleeding": 0,
+        "unstableInr": 0,
+        "age66OrMore": 0,
+        "antiplateletOrNsaids": 0,
+        "alcoholDependence": 0
+      },
+      "expected": null
+    }
+  ]
+} 

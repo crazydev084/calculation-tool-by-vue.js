@@ -1,0 +1,443 @@
+{
+  "testCases": [
+    {
+      "description": "最高リスク（スコア9点）",
+      "input": {
+        "congestiveHeartFailure": 1,
+        "hypertension": 1,
+        "age": 2,
+        "diabetesMellitus": 1,
+        "strokeHistory": 2,
+        "vascularDisease": 1,
+        "sexCategory": 1
+      },
+      "expected": {
+        "data": [9, "抗凝固療法を検討する\n抗凝固療法未施行例における脳梗塞発症率：15.2％", "red"]
+      }
+    },
+    {
+      "description": "高リスク（スコア6点）",
+      "input": {
+        "congestiveHeartFailure": 1,
+        "hypertension": 1,
+        "age": 1,
+        "diabetesMellitus": 0,
+        "strokeHistory": 2,
+        "vascularDisease": 1,
+        "sexCategory": 0
+      },
+      "expected": {
+        "data": [6, "抗凝固療法を検討する\n抗凝固療法未施行例における脳梗塞発症率：9.8％", "red"]
+      }
+    },
+    {
+      "description": "中リスク（スコア3点）",
+      "input": {
+        "congestiveHeartFailure": 0,
+        "hypertension": 0,
+        "age": 1,
+        "diabetesMellitus": 0,
+        "strokeHistory": 2,
+        "vascularDisease": 0,
+        "sexCategory": 0
+      },
+      "expected": {
+        "data": [3, "抗凝固療法を検討する\n抗凝固療法未施行例における脳梗塞発症率：3.2％", "red"]
+      }
+    },
+    {
+      "description": "低リスク（スコア1点）",
+      "input": {
+        "congestiveHeartFailure": 0,
+        "hypertension": 0,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeHistory": 0,
+        "vascularDisease": 0,
+        "sexCategory": 1
+      },
+      "expected": {
+        "data": [1, "CHADS<sub>2</sub>スコアと合わせて評価する\n抗凝固療法未施行例における脳梗塞発症率：1.3％", "green"]
+      }
+    },
+    {
+      "description": "最低リスク（スコア0点）",
+      "input": {
+        "congestiveHeartFailure": 0,
+        "hypertension": 0,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeHistory": 0,
+        "vascularDisease": 0,
+        "sexCategory": 0
+      },
+      "expected": {
+        "data": [0, "CHADS<sub>2</sub>スコアと合わせて評価する\n抗凝固療法未施行例における脳梗塞発症率：0％", "green"]
+      }
+    },
+    {
+      "description": "心不全・左室機能不全がnullの場合",
+      "input": {
+        "congestiveHeartFailure": null,
+        "hypertension": 0,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeHistory": 0,
+        "vascularDisease": 0,
+        "sexCategory": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "高血圧がnullの場合",
+      "input": {
+        "congestiveHeartFailure": 0,
+        "hypertension": null,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeHistory": 0,
+        "vascularDisease": 0,
+        "sexCategory": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "年齢がnullの場合",
+      "input": {
+        "congestiveHeartFailure": 0,
+        "hypertension": 0,
+        "age": null,
+        "diabetesMellitus": 0,
+        "strokeHistory": 0,
+        "vascularDisease": 0,
+        "sexCategory": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "糖尿病がnullの場合",
+      "input": {
+        "congestiveHeartFailure": 0,
+        "hypertension": 0,
+        "age": 0,
+        "diabetesMellitus": null,
+        "strokeHistory": 0,
+        "vascularDisease": 0,
+        "sexCategory": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "脳梗塞・TIAの既往がnullの場合",
+      "input": {
+        "congestiveHeartFailure": 0,
+        "hypertension": 0,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeHistory": null,
+        "vascularDisease": 0,
+        "sexCategory": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "血管疾患がnullの場合",
+      "input": {
+        "congestiveHeartFailure": 0,
+        "hypertension": 0,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeHistory": 0,
+        "vascularDisease": null,
+        "sexCategory": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "性別がnullの場合",
+      "input": {
+        "congestiveHeartFailure": 0,
+        "hypertension": 0,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeHistory": 0,
+        "vascularDisease": 0,
+        "sexCategory": null
+      },
+      "expected": null
+    },
+    {
+      "description": "異常値 - 心不全が範囲外",
+      "input": {
+        "congestiveHeartFailure": 2,
+        "hypertension": 0,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeHistory": 0,
+        "vascularDisease": 0,
+        "sexCategory": 0
+      },
+      "expected": {
+        "data": [2, "抗凝固療法を検討する\n抗凝固療法未施行例における脳梗塞発症率：2.2％", "red"]
+      }
+    },
+    {
+      "description": "異常値 - 高血圧が範囲外",
+      "input": {
+        "congestiveHeartFailure": 0,
+        "hypertension": 3,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeHistory": 0,
+        "vascularDisease": 0,
+        "sexCategory": 0
+      },
+      "expected": {
+        "data": [3, "抗凝固療法を検討する\n抗凝固療法未施行例における脳梗塞発症率：3.2％", "red"]
+      }
+    },
+    {
+      "description": "異常値 - 年齢が範囲外",
+      "input": {
+        "congestiveHeartFailure": 0,
+        "hypertension": 0,
+        "age": 3,
+        "diabetesMellitus": 0,
+        "strokeHistory": 0,
+        "vascularDisease": 0,
+        "sexCategory": 0
+      },
+      "expected": {
+        "data": [3, "抗凝固療法を検討する\n抗凝固療法未施行例における脳梗塞発症率：3.2％", "red"]
+      }
+    },
+    {
+      "description": "異常値 - 糖尿病が範囲外",
+      "input": {
+        "congestiveHeartFailure": 0,
+        "hypertension": 0,
+        "age": 0,
+        "diabetesMellitus": 4,
+        "strokeHistory": 0,
+        "vascularDisease": 0,
+        "sexCategory": 0
+      },
+      "expected": {
+        "data": [4, "抗凝固療法を検討する\n抗凝固療法未施行例における脳梗塞発症率：4.0％", "red"]
+      }
+    },
+    {
+      "description": "異常値 - 脳梗塞・TIAの既往が範囲外",
+      "input": {
+        "congestiveHeartFailure": 0,
+        "hypertension": 0,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeHistory": 3,
+        "vascularDisease": 0,
+        "sexCategory": 0
+      },
+      "expected": {
+        "data": [3, "抗凝固療法を検討する\n抗凝固療法未施行例における脳梗塞発症率：3.2％", "red"]
+      }
+    },
+    {
+      "description": "異常値 - 血管疾患が範囲外",
+      "input": {
+        "congestiveHeartFailure": 0,
+        "hypertension": 0,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeHistory": 0,
+        "vascularDisease": 2,
+        "sexCategory": 0
+      },
+      "expected": {
+        "data": [2, "抗凝固療法を検討する\n抗凝固療法未施行例における脳梗塞発症率：2.2％", "red"]
+      }
+    },
+    {
+      "description": "異常値 - 性別が範囲外",
+      "input": {
+        "congestiveHeartFailure": 0,
+        "hypertension": 0,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeHistory": 0,
+        "vascularDisease": 0,
+        "sexCategory": 2
+      },
+      "expected": {
+        "data": [2, "抗凝固療法を検討する\n抗凝固療法未施行例における脳梗塞発症率：2.2％", "red"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア0（最低リスク）",
+      "input": {
+        "congestiveHeartFailure": 0,
+        "hypertension": 0,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeHistory": 0,
+        "vascularDisease": 0,
+        "sexCategory": 0
+      },
+      "expected": {
+        "data": [0, "CHADS<sub>2</sub>スコアと合わせて評価する\n抗凝固療法未施行例における脳梗塞発症率：0％", "green"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア1（低リスク）",
+      "input": {
+        "congestiveHeartFailure": 1,
+        "hypertension": 0,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeHistory": 0,
+        "vascularDisease": 0,
+        "sexCategory": 0
+      },
+      "expected": {
+        "data": [1, "CHADS<sub>2</sub>スコアと合わせて評価する\n抗凝固療法未施行例における脳梗塞発症率：1.3％", "green"]
+      }
+    },
+    {
+      "description": "境界値テスト - スコア2（中リスクの下限）",
+      "input": {
+        "congestiveHeartFailure": 0,
+        "hypertension": 0,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeHistory": 0,
+        "vascularDisease": 1,
+        "sexCategory": 1
+      },
+      "expected": {
+        "data": [2, "抗凝固療法を検討する\n抗凝固療法未施行例における脳梗塞発症率：2.2％", "red"]
+      }
+    },
+    {
+      "description": "境界値テスト - 負の値が入力されスコアが0未満",
+      "input": {
+        "congestiveHeartFailure": -1,
+        "hypertension": 0,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeHistory": 0,
+        "vascularDisease": 0,
+        "sexCategory": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "境界値テスト - 負の値が入力されるが合計は1",
+      "input": {
+        "congestiveHeartFailure": -1,
+        "hypertension": 0,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeHistory": 0,
+        "vascularDisease": 0,
+        "sexCategory": 2
+      },
+      "expected": null
+    },
+    {
+      "description": "境界値テスト - 負の値が入力されるが合計は2",
+      "input": {
+        "congestiveHeartFailure": -1,
+        "hypertension": 0,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeHistory": 0,
+        "vascularDisease": 0,
+        "sexCategory": 3
+      },
+      "expected": null
+    },
+    {
+      "description": "小数値入力のテスト",
+      "input": {
+        "congestiveHeartFailure": 0.5,
+        "hypertension": 0.5,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeHistory": 0,
+        "vascularDisease": 0,
+        "sexCategory": 0
+      },
+      "expected": {
+        "data": [1, "CHADS<sub>2</sub>スコアと合わせて評価する\n抗凝固療法未施行例における脳梗塞発症率：1.3％", "green"]
+      }
+    },
+    {
+      "description": "極端に大きな値のテスト",
+      "input": {
+        "congestiveHeartFailure": 999,
+        "hypertension": 999,
+        "age": 999,
+        "diabetesMellitus": 999,
+        "strokeHistory": 999,
+        "vascularDisease": 999,
+        "sexCategory": 999
+      },
+      "expected": {
+        "data": [6993, "", "red"]
+      }
+    },
+    {
+      "description": "極端に小さな値（負の値）のテスト",
+      "input": {
+        "congestiveHeartFailure": -10,
+        "hypertension": -10,
+        "age": -10,
+        "diabetesMellitus": -10,
+        "strokeHistory": -10,
+        "vascularDisease": -10,
+        "sexCategory": -10
+      },
+      "expected": null
+    },
+    {
+      "description": "通常とは異なる組み合わせでスコア2になるケース",
+      "input": {
+        "congestiveHeartFailure": 3,
+        "hypertension": -1,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeHistory": 0,
+        "vascularDisease": 0,
+        "sexCategory": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "通常とは異なる組み合わせでスコア3になるケース",
+      "input": {
+        "congestiveHeartFailure": 5,
+        "hypertension": -2,
+        "age": 0,
+        "diabetesMellitus": 0,
+        "strokeHistory": 0,
+        "vascularDisease": 0,
+        "sexCategory": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "定義されていないスコア値（10点）",
+      "input": {
+        "congestiveHeartFailure": 1,
+        "hypertension": 1,
+        "age": 2,
+        "diabetesMellitus": 1,
+        "strokeHistory": 2,
+        "vascularDisease": 1,
+        "sexCategory": 2
+      },
+      "expected": {
+        "data": [10, "", "red"]
+      }
+    }
+  ]
+} 

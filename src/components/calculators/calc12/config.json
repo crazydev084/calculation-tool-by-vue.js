@@ -1,0 +1,55 @@
+{
+  "fields": [
+    {
+      "id": "gender",
+      "label": "性別",
+      "type": "radio",
+      "required": true,
+      "defaultValue": 0,
+      "showValue": false,
+      "options": [
+        {
+          "label": "男",
+          "value": 0
+        },
+        {
+          "label": "女",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "age",
+      "label": "年齢",
+      "type": "number",
+      "unit": "歳",
+      "required": true,
+      "defaultValue": "",
+      "min": 0,
+      "step": 1,
+      "placeholder": "例：30"
+    },
+    {
+      "id": "weight",
+      "label": "体重",
+      "type": "number",
+      "unit": "kg",
+      "required": true,
+      "defaultValue": "",
+      "min": 0,
+      "step": 1,
+      "placeholder": "例：60"
+    },
+    {
+      "id": "serumCreatinine",
+      "label": "血清クレアチニン値",
+      "type": "number",
+      "unit": "mg/dl",
+      "required": true,
+      "defaultValue": "",
+      "min": 0,
+      "step": 0.1,
+      "placeholder": "基準値：0.6~1.2"
+    }
+  ]
+} 

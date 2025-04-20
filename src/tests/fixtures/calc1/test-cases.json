@@ -1,0 +1,210 @@
+{
+  "testCases": [
+    {
+      "name": "標準的な計算例",
+      "input": {
+        "rcc": 2,
+        "weight": 60,
+        "hb": 2
+      },
+      "expected": {
+        "data": [
+          "1.3",
+          "3.17"
+        ]
+      }
+    },
+    {
+      "name": "小数点を含む入力値の計算例",
+      "input": {
+        "rcc": 1.5,
+        "weight": 55.5,
+        "hb": 1.5
+      },
+      "expected": {
+        "data": [
+          "1.0",
+          "2.20"
+        ]
+      }
+    },
+    {
+      "name": "無効な値の例（負の値）",
+      "input": {
+        "rcc": -1,
+        "weight": 60,
+        "hb": 2
+      },
+      "expected": {
+        "data": [
+          "-",
+          "3.17"
+        ]
+      }
+    },
+    {
+      "name": "空の入力値の例",
+      "input": {
+        "rcc": "",
+        "weight": 60,
+        "hb": ""
+      },
+      "expected": {
+        "data": [
+          "-",
+          "-"
+        ]
+      }
+    },
+    {
+      "name": "体重が0の場合",
+      "input": {
+        "rcc": 2,
+        "weight": 0,
+        "hb": 2
+      },
+      "expected": {
+        "data": [
+          "-",
+          "-"
+        ]
+      }
+    },
+    {
+      "name": "体重が負の値の場合",
+      "input": {
+        "rcc": 2,
+        "weight": -50,
+        "hb": 2
+      },
+      "expected": {
+        "data": [
+          "-",
+          "-"
+        ]
+      }
+    },
+    {
+      "name": "未定義の入力でnullを返す",
+      "input": null,
+      "expected": null
+    },
+    {
+      "name": "nullの入力でnullを返す",
+      "input": null,
+      "expected": null
+    },
+    {
+      "name": "RCCが非常に大きい値の場合",
+      "input": {
+        "rcc": 100,
+        "weight": 60,
+        "hb": 2
+      },
+      "expected": {
+        "data": [
+          "63.1",
+          "3.17"
+        ]
+      }
+    },
+    {
+      "name": "RCCが小数点第3位まで含む値の場合（丸め処理確認）",
+      "input": {
+        "rcc": 1.234,
+        "weight": 70,
+        "hb": 2
+      },
+      "expected": {
+        "data": [
+          "0.7",
+          "3.70"
+        ]
+      }
+    },
+    {
+      "name": "Hbが小数点第3位まで含む値の場合（丸め処理確認）",
+      "input": {
+        "rcc": "2",
+        "weight": "70",
+        "hb": "1.234"
+      },
+      "expected": {
+        "data": [
+          "1.1",
+          "2.28"
+        ]
+      }
+    },
+    {
+      "name": "体重が非常に小さい値の場合",
+      "input": {
+        "rcc": "2",
+        "weight": "0.1",
+        "hb": "2"
+      },
+      "expected": {
+        "data": [
+          "-",
+          "0.01"
+        ]
+      }
+    },
+    {
+      "name": "体重が非常に大きい値の場合",
+      "input": {
+        "rcc": "2",
+        "weight": "300",
+        "hb": "2"
+      },
+      "expected": {
+        "data": [
+          "0.3",
+          "15.85"
+        ]
+      }
+    },
+    {
+      "name": "文字列が入力された場合（数値に変換できない）",
+      "input": {
+        "rcc": "abc",
+        "weight": "60",
+        "hb": "2"
+      },
+      "expected": {
+        "data": [
+          "-",
+          "3.17"
+        ]
+      }
+    },
+    {
+      "name": "計算結果が100を超える場合",
+      "input": {
+        "rcc": "500",
+        "weight": "1",
+        "hb": "2"
+      },
+      "expected": {
+        "data": [
+          "-",
+          "0.05"
+        ]
+      }
+    },
+    {
+      "name": "すべての入力値が極端に大きい場合",
+      "input": {
+        "rcc": "999",
+        "weight": "999",
+        "hb": "999"
+      },
+      "expected": {
+        "data": [
+          "37.9",
+          "-"
+        ]
+      }
+    }
+  ]
+} 

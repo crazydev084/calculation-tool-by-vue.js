@@ -1,0 +1,165 @@
+{
+  "testCases": [    
+    {
+      "name": "新DIC診断スコア",
+      "input": {
+        "Plt": 1,
+        "decrease": 1,
+        "FDP": 1,
+        "Fib": 1,
+        "PT": 1,
+        "AT": 1,
+        "TAT": 1,
+        "Liverfailure": 0
+      },
+      "expected": {
+        "data": [
+          {
+            "score": 7,
+            "message": "基準を満たす",
+            "status": "green"
+          },
+          {
+            "score": 5,
+            "message": "基準を満たす",
+            "status": "green"
+          },
+          {
+            "score": 6,
+            "message": "基準を満たす",
+            "status": "green"
+          }
+        ]
+      }
+    },
+    {
+        "name": "新DIC診断スコア",
+        "input": {
+          "Plt": 0,
+          "decrease": 0,
+          "FDP": 0,
+          "Fib": 0,
+          "PT": 0,
+          "AT": 0,
+          "TAT": 0,
+          "Liverfailure": 0
+        },
+        "expected": {
+          "data": [
+            {
+              "score": 0,
+              "message": "基準を満たさない",
+              "status": "red"
+            },
+            {
+              "score": 0,
+              "message": "基準を満たさない",
+              "status": "red"
+            },
+            {
+              "score": 0,
+              "message": "基準を満たさない",
+              "status": "red"
+            }
+          ]
+        }
+      },
+      {
+        "name": "新DIC診断スコア",
+        "input": {
+          "Plt": 3,
+          "decrease": 1,
+          "FDP": 1,
+          "Fib": 2,
+          "PT": 1,
+          "AT": 1,
+          "TAT": 1,
+          "Liverfailure": -3
+        },
+        "expected": {
+          "data": [
+            {
+              "score": 7,
+              "message": "基準を満たす",
+              "status": "green"
+            },
+            {
+              "score": 3,
+              "message": "基準を満たさない",
+              "status": "red"
+            },
+            {
+              "score": 5,
+              "message": "基準を満たす",
+              "status": "green"
+            }
+          ]
+        }
+      },
+      {
+        "name": "新DIC診断スコア",
+        "input": {
+          "Plt": 3,
+          "decrease": 1,
+          "FDP": 3,
+          "Fib": 1,
+          "PT": 2,
+          "AT": 1,
+          "TAT": 1,
+          "Liverfailure": -3
+        },
+        "expected": {
+          "data": [
+            {
+              "score": 9,
+              "message": "基準を満たす",
+              "status": "green"
+            },
+            {
+              "score": 5,
+              "message": "基準を満たす",
+              "status": "green"
+            },
+            {
+              "score": 8,
+              "message": "基準を満たす",
+              "status": "green"
+            }
+          ]
+        }
+      },
+      {
+        "name": "新DIC診断スコア",
+        "input": {
+          "Plt": 3,
+          "decrease": 1,
+          "FDP": 3,
+          "Fib": 1,
+          "PT": 2,
+          "AT": 1,
+          "TAT": 1,
+          "Liverfailure": -3
+        },
+        "expected": {
+          "data": [
+            {
+              "score": 12,
+              "message": "基準を満たす",
+              "status": "green"
+            },
+            {
+              "score": 8,
+              "message": "基準を満たす",
+              "status": "green"
+            },
+            {
+              "score": 11,
+              "message": "基準を満たす",
+              "status": "green"
+            }
+          ]
+        }
+      }
+      
+  ]
+} 

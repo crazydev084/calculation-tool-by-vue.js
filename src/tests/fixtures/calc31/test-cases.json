@@ -1,0 +1,228 @@
+{
+  "testCases": [
+    {
+      "description": "高リスクケース（スコア11点）",
+      "input": {
+        "severeCkd": 2,
+        "peripheralVascularDisease": 2,
+        "heartFailure": 2,
+        "thrombocytopenia": 2,
+        "atrialFibrillation": 1,
+        "myocardialInfarctionHistory": 1,
+        "malignantTumor": 1
+      },
+      "expected": {
+        "data": [11, "イベント発生率は8.8％\n（DAPT期間は臨床的に判断する）<a href='clinicalpocket://calculator/30'>血栓性リスクも評価</a>", "red"]
+      }
+    },
+    {
+      "description": "中リスクケース（スコア2点）",
+      "input": {
+        "severeCkd": 0,
+        "peripheralVascularDisease": 0,
+        "heartFailure": 0,
+        "thrombocytopenia": 0,
+        "atrialFibrillation": 1,
+        "myocardialInfarctionHistory": 1,
+        "malignantTumor": 0
+      },
+      "expected": {
+        "data": [2, "イベント発生率は4.1％\n（DAPT期間は臨床的に判断する）<a href='clinicalpocket://calculator/30'>血栓性リスクも評価</a>", "yellow"]
+      }
+    },
+    {
+      "description": "低リスクケース（スコア0点）",
+      "input": {
+        "severeCkd": 0,
+        "peripheralVascularDisease": 0,
+        "heartFailure": 0,
+        "thrombocytopenia": 0,
+        "atrialFibrillation": 0,
+        "myocardialInfarctionHistory": 0,
+        "malignantTumor": 0
+      },
+      "expected": {
+        "data": [0, "イベント発生率は2.3％\n（DAPT期間は臨床的に判断する）<a href='clinicalpocket://calculator/30'>血栓性リスクも評価</a>", "green"]
+      }
+    },
+    {
+      "description": "重度CKDがnullの場合",
+      "input": {
+        "severeCkd": null,
+        "peripheralVascularDisease": 0,
+        "heartFailure": 0,
+        "thrombocytopenia": 0,
+        "atrialFibrillation": 0,
+        "myocardialInfarctionHistory": 0,
+        "malignantTumor": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "末梢血管疾患がnullの場合",
+      "input": {
+        "severeCkd": 0,
+        "peripheralVascularDisease": null,
+        "heartFailure": 0,
+        "thrombocytopenia": 0,
+        "atrialFibrillation": 0,
+        "myocardialInfarctionHistory": 0,
+        "malignantTumor": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "心不全がnullの場合",
+      "input": {
+        "severeCkd": 0,
+        "peripheralVascularDisease": 0,
+        "heartFailure": null,
+        "thrombocytopenia": 0,
+        "atrialFibrillation": 0,
+        "myocardialInfarctionHistory": 0,
+        "malignantTumor": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "血小板数減少がnullの場合",
+      "input": {
+        "severeCkd": 0,
+        "peripheralVascularDisease": 0,
+        "heartFailure": 0,
+        "thrombocytopenia": null,
+        "atrialFibrillation": 0,
+        "myocardialInfarctionHistory": 0,
+        "malignantTumor": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "心房細動がnullの場合",
+      "input": {
+        "severeCkd": 0,
+        "peripheralVascularDisease": 0,
+        "heartFailure": 0,
+        "thrombocytopenia": 0,
+        "atrialFibrillation": null,
+        "myocardialInfarctionHistory": 0,
+        "malignantTumor": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "心筋梗塞の既往がnullの場合",
+      "input": {
+        "severeCkd": 0,
+        "peripheralVascularDisease": 0,
+        "heartFailure": 0,
+        "thrombocytopenia": 0,
+        "atrialFibrillation": 0,
+        "myocardialInfarctionHistory": null,
+        "malignantTumor": 0
+      },
+      "expected": null
+    },
+    {
+      "description": "悪性腫瘍がnullの場合",
+      "input": {
+        "severeCkd": 0,
+        "peripheralVascularDisease": 0,
+        "heartFailure": 0,
+        "thrombocytopenia": 0,
+        "atrialFibrillation": 0,
+        "myocardialInfarctionHistory": 0,
+        "malignantTumor": null
+      },
+      "expected": null
+    },
+    {
+      "description": "高リスク下限値テスト（スコア3点）",
+      "input": {
+        "severeCkd": 0,
+        "peripheralVascularDisease": 0,
+        "heartFailure": 0,
+        "thrombocytopenia": 0,
+        "atrialFibrillation": 1,
+        "myocardialInfarctionHistory": 1,
+        "malignantTumor": 1
+      },
+      "expected": {
+        "data": [3, "イベント発生率は8.8％\n（DAPT期間は臨床的に判断する）<a href='clinicalpocket://calculator/30'>血栓性リスクも評価</a>", "red"]
+      }
+    },
+    {
+      "description": "中リスク下限値テスト（スコア1点）",
+      "input": {
+        "severeCkd": 0,
+        "peripheralVascularDisease": 0,
+        "heartFailure": 0,
+        "thrombocytopenia": 0,
+        "atrialFibrillation": 1,
+        "myocardialInfarctionHistory": 0,
+        "malignantTumor": 0
+      },
+      "expected": {
+        "data": [1, "イベント発生率は4.1％\n（DAPT期間は臨床的に判断する）<a href='clinicalpocket://calculator/30'>血栓性リスクも評価</a>", "yellow"]
+      }
+    },
+    {
+      "description": "中リスク上限値テスト（スコア2点）",
+      "input": {
+        "severeCkd": 0,
+        "peripheralVascularDisease": 0,
+        "heartFailure": 0,
+        "thrombocytopenia": 0,
+        "atrialFibrillation": 1,
+        "myocardialInfarctionHistory": 1,
+        "malignantTumor": 0
+      },
+      "expected": {
+        "data": [2, "イベント発生率は4.1％\n（DAPT期間は臨床的に判断する）<a href='clinicalpocket://calculator/30'>血栓性リスクも評価</a>", "yellow"]
+      }
+    },
+    {
+      "description": "小数値入力テスト",
+      "input": {
+        "severeCkd": 0.5,
+        "peripheralVascularDisease": 0.5,
+        "heartFailure": 0.5,
+        "thrombocytopenia": 0.5,
+        "atrialFibrillation": 0.5,
+        "myocardialInfarctionHistory": 0.5,
+        "malignantTumor": 0.5
+      },
+      "expected": {
+        "data": [3.5, "イベント発生率は8.8％\n（DAPT期間は臨床的に判断する）<a href='clinicalpocket://calculator/30'>血栓性リスクも評価</a>", "red"]
+      }
+    },
+    {
+      "description": "極端な高スコアテスト",
+      "input": {
+        "severeCkd": 100,
+        "peripheralVascularDisease": 100,
+        "heartFailure": 100,
+        "thrombocytopenia": 100,
+        "atrialFibrillation": 100,
+        "myocardialInfarctionHistory": 100,
+        "malignantTumor": 100
+      },
+      "expected": {
+        "data": [700, "イベント発生率は8.8％\n（DAPT期間は臨床的に判断する）<a href='clinicalpocket://calculator/30'>血栓性リスクも評価</a>", "red"]
+      }
+    },
+    {
+      "description": "負の値入力テスト",
+      "input": {
+        "severeCkd": -1,
+        "peripheralVascularDisease": -1,
+        "heartFailure": -1,
+        "thrombocytopenia": -1,
+        "atrialFibrillation": -1,
+        "myocardialInfarctionHistory": -1,
+        "malignantTumor": -1
+      },
+      "expected": null
+    }
+  ]
+} 

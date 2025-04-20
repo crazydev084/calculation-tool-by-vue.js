@@ -1,0 +1,81 @@
+{
+  "testCases": [    
+    {
+      "name": "DIC",
+      "input": {
+        "disease": 0,
+        "Coagulation": 0,
+        "Fibrinolysis": 0
+      },
+      "expected": {
+        "data": ["0点", "産科DIC診断基準を-","yellow"]
+      }
+    },
+    {
+      "name": "DIC",
+      "input": {
+        "disease": 4,
+        "Coagulation": 3,
+        "Fibrinolysis": 2
+      },
+      "expected": {
+        "data": ["9.0点", "産科DIC診断基準を満たす","green"]
+      }
+    },
+    {
+      "name": "DIC",
+      "input": {
+        "disease": 4,
+        "Coagulation": 3,
+        "Fibrinolysis": 1
+      },
+      "expected": {
+        "data": ["8.0点", "産科DIC診断基準を満たす","green"]
+      }
+    },
+    {
+      "name": "DIC",
+      "input": {
+        "disease": 4,
+        "Coagulation": 2,
+        "Fibrinolysis": 2
+      },
+      "expected": {
+        "data": ["8.0点", "産科DIC診断基準を満たす","green"]
+      }
+    },
+    {
+      "name": "DIC",
+      "input": {
+        "disease": 0,
+        "Coagulation": 3,
+        "Fibrinolysis": 2
+      },
+      "expected": {
+        "data": ["5.0点", "産科DIC診断基準を-","yellow"]
+      }
+    },
+    {
+      "name": "DIC",
+      "input": {
+        "disease": 0,
+        "Coagulation": 0,
+        "Fibrinolysis": 2
+      },
+      "expected": {
+        "data": ["2.0点", "産科DIC診断基準を-","yellow"]
+      }
+    },
+    {
+      "name": "DIC",
+      "input": {
+        "disease": 0,
+        "Coagulation": 3,
+        "Fibrinolysis": 0
+      },
+      "expected": {
+        "data": ["3.0点", "産科DIC診断基準を-","yellow"]
+      }
+    }
+  ]
+} 

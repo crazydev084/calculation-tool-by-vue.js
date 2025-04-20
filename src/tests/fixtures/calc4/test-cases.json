@@ -1,0 +1,336 @@
+{
+  "testCases": [
+    {
+      "name": "すべての値が最大の場合",
+      "input": {
+        "consciousnessLevel": 3,
+        "consciousnessDisorderQuestion": 2,
+        "consciousnessDisorderCommand": 2,
+        "bestGaze": 2,
+        "visualField": 3,
+        "facialPalsy": 3,
+        "upperExtremityMovementRight": 4,
+        "upperExtremityMovementLeft": 4,
+        "lowerExtremityMovementRight": 4,
+        "lowerExtremityMovementLeft": 4,
+        "ataxia": 2,
+        "sensation": 2,
+        "bestLanguage": 3,
+        "articulationDisorder": 2
+      },
+      "expected": {
+        "data": [40, "重症", "red"]
+      }
+    },
+    {
+      "name": "すべての値が最小の場合",
+      "input": {
+        "consciousnessLevel": 0,
+        "consciousnessDisorderQuestion": 0,
+        "consciousnessDisorderCommand": 0,
+        "bestGaze": 0,
+        "visualField": 0,
+        "facialPalsy": 0,
+        "upperExtremityMovementRight": 0,
+        "upperExtremityMovementLeft": 0,
+        "lowerExtremityMovementRight": 0,
+        "lowerExtremityMovementLeft": 0,
+        "ataxia": 0,
+        "sensation": 0,
+        "bestLanguage": 0,
+        "articulationDisorder": 0
+      },
+      "expected": {
+        "data": [0, "正常", "green"]
+      }
+    },
+    {
+      "name": "一部の値がNの場合",
+      "input": {
+        "consciousnessLevel": 1,
+        "consciousnessDisorderQuestion": 1,
+        "consciousnessDisorderCommand": 1,
+        "bestGaze": 1,
+        "visualField": 1,
+        "facialPalsy": 1,
+        "upperExtremityMovementRight": "N",
+        "upperExtremityMovementLeft": "N",
+        "lowerExtremityMovementRight": "N",
+        "lowerExtremityMovementLeft": "N",
+        "ataxia": "N",
+        "sensation": 1,
+        "bestLanguage": 1,
+        "articulationDisorder": "N"
+      },
+      "expected": {
+        "data": [8, "中等症", "yellow"]
+      }
+    },
+    {
+      "name": "空の入力値の例",
+      "input": {
+        "consciousnessLevel": "",
+        "consciousnessDisorderQuestion": "",
+        "consciousnessDisorderCommand": "",
+        "bestGaze": "",
+        "visualField": "",
+        "facialPalsy": "",
+        "upperExtremityMovementRight": "",
+        "upperExtremityMovementLeft": "",
+        "lowerExtremityMovementRight": "",
+        "lowerExtremityMovementLeft": "",
+        "ataxia": "",
+        "sensation": "",
+        "bestLanguage": "",
+        "articulationDisorder": ""
+      },
+      "expected": {
+        "data": [0, "正常", "green"]
+      }
+    },
+    {
+      "name": "未定義の入力でnullを返す",
+      "input": null,
+      "expected": null
+    },
+    {
+      "name": "nullの入力でnullを返す",
+      "input": null,
+      "expected": null
+    },
+    
+    {
+      "name": "境界値テスト（スコア0/正常）",
+      "input": {
+        "consciousnessLevel": 0,
+        "consciousnessDisorderQuestion": 0,
+        "consciousnessDisorderCommand": 0,
+        "bestGaze": 0,
+        "visualField": 0,
+        "facialPalsy": 0,
+        "upperExtremityMovementRight": 0,
+        "upperExtremityMovementLeft": 0,
+        "lowerExtremityMovementRight": 0,
+        "lowerExtremityMovementLeft": 0,
+        "ataxia": 0,
+        "sensation": 0,
+        "bestLanguage": 0,
+        "articulationDisorder": 0
+      },
+      "expected": {
+        "data": [0, "正常", "green"]
+      }
+    },
+    {
+      "name": "境界値テスト（スコア1/軽症）",
+      "input": {
+        "consciousnessLevel": 1,
+        "consciousnessDisorderQuestion": 0,
+        "consciousnessDisorderCommand": 0,
+        "bestGaze": 0,
+        "visualField": 0,
+        "facialPalsy": 0,
+        "upperExtremityMovementRight": 0,
+        "upperExtremityMovementLeft": 0,
+        "lowerExtremityMovementRight": 0,
+        "lowerExtremityMovementLeft": 0,
+        "ataxia": 0,
+        "sensation": 0,
+        "bestLanguage": 0,
+        "articulationDisorder": 0
+      },
+      "expected": {
+        "data": [1, "軽症", "yellow-green"]
+      }
+    },
+    {
+      "name": "境界値テスト（スコア4/軽症）",
+      "input": {
+        "consciousnessLevel": 1,
+        "consciousnessDisorderQuestion": 1,
+        "consciousnessDisorderCommand": 1,
+        "bestGaze": 1,
+        "visualField": 0,
+        "facialPalsy": 0,
+        "upperExtremityMovementRight": 0,
+        "upperExtremityMovementLeft": 0,
+        "lowerExtremityMovementRight": 0,
+        "lowerExtremityMovementLeft": 0,
+        "ataxia": 0,
+        "sensation": 0,
+        "bestLanguage": 0,
+        "articulationDisorder": 0
+      },
+      "expected": {
+        "data": [4, "軽症", "yellow-green"]
+      }
+    },
+    {
+      "name": "境界値テスト（スコア5/中等症）",
+      "input": {
+        "consciousnessLevel": 1,
+        "consciousnessDisorderQuestion": 1,
+        "consciousnessDisorderCommand": 1,
+        "bestGaze": 1,
+        "visualField": 1,
+        "facialPalsy": 0,
+        "upperExtremityMovementRight": 0,
+        "upperExtremityMovementLeft": 0,
+        "lowerExtremityMovementRight": 0,
+        "lowerExtremityMovementLeft": 0,
+        "ataxia": 0,
+        "sensation": 0,
+        "bestLanguage": 0,
+        "articulationDisorder": 0
+      },
+      "expected": {
+        "data": [5, "中等症", "yellow"]
+      }
+    },
+    {
+      "name": "境界値テスト（スコア15/中等症）",
+      "input": {
+        "consciousnessLevel": 2,
+        "consciousnessDisorderQuestion": 1,
+        "consciousnessDisorderCommand": 1,
+        "bestGaze": 1,
+        "visualField": 1,
+        "facialPalsy": 1,
+        "upperExtremityMovementRight": 1,
+        "upperExtremityMovementLeft": 1,
+        "lowerExtremityMovementRight": 1,
+        "lowerExtremityMovementLeft": 1,
+        "ataxia": 1,
+        "sensation": 1,
+        "bestLanguage": 1,
+        "articulationDisorder": 1
+      },
+      "expected": {
+        "data": [15, "中等症", "yellow"]
+      }
+    },
+    {
+      "name": "境界値テスト（スコア16/中等症から重症）",
+      "input": {
+        "consciousnessLevel": 2,
+        "consciousnessDisorderQuestion": 1,
+        "consciousnessDisorderCommand": 1,
+        "bestGaze": 1,
+        "visualField": 1,
+        "facialPalsy": 1,
+        "upperExtremityMovementRight": 2,
+        "upperExtremityMovementLeft": 1,
+        "lowerExtremityMovementRight": 1,
+        "lowerExtremityMovementLeft": 1,
+        "ataxia": 1,
+        "sensation": 1,
+        "bestLanguage": 1,
+        "articulationDisorder": 1
+      },
+      "expected": {
+        "data": [16, "中等症から重症", "orange"]
+      }
+    },
+    {
+      "name": "境界値テスト（スコア20/中等症から重症）",
+      "input": {
+        "consciousnessLevel": 2,
+        "consciousnessDisorderQuestion": 2,
+        "consciousnessDisorderCommand": 2,
+        "bestGaze": 1,
+        "visualField": 1,
+        "facialPalsy": 1,
+        "upperExtremityMovementRight": 2,
+        "upperExtremityMovementLeft": 2,
+        "lowerExtremityMovementRight": 2,
+        "lowerExtremityMovementLeft": 2,
+        "ataxia": 1,
+        "sensation": 1,
+        "bestLanguage": 1,
+        "articulationDisorder": 0
+      },
+      "expected": {
+        "data": [20, "中等症から重症", "orange"]
+      }
+    },
+    {
+      "name": "境界値テスト（スコア21/重症）",
+      "input": {
+        "consciousnessLevel": 2,
+        "consciousnessDisorderQuestion": 2,
+        "consciousnessDisorderCommand": 2,
+        "bestGaze": 1,
+        "visualField": 2,
+        "facialPalsy": 1,
+        "upperExtremityMovementRight": 2,
+        "upperExtremityMovementLeft": 2,
+        "lowerExtremityMovementRight": 2,
+        "lowerExtremityMovementLeft": 2,
+        "ataxia": 1,
+        "sensation": 1,
+        "bestLanguage": 1,
+        "articulationDisorder": 0
+      },
+      "expected": {
+        "data": [21, "重症", "red"]
+      }
+    },
+    {
+      "name": "小数値の入力（Number変換の確認）",
+      "input": {
+        "consciousnessLevel": 1.5,
+        "consciousnessDisorderQuestion": 0.9,
+        "consciousnessDisorderCommand": 0.1,
+        "bestGaze": 0.2,
+        "visualField": 0.8,
+        "facialPalsy": 1.2,
+        "upperExtremityMovementRight": 0.3,
+        "upperExtremityMovementLeft": 0.4,
+        "lowerExtremityMovementRight": 0.5,
+        "lowerExtremityMovementLeft": 0.6,
+        "ataxia": 0.7,
+        "sensation": 0.8,
+        "bestLanguage": 0.9,
+        "articulationDisorder": 0.1
+      },
+      "expected": {
+        "data": [9, "中等症", "yellow"]
+      }
+    },
+    {
+      "name": "一部の項目のみ入力",
+      "input": {
+        "consciousnessLevel": 2,
+        "consciousnessDisorderQuestion": 1,
+        "bestGaze": 1,
+        "facialPalsy": 1,
+        "upperExtremityMovementRight": 2
+      },
+      "expected": {
+        "data": [7, "中等症", "yellow"]
+      }
+    },
+    {
+      "name": "すべての値がNの場合",
+      "input": {
+        "consciousnessLevel": "N",
+        "consciousnessDisorderQuestion": "N",
+        "consciousnessDisorderCommand": "N",
+        "bestGaze": "N",
+        "visualField": "N",
+        "facialPalsy": "N",
+        "upperExtremityMovementRight": "N",
+        "upperExtremityMovementLeft": "N",
+        "lowerExtremityMovementRight": "N",
+        "lowerExtremityMovementLeft": "N",
+        "ataxia": "N",
+        "sensation": "N",
+        "bestLanguage": "N",
+        "articulationDisorder": "N"
+      },
+      "expected": {
+        "data": [0, "正常", "green"]
+      }
+    }
+  ]
+} 

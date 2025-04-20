@@ -1,0 +1,108 @@
+{
+  "testCases": [    
+    {
+      "name": "Bishop",
+      "input": {
+        "back": 0,
+        "station": 0,
+        "hard": 0,
+        "open": 0,
+        "position": 0
+      },
+      "expected": {
+        "data": ["0点", "-","blue"]
+      }
+    },
+    {
+      "name": "Bishop",
+      "input": {
+        "back": 1,
+        "station": 1,
+        "hard": 1,
+        "open": 1,
+        "position": 1
+      },
+      "expected": {
+        "data": ["5点", "頸管熟化は不良。熟化促進や分娩誘発の延期を検討する。","red"]
+      }
+    },
+    {
+      "name": "Bishop",
+      "input": {
+        "back": 2,
+        "station": 2,
+        "hard": 1,
+        "open": 1,
+        "position": 1
+      },
+      "expected": {
+        "data": ["7点", "頸管熟化は良好。自然分娩や分娩誘発を検討する。","green"]
+      }
+    },
+    {
+      "name": "Bishop",
+      "input": {
+        "back": 3,
+        "station": 3,
+        "hard": 2,
+        "open": 3,
+        "position": 2
+      },
+      "expected": {
+        "data": ["13点", "頸管熟化は良好。自然分娩や分娩誘発を検討する。","green"]
+      }
+    },
+    {
+      "name": "Bishop",
+      "input": {
+        "back": 0,
+        "station": 3,
+        "hard": 2,
+        "open": 3,
+        "position": 2
+      },
+      "expected": {
+        "data": ["10点", "頸管熟化は良好。自然分娩や分娩誘発を検討する。","green"]
+      }
+    },
+    {
+      "name": "Bishop",
+      "input": {
+        "back": 0,
+        "station": 0,
+        "hard": 2,
+        "open": 3,
+        "position": 2
+      },
+      "expected": {
+        "data": ["7点", "頸管熟化は良好。自然分娩や分娩誘発を検討する。","green"]
+      }
+    },
+    {
+      "name": "Bishop",
+      "input": {
+        "back": 0,
+        "station": 0,
+        "hard": 2,
+        "open": 1,
+        "position": 2
+      },
+      "expected": {
+        "data": ["5点", "頸管熟化は不良。熟化促進や分娩誘発の延期を検討する。","red"]
+      }
+    },
+    {
+      "name": "Bishop",
+      "input": {
+        "back": 0,
+        "station": 0,
+        "hard": 2,
+        "open": 2,
+        "position": 2
+      },
+      "expected": {
+        "data": ["6点", "頸管熟化は不良。熟化促進や分娩誘発の延期を検討する。","red"]
+      }
+    }
+  ]
+} 

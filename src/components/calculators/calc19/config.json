@@ -1,0 +1,38 @@
+{
+  "fields": [
+    {
+      "id": "woundCharacteristics",
+      "label": "創の特徴",
+      "type": "radio",
+      "required": true,
+      "defaultValue": "",
+      "options": [
+        {
+          "label": "リスクの高い創",
+          "value": 1
+        },
+        {
+          "label": "リスクの低い創",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "tetanusVaccinationHistory",
+      "label": "破傷風トキソイド接種歴",
+      "type": "radio",
+      "required": true,
+      "defaultValue": "",
+      "options": [
+        {
+          "label": "接種歴3回以上",
+          "value": 10
+        },
+        {
+          "label": "接種歴3回未満 もしくは 不明",
+          "value": 20
+        }
+      ]
+    }
+  ]
+} 

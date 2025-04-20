@@ -1,0 +1,33 @@
+/* Tailwindディレクティブ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* ここにコンポーネントスタイルを書くことができます */
+  .my-custom-class {
+    @apply bg-blue-500 text-white p-4 rounded-md;
+  }
+}
+
+@layer utilities {
+    .text-wrap-pretty {
+      text-align: left;
+      hyphens: auto;
+      text-wrap: pretty;
+    }
+    
+    .text-wrap-balance {
+      text-wrap: balance;
+    }
+    
+    .text-wrap-stable {
+      text-wrap: stable;
+    }
+  }
+
+@layer base {
+    body {
+        @apply bg-pls-bg w-full h-full;
+    }
+}
