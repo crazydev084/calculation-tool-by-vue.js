@@ -32,7 +32,7 @@ export function useCalc() {
     .plus(blood)
     .plus(neutrophil)
     .round(3)
-    .toFixed(2)
+    .toFixed(0)
 
     if (totalScore < 0 || totalScore > 9999.9) {
       return null

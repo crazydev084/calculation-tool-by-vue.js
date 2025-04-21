@@ -112,3 +112,8 @@
 
 1. [Samuel M. Pediatric appendicitis score. J Pediatr Surg. 2002 Jun;37(6):877-81.](https://pubmed.ncbi.nlm.nih.gov/12037754/)  
 2. [エビデンスに基づいた子どもの腹部救急診療ガイドライン2017｜日本小児救急医学会](https://minds.jcqhc.or.jp/common/summary/pdf/c00575.pdf)
+
+
+### 監修
+監修:平山傑（札幌徳洲会病院 副院長/救急科部長）
+更新日時:2025年1月25日

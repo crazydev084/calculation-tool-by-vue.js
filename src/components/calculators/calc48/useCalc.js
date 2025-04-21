@@ -26,7 +26,7 @@ export function useCalc() {
     .plus(Coagulation)
     .plus(Fibrinolysis)
     .round(2)
-    .toFixed(1)
+    .toFixed(0)
     
     // 結果の配列を返す [スコア, コメント, ステータス]
     const status = getStatus(totalScore)

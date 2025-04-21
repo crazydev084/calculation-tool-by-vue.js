@@ -43,3 +43,7 @@
 3. [Isojima T, Kato N, Ito Y, Kanzaki S, Murata M: Growth standard charts for Japanese children with mean and standard deviation (SD) values based on the year 2000 national survey, Clin Pediatr Endocrinol 25:71-76, 2016](https://pmc.ncbi.nlm.nih.gov/articles/PMC4860518/)
 4. [加藤則子, 横山徹爾, 瀧本秀美:平成23年度総括・分担研究報告書, 11-52, 2012](https://www.niph.go.jp/soshiki/07shougai/hatsuiku/houkoku120617.pdf)
 
+
+### 監修
+監修:平山傑（札幌徳洲会病院 副院長/救急科部長）
+更新日時:2025年1月25日

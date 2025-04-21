@@ -73,3 +73,8 @@
 1. [1.	Kuppermann N, et al; Pediatric Emergency Care Applied Research Network (PECARN). Identification of children at very low risk of clinically-important brain injuries after head trauma: a prospective cohort study. Lancet. 2009 Oct 3;374(9696):1160-70.](https://pubmed.ncbi.nlm.nih.gov/19758692/)  
 2. [2.	Nihon Kyukyu Igakukai Zasshi: Journal of Japanese Association for Acute MedicineVolume 35, Issue 6 p. 191-198](https://onlinelibrary.wiley.com/doi/10.1002/jja2.12906)  
 3. [3.	小児軽症頭部外傷における頭部CT適応基準, 脳と発達 2018;50;413-7](https://www.jstage.jst.go.jp/article/ojjscn/50/6/50_413/_pdf/-char/ja)  
+
+
+### 監修
+監修:平山傑（札幌徳洲会病院 副院長/救急科部長）
+更新日時:2025年1月25日

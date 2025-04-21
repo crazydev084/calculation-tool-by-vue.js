@@ -60,3 +60,8 @@
 3. [周産期委員会：平成24年度専門委員会報告 日本産科婦人科学会雑誌 2013;65（6）:1318-419.](https://www.jsog.or.jp/activity/pdf/shusanki_vol65no6.pdf)
 
 4. [Carlson N, et al. Review of Evidence-Based Methods for Successful Labor Induction. J Midwifery Womens Health. 2021 Jul;66(4):459-469.](https://pmc.ncbi.nlm.nih.gov/articles/PMC8363560/#S12)
+
+
+### 監修
+監修:平山傑（札幌徳洲会病院 副院長/救急科部長）
+更新日時:2025年1月25日

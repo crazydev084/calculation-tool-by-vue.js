@@ -32,7 +32,7 @@ export function useCalc() {
     .plus(activity)
     .plus(respiration)
     .round(2)
-    .toFixed(1)
+    .toFixed(0)
     
     // 結果の配列を返す [スコア, コメント, ステータス]
     const status = getStatus(totalScore)

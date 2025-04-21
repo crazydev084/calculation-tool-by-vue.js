@@ -16,23 +16,23 @@ export function useCalc() {
     let Danger2 = new Big(0)
     let Danger3 = new Big(0)
     let Danger4 = new Big(0)
-    let totalScore;
+    let totalScore = new Big(0)
     
-    Danger1 = new Big(formData.gcs || 0).plus(new Big(formData.altered1 || 0)).plus(new Big(formData.fracture || 0)).round(3).toFixed(2);
-    Danger2 = new Big(formData.hematoma || 0).plus(new Big(formData.loss1 || 0)).plus(new Big(formData.injury || 0)).plus(new Big(formData.point || 0)).round(3).toFixed(2);
-    Danger3 = new Big(formData.gcs2 || 0).plus(new Big(formData.altered2 || 0)).plus(new Big(formData.skull || 0)).round(3).toFixed(2);
-    Danger4 = new Big(formData.loss2 || 0).plus(new Big(formData.vomiting || 0)).plus(new Big(formData.injury2 || 0)).plus(new Big(formData.headache || 0)).round(3).toFixed(2);
+    Danger1 = new Big(formData.gcs || 0).plus(new Big(formData.altered1 || 0)).plus(new Big(formData.fracture || 0));
+    Danger2 = new Big(formData.hematoma || 0).plus(new Big(formData.loss1 || 0)).plus(new Big(formData.injury || 0)).plus(new Big(formData.point || 0));
+    Danger3 = new Big(formData.gcs2 || 0).plus(new Big(formData.altered2 || 0)).plus(new Big(formData.skull || 0));
+    Danger4 = new Big(formData.loss2 || 0).plus(new Big(formData.vomiting || 0)).plus(new Big(formData.injury2 || 0)).plus(new Big(formData.headache || 0));
     
     if (Danger1 > 0) {
-      totalScore = 4.4 * Danger1+0.9*Danger2;
+      totalScore = new Big(4.4 * Danger1+0.9*Danger2).round(3).toFixed(1);
     } else if (Danger2 > 0) {
-      totalScore = 0.9 * Danger2;
+      totalScore = new Big(0.9 * Danger2).round(3).toFixed(1);
     } else if (Danger3 > 0) {
-      totalScore = 4.3 * Danger3+0.9*Danger4;
+      totalScore = new Big(4.3 * Danger3+0.9*Danger4).round(3).toFixed(1);
     } else if (Danger4 > 0) {
-      totalScore = 0.8 * Danger4;
+      totalScore = new Big(0.8 * Danger4).round(3).toFixed(1);
     } else {
-      totalScore = 0;
+      totalScore = new Big(0).round(3).toFixed(1);
     }
     
     // 結果の配列を返す [スコア, コメント, ステータス]

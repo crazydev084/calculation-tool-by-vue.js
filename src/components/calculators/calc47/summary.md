@@ -46,3 +46,8 @@
 
 1. [Apgar新生児採点法について, 産婦人科の進歩;1965年17巻6号;425-429](https://www.jstage.jst.go.jp/article/sanpunosinpo1949/17/6/17_6_425/_article/-char/ja/)  
 2. [産婦人科診療ガイドラインー産科編2023｜公益社団法人 日本産科婦人科学会,公益社団法人 日本産婦人科医会](https://www.jsog.or.jp/activity/pdf/gl_sanka_2023.pdf)  
+
+
+### 監修
+監修:平山傑（札幌徳洲会病院 副院長/救急科部長）
+更新日時:2025年1月25日

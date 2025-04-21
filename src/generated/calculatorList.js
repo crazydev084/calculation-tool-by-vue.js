@@ -142,7 +142,7 @@ export const calculatorList = [
   },
   {
     "id": 44,
-    "title": "ROX指数計算"
+    "title": "小児成長曲線_SDスコア"
   },
   {
     "id": 45,
