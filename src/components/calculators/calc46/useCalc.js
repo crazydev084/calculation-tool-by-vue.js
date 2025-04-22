@@ -52,9 +52,9 @@ export function useCalc() {
   
 
   const getStatus = (score,age) => {
-    if (age == 0) return 'green'
+    if (age == 0) return 'blue'
     else{
-      if (score >= 0 && score < 4) return 'blue'
+      if (score >= 0 && score < 4) return 'green'
       else if (score >= 4 && score < 7) return 'yellow'
       else return 'red'
     }

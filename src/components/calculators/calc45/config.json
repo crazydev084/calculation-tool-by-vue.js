@@ -5,19 +5,20 @@
       "label": "年齢",
       "type": "radio-group",
       "required": true,
+      "showValue": false,      
       "defaultValue": 0,
       "options": [
         {
           "label": "2歳未満",
           "value": 0,
-          "id": "agedown",
           "fields": [
             {
               "id": "gcs",
-              "label": "GCS ＝14（GCS13未満は本スコア対象外）",
+              "label": "GCS ＝ 14（GCS13未満は本スコア対象外）",
               "type": "radio",
               "required": true,
               "defaultValue": 0,
+              "showValue": false,
               "options": [
                 {
                   "label": "はい",
@@ -35,6 +36,7 @@
               "type": "radio",
               "required": true,
               "defaultValue": 0,
+              "showValue": false,
               "options": [
                 {
                   "label": "あり",
@@ -52,6 +54,7 @@
               "type": "radio",
               "required": true,
               "defaultValue": 0,
+              "showValue": false,
               "options": [
                 {
                   "label": "あり",
@@ -69,6 +72,7 @@
               "type": "radio",
               "required": true,
               "defaultValue": 0,
+              "showValue": false,
               "options": [
                 {
                   "label": "あり",
@@ -86,6 +90,7 @@
               "type": "radio",
               "required": true,
               "defaultValue": 0,
+              "showValue": false,
               "options": [
                 {
                   "label": "あり",
@@ -103,6 +108,7 @@
               "type": "radio",
               "required": true,
               "defaultValue": 0,
+              "showValue": false,
               "options": [
                 {
                   "label": "あり",
@@ -120,6 +126,7 @@
               "type": "radio",
               "required": true,
               "defaultValue": 0,
+              "showValue": false,
               "options": [
                 {
                   "label": "あり",
@@ -139,10 +146,11 @@
           "fields": [
             {
               "id": "gcs2",
-              "label": "GCS=14（GCS13未満は本スコア対象外） ",
+              "label": "GCS = 14（GCS13未満は本スコア対象外）",
               "type": "radio",
               "required": true,
               "defaultValue": 0,
+              "showValue": false,
               "options": [
                 {
                   "label": "はい",
@@ -160,6 +168,7 @@
               "type": "radio",
               "required": true,
               "defaultValue": 0,
+              "showValue": false,
               "options": [
                 {
                   "label": "あり",
@@ -177,6 +186,7 @@
               "type": "radio",
               "required": true,
               "defaultValue": 0,
+              "showValue": false,
               "options": [
                 {
                   "label": "あり",
@@ -194,6 +204,7 @@
               "type": "radio",
               "required": true,
               "defaultValue": 0,
+              "showValue": false,
               "options": [
                 {
                   "label": "あり",
@@ -211,6 +222,7 @@
               "type": "radio",
               "required": true,
               "defaultValue": 0,
+              "showValue": false,
               "options": [
                 {
                   "label": "あり",
@@ -228,6 +240,7 @@
               "type": "radio",
               "required": true,
               "defaultValue": 0,
+              "showValue": false,
               "options": [
                 {
                   "label": "あり",
@@ -245,6 +258,7 @@
               "type": "radio",
               "required": true,
               "defaultValue": 0,
+              "showValue": false,
               "options": [
                 {
                   "label": "あり",

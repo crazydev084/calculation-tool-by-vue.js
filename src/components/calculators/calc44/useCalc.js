@@ -21,21 +21,13 @@ const calculateDose = (formData) => {
             return null
     }
 
-    let age_data
-    let formattedAges = String(new Big(formData.ages).round(3).toFixed(2))
-    if (!formattedAges.includes(".")) {
-        age_data = formattedAges + "-0"
-    } else {
-        if (formattedAges.includes(".0")) {
-            age_data = formattedAges.replace(".0", "-")
-        } else {
-            age_data = formattedAges.replace(".", "-")
-        }
-    }
+    const age = new Big(formData.age).round(3).toFixed()
+    const age_month = new Big(formData.age_month).round(3).toFixed()
     const gender = new Big(formData.gender).round(3).toFixed()
     const height = new Big(formData.height)
     const weight = new Big(formData.weight)
     const head = new Big(formData.head).round(3).toFixed(2)
+    let age_data = age + "-" + age_month
 
     let avg_weight
     let sd_weight

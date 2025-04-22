@@ -169,6 +169,7 @@ export default {
           const defaultVal = field.defaultValue !== undefined ? field.defaultValue : ''
           formData[field.id] = defaultVal
           initialValues[field.id] = defaultVal
+          handleRadioGroupChange(field.id, { value: defaultVal })
         }
       })
     }
@@ -294,7 +295,6 @@ export default {
     const handleRadioGroupChange = (fieldId, selectedOption) => {
       const parentField = props.formConfig.fields.find(f => f.id === fieldId)
       const selectedValue = Number(selectedOption.value)
-      
       parentField.options.forEach(opt => {
         if (opt.fields) {
           opt.fields.forEach(subField => {

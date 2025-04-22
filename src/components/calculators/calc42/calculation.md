@@ -27,8 +27,7 @@ FeUAは以下の式で算出される<sup>1)</sup>。
     </mfrac>
     <mi>×100</mi>
   </math>
-</div>
-<div>
-UA：尿酸<p>
-Cr：クレアチニン
+<br />
+  <small>UA：尿酸</small><br />
+  <small>Cr：クレアチニン</small>
 </div>

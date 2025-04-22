@@ -27,8 +27,7 @@ FeUNは以下の式で算出される<sup>1)</sup>。
     </mfrac>
     <mi>×100</mi>
   </math>
-</div>
-<div>
-UN：尿素窒素<p>
-Cr：クレアチニン
+  <br />
+  <small>UN：尿素窒素</small><br />
+  <small>Cr：クレアチニン</small>
 </div>

@@ -37,7 +37,7 @@
     },
     {
       "id": "UN2",
-      "label": "尿中UN<br>※ 準値には男女で差がある。",
+      "label": "尿中UN",
       "type": "number",
       "unit": "mg/dL",
       "required": true,
@@ -46,6 +46,10 @@
       "max": 13,
       "step": 1,
       "placeholder": "基準値：6.5〜13 mg/dL"
+    },
+    {
+      "label": "※ 基準値には男女で差がある。",
+      "type": "group"
     }
   ]
 } 
