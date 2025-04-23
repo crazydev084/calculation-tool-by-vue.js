@@ -182,3 +182,6 @@
     </tr>
   </tbody>
 </table>
+
+### 出典
+1. [厚生労働省｜血液製剤の使用指針（改訂版）Ⅲ 血小板濃厚液の適正使用）（2024/12/26閲覧）](https://www.jrc.or.jp/mr/blood_product/about/platelet/?utm_source=chatgpt.com)  

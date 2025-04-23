@@ -32,7 +32,6 @@ export default {
       if (result && result.data) {
         resultItems.value[0].value = result.data[0]
         resultItems.value[1].comment = result.data[1]
-        // resultStatus.value = result.data[2]
       }
     }
 
@@ -40,7 +39,6 @@ export default {
       formConfig,
       calculateFunction: calculateDose,
       resultItems,
-      // resultStatus,
       onCalculated,
       markdownContent,
       explanationContent,
@@ -58,7 +56,6 @@ export default {
     :form-config="formConfig"
     :calculation-function="calculateFunction"
     :result-items="resultItems"
-    :result-status="resultStatus"
     :explanation-content="explanationContent"
     :markdown-content="markdownContent"
     @calculated="onCalculated"

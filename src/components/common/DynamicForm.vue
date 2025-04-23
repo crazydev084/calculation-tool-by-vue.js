@@ -165,11 +165,17 @@ export default {
             formData[childField.id] = defaultVal
             initialValues[childField.id] = defaultVal
           })
-        } else {
+        } else if(field.type === 'radio-group'){
           const defaultVal = field.defaultValue !== undefined ? field.defaultValue : ''
           formData[field.id] = defaultVal
           initialValues[field.id] = defaultVal
           handleRadioGroupChange(field.id, { value: defaultVal })
+        }
+        else {
+
+          const defaultVal = field.defaultValue !== undefined ? field.defaultValue : ''
+          formData[field.id] = defaultVal
+          initialValues[field.id] = defaultVal
         }
       })
     }

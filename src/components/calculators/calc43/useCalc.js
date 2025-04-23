@@ -36,22 +36,16 @@ export function useCalc() {
     }
     
     // 結果の配列を返す [スコア, コメント, ステータス]
-    // const status = getStatus(totalScore)
     const message = getMessage(totalScore)
     
     return {
       data: [
         totalScore,
         message,
-        // status
       ]
     }
   }
 
-  // const getStatus = (score) => {
-  //   if (score >= 0 && score <= 14) return 'green'
-  //   return 'red'
-  // }
 
   const getMessage = (score) => {
     if (score >= 0 && score <= 14) return '尿中Cr/血清Cr<140の場合、FeNa≧0.5％ or FeUN≧55％でSIADHパターンの判断に有用'
@@ -60,13 +54,11 @@ export function useCalc() {
   }
 
   const score = computed(() => calculateDose(input.value))
-  // const status = computed(() => getStatus(score.value?.data?.[0]))
   const message = computed(() => getMessage(score.value?.data?.[0]))
 
   return {
     input,
     score,
-    // status,
     message,
     calculateDose
   }
